@@ -1,0 +1,599 @@
+ID,Head,Throat,Shoulder,Shoulder_bilateral,Arms,Elbows,Elbows_bilateral,Wrists.Hands,Wrists.Hands_bilateral,Chest,Upper_back,Lower_back,Abdomen,Cervical_spine,Thoracic_spine,Lumbosacral_spine,Groin,Hips,Hips_bilateral,Legs,Knees,Knees_bilateral,Ankles.Feet,Ankles.Feet_bilateral,Buttocks,Whole_body,Sex,Age,Language,Education (choice=Primary ( grades 1-7)),Education (choice=secondary (grades 8-12)),Education (choice=Tertiary (any post-school)),Education (choice=Missing),Employment_status,CD4_recent,ART_currently,ART_D4T.now,ART_D4T.previous,TB,Pain_worst,Pain_least,Pain_now,Timing
+RPB73,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,391,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB74,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,571,Yes,Yes,No,No,NA,NA,NA,Pain_week
+RPB75,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,591,Yes,No,No,No,4,4,1,Pain_week
+RPB76,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,207,Yes,Yes,No,No,10,5,5,Pain_week
+RPB77,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,126,Yes,Yes,No,Yes,10,5,1,Pain_week
+RPB78,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,225,Yes,No,No,No,6,4,5,Pain_week
+RPB80,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,543,Yes,Yes,No,Yes,6,3,2,Pain_week
+RPB81,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,Yes,No,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,410,Yes,No,No,No,9,6,7,Pain_week
+RPB84,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,74,Yes,No,No,No,8,4,1,Pain_week
+RPB85,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,212,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB103,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,579,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB104,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,24,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,346,Yes,Yes,No,No,5,2,2,Pain_week
+RPB105,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,602,Yes,No,No,No,8,5,4,Pain_week
+RPB106,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Female,26,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,519,Yes,No,No,No,9,6,5,Pain_week
+RPB107,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,261,Yes,No,No,No,9,5,4,Pain_week
+RPB108,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,277,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB109,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,287,Yes,No,No,No,9,9,6,Pain_week
+RPB110,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,397,Yes,Yes,No,No,6,4,8,Pain_week
+RPB111,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,133,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB112,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,124,Yes,No,No,No,10,10,9,Pain_week
+RPB132,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,300,Yes,No,No,No,8,5,4,Pain_week
+RPB133,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,206,Yes,No,No,Yes,9,5,8,Pain_week
+RPB134,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,437,Yes,Yes,No,No,8,5,3,Pain_week
+RPB135,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,479,Yes,No,No,No,8,5,4,Pain_week
+RPB136,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,224,Yes,No,No,No,9,5,9,Pain_week
+RPB139,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,447,Yes,No,No,No,6,4,3,Pain_week
+RPB140,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,29,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,327,Yes,Yes,No,No,NA,NA,NA,Pain_week
+RPB124,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,27,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,635,Yes,No,No,No,8,5,2,Pain_week
+RPB125,Yes,No,Yes,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,430,Yes,No,No,No,8,6,9,Pain_week
+RPB04,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,153,Yes,No,No,No,9,6,3,Pain_week
+RPB06,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,35,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,308,Yes,No,No,No,10,5,4,Pain_week
+RPB07,Yes,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Female,22,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,184,Yes,Yes,No,No,8,5,6,Pain_week
+RPB08,Yes,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,26,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,317,Yes,No,No,No,6,3,1,Pain_week
+RPB09,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Yes,No,Female,31,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,452,Yes,Yes,No,No,8,5,10,Pain_week
+RPB10,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,Yes,No,No,No,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,308,Yes,Yes,No,No,6,3,1,Pain_week
+RPB11,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,38,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,590,Yes,No,No,No,10,10,7,Pain_week
+RPB12,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,188,Yes,No,No,No,10,4,3,Pain_week
+RPB14,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,348,Yes,Yes,No,No,NA,NA,NA,Pain_week
+RPB15,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,216,Yes,Yes,No,Yes,6,4,8,Pain_week
+RPB42,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,26,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,288,Yes,No,No,No,5,3,1,Pain_week
+RBP43,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,38,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,155,Yes,Yes,No,No,7,5,10,Pain_week
+RPB44,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,29,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,165,Yes,No,No,No,7,3,2,Pain_week
+RPB46,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,226,Yes,Yes,No,No,7,3,3,Pain_week
+RBP47,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,23,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,387,Yes,No,No,No,10,10,3,Pain_week
+RPB48,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,561,Yes,No,No,No,8,4,2,Pain_week
+RPB49,Yes,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,26,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,236,Yes,Yes,No,No,10,4,9,Pain_week
+RPB50,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,479,Yes,Yes,No,No,5,2,1,Pain_week
+RPB51,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,311,Yes,No,No,No,5,3,2,Pain_week
+RPB52,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,26,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,353,Yes,No,No,No,6,4,3,Pain_week
+RPB53,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,114,Yes,Yes,No,No,9,5,5,Pain_week
+RPB54,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,28,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,872,Yes,No,No,No,7,4,2,Pain_week
+RPB55,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,881,Yes,No,No,No,8,8,6,Pain_week
+RPB57,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,388,Yes,No,No,No,4,2,1,Pain_week
+RPB58,Yes,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,500,Yes,No,No,No,8,5,6,Pain_week
+RPB59,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,452,Yes,No,No,No,6,3,3,Pain_week
+RPB60,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,26,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,340,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB32,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,777,Yes,Yes,No,No,NA,NA,NA,Pain_week
+RPB33,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,140,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB34,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,673,Yes,No,No,No,6,5,2,Pain_week
+RPB35,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,714,Yes,NA,No,No,10,5,5,Pain_week
+RPB36,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,39,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,501,Yes,Yes,No,No,10,10,5,Pain_week
+RPB37,No,No,Yes,Yes,No,No,No,No,No,Yes,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,233,Yes,No,No,No,7,5,3,Pain_week
+RPB38,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Female,30,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,360,Yes,No,No,No,5,2,4,Pain_week
+RPB41,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,Female,27,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,379,Yes,No,No,No,8,3,10,Pain_week
+RPB39,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,27,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,325,Yes,No,No,No,6,3,2,Pain_week
+RPD08,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,154,Yes,No,No,No,NA,NA,NA,Pain_week
+RPD09,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,21,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,184,No,No,No,No,5,3,2,Pain_week
+RPD10,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,173,No,No,No,No,6,4,2,Pain_week
+RPD11,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,24,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,274,Yes,No,No,No,9,5,10,Pain_week
+RPC11,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,281,Yes,No,No,No,8,4,2,Pain_week
+RPB16,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,659,Yes,Yes,No,No,NA,NA,NA,Pain_week
+RPC,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,115,No,No,No,No,10,10,8,Pain_week
+RPA11,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,220,Yes,No,No,No,6,4,2,Pain_week
+RPA12,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,275,Yes,No,No,No,5,3,3,Pain_week
+RPA13,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,72,Yes,No,No,No,5,3,1,Pain_week
+RPA14,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,32,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,109,Yes,No,No,Yes,10,6,4,Pain_week
+RPA15,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Xhosa,Unchecked,Checked,Checked,Unchecked,Unemployed,306,Yes,No,No,Yes,10,6,8,Pain_week
+RPA17,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,313,Yes,No,No,No,9,9,5,Pain_week
+RPA18,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,203,Yes,No,No,No,NA,NA,NA,Pain_week
+RPA02,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,Female,30,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,146,Yes,Yes,No,Yes,10,6,3,Pain_week
+RPA03,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,33,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,26,Yes,Yes,No,Yes,5,2,4,Pain_week
+RPA04,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,176,Yes,No,No,No,5,5,2,Pain_week
+RPA05,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,35,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,149,Yes,No,No,No,9,4,4,Pain_week
+RPA06,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,240,Yes,No,No,No,10,5,0,Pain_week
+RPA07,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,36,Yes,Yes,No,Yes,5,3,1,Pain_week
+RPA09,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,29,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,155,Yes,No,No,No,6,3,2,Pain_week
+RPA10,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,22,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,181,Yes,No,No,No,9,5,3,Pain_week
+RPD01,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,173,No,No,No,No,7,4,3,Pain_week
+RPD02,Yes,Yes,Yes,Yes,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,145,No,No,No,No,5,3,2,Pain_week
+RPD03,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,209,Yes,No,No,No,NA,NA,NA,Pain_week
+RPD04,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,27,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,133,Yes,No,No,No,7,3,3,Pain_week
+RPD06,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,152,No,No,No,No,6,4,1,Pain_week
+RPD07,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,295,No,No,No,No,8,8,8,Pain_week
+RPA19,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,24,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,98,No,No,No,No,NA,NA,NA,Pain_week
+RPA20,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,114,No,No,No,No,NA,NA,NA,Pain_week
+RPA21,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,58,Yes,No,No,No,NA,NA,NA,Pain_week
+RPA22,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,221,Yes,No,No,Yes,9,6,6,Pain_week
+RPC01,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,Yes,Yes,No,No,Yes,No,Yes,No,Yes,Yes,No,Yes,No,Yes,No,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,101,No,No,No,No,8,4,5,Pain_week
+RPC02,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,159,No,No,No,No,10,4,6,Pain_week
+RPC03,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,246,No,No,No,No,8,8,1,Pain_week
+RPC04,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,261,No,No,No,No,9,7,3,Pain_week
+RPC05,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,174,No,No,No,No,9,5,3,Pain_week
+RPC06,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,Yes,Yes,No,No,No,No,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,192,No,No,No,No,8,5,5,Pain_week
+RPB141,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,165,Yes,Yes,No,No,7,5,3,Pain_week
+RPB142,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,20,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,202,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB143,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,29,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,165,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB144,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Xhosa,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,213,Yes,No,No,No,8,5,5,Pain_week
+RPB17,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,596,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB19,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1040,Yes,Yes,No,No,6,4,5,Pain_week
+RPB20,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,382,Yes,No,No,No,9,5,3,Pain_week
+RPB21,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,Yes,No,Yes,No,No,No,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,487,Yes,Yes,No,No,7,5,4,Pain_week
+RPC07,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,24,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,175,No,No,No,No,7,4,5,Pain_week
+RPC08,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,28,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,213,No,No,No,No,7,3,1,Pain_week
+RPC10,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,29,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,174,Yes,No,No,No,5,2,2,Pain_week
+RPC12,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,166,No,No,No,No,9,6,5,Pain_week
+RPC14,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,NA,No,No,No,No,9,8,5,Pain_week
+RPC15,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,23,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,305,No,No,No,No,NA,NA,NA,Pain_week
+RPB88,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,20,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,191,Yes,No,No,No,9,4,3,Pain_week
+RPB89,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,667,Yes,No,No,No,9,9,5,Pain_week
+RPB90,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,1032,Yes,Yes,No,No,NA,NA,NA,Pain_week
+RPB93,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,32,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,301,Yes,No,No,No,9,5,1,Pain_week
+RPB94,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,774,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB95,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Xhosa,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,54,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB98,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,187,Yes,Yes,No,No,NA,NA,NA,Pain_week
+RPB99,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,33,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,249,Yes,No,No,No,8,4,6,Pain_week
+RPB100,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,576,Yes,No,No,No,7,3,3,Pain_week
+RPA01,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,170,Yes,No,No,No,4,2,5,Pain_week
+RPB113,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,Yes,No,No,No,No,Yes,No,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,560,Yes,No,No,No,9,6,9,Pain_week
+RPB114,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,262,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB116,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,484,Yes,No,No,No,8,5,4,Pain_week
+RPB117,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,385,Yes,Yes,No,Yes,10,5,4,Pain_week
+RPB118,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,40,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,Yes,No,No,7,5,10,Pain_week
+RPB119,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,32,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,212,Yes,No,No,No,9,9,8,Pain_week
+RPB120,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,34,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,266,Yes,No,No,No,9,6,6,Pain_week
+RPB121,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,282,Yes,No,No,No,9,6,2,Pain_week
+RPB122,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,39,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,50,Yes,Yes,No,No,10,6,8,Pain_week
+RPB123,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,NA,Yes,Yes,No,No,9,5,4,Pain_week
+RPB40,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,4,4,3,Pain_week
+RPB22,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,360,Yes,Yes,No,No,6,4,2,Pain_week
+RPB23,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Female,23,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,245,Yes,No,No,No,5,2,5,Pain_week
+RPB24,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,20,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,700,Yes,No,No,No,NA,NA,NA,Pain_week
+RPB25,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,39,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,237,Yes,No,No,No,7,3,2,Pain_week
+RPB26,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,502,Yes,Yes,No,No,8,4,8,Pain_week
+RPB27,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,310,Yes,Yes,No,No,6,2,2,Pain_week
+RPB28,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,911,Yes,Yes,No,No,9,3,0,Pain_week
+RPB29,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,24,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,281,Yes,No,No,No,8,5,4,Pain_week
+RPB30,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,170,Yes,Yes,No,No,8,5,9,Pain_week
+RPB31,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,38,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,282,Yes,No,No,No,8,7,5,Pain_week
+STIG01,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,50,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,Yes,Yes,8,3,3,Pain_week
+STIG02,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,291,Yes,No,No,Yes,9,4,6,Pain_week
+STIG03,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Female,26,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1138,Yes,No,No,No,6,3,0,Pain_week
+STIG04,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Female,58,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,1092,Yes,No,No,No,9,4,3,Pain_week
+STIG05,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,34,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,906,Yes,No,Yes,Yes,8,5,3,Pain_week
+STIG06,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Male,45,English,Unchecked,Unchecked,Checked,Unchecked,Other,236,Yes,No,No,No,8,6,5,Pain_week
+STIG07,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,55,Swazi,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,232,Yes,No,Yes,No,9,5,6,Pain_week
+STIG08,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,288,Yes,No,No,No,8,6,7,Pain_week
+STIG09,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Male,51,Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,295,Yes,No,Yes,No,10,8,8,Pain_week
+STIG10,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,Female,48,Zulu,Checked,Unchecked,Checked,Unchecked,Unemployed,442,Yes,No,No,Yes,8,4,6,Pain_week
+STIG11,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,37,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,461,Yes,No,Yes,Yes,8,2,4,Pain_week
+STIG12,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,291,Yes,No,No,Yes,7,3,3,Pain_week
+STIG13,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,Female,49,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,533,Yes,No,Yes,No,6,2,2,Pain_week
+STIG14,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Female,46,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,616,Yes,No,Yes,No,7,3,1,Pain_week
+STIG15,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,65,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,440,Yes,No,Yes,No,8,7,8,Pain_week
+STIG16,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,39,Ndebele,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,NA,Yes,No,Yes,Yes,9,4,2,Pain_week
+STIG17,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,50,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,330,Yes,No,No,No,10,7,3,Pain_week
+STIG18,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,63,Tswana,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,223,Yes,No,Yes,Yes,7,6,5,Pain_week
+STIG19,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,8,8,8,Pain_week
+STIG20,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No,10,5,4,Pain_week
+STIG21,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,NA,Yes,No,No,No,8,3,1,Pain_week
+STIG22,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,No,8,6,6,Pain_week
+STIG23,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Female,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,620,Yes,No,No,No,8,7,5,Pain_week
+STIG24,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,No,9,8,7,Pain_week
+STIG25,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,58,Sotho,Unchecked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No,6,4,6,Pain_week
+STIG26,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,57,Sotho,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,No,7,5,6,Pain_week
+STIG27,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Male,41,Tsonga,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,NA,Yes,No,No,No,5,3,4,Pain_week
+STIG28,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,51,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,8,7,3,Pain_week
+STIG29,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,57,Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,6,3,2,Pain_week
+STIG30,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,43,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,10,8,8,Pain_week
+STIG31,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,54,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,583,Yes,No,No,No,8,6,6,Pain_week
+STIG32,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No,8,2,5,Pain_week
+STIG33,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,8,3,3,Pain_week
+STIG34,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,48,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No,4,1,0,Pain_week
+STIG35,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,421,Yes,No,No,No,5,1,4,Pain_week
+STIG36,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,Yes,No,No,No,Female,55,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,429,Yes,No,No,No,9,6,9,Pain_week
+STIG37,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Male,36,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,5,2,3,Pain_week
+STIG38,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,53,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,NA,NA,NA,NA,7,4,7,Pain_week
+STIG39,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,50,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No,10,4,10,Pain_week
+STIG40,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,40,Zulu,Unchecked,Checked,Checked,Unchecked,Employment full-time,NA,Yes,No,No,No,4,2,2,Pain_week
+STIG41,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,32,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,1086,Yes,No,No,No,7,3,0,Pain_week
+STIG42,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,48,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,10,5,10,Pain_week
+STIG43,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,50,Afrikaans,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,415,Yes,No,No,No,7,3,7,Pain_week
+STIG44,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,53,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No,7,3,3,Pain_week
+STIG45,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,44,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,7,3,7,Pain_week
+STIG46,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,54,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,50,Yes,No,No,No,10,4,5,Pain_week
+STIG47,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,59,Zulu,Checked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,10,5,8,Pain_week
+STIG48,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,Female,39,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,60,Yes,No,No,No,9,6,8,Pain_week
+STIG49,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,579,Yes,No,No,No,8,4,4,Pain_week
+STIG50,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,498,Yes,No,No,Yes,9,2,5,Pain_week
+RESI01,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Female,35,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,21,Yes,No,Yes,Yes,8,3,8,Pain_week
+RESI02,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,Yes,No,No,No,Yes,No,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,894,Yes,No,Yes,No,6,6,4,Pain_week
+RESI03,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Male,38,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,465,Yes,No,Yes,Yes,9,5,7,Pain_week
+RESI04,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,576,Yes,No,No,Yes,10,7,3,Pain_week
+RESI05,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,Yes,Yes,No,Yes,No,Yes,No,Male,59,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,827,Yes,No,No,Yes,7,4,4,Pain_week
+RESI06,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,59,English,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,5,3,2,Pain_week
+RESI07,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,20,Yes,No,No,No,9,2,3,Pain_week
+RESI09,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,34,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,7300,Yes,No,No,Yes,7,4,2,Pain_week
+RESI35,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,682,Yes,No,No,No,7,3,0,Pain_week
+RESI45,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,No,No,No,Female,45,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,209,Yes,No,No,No,8,3,3,Pain_week
+RESI21,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,34,English,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No,3,0,1,Pain_week
+RESI23,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,47,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,386,Yes,No,No,No,10,4,5,Pain_week
+RESI31,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,NA,Yes,No,No,Yes,10,2,0,Pain_week
+RESI34,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,49,Zulu,Unchecked,Unchecked,Unchecked,Unchecked,Employment full-time,NA,No,No,No,No,5,1,0,Pain_week
+RESI36,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,No,No,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,No,No,No,Female,50,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,416,Yes,No,Yes,No,7,4,6,Pain_week
+RESI37,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,263,Yes,No,No,No,7,4,0,Pain_week
+RESI40,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,42,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,286,Yes,No,No,No,9,6,6,Pain_week
+RESI44,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Female,41,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,441,Yes,No,Yes,No,8,5,10,Pain_week
+RISI48,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,Female,41,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,915,Yes,No,No,No,7,2,1,Pain_week
+RESI52,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,45,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,Yes,No,8,4,5,Pain_week
+RESI61,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,30,Yes,No,No,Yes,6,3,5,Pain_week
+RESI62,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,312,Yes,No,No,Yes,9,4,4,Pain_week
+RESI64,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Male,55,Tswana,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,216,Yes,No,No,No,5,3,3,Pain_week
+RESI66,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,57,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,30,No,No,No,No,10,4,2,Pain_week
+RESI67,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,34,Tswana,Unchecked,Unchecked,Checked,Unchecked,Unemployed,97,Yes,No,No,Yes,8,3,0,Pain_week
+RESI69,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,Male,48,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,1000,Yes,No,Yes,No,4,2,2,Pain_week
+RESI71,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,Yes,10,6,3,Pain_week
+RESI72,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,No,Female,48,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,552,Yes,No,No,No,8,3,0,Pain_week
+RESI74,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Male,41,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,257,Yes,No,No,No,7,5,5,Pain_week
+RESI73,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,50,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,617,Yes,No,Yes,Yes,7,3,6,Pain_week
+RESI75,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,41,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,46,Yes,No,No,No,5,2,0,Pain_week
+RESI76,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,33,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,258,Yes,No,No,Yes,8,4,4,Pain_week
+RESI77,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,227,Yes,No,No,No,7,2,8,Pain_week
+RESI78,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,30,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,1230,Yes,No,Yes,No,7,2,3,Pain_week
+RESI82,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,19,Tswana,Unchecked,Checked,Unchecked,Unchecked,Other,405,Yes,No,No,No,8,3,4,Pain_week
+RESI86,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,Female,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,442,Yes,No,No,Yes,7,4,3,Pain_week
+RESI89,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,61,Tswana,Checked,Unchecked,Unchecked,Unchecked,Unemployed,476,Yes,No,No,No,8,3,0,Pain_week
+RESI90,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,50,Afrikaans,Unchecked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,653,Yes,No,Yes,No,10,3,0,Pain_week
+RESI92,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,299,Yes,No,Yes,Yes,9,3,5,Pain_week
+RESI93,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,63,Sotho,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,676,Yes,No,Yes,No,6,4,2,Pain_week
+RESI97,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Female,64,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,567,Yes,No,No,Yes,7,2,1,Pain_week
+RESI98,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,42,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,274,Yes,No,No,Yes,10,5,0,Pain_week
+RESI100,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,42,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,785,Yes,No,Yes,No,8,4,5,Pain_week
+RESI102,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,Female,33,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,1232,Yes,No,No,Yes,9,4,0,Pain_week
+RESI105,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,Male,49,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,505,Yes,No,Yes,No,8,2,4,Pain_week
+RESI112,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,40,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,381,Yes,No,Yes,No,5,2,3,Pain_week
+RESI115,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Female,33,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,575,No,No,No,No,10,7,7,Pain_week
+RESI116,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,Yes,No,Male,27,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,306,Yes,No,No,Yes,8,5,4,Pain_week
+RESI117,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,33,Tswana,Checked,Unchecked,Unchecked,Unchecked,Unemployed,245,Yes,No,Yes,No,8,2,0,Pain_week
+RESI120,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,39,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,6,3,7,Pain_week
+RESI122,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,35,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,11,Yes,No,No,Yes,8,5,6,Pain_week
+RESI124,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,642,Yes,No,Yes,No,8,2,5,Pain_week
+RESI127,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,NA,NA,NA,NA,8,2,7,Pain_week
+RESI129,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,Female,38,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,Yes,Yes,9,4,3,Pain_week
+RESI130,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,Male,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,649,Yes,No,Yes,Yes,8,4,10,Pain_week
+RESI131,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,213,Yes,No,No,Yes,5,1,0,Pain_week
+RESI132,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,30,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,496,Yes,No,No,No,8,4,3,Pain_week
+RESI133,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,No,Female,58,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,789,Yes,No,No,Yes,10,8,8,Pain_week
+RESI134,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,Male,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,Yes,Yes,7,6,3,Pain_week
+RESI135,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,No,Female,48,Tswana,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,NA,Yes,No,Yes,Yes,8,2,0,Pain_week
+RESI136,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,Female,45,Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,662,Yes,No,Yes,Yes,6,3,0,Pain_week
+RESI139,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,966,Yes,No,Yes,No,6,2,5,Pain_week
+RESI140,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,Yes,No,No,No,Female,55,Zulu,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,663,Yes,No,No,No,9,2,7,Pain_week
+RESI141,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,35,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,219,Yes,No,No,No,8,5,9,Pain_week
+RESI143,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,49,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,Yes,Yes,5,2,2,Pain_week
+RESI144,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,52,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,751,Yes,No,Yes,Yes,6,3,0,Pain_week
+RESI146,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,59,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,689,Yes,No,No,No,7,6,3,Pain_week
+RESI148,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,Male,42,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,107,Yes,No,Yes,Yes,5,2,5,Pain_week
+RESI150,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,51,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,Yes,Yes,8,3,2,Pain_week
+RESI151,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,176,Yes,No,No,No,6,2,4,Pain_week
+RESI152,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Male,55,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,Yes,No,6,1,1,Pain_week
+RESI153,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,964,Yes,No,Yes,Yes,8,4,7,Pain_week
+RESI154,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Yes,Yes,No,No,No,No,Female,34,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,844,Yes,No,No,Yes,9,6,5,Pain_week
+RESI155,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,56,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,723,Yes,No,Yes,No,8,6,5,Pain_week
+RESI156,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,66,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,458,Yes,No,No,Yes,10,6,9,Pain_week
+RESI159,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,Male,49,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,385,Yes,No,No,No,9,3,0,Pain_week
+RESI161,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,43,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,Yes,Yes,7,5,7,Pain_week
+RESI162,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,Yes,No,No,No,Female,37,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,540,Yes,No,No,Yes,10,5,7,Pain_week
+RESI163,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,51,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,8,4,7,Pain_week
+RESI164,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,50,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,578,Yes,No,Yes,No,9,7,3,Pain_week
+RESI165,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,Female,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,673,Yes,No,No,No,10,5,7,Pain_week
+RESI167,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,42,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,671,Yes,No,Yes,No,8,4,2,Pain_week
+RESI168,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,45,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,113,Yes,No,No,Yes,8,3,8,Pain_week
+RESI170,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Male,59,Ndebele,Unchecked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,357,Yes,No,Yes,Yes,8,3,5,Pain_week
+RESI173,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,40,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,605,Yes,No,Yes,No,10,7,7,Pain_week
+RESI178,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,Yes,No,No,No,Male,35,English,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,256,Yes,Yes,No,No,8,3,3,Pain_week
+RESI18,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,31,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,206,Yes,No,No,Yes,7,1,10,Pain_week
+RESI185,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,41,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,210,Yes,No,No,Yes,8,3,4,Pain_week
+RESI186,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Male,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,295,Yes,No,Yes,No,6,2,3,Pain_week
+RESI187,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,Male,34,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,258,Yes,No,No,No,10,5,3,Pain_week
+RESI189,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,56,Sotho,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,482,Yes,No,Yes,Yes,8,4,6,Pain_week
+RESI191,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,285,Yes,No,No,No,7,3,5,Pain_week
+RESI192,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Female,49,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,397,Yes,No,Yes,Yes,10,5,4,Pain_week
+RESI193,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,No,Male,57,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,575,Yes,No,No,No,9,0,6,Pain_week
+RESI194,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,45,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,162,Yes,No,No,Yes,5,1,2,Pain_week
+RESI195,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,40,Swazi,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,181,Yes,No,Yes,No,8,6,4,Pain_week
+RESI196,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Female,50,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,257,Yes,No,No,No,5,1,3,Pain_week
+RESI197,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,49,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,333,Yes,No,No,No,4,2,2,Pain_week
+RESI198,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Ndebele,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,319,Yes,No,Yes,No,5,2,2,Pain_week
+DD1,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,Yes,8,4,6,Pain_week
+DD2,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Female,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,339,Yes,No,No,No,8,2,6,Pain_week
+DD4,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,36,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,177,Yes,No,No,No,5,1,0,Pain_week
+DD5,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Female,58,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,392,Yes,No,No,No,7,10,5,Pain_week
+DD6,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No,7,2,2,Pain_week
+DD7,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,No,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,295,Yes,No,No,Yes,8,3,9,Pain_week
+DD8,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,227,Yes,No,No,No,7,3,3,Pain_week
+DD9,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,667,Yes,No,No,No,10,3,0,Pain_week
+DD10,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,386,Yes,No,No,Yes,10,5,0,Pain_week
+DD11,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,31,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,474,Yes,No,No,Yes,9,3,9,Pain_week
+DD12,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Tswana,Unchecked,Checked,Checked,Unchecked,Employment full-time,682,Yes,No,No,No,0,0,0,Pain_week
+DD14,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,Female,34,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,450,Yes,No,No,No,10,3,2,Pain_week
+DD15,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,33,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,258,Yes,No,No,Yes,6,3,0,Pain_week
+DD16,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,30,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,496,Yes,No,No,No,7,3,0,Pain_week
+DD17,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,43,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,354,Yes,No,No,Yes,10,3,3,Pain_week
+DD19,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes,9,3,0,Pain_week
+DD20,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,35,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,NA,Yes,No,No,No,8,4,5,Pain_week
+DD23,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Male,41,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,256,Yes,No,No,No,10,2,6,Pain_week
+DD24,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,226,Yes,No,No,Yes,6,3,3,Pain_week
+DD25,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,Yes,10,2,2,Pain_week
+DD26,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,41,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes,5,1,0,Pain_week
+DD27,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Tswana,Unchecked,Unchecked,Checked,Unchecked,Unemployed,97,Yes,No,No,Yes,6,3,0,Pain_week
+DD30,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,Female,39,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes,10,4,10,Pain_week
+DD31,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,42,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,443,Yes,No,No,No,6,2,6,Pain_week
+DD32,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,145,Yes,No,No,Yes,5,2,1,Pain_week
+DD33,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,42,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,274,Yes,No,No,Yes,10,4,0,Pain_week
+DD34,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,42,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,785,Yes,No,No,No,8,3,2,Pain_week
+DD35,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,642,Yes,No,Yes,Yes,8,2,5,Pain_week
+DD37,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,27,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,NA,Yes,No,No,Yes,7,3,1,Pain_week
+DD39,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Female,40,Sotho,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,840,Yes,No,No,No,8,3,0,Pain_week
+DD40,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Female,38,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes,7,2,5,Pain_week
+DD41,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,Male,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,649,Yes,No,No,Yes,8,5,9,Pain_week
+DD43,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Male,40,Sotho,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes,5,2,10,Pain_week
+DD44,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,38,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,741,Yes,No,No,No,9,4,4,Pain_week
+DD46,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Male,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,Yes,8,2,6,Pain_week
+DD48,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,40,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,381,Yes,No,No,No,7,2,0,Pain_week
+DD49,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,49,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes,7,3,5,Pain_week
+DD50,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Male,39,Zulu,Unchecked,Unchecked,Unchecked,Unchecked,Employment full-time,107,Yes,No,No,Yes,10,3,9,Pain_week
+DD51,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,43,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,No,No,No,Yes,7,2,7,Pain_week
+DD52,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,41,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,210,Yes,No,No,Yes,5,1,2,Pain_week
+DD53,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,Male,50,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,578,Yes,No,No,No,9,3,4,Pain_week
+DD54,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,35,English,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,256,Yes,Yes,No,No,7,3,3,Pain_week
+DD55,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes,7,3,3,Pain_week
+DD56,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Male,34,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,258,Yes,No,No,No,10,5,3,Pain_week
+DD57,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,49,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,333,Yes,No,No,Yes,5,2,3,Pain_week
+DD58,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Male,33,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,16,Yes,No,No,Yes,6,4,6,Pain_week
+DD60,Yes,Yes,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,63,Yes,No,No,No,8,4,8,Pain_week
+DD61,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,43,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,368,Yes,No,No,No,6,4,4,Pain_week
+DD62,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes,9,6,10,Pain_week
+DD63,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,364,Yes,No,No,No,8,2,8,Pain_week
+DD64,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,Female,48,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,543,Yes,No,No,Yes,10,5,4,Pain_week
+DD65,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,Female,41,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes,6,2,9,Pain_week
+DD66,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,760,Yes,No,No,Yes,8,3,2,Pain_week
+DD68,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1090,Yes,No,No,No,6,3,9,Pain_week
+DD69,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,34,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,464,Yes,No,No,No,7,5,3,Pain_week
+DD70,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,31,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1095,Yes,No,No,Yes,5,3,3,Pain_week
+RESI183,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,31,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,325,Yes,No,No,Yes,7,1,10,Pain_week
+DD42,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,42,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes,7,2,6,Pain_week
+DD38,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,33,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,575,No,No,No,Yes,8,1,5,Pain_week
+DD36,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,33,Tswana,Checked,Unchecked,Unchecked,Unchecked,Other,245,Yes,No,No,No,10,4,9,Pain_week
+DD45,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes,5,2,0,Pain_week
+NM0005,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,47,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,209,Yes,Yes,Yes,Missing,4,4,2,Pain_month
+NM0006,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,329,Yes,Missing,Missing,Missing,5,5,5,Pain_month
+NM0007,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,28,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,196,Yes,Missing,Missing,Missing,5,5,6,Pain_month
+NM0009,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,47,English,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,338,No,No,Missing,Yes,6,6,3,Pain_month
+NM0010,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,69,No,No,Missing,Missing,10,8,9,Pain_month
+NM0011,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,31,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,19,Yes,Missing,Missing,Missing,3,3,3,Pain_month
+NM0012,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing,3,5,2,Pain_month
+NM0013,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,50,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Other,2000,Yes,Missing,Missing,Missing,NA,0,0,Pain_month
+NM0014,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Female,26,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1,Yes,Missing,Missing,Missing,0,NA,0,Pain_month
+NM0015,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,110,Yes,Missing,Missing,Missing,4,2,4,Pain_month
+NM0017,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Female,28,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,61,Yes,Missing,Missing,Missing,5,4,0,Pain_month
+NM0023,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,Yes,Yes,No,Yes,No,No,No,Male,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,5,Yes,No,Missing,Missing,5,5,5,Pain_month
+NM0025,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Northern Sotho,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,228,Yes,Missing,Missing,Missing,3,3,3,Pain_month
+NM0026,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,42,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,144,Yes,Missing,Missing,Missing,10,10,2,Pain_month
+NM0027,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Female,36,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,84,No,No,No,Missing,4,0,0,Pain_month
+NM0029,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Male,47,Venda,Checked,Unchecked,Unchecked,Unchecked,Unemployed,248,Yes,Yes,Missing,Missing,10,5,0,Pain_month
+NM0030,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,12,Yes,Missing,Missing,Missing,7,3,7,Pain_month
+NM0031,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,200,Yes,Missing,Missing,Missing,8,6,6,Pain_month
+NM0034,Yes,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,40,English,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,287,No,No,Missing,Missing,2,1,3,Pain_month
+NM0035,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,33,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,Missing,Missing,Missing,5,5,7,Pain_month
+NM0036,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,36,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,147,Yes,Missing,Missing,Missing,10,10,6,Pain_month
+NM0037,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Female,29,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,298,No,No,No,Missing,6,3,4,Pain_month
+NM0039,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,43,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,231,Yes,Missing,Missing,Missing,10,2,6,Pain_month
+NM0040,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,4,Yes,Missing,Missing,Missing,10,10,10,Pain_month
+NM0002,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Male,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,35,Yes,Missing,Yes,Missing,10,2,0,Pain_month
+NM0056,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,338,Yes,Missing,Missing,Missing,8,9,2,Pain_month
+NM0057,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,23,Swazi,Unchecked,Unchecked,Checked,Unchecked,Unemployed,18,Yes,Missing,Missing,Missing,4,3,0,Pain_month
+NM0058,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,58,Tswana,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,NA,Yes,Missing,Missing,Missing,8,5,8,Pain_month
+NM0059,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,200,Yes,Missing,Missing,Missing,10,1,0,Pain_month
+NM0050,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,309,No,No,No,Missing,10,10,5,Pain_month
+NM0051,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Male,39,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,308,No,No,No,Missing,7,2,3,Pain_month
+NM0053,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Male,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,150,Yes,Missing,Missing,Missing,0,5,1,Pain_month
+NM0055,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Female,56,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,159,Yes,Missing,Missing,Missing,6,2,1,Pain_month
+NM0041,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,118,No,No,No,Missing,8,8,4,Pain_month
+NM0042,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,English,Unchecked,Checked,Unchecked,Unchecked,Unemployed,202,Yes,Missing,Missing,Missing,0,0,0,Pain_month
+NM0043,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,Yes,No,Female,31,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,247,Yes,Missing,Missing,Missing,10,10,9,Pain_month
+NM0044,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,Female,38,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,101,Yes,Missing,Missing,Missing,10,9,9,Pain_month
+NM0048,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,8,Yes,Missing,Missing,Missing,5,3,0,Pain_month
+NM0062,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,27,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,300,Yes,Missing,Missing,Missing,8,8,5,Pain_month
+NM0064,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,61,Yes,Missing,Missing,Missing,4,1,2,Pain_month
+NM0065,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Male,45,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,200,Yes,Missing,Missing,Missing,8,5,0,Pain_month
+NM0066,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,53,Yes,Missing,Missing,Missing,4,0,5,Pain_month
+NM0067,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,7,Yes,Missing,Missing,Missing,10,4,0,Pain_month
+NM0068,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Male,44,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing,8,4,2,Pain_month
+NM0070,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,426,No,No,Missing,Missing,3,0,1,Pain_month
+NM0072,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,41,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,250,No,No,Missing,Missing,4,1,1,Pain_month
+NM0073,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,400,No,No,Missing,Missing,8,1,7,Pain_month
+NM0075,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,41,English,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,316,No,No,Missing,Missing,6,5,4,Pain_month
+NM0076,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,No,No,No,Female,34,Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,494,Yes,Missing,Missing,Missing,10,0,10,Pain_month
+NM0077,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,43,Zulu,Unchecked,Unchecked,Unchecked,Checked,Unemployed,170,Yes,Missing,Missing,Missing,5,0,0,Pain_month
+NM0078,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1,Yes,Missing,Missing,Yes,10,6,9,Pain_month
+NM0079,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,43,Swazi,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing,5,0,0,Pain_month
+NM0080,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,94,Yes,Missing,Missing,Missing,7,2,4,Pain_month
+NM0081,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Northern Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,110,No,No,Missing,Missing,4,3,0,Pain_month
+NM0082,Yes,No,Yes,Yes,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,34,Swazi,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,130,Yes,Missing,Missing,Missing,10,0,0,Pain_month
+NM0085,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,285,Yes,Missing,Missing,Missing,4,10,6,Pain_month
+NM0086,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,40,English,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing,6,3,1,Pain_month
+NM0087,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,44,Zulu,Unchecked,Unchecked,Unchecked,Checked,Unemployed,NA,Yes,Missing,Missing,Missing,9,2,0,Pain_month
+NM0089,Yes,Yes,Yes,Yes,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Yes,Male,45,Swazi,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,57,Yes,Missing,Missing,Missing,10,5,10,Pain_month
+NM0090,Yes,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,55,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing,2,1,0,Pain_month
+NM0091,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,52,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,No,No,Missing,Missing,3,2,0,Pain_month
+NM0092,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,25,Ndebele,Unchecked,Unchecked,Checked,Unchecked,Unemployed,152,Yes,Missing,Missing,Missing,5,3,4,Pain_month
+NM0093,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Male,47,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing,3,0,1,Pain_month
+NM0095,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Female,24,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,432,No,No,Missing,Missing,3,0,0,Pain_month
+NM0096,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,NA,Missing,Missing,Missing,10,0,0,Pain_month
+NM0097,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Missing,308,No,No,Missing,Missing,3,2,0,Pain_month
+NM0098,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,35,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,NA,Yes,Missing,Missing,Missing,9,5,5,Pain_month
+NM0100,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Yes,Yes,Yes,No,Yes,No,Female,36,Tswana,Checked,Unchecked,Unchecked,Unchecked,Unemployed,200,Yes,Missing,Missing,Missing,10,10,10,Pain_month
+NM0101,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Female,35,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,172,No,No,Missing,Missing,10,4,7,Pain_month
+NM0102,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,48,Venda,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing,3,1,3,Pain_month
+NM0104,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Female,53,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing,10,0,7,Pain_month
+NM0106,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,36,Yes,Missing,Missing,Missing,5,1,3,Pain_month
+NM0107,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,27,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,4,Yes,Missing,Missing,Missing,6,0,0,Pain_month
+NM0108,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,39,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,47,No,No,Missing,Missing,7,1,0,Pain_month
+NM0110,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Male,49,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,27,Yes,Missing,Missing,Missing,5,2,2,Pain_month
+NM0111,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,29,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,56,Yes,Missing,Missing,Missing,9,4,2,Pain_month
+NM0112,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,52,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,174,Yes,Missing,Missing,Missing,9,3,0,Pain_month
+NM0113,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,Female,39,Swazi,Checked,Unchecked,Unchecked,Unchecked,Unemployed,364,No,No,Missing,Missing,6,2,2,Pain_month
+NM0114,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,154,Yes,Missing,Missing,Missing,10,4,7,Pain_month
+NM0119,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,36,Tswana,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,19,Yes,Missing,Missing,Missing,2,2,0,Pain_month
+NM0120,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,120,Yes,Missing,Missing,Missing,5,0,7,Pain_month
+NM0122,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,32,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,315,Yes,Missing,Missing,Missing,5,2,6,Pain_month
+NM0124,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,35,Tswana,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,88,Yes,Missing,Missing,Missing,7,4,2,Pain_month
+NM0128,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,21,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,17,No,No,Missing,Missing,10,2,1,Pain_month
+NM0129,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,20,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,238,No,No,Missing,Missing,8,6,8,Pain_month
+NM0130,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Female,37,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,334,No,No,Missing,Missing,9,5,6,Pain_month
+NM0133,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,Female,40,Zulu,Unchecked,Unchecked,Unchecked,Checked,Unemployed,226,No,No,Missing,Missing,10,3,1,Pain_month
+NM0134,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,Yes,No,No,No,Female,26,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,637,No,No,Missing,Missing,5,2,5,Pain_month
+NM0136,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,Female,58,English,Unchecked,Checked,Unchecked,Unchecked,Unemployed,106,Yes,Missing,Missing,Missing,10,2,0,Pain_month
+NM0138,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,50,Yes,Missing,Missing,Missing,4,2,1,Pain_month
+NM0143,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,44,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,159,Yes,Missing,Missing,Missing,6,2,5,Pain_month
+NM0146,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,18,No,No,Missing,Missing,10,0,10,Pain_month
+NM0147,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,109,Yes,Missing,Missing,Missing,6,3,4,Pain_month
+NM0149,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,37,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,132,Yes,Missing,Missing,Missing,10,10,8,Pain_month
+NM0150,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,103,Yes,Missing,Missing,Missing,5,2,0,Pain_month
+NM0151,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Female,42,English,Unchecked,Checked,Unchecked,Unchecked,Unemployed,184,Yes,Missing,Missing,Missing,6,3,10,Pain_month
+NM0152,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,Female,38,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,101,Yes,Missing,Missing,Missing,10,1,3,Pain_month
+NM0153,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,321,No,No,Missing,Missing,10,4,0,Pain_month
+NM0154,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,44,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,334,No,No,Missing,Missing,6,1,0,Pain_month
+NM0155,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,65,Yes,Missing,Missing,Missing,7,3,0,Pain_month
+NM0158,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,171,No,No,Missing,Missing,7,2,7,Pain_month
+NM0159,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,30,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,440,No,No,Missing,Missing,6,3,1,Pain_month
+NM0160,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,802,No,No,Missing,Missing,6,3,7,Pain_month
+NM0161,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,No,No,Female,41,Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,372,No,No,Missing,Missing,10,3,10,Pain_month
+NM0162,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Male,43,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,381,No,No,Missing,Missing,9,9,9,Pain_month
+NM0165,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,45,Tswana,Checked,Unchecked,Unchecked,Unchecked,Unemployed,340,Yes,Missing,Missing,Missing,2,2,0,Pain_month
+NM0166,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,NA,Missing,Missing,Missing,3,3,2,Pain_month
+NM0167,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,235,Yes,Missing,Missing,Missing,1,1,1,Pain_month
+NM0169,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,43,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,154,Yes,Missing,Missing,Missing,10,5,8,Pain_month
+NM0172,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Tswana,Checked,Unchecked,Unchecked,Unchecked,Unemployed,200,NA,Missing,Missing,Missing,10,3,4,Pain_month
+NM0173,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,41,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,182,No,No,Missing,Missing,4,3,5,Pain_month
+NM0174,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,35,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,155,Yes,Missing,Missing,Missing,3,0,0,Pain_month
+NM0176,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,44,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,196,Yes,Missing,Missing,Missing,4,2,0,Pain_month
+NM0177,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Male,34,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,129,Yes,Missing,Missing,Missing,5,2,5,Pain_month
+NM0178,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Male,45,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,150,Yes,Missing,Missing,Missing,6,3,2,Pain_month
+NM0179,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,67,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Unemployed,117,Yes,Missing,Missing,Missing,5,2,1,Pain_month
+NM0180,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,39,Zulu,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,NA,Yes,Yes,Missing,Missing,2,1,1,Pain_month
+NM0181,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,No,Female,34,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,55,Yes,Missing,Missing,Missing,6,3,3,Pain_month
+NM0182,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,24,NA,Unchecked,Checked,Unchecked,Unchecked,Unemployed,2,Yes,Missing,Missing,Missing,1,0,1,Pain_month
+NM1503,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,61,Yes,Yes,Missing,Missing,2,2,0,Pain_month
+NM1506,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,English,Unchecked,Checked,Unchecked,Unchecked,Unemployed,72,Yes,Yes,Missing,Missing,1,1,1,Pain_month
+NM1509,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,85,Yes,Yes,Missing,Missing,10,10,7,Pain_month
+NM1500,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,42,Tswana,Checked,Unchecked,Unchecked,Unchecked,Missing,109,Yes,Missing,Missing,Missing,5,5,5,Pain_month
+NM1512,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,45,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,302,No,Missing,Missing,Missing,10,10,3,Pain_month
+NM1513,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,6,Yes,Yes,Missing,Missing,10,10,0,Pain_month
+NM1514,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,157,No,Missing,Missing,Missing,5,5,5,Pain_month
+NM1517,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Tswana,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,194,Yes,Yes,Missing,Missing,4,4,0,Pain_month
+NM1518,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,367,No,No,Missing,Missing,10,10,0,Pain_month
+NM1519,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,471,No,No,Missing,Missing,5,5,5,Pain_month
+NM1520,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,480,No,No,Missing,Missing,4,4,0,Pain_month
+NM1524,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,Female,28,NA,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,112,Yes,Missing,Missing,Missing,10,1,10,Pain_month
+NM1525,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,48,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,159,Yes,Missing,Missing,Missing,4,1,0,Pain_month
+NM6030,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,289,No,Missing,Missing,Missing,10,9,10,Pain_month
+NM6029,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,35,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,236,No,Missing,Missing,Missing,8,8,10,Pain_month
+NM6028,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Male,41,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,40,No,Missing,Missing,Missing,10,0,0,Pain_month
+NM6026,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,45,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,855,No,Missing,Missing,Yes,10,7,10,Pain_month
+NM6025,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Female,37,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,388,No,Missing,Missing,Missing,10,9,10,Pain_month
+NM6024,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,36,Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,963,No,Missing,Missing,Missing,10,5,10,Pain_month
+NM6023,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,33,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,278,No,Missing,Missing,Missing,10,1,0,Pain_month
+NM6022,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,35,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,478,No,Missing,Missing,Missing,10,4,0,Pain_month
+NM6021,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,53,Sotho,Unchecked,Unchecked,Unchecked,Checked,Unemployed,187,Yes,Missing,Missing,Yes,10,5,10,Pain_month
+NM6020,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,No,Missing,Missing,Missing,10,9,10,Pain_month
+NM6019,Yes,No,Yes,Yes,No,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Yes,Male,34,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,31,Yes,Missing,Missing,Missing,10,4,6,Pain_month
+NM6018,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,32,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,125,Yes,Missing,Missing,Missing,7,0,0,Pain_month
+NM6017,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,34,Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,12,Yes,Missing,Missing,Missing,4,2,1,Pain_month
+NM6016,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,42,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,225,No,Missing,Missing,Yes,10,4,6,Pain_month
+NM6015,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Male,29,Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,NA,No,Missing,Missing,Missing,10,8,4,Pain_month
+NM6014,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,315,No,Missing,Missing,Missing,10,1,1,Pain_month
+NM6001,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,360,Yes,Missing,Missing,Missing,10,1,0,Pain_month
+NM6002,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,63,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,960,No,Missing,Missing,Missing,10,9,10,Pain_month
+NM6000,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,38,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,251,No,Missing,Missing,Missing,7,6,9,Pain_month
+NM6004,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,28,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,48,Yes,Missing,Missing,Missing,6,4,4,Pain_month
+NM6005,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Northern Sotho,Unchecked,Unchecked,Unchecked,Checked,Employed part time/ Piece work,84,Yes,Missing,Missing,Missing,10,5,7,Pain_month
+NM6007,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,25,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,303,No,Missing,Missing,Missing,10,10,10,Pain_month
+NM6008,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Male,76,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,415,No,No,Missing,Missing,10,5,9,Pain_month
+NM6010,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,41,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,Missing,Missing,Missing,10,4,3,Pain_month
+NM6012,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Male,45,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,458,No,No,Missing,Missing,10,5,10,Pain_month
+NM6013,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,40,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,89,No,No,Missing,Missing,8,5,10,Pain_month
+NM6031,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Female,55,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,633,No,No,Missing,Missing,10,3,10,Pain_month
+NM6032,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,410,No,No,Missing,Missing,8,6,9,Pain_month
+NM6033,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Female,58,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,184,Yes,Missing,Missing,Missing,7,3,3,Pain_month
+NM6034,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,43,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,341,No,Missing,Missing,Missing,8,8,8,Pain_month
+NM6035,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,38,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,128,Yes,Missing,Missing,Yes,10,5,5,Pain_month
+NM6037,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,25,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,299,No,No,Missing,Yes,10,5,3,Pain_month
+NM6038,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,376,No,No,Missing,Missing,5,2,0,Pain_month
+NM6039,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Male,41,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,380,Yes,Missing,Missing,Missing,7,3,3,Pain_month
+NM6040,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,23,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,115,No,Missing,Missing,Missing,4,4,7,Pain_month
+NM6041,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,40,Northern Sotho,Unchecked,Unchecked,Unchecked,Unchecked,Missing,234,Yes,Missing,Missing,Missing,9,8,10,Pain_month
+NM6042,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Missing,849,No,Missing,Missing,Missing,9,4,9,Pain_month
+NM6043,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,48,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,321,No,No,Missing,Missing,9,2,3,Pain_month
+NM6045,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,31,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,350,No,No,Missing,Missing,8,4,2,Pain_month
+NM6046,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,28,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,222,Yes,Missing,Missing,Missing,5,4,7,Pain_month
+NM6047,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Male,20,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,475,No,No,Missing,Yes,2,0,1,Pain_month
+NM6048,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,142,No,No,Missing,Missing,3,3,3,Pain_month
+NM6049,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,301,No,No,Missing,Missing,9,9,9,Pain_month
+NM6050,No,Yes,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,21,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,NA,No,Missing,Missing,Missing,6,6,9,Pain_month
+NM6052,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,412,No,Missing,Missing,Missing,8,8,4,Pain_month
+NM6053,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,116,Yes,Missing,Missing,Missing,6,8,7,Pain_month
+NM6054,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Unemployed,196,Yes,Missing,Missing,Missing,9,4,7,Pain_month
+NM6101,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,202,Yes,Yes,Missing,Missing,0,0,0,Pain_month
+NM6102,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Female,NA,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,No,Missing,Missing,Missing,4,2,5,Pain_month
+NM6103,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Male,NA,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Unemployed,NA,No,Missing,Missing,Missing,4,3,1,Pain_month
+NM6104,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,34,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,456,No,Missing,Missing,Missing,8,3,6,Pain_month
+NM6106,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Male,43,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,195,No,Missing,Missing,Missing,7,3,2,Pain_month
+NM6107,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,71,Sotho,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,354,No,Missing,Missing,Missing,5,3,1,Pain_month
+NM6108,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,265,Yes,Yes,Missing,Missing,3,2,1,Pain_month
+NM6109,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,21,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,386,No,No,Missing,Missing,3,1,0,Pain_month
+NM6112,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,51,No,Missing,Missing,Missing,5,2,1,Pain_month
+NM6114,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,170,No,No,Missing,Missing,5,4,4,Pain_month
+NM6115,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,No,No,Missing,Missing,2,1,1,Pain_month
+NM6116,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,30,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,183,No,No,Missing,Missing,4,3,2,Pain_month
+NM6117,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Unemployed,119,No,No,Missing,Missing,5,4,3,Pain_month
+NM6118,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,131,Yes,Yes,Missing,Missing,3,1,0,Pain_month
+NM6119,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,30,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,163,No,No,Missing,Missing,5,3,1,Pain_month
+NM6120,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,36,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,140,Yes,Yes,Missing,Missing,5,3,4,Pain_month
+NM6121,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Unemployed,123,No,No,Missing,Missing,5,3,3,Pain_month
+NM6122,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,170,Yes,Yes,Missing,Missing,3,2,2,Pain_month
+NM6123,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,203,No,No,Missing,Missing,5,2,2,Pain_month
+NM6124,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Male,39,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Unemployed,120,No,No,Missing,Missing,4,3,4,Pain_month
+NM6125,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,207,No,No,Missing,Missing,4,5,3,Pain_month
+NM6126,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,33,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,171,Yes,Yes,Missing,Missing,5,4,1,Pain_month
+NM6127,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Male,55,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,230,No,No,Missing,Missing,4,4,2,Pain_month
+NM6201,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,563,Yes,Missing,Missing,Missing,8,5,1,Pain_month
+NM6204,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,42,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,40,Yes,Missing,Missing,Missing,0,0,1,Pain_month
+NM6205,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Male,34,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,246,Yes,Missing,Missing,Missing,8,5,7,Pain_month
+NM6210,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,33,Sepedi,Checked,Unchecked,Unchecked,Unchecked,Missing,425,Yes,Missing,Missing,Missing,8,5,2,Pain_month
+NM6211,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,63,Yes,Missing,Missing,Missing,8,4,5,Pain_month
+NM6214,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,NA,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,NA,No,Missing,Missing,Missing,2,1,2,Pain_month
+NM6220,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Tsonga,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,213,Yes,Missing,Missing,Missing,10,3,4,Pain_month
+NM6221,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,187,No,Missing,Missing,Missing,9,3,7,Pain_month
+NM6223,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,42,Northern Sotho,Unchecked,Unchecked,Unchecked,Checked,Employed part time/ Piece work,NA,No,Missing,Missing,Missing,8,5,9,Pain_month
+NM6224,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,No,Missing,Missing,Missing,9,5,7,Pain_month
+NM6229,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,29,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,NA,No,Missing,Missing,Missing,10,5,NA,Pain_month
+NM6234,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,34,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,129,Yes,Missing,Missing,Missing,6,4,4,Pain_month
+NM6236,No,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Yes,Female,34,Sepedi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing,8,3,5,Pain_month
+NM6239,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,36,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,26,Yes,Missing,Missing,Missing,7,4,3,Pain_month
+NM6240,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,42,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,293,No,Missing,Missing,Missing,7,4,0,Pain_month
+NM2002,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,33,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,910,No,No,Missing,Missing,10,10,10,Pain_month
+NM2004,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,31,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,No,Missing,Missing,Missing,1,1,0,Pain_month
+NM2005,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Male,26,Sepedi,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,329,No,No,Missing,Missing,3,0,0,Pain_month
+NM2008,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,No,Missing,Missing,Missing,9,6,3,Pain_month
+NM2009,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,549,No,Missing,Missing,Missing,10,6,0,Pain_month
+NM2010,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,Yes,Missing,Missing,5,3,3,Pain_month
+NM2011,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,Missing,Missing,2,1,1,Pain_month
+NM2012,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Yes,No,Yes,No,Female,24,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,310,Yes,No,Missing,Missing,8,8,8,Pain_month
+NM2015,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,43,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,No,Missing,Missing,Missing,10,8,8,Pain_month
+NM2018,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,31,Sotho,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,NA,No,Missing,Missing,Missing,7,4,0,Pain_month
+NM2019,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,29,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,Missing,Missing,7,3,1,Pain_month
+NM2020,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Male,29,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,235,No,Missing,Missing,Missing,3,1,1,Pain_month
+NM7010,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,36,Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,NA,No,Missing,Missing,Missing,10,10,10,Pain_month
+NM7009,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,13,No,Missing,Missing,Yes,10,3,10,Pain_month
+NM7008,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Female,28,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,135,Yes,No,Missing,Missing,10,5,5,Pain_month
+NM7007,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Female,29,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,301,Yes,Yes,Missing,Yes,10,5,3,Pain_month
+NM7006,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Missing,98,No,Missing,Missing,Missing,8,5,5,Pain_month
+NM7005,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Male,34,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,284,Yes,No,Missing,Yes,4,1,2,Pain_month
+NM7004,Yes,No,Yes,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,26,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,182,Yes,Yes,Missing,Missing,8,8,5,Pain_month
+NM7003,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Male,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,83,No,Missing,Missing,Yes,10,10,10,Pain_month
+NM7002,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,4,Yes,Yes,Missing,Missing,10,5,5,Pain_month
+NM7001,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,108,No,No,Missing,Yes,3,0,0,Pain_month
+NM7000,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Female,25,Tswana,Unchecked,Checked,Unchecked,Unchecked,Missing,NA,Yes,Yes,Missing,Missing,5,3,0,Pain_month

@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+*_cache
+data-original/data.csv
+data-original/data-july-2019.xlsx

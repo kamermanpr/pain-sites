@@ -1,0 +1,599 @@
+ID,Sex,Age,Language,Education (choice=Primary ( grades 1-7)),Education (choice=secondary (grades 8-12)),Education (choice=Tertiary (any post-school)),Education (choice=Missing),Employment_status,CD4_recent,ART_currently,ART_D4T.now,ART_D4T.previous,TB
+RPB73,Female,36,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,391,Yes,No,No,No
+RPB74,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,571,Yes,Yes,No,No
+RPB75,Female,39,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,591,Yes,No,No,No
+RPB76,Female,36,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,207,Yes,Yes,No,No
+RPB77,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,126,Yes,Yes,No,Yes
+RPB78,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,225,Yes,No,No,No
+RPB80,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,543,Yes,Yes,No,Yes
+RPB81,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,410,Yes,No,No,No
+RPB84,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,74,Yes,No,No,No
+RPB85,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,212,Yes,No,No,No
+RPB103,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,579,Yes,No,No,No
+RPB104,Female,24,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,346,Yes,Yes,No,No
+RPB105,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,602,Yes,No,No,No
+RPB106,Female,26,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,519,Yes,No,No,No
+RPB107,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,261,Yes,No,No,No
+RPB108,Female,33,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,277,Yes,No,No,No
+RPB109,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,287,Yes,No,No,No
+RPB110,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,397,Yes,Yes,No,No
+RPB111,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,133,Yes,No,No,No
+RPB112,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,124,Yes,No,No,No
+RPB132,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,300,Yes,No,No,No
+RPB133,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,206,Yes,No,No,Yes
+RPB134,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,437,Yes,Yes,No,No
+RPB135,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,479,Yes,No,No,No
+RPB136,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,224,Yes,No,No,No
+RPB139,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,447,Yes,No,No,No
+RPB140,Female,29,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,327,Yes,Yes,No,No
+RPB124,Female,27,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,635,Yes,No,No,No
+RPB125,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,430,Yes,No,No,No
+RPB04,Female,33,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,153,Yes,No,No,No
+RPB06,Female,35,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,308,Yes,No,No,No
+RPB07,Female,22,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,184,Yes,Yes,No,No
+RPB08,Female,26,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,317,Yes,No,No,No
+RPB09,Female,31,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,452,Yes,Yes,No,No
+RPB10,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,308,Yes,Yes,No,No
+RPB11,Female,38,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,590,Yes,No,No,No
+RPB12,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,188,Yes,No,No,No
+RPB14,Female,36,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,348,Yes,Yes,No,No
+RPB15,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,216,Yes,Yes,No,Yes
+RPB42,Female,26,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,288,Yes,No,No,No
+RBP43,Female,38,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,155,Yes,Yes,No,No
+RPB44,Female,29,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,165,Yes,No,No,No
+RPB46,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,226,Yes,Yes,No,No
+RBP47,Female,23,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,387,Yes,No,No,No
+RPB48,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,561,Yes,No,No,No
+RPB49,Female,26,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,236,Yes,Yes,No,No
+RPB50,Female,37,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,479,Yes,Yes,No,No
+RPB51,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,311,Yes,No,No,No
+RPB52,Female,26,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,353,Yes,No,No,No
+RPB53,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,114,Yes,Yes,No,No
+RPB54,Female,28,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,872,Yes,No,No,No
+RPB55,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,881,Yes,No,No,No
+RPB57,Female,34,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,388,Yes,No,No,No
+RPB58,Female,30,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,500,Yes,No,No,No
+RPB59,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,452,Yes,No,No,No
+RPB60,Female,26,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,340,Yes,No,No,No
+RPB32,Female,34,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,777,Yes,Yes,No,No
+RPB33,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,140,Yes,No,No,No
+RPB34,Female,33,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,673,Yes,No,No,No
+RPB35,Female,39,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,714,Yes,NA,No,No
+RPB36,Female,39,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,501,Yes,Yes,No,No
+RPB37,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,233,Yes,No,No,No
+RPB38,Female,30,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,360,Yes,No,No,No
+RPB41,Female,27,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,379,Yes,No,No,No
+RPB39,Female,27,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,325,Yes,No,No,No
+RPD08,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,154,Yes,No,No,No
+RPD09,Female,21,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,184,No,No,No,No
+RPD10,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,173,No,No,No,No
+RPD11,Female,24,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,274,Yes,No,No,No
+RPC11,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,281,Yes,No,No,No
+RPB16,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,659,Yes,Yes,No,No
+RPC,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,115,No,No,No,No
+RPA11,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,220,Yes,No,No,No
+RPA12,Female,33,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,275,Yes,No,No,No
+RPA13,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,72,Yes,No,No,No
+RPA14,Female,32,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,109,Yes,No,No,Yes
+RPA15,Female,33,Xhosa,Unchecked,Checked,Checked,Unchecked,Unemployed,306,Yes,No,No,Yes
+RPA17,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,313,Yes,No,No,No
+RPA18,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,203,Yes,No,No,No
+RPA02,Female,30,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,146,Yes,Yes,No,Yes
+RPA03,Female,33,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,26,Yes,Yes,No,Yes
+RPA04,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,176,Yes,No,No,No
+RPA05,Female,35,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,149,Yes,No,No,No
+RPA06,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,240,Yes,No,No,No
+RPA07,Female,30,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,36,Yes,Yes,No,Yes
+RPA09,Female,29,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,155,Yes,No,No,No
+RPA10,Female,22,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,181,Yes,No,No,No
+RPD01,Female,37,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,173,No,No,No,No
+RPD02,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,145,No,No,No,No
+RPD03,Female,34,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,209,Yes,No,No,No
+RPD04,Female,27,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,133,Yes,No,No,No
+RPD06,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,152,No,No,No,No
+RPD07,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,295,No,No,No,No
+RPA19,Female,24,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,98,No,No,No,No
+RPA20,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,114,No,No,No,No
+RPA21,Female,31,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,58,Yes,No,No,No
+RPA22,Female,36,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,221,Yes,No,No,Yes
+RPC01,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,101,No,No,No,No
+RPC02,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,159,No,No,No,No
+RPC03,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,246,No,No,No,No
+RPC04,Female,27,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,261,No,No,No,No
+RPC05,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,174,No,No,No,No
+RPC06,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,192,No,No,No,No
+RPB141,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,165,Yes,Yes,No,No
+RPB142,Female,20,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,202,Yes,No,No,No
+RPB143,Female,29,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,165,Yes,No,No,No
+RPB144,Female,35,Xhosa,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,213,Yes,No,No,No
+RPB17,Female,35,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,596,Yes,No,No,No
+RPB19,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1040,Yes,Yes,No,No
+RPB20,Female,40,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,382,Yes,No,No,No
+RPB21,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,487,Yes,Yes,No,No
+RPC07,Female,24,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,175,No,No,No,No
+RPC08,Female,28,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,213,No,No,No,No
+RPC10,Female,29,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,174,Yes,No,No,No
+RPC12,Female,40,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,166,No,No,No,No
+RPC14,Female,NA,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,NA,No,No,No,No
+RPC15,Female,23,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,305,No,No,No,No
+RPB88,Female,20,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,191,Yes,No,No,No
+RPB89,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,667,Yes,No,No,No
+RPB90,Female,36,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,1032,Yes,Yes,No,No
+RPB93,Female,32,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,301,Yes,No,No,No
+RPB94,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,774,Yes,No,No,No
+RPB95,Female,36,Xhosa,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,54,Yes,No,No,No
+RPB98,Female,NA,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,187,Yes,Yes,No,No
+RPB99,Female,33,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,249,Yes,No,No,No
+RPB100,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,576,Yes,No,No,No
+RPA01,Female,32,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,170,Yes,No,No,No
+RPB113,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,560,Yes,No,No,No
+RPB114,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,262,Yes,No,No,No
+RPB116,Female,33,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,484,Yes,No,No,No
+RPB117,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,385,Yes,Yes,No,Yes
+RPB118,Female,40,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,Yes,No,No
+RPB119,Female,32,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,212,Yes,No,No,No
+RPB120,Female,34,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,266,Yes,No,No,No
+RPB121,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,282,Yes,No,No,No
+RPB122,Female,39,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,50,Yes,Yes,No,No
+RPB123,Female,27,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,NA,Yes,Yes,No,No
+RPB40,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+RPB22,Female,39,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Other,360,Yes,Yes,No,No
+RPB23,Female,23,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,245,Yes,No,No,No
+RPB24,Female,20,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,700,Yes,No,No,No
+RPB25,Female,39,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,237,Yes,No,No,No
+RPB26,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,502,Yes,Yes,No,No
+RPB27,Female,30,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,310,Yes,Yes,No,No
+RPB28,Female,34,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,911,Yes,Yes,No,No
+RPB29,Female,24,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,281,Yes,No,No,No
+RPB30,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,170,Yes,Yes,No,No
+RPB31,Female,38,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Other,282,Yes,No,No,No
+STIG01,Female,50,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,Yes,Yes
+STIG02,Female,38,Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,291,Yes,No,No,Yes
+STIG03,Female,26,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1138,Yes,No,No,No
+STIG04,Female,58,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,1092,Yes,No,No,No
+STIG05,Female,34,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,906,Yes,No,Yes,Yes
+STIG06,Male,45,English,Unchecked,Unchecked,Checked,Unchecked,Other,236,Yes,No,No,No
+STIG07,Female,55,Swazi,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,232,Yes,No,Yes,No
+STIG08,Female,25,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,288,Yes,No,No,No
+STIG09,Male,51,Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,295,Yes,No,Yes,No
+STIG10,Female,48,Zulu,Checked,Unchecked,Checked,Unchecked,Unemployed,442,Yes,No,No,Yes
+STIG11,Female,37,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,461,Yes,No,Yes,Yes
+STIG12,Female,32,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,291,Yes,No,No,Yes
+STIG13,Female,49,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,533,Yes,No,Yes,No
+STIG14,Female,46,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,616,Yes,No,Yes,No
+STIG15,Female,65,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,440,Yes,No,Yes,No
+STIG16,Female,39,Ndebele,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,NA,Yes,No,Yes,Yes
+STIG17,Female,50,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,330,Yes,No,No,No
+STIG18,Female,63,Tswana,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,223,Yes,No,Yes,Yes
+STIG19,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+STIG20,Female,38,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No
+STIG21,Female,32,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,NA,Yes,No,No,No
+STIG22,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,No
+STIG23,Female,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,620,Yes,No,No,No
+STIG24,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,No
+STIG25,Female,58,Sotho,Unchecked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No
+STIG26,Female,57,Sotho,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,No
+STIG27,Male,41,Tsonga,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,NA,Yes,No,No,No
+STIG28,Male,51,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+STIG29,Female,57,Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+STIG30,Female,43,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+STIG31,Female,54,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,583,Yes,No,No,No
+STIG32,Female,35,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No
+STIG33,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+STIG34,Female,48,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No
+STIG35,Female,36,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,421,Yes,No,No,No
+STIG36,Female,55,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,429,Yes,No,No,No
+STIG37,Male,36,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+STIG38,Female,53,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,NA,NA,NA,NA
+STIG39,Female,50,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No
+STIG40,Male,40,Zulu,Unchecked,Checked,Checked,Unchecked,Employment full-time,NA,Yes,No,No,No
+STIG41,Female,32,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,1086,Yes,No,No,No
+STIG42,Female,48,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+STIG43,Female,50,Afrikaans,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,415,Yes,No,No,No
+STIG44,Female,53,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No
+STIG45,Female,44,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+STIG46,Female,54,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,50,Yes,No,No,No
+STIG47,Female,59,Zulu,Checked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+STIG48,Female,39,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,60,Yes,No,No,No
+STIG49,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,579,Yes,No,No,No
+STIG50,Female,39,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,498,Yes,No,No,Yes
+RESI01,Female,35,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,21,Yes,No,Yes,Yes
+RESI02,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,894,Yes,No,Yes,No
+RESI03,Male,38,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,465,Yes,No,Yes,Yes
+RESI04,Male,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,576,Yes,No,No,Yes
+RESI05,Male,59,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,827,Yes,No,No,Yes
+RESI06,Female,59,English,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+RESI07,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,20,Yes,No,No,No
+RESI09,Male,34,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,7300,Yes,No,No,Yes
+RESI35,Female,36,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,682,Yes,No,No,No
+RESI45,Female,45,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,209,Yes,No,No,No
+RESI21,Female,34,English,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,No
+RESI23,Male,47,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,386,Yes,No,No,No
+RESI31,Female,38,Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+RESI34,Female,49,Zulu,Unchecked,Unchecked,Unchecked,Unchecked,Employment full-time,NA,No,No,No,No
+RESI36,Female,50,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,416,Yes,No,Yes,No
+RESI37,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,263,Yes,No,No,No
+RESI40,Female,42,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,286,Yes,No,No,No
+RESI44,Female,41,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,441,Yes,No,Yes,No
+RISI48,Female,41,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,915,Yes,No,No,No
+RESI52,Female,45,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,Yes,No
+RESI61,Female,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,30,Yes,No,No,Yes
+RESI62,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,312,Yes,No,No,Yes
+RESI64,Male,55,Tswana,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,216,Yes,No,No,No
+RESI66,Female,57,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,30,No,No,No,No
+RESI67,Female,34,Tswana,Unchecked,Unchecked,Checked,Unchecked,Unemployed,97,Yes,No,No,Yes
+RESI69,Male,48,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,1000,Yes,No,Yes,No
+RESI71,Female,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,Yes
+RESI72,Female,48,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,552,Yes,No,No,No
+RESI74,Male,41,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,257,Yes,No,No,No
+RESI73,Female,50,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,617,Yes,No,Yes,Yes
+RESI75,Male,41,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,46,Yes,No,No,No
+RESI76,Female,33,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,258,Yes,No,No,Yes
+RESI77,Male,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,227,Yes,No,No,No
+RESI78,Female,30,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,1230,Yes,No,Yes,No
+RESI82,Female,19,Tswana,Unchecked,Checked,Unchecked,Unchecked,Other,405,Yes,No,No,No
+RESI86,Female,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,442,Yes,No,No,Yes
+RESI89,Female,61,Tswana,Checked,Unchecked,Unchecked,Unchecked,Unemployed,476,Yes,No,No,No
+RESI90,Female,50,Afrikaans,Unchecked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,653,Yes,No,Yes,No
+RESI92,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,299,Yes,No,Yes,Yes
+RESI93,Female,63,Sotho,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,676,Yes,No,Yes,No
+RESI97,Female,64,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,567,Yes,No,No,Yes
+RESI98,Female,42,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,274,Yes,No,No,Yes
+RESI100,Female,42,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,785,Yes,No,Yes,No
+RESI102,Female,33,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,1232,Yes,No,No,Yes
+RESI105,Male,49,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,505,Yes,No,Yes,No
+RESI112,Male,40,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,381,Yes,No,Yes,No
+RESI115,Female,33,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,575,No,No,No,No
+RESI116,Male,27,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,306,Yes,No,No,Yes
+RESI117,Female,33,Tswana,Checked,Unchecked,Unchecked,Unchecked,Unemployed,245,Yes,No,Yes,No
+RESI120,Female,39,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+RESI122,Male,35,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,11,Yes,No,No,Yes
+RESI124,Female,33,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,642,Yes,No,Yes,No
+RESI127,Male,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,NA,NA,NA,NA
+RESI129,Female,38,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,Yes,Yes
+RESI130,Male,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,649,Yes,No,Yes,Yes
+RESI131,Female,30,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,213,Yes,No,No,Yes
+RESI132,Female,30,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,496,Yes,No,No,No
+RESI133,Female,58,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,789,Yes,No,No,Yes
+RESI134,Male,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,Yes,Yes
+RESI135,Female,48,Tswana,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,NA,Yes,No,Yes,Yes
+RESI136,Female,45,Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,662,Yes,No,Yes,Yes
+RESI139,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,966,Yes,No,Yes,No
+RESI140,Female,55,Zulu,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,663,Yes,No,No,No
+RESI141,Female,35,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,219,Yes,No,No,No
+RESI143,Male,49,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,Yes,Yes
+RESI144,Female,52,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,751,Yes,No,Yes,Yes
+RESI146,Female,59,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,689,Yes,No,No,No
+RESI148,Male,42,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,107,Yes,No,Yes,Yes
+RESI150,Female,51,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,Yes,Yes
+RESI151,Male,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,176,Yes,No,No,No
+RESI152,Male,55,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,Yes,No
+RESI153,Female,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,964,Yes,No,Yes,Yes
+RESI154,Female,34,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,844,Yes,No,No,Yes
+RESI155,Female,56,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,723,Yes,No,Yes,No
+RESI156,Female,66,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,458,Yes,No,No,Yes
+RESI159,Male,49,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,385,Yes,No,No,No
+RESI161,Male,43,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,Yes,Yes
+RESI162,Female,37,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,540,Yes,No,No,Yes
+RESI163,Female,51,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+RESI164,Male,50,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,578,Yes,No,Yes,No
+RESI165,Female,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,673,Yes,No,No,No
+RESI167,Female,42,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,671,Yes,No,Yes,No
+RESI168,Female,45,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,113,Yes,No,No,Yes
+RESI170,Male,59,Ndebele,Unchecked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,357,Yes,No,Yes,Yes
+RESI173,Female,40,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,605,Yes,No,Yes,No
+RESI178,Male,35,English,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,256,Yes,Yes,No,No
+RESI18,Female,31,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,206,Yes,No,No,Yes
+RESI185,Male,41,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,210,Yes,No,No,Yes
+RESI186,Male,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,295,Yes,No,Yes,No
+RESI187,Male,34,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,258,Yes,No,No,No
+RESI189,Female,56,Sotho,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,482,Yes,No,Yes,Yes
+RESI191,Male,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,285,Yes,No,No,No
+RESI192,Female,49,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,397,Yes,No,Yes,Yes
+RESI193,Male,57,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,575,Yes,No,No,No
+RESI194,Male,45,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,162,Yes,No,No,Yes
+RESI195,Male,40,Swazi,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,181,Yes,No,Yes,No
+RESI196,Female,50,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,257,Yes,No,No,No
+RESI197,Male,49,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,333,Yes,No,No,No
+RESI198,Female,40,Ndebele,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,319,Yes,No,Yes,No
+DD1,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,No,No,Yes
+DD2,Female,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,339,Yes,No,No,No
+DD4,Female,36,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,177,Yes,No,No,No
+DD5,Female,58,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,392,Yes,No,No,No
+DD6,Female,33,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,No
+DD7,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,295,Yes,No,No,Yes
+DD8,Male,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,227,Yes,No,No,No
+DD9,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,667,Yes,No,No,No
+DD10,Male,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,386,Yes,No,No,Yes
+DD11,Female,31,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,474,Yes,No,No,Yes
+DD12,Female,36,Tswana,Unchecked,Checked,Checked,Unchecked,Employment full-time,682,Yes,No,No,No
+DD14,Female,34,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,450,Yes,No,No,No
+DD15,Female,33,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,258,Yes,No,No,Yes
+DD16,Female,30,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,496,Yes,No,No,No
+DD17,Female,43,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,354,Yes,No,No,Yes
+DD19,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+DD20,Female,35,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,NA,Yes,No,No,No
+DD23,Male,41,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,256,Yes,No,No,No
+DD24,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,226,Yes,No,No,Yes
+DD25,Female,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,Yes
+DD26,Male,41,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+DD27,Female,34,Tswana,Unchecked,Unchecked,Checked,Unchecked,Unemployed,97,Yes,No,No,Yes
+DD30,Female,39,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+DD31,Female,42,Zulu,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,443,Yes,No,No,No
+DD32,Female,31,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,145,Yes,No,No,Yes
+DD33,Female,42,Zulu,Unchecked,Unchecked,Checked,Unchecked,Unemployed,274,Yes,No,No,Yes
+DD34,Female,42,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,785,Yes,No,No,No
+DD35,Female,33,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,642,Yes,No,Yes,Yes
+DD37,Male,27,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,NA,Yes,No,No,Yes
+DD39,Female,40,Sotho,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,840,Yes,No,No,No
+DD40,Female,38,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+DD41,Male,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,649,Yes,No,No,Yes
+DD43,Male,40,Sotho,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+DD44,Male,38,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,741,Yes,No,No,No
+DD46,Male,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,No,Yes
+DD48,Male,40,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,381,Yes,No,No,No
+DD49,Male,49,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+DD50,Male,39,Zulu,Unchecked,Unchecked,Unchecked,Unchecked,Employment full-time,107,Yes,No,No,Yes
+DD51,Male,43,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,No,No,No,Yes
+DD52,Male,41,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,210,Yes,No,No,Yes
+DD53,Male,50,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,578,Yes,No,No,No
+DD54,Male,35,English,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,256,Yes,Yes,No,No
+DD55,Male,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+DD56,Male,34,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,258,Yes,No,No,No
+DD57,Male,49,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,333,Yes,No,No,Yes
+DD58,Male,33,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,16,Yes,No,No,Yes
+DD60,Female,44,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,63,Yes,No,No,No
+DD61,Female,43,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employed part time/ Piece work,368,Yes,No,No,No
+DD62,Female,35,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+DD63,Female,36,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,364,Yes,No,No,No
+DD64,Female,48,Xhosa,Unchecked,Unchecked,Checked,Unchecked,Unemployed,543,Yes,No,No,Yes
+DD65,Female,41,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+DD66,Female,39,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,760,Yes,No,No,Yes
+DD68,Female,46,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1090,Yes,No,No,No
+DD69,Female,34,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,464,Yes,No,No,No
+DD70,Female,31,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1095,Yes,No,No,Yes
+RESI183,Female,31,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,325,Yes,No,No,Yes
+DD42,Male,42,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+DD38,Female,33,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,575,No,No,No,Yes
+DD36,Female,33,Tswana,Checked,Unchecked,Unchecked,Unchecked,Other,245,Yes,No,No,No
+DD45,Female,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,No,No,Yes
+NM0005,Male,47,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,209,Yes,Yes,Yes,Missing
+NM0006,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,329,Yes,Missing,Missing,Missing
+NM0007,Female,28,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,196,Yes,Missing,Missing,Missing
+NM0009,Female,47,English,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,338,No,No,Missing,Yes
+NM0010,Female,36,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,69,No,No,Missing,Missing
+NM0011,Male,31,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,19,Yes,Missing,Missing,Missing
+NM0012,Female,28,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing
+NM0013,Female,50,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Other,2000,Yes,Missing,Missing,Missing
+NM0014,Female,26,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1,Yes,Missing,Missing,Missing
+NM0015,Female,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,110,Yes,Missing,Missing,Missing
+NM0017,Female,28,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,61,Yes,Missing,Missing,Missing
+NM0023,Male,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,5,Yes,No,Missing,Missing
+NM0025,Female,32,Northern Sotho,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,228,Yes,Missing,Missing,Missing
+NM0026,Female,42,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,144,Yes,Missing,Missing,Missing
+NM0027,Female,36,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,84,No,No,No,Missing
+NM0029,Male,47,Venda,Checked,Unchecked,Unchecked,Unchecked,Unemployed,248,Yes,Yes,Missing,Missing
+NM0030,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,12,Yes,Missing,Missing,Missing
+NM0031,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,200,Yes,Missing,Missing,Missing
+NM0034,Female,40,English,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,287,No,No,Missing,Missing
+NM0035,Female,33,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,Missing,Missing,Missing
+NM0036,Female,36,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,147,Yes,Missing,Missing,Missing
+NM0037,Female,29,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,298,No,No,No,Missing
+NM0039,Female,43,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,231,Yes,Missing,Missing,Missing
+NM0040,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,4,Yes,Missing,Missing,Missing
+NM0002,Male,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,35,Yes,Missing,Yes,Missing
+NM0056,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,338,Yes,Missing,Missing,Missing
+NM0057,Female,23,Swazi,Unchecked,Unchecked,Checked,Unchecked,Unemployed,18,Yes,Missing,Missing,Missing
+NM0058,Female,58,Tswana,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,NA,Yes,Missing,Missing,Missing
+NM0059,Female,36,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,200,Yes,Missing,Missing,Missing
+NM0050,Female,36,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,309,No,No,No,Missing
+NM0051,Male,39,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,308,No,No,No,Missing
+NM0053,Male,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,150,Yes,Missing,Missing,Missing
+NM0055,Female,56,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,159,Yes,Missing,Missing,Missing
+NM0041,Male,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,118,No,No,No,Missing
+NM0042,Female,31,English,Unchecked,Checked,Unchecked,Unchecked,Unemployed,202,Yes,Missing,Missing,Missing
+NM0043,Female,31,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,247,Yes,Missing,Missing,Missing
+NM0044,Female,38,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,101,Yes,Missing,Missing,Missing
+NM0048,Female,31,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,8,Yes,Missing,Missing,Missing
+NM0062,Female,27,Zulu,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,300,Yes,Missing,Missing,Missing
+NM0064,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,61,Yes,Missing,Missing,Missing
+NM0065,Male,45,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,200,Yes,Missing,Missing,Missing
+NM0066,Female,33,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,53,Yes,Missing,Missing,Missing
+NM0067,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,7,Yes,Missing,Missing,Missing
+NM0068,Male,44,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing
+NM0070,Male,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,426,No,No,Missing,Missing
+NM0072,Female,41,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,250,No,No,Missing,Missing
+NM0073,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,400,No,No,Missing,Missing
+NM0075,Male,41,English,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,316,No,No,Missing,Missing
+NM0076,Female,34,Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,494,Yes,Missing,Missing,Missing
+NM0077,Female,43,Zulu,Unchecked,Unchecked,Unchecked,Checked,Unemployed,170,Yes,Missing,Missing,Missing
+NM0078,Male,37,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,1,Yes,Missing,Missing,Yes
+NM0079,Male,43,Swazi,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing
+NM0080,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,94,Yes,Missing,Missing,Missing
+NM0081,Female,32,Northern Sotho,Unchecked,Unchecked,Checked,Unchecked,Unemployed,110,No,No,Missing,Missing
+NM0082,Female,34,Swazi,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,130,Yes,Missing,Missing,Missing
+NM0085,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,285,Yes,Missing,Missing,Missing
+NM0086,Male,40,English,Unchecked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing
+NM0087,Female,44,Zulu,Unchecked,Unchecked,Unchecked,Checked,Unemployed,NA,Yes,Missing,Missing,Missing
+NM0089,Male,45,Swazi,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,57,Yes,Missing,Missing,Missing
+NM0090,Male,55,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing
+NM0091,Male,52,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,No,No,Missing,Missing
+NM0092,Female,25,Ndebele,Unchecked,Unchecked,Checked,Unchecked,Unemployed,152,Yes,Missing,Missing,Missing
+NM0093,Male,47,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing
+NM0095,Female,24,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,432,No,No,Missing,Missing
+NM0096,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,NA,Missing,Missing,Missing
+NM0097,Female,32,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Missing,308,No,No,Missing,Missing
+NM0098,Female,35,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,NA,Yes,Missing,Missing,Missing
+NM0100,Female,36,Tswana,Checked,Unchecked,Unchecked,Unchecked,Unemployed,200,Yes,Missing,Missing,Missing
+NM0101,Female,35,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,172,No,No,Missing,Missing
+NM0102,Female,48,Venda,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing
+NM0104,Female,53,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing
+NM0106,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,36,Yes,Missing,Missing,Missing
+NM0107,Female,27,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,4,Yes,Missing,Missing,Missing
+NM0108,Female,39,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,47,No,No,Missing,Missing
+NM0110,Male,49,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,27,Yes,Missing,Missing,Missing
+NM0111,Female,29,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,56,Yes,Missing,Missing,Missing
+NM0112,Female,52,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,174,Yes,Missing,Missing,Missing
+NM0113,Female,39,Swazi,Checked,Unchecked,Unchecked,Unchecked,Unemployed,364,No,No,Missing,Missing
+NM0114,Female,34,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,154,Yes,Missing,Missing,Missing
+NM0119,Female,36,Tswana,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,19,Yes,Missing,Missing,Missing
+NM0120,Female,25,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,120,Yes,Missing,Missing,Missing
+NM0122,Female,32,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Unemployed,315,Yes,Missing,Missing,Missing
+NM0124,Female,35,Tswana,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,88,Yes,Missing,Missing,Missing
+NM0128,Female,21,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,17,No,No,Missing,Missing
+NM0129,Female,20,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,238,No,No,Missing,Missing
+NM0130,Female,37,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,334,No,No,Missing,Missing
+NM0133,Female,40,Zulu,Unchecked,Unchecked,Unchecked,Checked,Unemployed,226,No,No,Missing,Missing
+NM0134,Female,26,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,637,No,No,Missing,Missing
+NM0136,Female,58,English,Unchecked,Checked,Unchecked,Unchecked,Unemployed,106,Yes,Missing,Missing,Missing
+NM0138,Male,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,50,Yes,Missing,Missing,Missing
+NM0143,Female,44,Ndebele,Unchecked,Checked,Unchecked,Unchecked,Unemployed,159,Yes,Missing,Missing,Missing
+NM0146,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,18,No,No,Missing,Missing
+NM0147,Female,31,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,109,Yes,Missing,Missing,Missing
+NM0149,Female,37,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,132,Yes,Missing,Missing,Missing
+NM0150,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,103,Yes,Missing,Missing,Missing
+NM0151,Female,42,English,Unchecked,Checked,Unchecked,Unchecked,Unemployed,184,Yes,Missing,Missing,Missing
+NM0152,Female,38,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,101,Yes,Missing,Missing,Missing
+NM0153,Female,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,321,No,No,Missing,Missing
+NM0154,Female,44,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,334,No,No,Missing,Missing
+NM0155,Female,34,Swazi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,65,Yes,Missing,Missing,Missing
+NM0158,Female,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,171,No,No,Missing,Missing
+NM0159,Female,30,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,440,No,No,Missing,Missing
+NM0160,Female,28,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,802,No,No,Missing,Missing
+NM0161,Female,41,Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,372,No,No,Missing,Missing
+NM0162,Male,43,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,381,No,No,Missing,Missing
+NM0165,Female,45,Tswana,Checked,Unchecked,Unchecked,Unchecked,Unemployed,340,Yes,Missing,Missing,Missing
+NM0166,Female,36,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,NA,Missing,Missing,Missing
+NM0167,Male,37,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,235,Yes,Missing,Missing,Missing
+NM0169,Female,43,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,154,Yes,Missing,Missing,Missing
+NM0172,Female,31,Tswana,Checked,Unchecked,Unchecked,Unchecked,Unemployed,200,NA,Missing,Missing,Missing
+NM0173,Female,41,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,182,No,No,Missing,Missing
+NM0174,Female,35,Zulu,Checked,Unchecked,Unchecked,Unchecked,Unemployed,155,Yes,Missing,Missing,Missing
+NM0176,Male,44,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,196,Yes,Missing,Missing,Missing
+NM0177,Male,34,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,129,Yes,Missing,Missing,Missing
+NM0178,Male,45,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,150,Yes,Missing,Missing,Missing
+NM0179,Female,67,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Unemployed,117,Yes,Missing,Missing,Missing
+NM0180,Female,39,Zulu,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,NA,Yes,Yes,Missing,Missing
+NM0181,Female,34,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,55,Yes,Missing,Missing,Missing
+NM0182,Female,24,NA,Unchecked,Checked,Unchecked,Unchecked,Unemployed,2,Yes,Missing,Missing,Missing
+NM1503,Female,35,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,61,Yes,Yes,Missing,Missing
+NM1506,Female,40,English,Unchecked,Checked,Unchecked,Unchecked,Unemployed,72,Yes,Yes,Missing,Missing
+NM1509,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,85,Yes,Yes,Missing,Missing
+NM1500,Female,42,Tswana,Checked,Unchecked,Unchecked,Unchecked,Missing,109,Yes,Missing,Missing,Missing
+NM1512,Female,45,Xhosa,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,302,No,Missing,Missing,Missing
+NM1513,Female,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,6,Yes,Yes,Missing,Missing
+NM1514,Male,32,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,157,No,Missing,Missing,Missing
+NM1517,Female,34,Tswana,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,194,Yes,Yes,Missing,Missing
+NM1518,Female,38,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,367,No,No,Missing,Missing
+NM1519,Female,27,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,471,No,No,Missing,Missing
+NM1520,Female,34,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,480,No,No,Missing,Missing
+NM1524,Female,28,NA,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,112,Yes,Missing,Missing,Missing
+NM1525,Male,48,Ndebele,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,159,Yes,Missing,Missing,Missing
+NM6030,Female,40,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,289,No,Missing,Missing,Missing
+NM6029,Female,35,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,236,No,Missing,Missing,Missing
+NM6028,Male,41,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,40,No,Missing,Missing,Missing
+NM6026,Male,45,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,855,No,Missing,Missing,Yes
+NM6025,Female,37,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,388,No,Missing,Missing,Missing
+NM6024,Female,36,Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,963,No,Missing,Missing,Missing
+NM6023,Female,33,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,278,No,Missing,Missing,Missing
+NM6022,Female,35,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,478,No,Missing,Missing,Missing
+NM6021,Female,53,Sotho,Unchecked,Unchecked,Unchecked,Checked,Unemployed,187,Yes,Missing,Missing,Yes
+NM6020,Female,31,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,No,Missing,Missing,Missing
+NM6019,Male,34,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,31,Yes,Missing,Missing,Missing
+NM6018,Female,32,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,125,Yes,Missing,Missing,Missing
+NM6017,Female,34,Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,12,Yes,Missing,Missing,Missing
+NM6016,Female,42,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,225,No,Missing,Missing,Yes
+NM6015,Male,29,Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,NA,No,Missing,Missing,Missing
+NM6014,Female,NA,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,315,No,Missing,Missing,Missing
+NM6001,Female,40,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,360,Yes,Missing,Missing,Missing
+NM6002,Male,63,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,960,No,Missing,Missing,Missing
+NM6000,Female,38,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,251,No,Missing,Missing,Missing
+NM6004,Female,28,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,48,Yes,Missing,Missing,Missing
+NM6005,Female,32,Northern Sotho,Unchecked,Unchecked,Unchecked,Checked,Employed part time/ Piece work,84,Yes,Missing,Missing,Missing
+NM6007,Female,25,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,303,No,Missing,Missing,Missing
+NM6008,Male,76,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,415,No,No,Missing,Missing
+NM6010,Female,41,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Employed part time/ Piece work,NA,Yes,Missing,Missing,Missing
+NM6012,Male,45,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,458,No,No,Missing,Missing
+NM6013,Female,40,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,89,No,No,Missing,Missing
+NM6031,Female,55,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,633,No,No,Missing,Missing
+NM6032,Female,31,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,410,No,No,Missing,Missing
+NM6033,Female,58,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,184,Yes,Missing,Missing,Missing
+NM6034,Female,43,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,341,No,Missing,Missing,Missing
+NM6035,Female,38,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,128,Yes,Missing,Missing,Yes
+NM6037,Female,25,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,299,No,No,Missing,Yes
+NM6038,Male,37,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,376,No,No,Missing,Missing
+NM6039,Male,41,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,380,Yes,Missing,Missing,Missing
+NM6040,Female,23,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,115,No,Missing,Missing,Missing
+NM6041,Female,40,Northern Sotho,Unchecked,Unchecked,Unchecked,Unchecked,Missing,234,Yes,Missing,Missing,Missing
+NM6042,Female,32,Northern Sotho,Checked,Unchecked,Unchecked,Unchecked,Missing,849,No,Missing,Missing,Missing
+NM6043,Female,48,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Missing,321,No,No,Missing,Missing
+NM6045,Female,31,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,350,No,No,Missing,Missing
+NM6046,Female,28,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,222,Yes,Missing,Missing,Missing
+NM6047,Male,20,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,475,No,No,Missing,Yes
+NM6048,Male,37,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,142,No,No,Missing,Missing
+NM6049,Female,41,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,301,No,No,Missing,Missing
+NM6050,Female,21,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,NA,No,Missing,Missing,Missing
+NM6052,Female,38,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,412,No,Missing,Missing,Missing
+NM6053,Female,28,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,116,Yes,Missing,Missing,Missing
+NM6054,Female,38,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Unemployed,196,Yes,Missing,Missing,Missing
+NM6101,Female,NA,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,202,Yes,Yes,Missing,Missing
+NM6102,Female,NA,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,NA,No,Missing,Missing,Missing
+NM6103,Male,NA,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Unemployed,NA,No,Missing,Missing,Missing
+NM6104,Female,34,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,456,No,Missing,Missing,Missing
+NM6106,Male,43,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,195,No,Missing,Missing,Missing
+NM6107,Female,71,Sotho,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,354,No,Missing,Missing,Missing
+NM6108,Female,41,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,265,Yes,Yes,Missing,Missing
+NM6109,Female,21,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,386,No,No,Missing,Missing
+NM6112,Female,NA,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,51,No,Missing,Missing,Missing
+NM6114,Female,38,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,170,No,No,Missing,Missing
+NM6115,Female,39,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,No,No,Missing,Missing
+NM6116,Female,30,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,183,No,No,Missing,Missing
+NM6117,Female,37,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Unemployed,119,No,No,Missing,Missing
+NM6118,Female,41,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,131,Yes,Yes,Missing,Missing
+NM6119,Female,30,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,163,No,No,Missing,Missing
+NM6120,Male,36,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,140,Yes,Yes,Missing,Missing
+NM6121,Female,40,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Unemployed,123,No,No,Missing,Missing
+NM6122,Female,36,Sotho,Checked,Unchecked,Unchecked,Unchecked,Unemployed,170,Yes,Yes,Missing,Missing
+NM6123,Female,30,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,203,No,No,Missing,Missing
+NM6124,Male,39,Tsonga,Unchecked,Unchecked,Unchecked,Checked,Unemployed,120,No,No,Missing,Missing
+NM6125,Female,36,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Unemployed,207,No,No,Missing,Missing
+NM6126,Female,33,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,171,Yes,Yes,Missing,Missing
+NM6127,Male,55,Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,230,No,No,Missing,Missing
+NM6201,Female,35,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,563,Yes,Missing,Missing,Missing
+NM6204,Male,42,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Employment full-time,40,Yes,Missing,Missing,Missing
+NM6205,Male,34,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,246,Yes,Missing,Missing,Missing
+NM6210,Female,33,Sepedi,Checked,Unchecked,Unchecked,Unchecked,Missing,425,Yes,Missing,Missing,Missing
+NM6211,Female,35,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,63,Yes,Missing,Missing,Missing
+NM6214,Male,NA,Tsonga,Checked,Unchecked,Unchecked,Unchecked,Missing,NA,No,Missing,Missing,Missing
+NM6220,Female,30,Tsonga,Unchecked,Unchecked,Checked,Unchecked,Employment full-time,213,Yes,Missing,Missing,Missing
+NM6221,Female,35,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,187,No,Missing,Missing,Missing
+NM6223,Female,42,Northern Sotho,Unchecked,Unchecked,Unchecked,Checked,Employed part time/ Piece work,NA,No,Missing,Missing,Missing
+NM6224,Female,36,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,No,Missing,Missing,Missing
+NM6229,Female,29,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Employed part time/ Piece work,NA,No,Missing,Missing,Missing
+NM6234,Female,34,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Unemployed,129,Yes,Missing,Missing,Missing
+NM6236,Female,34,Sepedi,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,Yes,Missing,Missing,Missing
+NM6239,Male,36,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,26,Yes,Missing,Missing,Missing
+NM6240,Female,42,Northern Sotho,Unchecked,Checked,Unchecked,Unchecked,Unemployed,293,No,Missing,Missing,Missing
+NM2002,Female,33,Sotho,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,910,No,No,Missing,Missing
+NM2004,Male,31,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,No,Missing,Missing,Missing
+NM2005,Male,26,Sepedi,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,329,No,No,Missing,Missing
+NM2008,Female,30,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,No,Missing,Missing,Missing
+NM2009,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,549,No,Missing,Missing,Missing
+NM2010,Female,37,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,Yes,Missing,Missing
+NM2011,Female,41,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,Missing,Missing
+NM2012,Female,24,Tswana,Unchecked,Checked,Unchecked,Unchecked,Unemployed,310,Yes,No,Missing,Missing
+NM2015,Female,43,Zulu,Unchecked,Checked,Unchecked,Unchecked,Unemployed,NA,No,Missing,Missing,Missing
+NM2018,Female,31,Sotho,Unchecked,Unchecked,Unchecked,Checked,Employment full-time,NA,No,Missing,Missing,Missing
+NM2019,Male,29,Tswana,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,NA,Yes,No,Missing,Missing
+NM2020,Male,29,Zulu,Unchecked,Checked,Unchecked,Unchecked,Employment full-time,235,No,Missing,Missing,Missing
+NM7010,Female,36,Sotho,Unchecked,Checked,Unchecked,Unchecked,Missing,NA,No,Missing,Missing,Missing
+NM7009,Female,32,Tsonga,Unchecked,Checked,Unchecked,Unchecked,Missing,13,No,Missing,Missing,Yes
+NM7008,Female,28,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,135,Yes,No,Missing,Missing
+NM7007,Female,29,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,301,Yes,Yes,Missing,Yes
+NM7006,Female,28,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Missing,98,No,Missing,Missing,Missing
+NM7005,Male,34,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,284,Yes,No,Missing,Yes
+NM7004,Female,26,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,182,Yes,Yes,Missing,Missing
+NM7003,Male,40,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,83,No,Missing,Missing,Yes
+NM7002,Male,37,Xhosa,Unchecked,Checked,Unchecked,Unchecked,Unemployed,4,Yes,Yes,Missing,Missing
+NM7001,Female,35,Zulu,Unchecked,Checked,Unchecked,Unchecked,Missing,108,No,No,Missing,Yes
+NM7000,Female,25,Tswana,Unchecked,Checked,Unchecked,Unchecked,Missing,NA,Yes,Yes,Missing,Missing
