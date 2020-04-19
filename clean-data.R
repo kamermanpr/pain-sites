@@ -7,6 +7,10 @@
 # Load packages
 library(tidyverse)
 library(lubridate)
+library(skimr)
+
+skim <- skim_with(factor = sfl(ordered = NULL),
+                  numeric = sfl(hist = NULL))
 
 # Make data-cleaned directory
 if(!dir.exists('data-cleaned')) {
@@ -390,26 +394,9 @@ data <- data %>%
            Knees_bilateral, Ankles.Feet, Ankles.Feet_bilateral, Buttocks,
            everything())
 
-# Whole body
+# Remove whole body / whole arm / whole leg
 data <- data %>% 
-    mutate(Whole_body = case_when(
-        `whole body (choice=Yes)` == 'Checked' |
-            `whole body (choice=Front)` == 'Checked' |
-            `whole body (choice=Back)` == 'Checked' |
-            `whole body (choice=Left)` == 'Checked' |
-            `whole body (choice=Right)` == 'Checked' ~ 'Yes',
-        TRUE ~ 'No'
-    )) %>%
-    select(-starts_with('Whole body (')) %>%
-    select(ID, Head, Throat, Shoulder, Shoulder_bilateral,
-           Arms, Elbows, Elbows_bilateral, Wrists.Hands, Wrists.Hands_bilateral,
-           Chest, Upper_back, Lower_back, Abdomen, Cervical_spine, Thoracic_spine, 
-           Lumbosacral_spine, Groin, Hips, Hips_bilateral, Legs, Knees, 
-           Knees_bilateral, Ankles.Feet, Ankles.Feet_bilateral, Buttocks,
-           Whole_body, everything())
-
-# Remove whole arm / whole leg
-data <- data %>% 
+    select(-starts_with('whole body')) %>% 
     select(-starts_with('Whole leg')) %>% 
     select(-starts_with('Whole arm'))
 
@@ -484,34 +471,63 @@ data <- data %>%
 # Remove pain_week and pain_month
 data <- data %>% 
     select(-Pain_week, -Pain_month)
-    
-# Remove ancestry
-data <- data %>% 
-    select(-Ancestry)
-
-# Remove Urban / rural
-data <- data %>% 
-    select(-`Urban or rural`)
-
-# Remove CD4 diagnosed
-data <- data %>% 
-    select(-`CD4+ diagnosed`)
-
-# Remove Diabetes
-data <- data %>% 
-    select(-Diabetes)
-
-# Remove TB treatment
-data <- data %>% 
-    select(-`currently on TB treatment`)
-
-# Remove Shingles
-data <- data %>% 
-    select(-starts_with('Shingles'))
 
 # Remove Complete
 data <- data %>% 
     select(-`Complete?`)
+
+## Convert 'Missing' to <NA>
+data[data == 'Missing'] <- NA
+
+## Convert 'No details' to <NA>
+data[data == 'no details'] <- NA
+
+## Check data and remove variables with less than 80% completeness
+data %>%
+    mutate_if(is.character, factor) %>% 
+    skim()
+
+### Remove Urban / rural
+data <- data %>% 
+    select(-`Urban or rural`)
+    
+### Remove ancestry
+data <- data %>% 
+    select(-Ancestry)
+
+### Remove CD4 diagnosed 
+### (>80% complete, but the timing of the measurement is a nightmare)
+data <- data %>% 
+    select(-`CD4+ diagnosed`)
+
+### Remove language 
+### (>80% complete, but I cannot see a use for the variable)
+data <- data %>% 
+    select(-Language)
+
+### Remove Diabetes
+data <- data %>% 
+    select(-Diabetes)
+
+### Remove TB
+data <- data %>% 
+    select(-TB)
+
+### Remove TB treatment
+data <- data %>% 
+    select(-`currently on TB treatment`)
+
+### Remove Shingles
+data <- data %>% 
+    select(-starts_with('Shingles'))
+
+### Remove currently on D4T treatment 
+data <- data %>% 
+    select(-ART_D4T.now)
+
+### Remove previous exposure to D4T
+data <- data %>% 
+    select(-ART_D4T.previous)
 
 ############################################################
 #                                                          #
@@ -529,12 +545,11 @@ write_rds(data, path = 'data-cleaned/data-all.rds')
 ############################################################
 # Extract data from complete dataset
 sites <- data %>% 
-    select(-ends_with('bilateral'), -c(28:44))
+    select(-ends_with('bilateral'), -c(27:39))
 
 # Write to file
 write_csv(sites, path = 'data-cleaned/data-pain-sites.csv')
 write_rds(sites, path = 'data-cleaned/data-pain-sites.rds')
-
 
 ############################################################
 #                                                          #
@@ -556,7 +571,7 @@ write_rds(arthritis, path = 'data-cleaned/data-rheumatoid-arthritis.rds')
 ############################################################
 # Extract data from complete dataset
 demo <- data %>% 
-    select(ID, 28:40)
+    select(ID, 27:35)
 
 # Write to file
 write_csv(demo, path = 'data-cleaned/data-demographics.csv')
@@ -569,7 +584,7 @@ write_rds(demo, path = 'data-cleaned/data-demographics.rds')
 ############################################################
 # Extract data from complete dataset
 pain <- data %>% 
-    select(ID, 41:44)
+    select(ID, 36:39)
 
 # Write to file
 write_csv(pain, path = 'data-cleaned/data-pain-intensity.csv')
