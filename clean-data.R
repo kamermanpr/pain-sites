@@ -460,12 +460,16 @@ temp <- data %>%
     select(-starts_with('Education')) %>% 
     pivot_longer(cols = -ID,
                  names_to = 'Education',
-                 values_to = 'Value') %>% 
+                 values_to = 'Value') %>%
+    mutate(Value = ifelse(Value == 'Missing',
+                          yes = NA,
+                          no = Value)) %>% 
     filter(!is.na(Value)) %>% 
     # Check original records for DD12, RPA15, STIG10, STIG40, STIG47
     # Stop-gap until original data fixed
     distinct(ID, .keep_all = TRUE) %>% 
-    select(ID, Education)
+    select(ID, Value) %>% 
+    rename(Education = Value)
 
 data <- data %>% 
     select(-starts_with('Education')) %>% 
@@ -475,11 +479,14 @@ data <- data %>%
 timing_temp <- data %>% 
     select(ID, Pain_week, Pain_month) %>% 
     pivot_longer(cols = -ID,
-                 names_to = 'Timing',
+                 names_to = 'Rating_period',
                  values_to = 'Values') %>% 
     filter(Values == 'Checked') %>% 
-    select(-Values)
-
+    select(-Values) %>%
+    mutate(Rating_period = ifelse(Rating_period == 'Pain_week',
+                                  yes = 'Weekly',
+                                  no = 'Monthly'))
+    
 data <- data %>% 
     left_join(timing_temp)
 
@@ -597,3 +604,4 @@ pain <- data %>%
 # Write to file
 write_csv(pain, path = 'data-cleaned/data-pain-intensity.csv')
 write_rds(pain, path = 'data-cleaned/data-pain-intensity.rds')
+
