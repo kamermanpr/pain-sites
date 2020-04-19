@@ -402,7 +402,8 @@ data <- data %>%
 
 # Rename CD4+ (recent) / Employment status / ART columns / pain columns
 data <- data %>% 
-    rename(CD4_recent = `CD4+ (recent)`,
+    rename(CD4_diagnosed = `CD4+ diagnosed`,
+           CD4_recent = `CD4+ (recent)`,
            ART_currently = `Currently on ART`,
            ART_D4T.now = `Current ARV includes Stavudine (d4T)`,
            ART_D4T.previous = `Previous regimen include stavudine(d4T)`,
@@ -413,11 +414,18 @@ data <- data %>%
            Pain_least = `Least pain`,
            Pain_now = `Pain now`)
 
-# Fix CD4_recent 
-data <- data %>% 
-    mutate(CD4_recent = ifelse(CD4_recent == -99, 
-                               yes = NA,
-                               no = CD4_recent))
+## Convert 'Missing' to <NA>
+data[data == 'Missing'] <- NA
+
+## Convert 'No details' to <NA>
+data[data == 'no details'] <- NA
+
+## Convert -99 to <NA>
+data[data == '-99'] <- NA
+data[data == -99] <- NA
+
+# Fix CD4_diagnosed
+data$CD4_diagnosed <- as.numeric(data$CD4_diagnosed)
 
 # Fix Age
 data <- data %>% 
@@ -425,9 +433,17 @@ data <- data %>%
                         yes = NA,
                         no = Age))
 
+# Fix employment status
+data <- data %>% 
+    mutate(Employment_status = case_when(
+        Employment_status == 'Employed part time/ Piece work' ~ 'Part-time work',
+        Employment_status == 'Employment full-time' ~ 'Full-time work',
+        Employment_status == 'Other' ~ 'Other',
+        Employment_status == 'Unemployed' ~ 'Unemployed'
+    )) 
+
 # Fix education
-## Testing extraction method
-foo <- data %>% 
+temp <- data %>% 
     select(ID, starts_with('Education')) %>% 
     mutate(Primary = ifelse(`Education (choice=Primary ( grades 1-7))` == 'Unchecked',
                             yes = NA,
@@ -445,16 +461,15 @@ foo <- data %>%
     pivot_longer(cols = -ID,
                  names_to = 'Education',
                  values_to = 'Value') %>% 
-    filter(!is.na(Value))
+    filter(!is.na(Value)) %>% 
+    # Check original records for DD12, RPA15, STIG10, STIG40, STIG47
+    # Stop-gap until original data fixed
+    distinct(ID, .keep_all = TRUE) %>% 
+    select(ID, Education)
 
-data %>% 
-    select(ID) %>% 
-    left_join(foo) %>% 
-    group_by(ID) %>% 
-    summarise(total = n()) %>% 
-    filter(total == 2)
-
-# Check original records for DD12, RPA15, STIG10, STIG40, STIG47
+data <- data %>% 
+    select(-starts_with('Education')) %>% 
+    left_join(temp) 
 
 # Fix pain record timespan
 timing_temp <- data %>% 
@@ -476,12 +491,6 @@ data <- data %>%
 data <- data %>% 
     select(-`Complete?`)
 
-## Convert 'Missing' to <NA>
-data[data == 'Missing'] <- NA
-
-## Convert 'No details' to <NA>
-data[data == 'no details'] <- NA
-
 ## Check data and remove variables with less than 80% completeness
 data %>%
     mutate_if(is.character, factor) %>% 
@@ -495,10 +504,9 @@ data <- data %>%
 data <- data %>% 
     select(-Ancestry)
 
-### Remove CD4 diagnosed 
-### (>80% complete, but the timing of the measurement is a nightmare)
+### Remove CD4_diagnosed
 data <- data %>% 
-    select(-`CD4+ diagnosed`)
+    select(-CD4_diagnosed)
 
 ### Remove language 
 ### (>80% complete, but I cannot see a use for the variable)
@@ -545,7 +553,7 @@ write_rds(data, path = 'data-cleaned/data-all.rds')
 ############################################################
 # Extract data from complete dataset
 sites <- data %>% 
-    select(-ends_with('bilateral'), -c(27:39))
+    select(-ends_with('bilateral'), -c(27:36))
 
 # Write to file
 write_csv(sites, path = 'data-cleaned/data-pain-sites.csv')
@@ -571,7 +579,7 @@ write_rds(arthritis, path = 'data-cleaned/data-rheumatoid-arthritis.rds')
 ############################################################
 # Extract data from complete dataset
 demo <- data %>% 
-    select(ID, 27:35)
+    select(ID, 27:31, 35)
 
 # Write to file
 write_csv(demo, path = 'data-cleaned/data-demographics.csv')
@@ -584,7 +592,7 @@ write_rds(demo, path = 'data-cleaned/data-demographics.rds')
 ############################################################
 # Extract data from complete dataset
 pain <- data %>% 
-    select(ID, 36:39)
+    select(ID, 32:34, 36)
 
 # Write to file
 write_csv(pain, path = 'data-cleaned/data-pain-intensity.csv')
