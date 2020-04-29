@@ -363,67 +363,6 @@ walk(sex_boot2$tables, ~ print(.x))
 walk(sex_boot2$plots, ~ print(.x))
 ```
 
-## Hypothesis tests
-
-### Process data
-
-```{r process_sex2}
-sex_tab <- sex %>% 
-    # Convert to long format and nest
-    pivot_longer(cols = -Sex,
-                 names_to = 'site',
-                 values_to = 'pain_present') %>% 
-    group_by(site) %>% 
-    nest() %>% 
-    # Remove site with only one outcome (based on skimr summary)
-    filter(site != 'Upper_back') %>% 
-    # Perform chi-square test
-    mutate(chi = map(.x = data,
-                     ~ with(.x, chisq.test(pain_present, Sex)))) %>% 
-    # Perform logistic regression
-    mutate(logistic = map(.x = data,
-                          ~ glm(factor(pain_present) ~ factor(Sex),
-                                data = .x,
-                                family = binomial()))) %>% 
-    # Extract test statistics
-    mutate(stat = map(.x = chi,
-                      ~ .x$statistic[[1]]),
-           p_value = map(.x = chi,
-                         ~ .x$p.value),
-           OR = map(.x = logistic,
-                    ~ exp(coef(.x))[[2]]),
-           lower_ci = map(.x = logistic,
-                          ~ exp(confint(.x))[2, 1]),
-           upper_ci = map(.x = logistic,
-                          ~ exp(confint(.x))[2, 2])) 
-
-# Calculate adjusted p-values and then add to nested dataframe
-adj_p <- p.adjust(p = sex_tab$p_value,
-                  method = 'holm')
-sex_tab$adj_p <- adj_p
-
-# Generate table for each pain site
-sex_tab <- sex_tab %>% 
-    mutate(tab = pmap(.l = list(site, stat, adj_p, OR, lower_ci, upper_ci),
-                      ~ data.frame(site = ..1,
-                                   statistic = ..2,
-                                   df = 1,
-                                   holm_pvalue = ..3,
-                                   OR_Male = ..4,
-                                   lower_ci = ..5, 
-                                   upper_ci = ..6))) 
-```
-
-### Tabulate hypothesis test results
-
-```{r hypothesis_sex, results = 'asis'}
-# Bind tables and print
-bind_rows(sex_tab$tab) %>% 
-    arrange(holm_pvalue) %>% 
-    kable(caption = 'Sex vs body sites: hypothesis test results',
-          digits = 3)
-```
-
 ----
 
 # By age
@@ -564,63 +503,6 @@ walk(age_boot2$tables, ~ print(.x))
 walk(age_boot2$plots, ~ print(.x))
 ```
 
-## Hypothesis tests
-
-Hypothesis tests run using age as a continuous variable (years), and not using the age groups reported in the figures and tables.  
-
-### Process data
-
-```{r process_age2}
-age_tab <- age %>% 
-    # Convert to long format and nest
-    pivot_longer(cols = -Age,
-                 names_to = 'site',
-                 values_to = 'pain_present') %>% 
-    group_by(site) %>% 
-    nest() %>% 
-    # Remove site with only one outcome (based on skimr summary)
-    filter(site != 'Upper_back') %>% 
-    # Perform logistic regression
-    mutate(logistic = map(.x = data,
-                          ~ glm(factor(pain_present) ~ Age,
-                                data = .x,
-                                family = binomial()))) %>% 
-    # Extract test statistics
-    mutate(OR = map(.x = logistic,
-                    ~ exp(coef(.x))[[2]]),
-           lower_ci = map(.x = logistic,
-                          ~ exp(confint(.x))[2, 1]),
-           upper_ci = map(.x = logistic,
-                          ~ exp(confint(.x))[2, 2]),
-           p_value = map(.x = logistic,
-                         ~ coef(summary(.x))[2, 4])) 
-
-# Calculate adjusted p-values and then add to nested dataframe
-adj_p <- p.adjust(p = age_tab$p_value,
-                  method = 'holm')
-
-age_tab$adj_p <- adj_p
-
-# Generate table for each pain site
-age_tab <- age_tab %>% 
-    mutate(tab = pmap(.l = list(site, adj_p, OR, lower_ci, upper_ci),
-                      ~ data.frame(site = ..1,
-                                   holm_pvalue = ..2,
-                                   OR_Yes = ..3,
-                                   lower_ci = ..4, 
-                                   upper_ci = ..5))) 
-```
-
-### Tabulate hypothesis test results
-
-```{r hypothesis_age, results = 'asis'}
-# Bind tables and print
-bind_rows(age_tab$tab) %>% 
-    arrange(holm_pvalue) %>% 
-    kable(caption = 'Age vs body sites: hypothesis test results',
-          digits = 3)
-```
-
 ----
 
 # By most recent CD4 T-cell count
@@ -756,64 +638,11 @@ walk(cd4_boot2$tables, ~ print(.x))
 walk(cd4_boot2$plots, ~ print(.x))
 ```
 
-## Hypothesis tests
-
-Hypothesis tests run using CD4 T-cell count as a continuous variable ($cell.mm^{-3}$), and not using the CD4 T-cell count groups reported in the figures and tables.  
-
-### Process data
-
-```{r process_cd42}
-cd4_tab <- cd4 %>% 
-    # Convert to long format and nest
-    pivot_longer(cols = -CD4_recent,
-                 names_to = 'site',
-                 values_to = 'pain_present') %>% 
-    group_by(site) %>% 
-    nest() %>% 
-    # Perform logistic regression
-    mutate(logistic = map(.x = data,
-                          ~ glm(factor(pain_present) ~ CD4_recent,
-                                data = .x,
-                                family = binomial()))) %>% 
-    # Extract test statistics
-    mutate(OR = map(.x = logistic,
-                    ~ exp(coef(.x))[[2]]),
-           lower_ci = map(.x = logistic,
-                          ~ exp(confint(.x))[2, 1]),
-           upper_ci = map(.x = logistic,
-                          ~ exp(confint(.x))[2, 2]),
-           p_value = map(.x = logistic,
-                         ~ coef(summary(.x))[2, 4])) 
-
-# Calculate adjusted p-values and then add to nested dataframe
-adj_p2 <- p.adjust(p = cd4_tab$p_value,
-                   method = 'holm')
-
-cd4_tab$adj_p2 <- adj_p2
-
-# Generate table for each pain site
-cd4_tab <- cd4_tab %>% 
-    mutate(tab = pmap(.l = list(site, adj_p2, OR, lower_ci, upper_ci),
-                      ~ data.frame(site = ..1,
-                                   holm_pvalue = ..2,
-                                   OR_Yes = ..3,
-                                   lower_ci = ..4, 
-                                   upper_ci = ..5))) 
-```
-
-### Tabulate hypothesis test results
-
-```{r hypothesis_cd4, results = 'asis'}
-# Bind tables and print
-bind_rows(cd4_tab$tab) %>% 
-    arrange(holm_pvalue) %>% 
-    kable(caption = 'CD4 vs body sites: hypothesis test results',
-          digits = 3)
-```
-
 ----
 
 # Logistic regression (generalised linear mixed model)
+
+Note: Age treated as a continuous variable, not like the categories used in the figures shwon above.
 
 ## Process data
 
@@ -904,7 +733,7 @@ data_glmm.long %>%
 
 ## GLMM
 
-```{r glmm}
+```{r glmm, results = 'asis'}
 # Perform GLMM on each remaining body site
 glmm_mods <- data_glmm.filtered %>% 
     # Scale Age and CD4_recent
