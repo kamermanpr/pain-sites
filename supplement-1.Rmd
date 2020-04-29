@@ -24,10 +24,7 @@ skim <- skim_with(factor = sfl(ordered = NULL),
 # Set knitr options
 knitr::opts_chunk$set(echo = TRUE,
                       message = FALSE,
-                      warning = FALSE,
-                      fig.height = 6,
-                      fig.width = 7,
-                      fig.path = 'figures/supplement-1/')
+                      warning = FALSE)
 ```
 
 ----
