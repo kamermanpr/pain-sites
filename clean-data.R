@@ -8,6 +8,7 @@
 library(tidyverse)
 library(lubridate)
 library(skimr)
+library(knitr)
 
 skim <- skim_with(factor = sfl(ordered = NULL),
                   numeric = sfl(hist = NULL))
@@ -543,6 +544,22 @@ data <- data %>%
 ### Remove previous exposure to D4T
 data <- data %>% 
     select(-ART_D4T.previous)
+
+# Check sample size per site
+data %>% 
+    # Select ID
+    select(ID) %>% 
+    # Clean-up ID column to keep only study site information
+    mutate(ID = str_remove(ID, 
+                           pattern = '[0-9][0-9]?[0-9]?[0-9]?')) %>%
+    # Group data 
+    group_by(ID) %>% 
+    summarise(Count = n()) %>% 
+    kable(caption = 'Sample size by study site')
+
+# Remove sites with n < 10 
+data <- data %>% 
+    filter(!str_detect(ID, pattern = 'RISI') & !str_detect(ID, pattern = 'RBP'))
 
 ############################################################
 #                                                          #
