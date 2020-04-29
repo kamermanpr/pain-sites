@@ -1,7 +1,7 @@
 ---
 title: "Supplement 1"
-subtitle: "Pain sites"
-author: "Peter Kamerman"
+subtitle: "Demopgraphics"
+author: "Peter Kamerman" 
 date: "Last knitted: `r format(Sys.Date(), '%d %B %Y')`"
 mainfont: Helvetica
 ---
@@ -11,16 +11,18 @@ mainfont: Helvetica
 library(tidyverse)
 library(skimr)
 library(knitr)
-library(boot)
 
 # Create figures folder
 if(!dir.exists('figures')){
     dir.create('figures')
 }
 
+# Skimr options
+skim <- skim_with(factor = sfl(ordered = NULL),
+                  numeric = sfl(hist = NULL))
+
 # Set knitr options
 knitr::opts_chunk$set(echo = TRUE,
-                      cache = TRUE,
                       message = FALSE,
                       warning = FALSE,
                       fig.height = 6,
@@ -28,19 +30,19 @@ knitr::opts_chunk$set(echo = TRUE,
                       fig.path = 'figures/supplement-1/')
 ```
 
+----
+
+Note: Sites RBP and RISI removed at data cleaning stage because n < 10. 
+
+----
+
 # Import and check data
 
 ```{r import}
 # Import
-data <- read_rds('data-cleaned/data-pain-sites.rds')
 demo <- read_rds('data-cleaned/data-demographics.rds')
 
 # Check
-## Pain sites 
-dim(data)
-names(data)
-glimpse(data)
-
 ## Demographics
 dim(demo)
 names(demo)
@@ -51,546 +53,54 @@ glimpse(demo)
 
 # Basic descriptive statistics
 
-## Pain sites
+## Full cohort
+
+### Descriptives
 
 ```{r numerical_sites}
-data %>% 
+demo %>% 
+    # Remove ID column
+    select(-ID) %>% 
+    # Convert character to factor
     mutate_if(is.character, factor) %>% 
     skim()
 ```
 
-## Demographics
+## By site
+
+### Sample size
+
+```{r numerical_size}
+demo %>% 
+    # Select ID
+    select(ID) %>% 
+    # Clean-up ID column to keep only study site information
+    mutate(ID = str_remove(ID, 
+                           pattern = '[0-9][0-9]?[0-9]?[0-9]?')) %>%
+    # Group data 
+    group_by(ID) %>% 
+    summarise(Count = n()) %>% 
+    kable(caption = 'Sample size by study site')
+```
+
+### Descriptives
 
 ```{r numerical_demo}
 demo %>% 
+    # Clean-up ID column to keep only study site information
+    mutate(ID = str_remove(ID, 
+                           pattern = '[0-9][0-9]?[0-9]?[0-9]?')) %>%
+    # Convert character to factor
     mutate_if(is.character, factor) %>% 
+    # Group by site
+    group_by(ID) %>%
     skim()
 ```
 
-## Boostrap functions
-
-```{r functions}
-# Proportion
-prop_func <- function(d, i){
-    dat <- d[i, ]
-    dat_vec <- dat[[1]]
-    dat_prop <- mean(dat_vec == 'Yes')
-    dat_prop
-}
-
-# Median
-median_func <- function(d, i){
-    dat <- d[i, ]
-    dat_vec <- dat[[1]]
-    dat_median <- median(dat_vec)
-    dat_median
-}
-```
 ----
 
-# Proportion point estimates with 95% CIs
+# Session information
 
-## Process data
-
-```{r process_prop}
-# Remove ID, whole_body, and upper_back columns
-prop <- data[, !(names(data) %in% c('ID', 'Whole_body', 'Upper_back'))]
-
-# Bootstrap CIs
-prop_boot <- prop %>% 
-    # Pivot to long format
-    pivot_longer(cols = everything(),
-                 names_to = 'site',
-                 values_to = 'pain_present') %>% 
-    # Add body regions
-    mutate(region = case_when(
-        site == 'Chest' |
-            site == 'Head' |
-            site == 'Throat' |
-            site == 'Shoulder' ~ 'Head and upper torso',
-        site == 'Lower_back' |
-            site == 'Abdomen' |
-            site == 'Hips' |
-            site == 'Buttocks' |
-            site == 'Groin' ~ 'Lower torso',
-        site == 'Legs' |
-            site == 'Knees' |
-            site == 'Ankles.Feet' ~ 'Lower limbs',
-        site == 'Arms' |
-            site == 'Elbows' |
-            site == 'Wrists.Hands' ~ 'Upper limbs',
-        site == 'Cervical_spine' |
-            site == 'Thoracic_spine' |
-            site == 'Lumbosacral_spine' ~ 'Spinal column',
-        TRUE ~ 'other'
-    )) %>% 
-    # Nest by body region and body site
-    group_by(region, site) %>% 
-    nest() %>% 
-    # Boostrap data
-    mutate(boot = map(.x = data,
-                      ~ boot(data = .x,
-                             statistic = prop_func, 
-                             R = 999,
-                             stype = 'i'))) %>% 
-    # Get CI
-    mutate(ci = map(.x = boot,
-                    ~ boot.ci(.x, type = 'perc'))) %>% 
-    # Extract ci data
-    mutate(point_est = map(.x = ci,
-                           ~ .x$t0),
-           lower_ci = map(.x = ci,
-                          ~ .x$percent[[4]]),
-           upper_ci = map(.x = ci,
-                          ~ .x$percent[[5]])) %>% 
-    # Remove columns
-    select(-data, -boot, -ci) %>% 
-    # Unnest
-    unnest(cols = c(point_est, lower_ci, upper_ci))
-
-# Re-nest by body region and generate figures and tables
-prop_boot2 <- prop_boot %>% 
-    group_by(region) %>% 
-    nest() %>% 
-    # Fix site labels
-    mutate(data = map(.x = data,
-                      ~ .x %>% 
-                          mutate(site = str_replace_all(site,
-                                                        pattern = '_',
-                                                        replacement = ' '),
-                                 site = str_replace_all(site, 
-                                                        pattern = '\\.',
-                                                        replacement = ' & ')))) %>% 
-    # Re-order sites by point_est
-    mutate(data = map(.x = data,
-                      ~ .x %>% 
-                          mutate(site = fct_reorder(site, 
-                                                    point_est)))) %>% 
-    # Plot data
-    mutate(plots = map2(.x = data,
-                        .y = region,
-                       ~ .x %>% 
-                           ggplot(data = .) +
-                           aes(x = site,
-                               y = point_est,
-                               ymin = lower_ci,
-                               ymax = upper_ci) +
-                           geom_linerange(size = 1) +
-                           geom_point(size = 6) +
-                           coord_flip() +
-                            labs(title = .y,
-                                 subtitle = '(Point estimate with 95%CI)',
-                                 y = 'Proportion with pain') +
-                            scale_y_continuous(limits = c(0, 1)) +
-                            theme_minimal(base_size = 18) +
-                            theme(plot.title = element_text(size = 18),
-                                  plot.subtitle = element_text(size = 12),
-                                  axis.title.y = element_blank(),
-                                  panel.grid = element_blank(),
-                                  axis.text = element_text(colour = '#000000'),
-                                  axis.line = element_line(size = 0.5),
-                                  axis.ticks = element_line(size = 0.5)))) %>% 
-    # Tabulate data
-    mutate(tables = map2(.x = data,
-                         .y = region,
-                         ~ .x %>% 
-                             kable(caption = .y,
-                                   digits = 2)))
-```
-
-## Tabulated proportions (with 95% CIs), by body region
-
-```{r tabulated_prop, results = 'asis'}
-walk(prop_boot2$tables, ~ print(.x))
-```
-
-## Plotted proportions (with 95% CIs), by body region
-
-```{r plotted_prop}
-walk(prop_boot2$plots, ~ print(.x))
-```
-
-----
-
-# By sex
-
-## Process data
-
-```{r process_sex}
-# Select sex data
-sex <- demo[, c('ID', 'Sex')]
-
-# Join to boot_data & remove ID, Whole_body, and Upper_back
-sex <- left_join(data, sex) %>% 
-    select(-ID, -Whole_body, -Upper_back)
-
-# Bootstrap CIs
-sex_boot <- sex %>% 
-    # Pivot to long format
-    pivot_longer(cols = -Sex,
-                 names_to = 'site',
-                 values_to = 'pain_present') %>% 
-    # Add body regions
-    mutate(region = case_when(
-        site == 'Chest' |
-            site == 'Head' |
-            site == 'Throat' |
-            site == 'Shoulder' ~ 'Head and upper torso',
-        site == 'Lower_back' |
-            site == 'Abdomen' |
-            site == 'Hips' |
-            site == 'Buttocks' |
-            site == 'Groin' ~ 'Lower torso',
-        site == 'Legs' |
-            site == 'Knees' |
-            site == 'Ankles.Feet' ~ 'Lower limbs',
-        site == 'Arms' |
-            site == 'Elbows' |
-            site == 'Wrists.Hands' ~ 'Upper limbs',
-        site == 'Cervical_spine' |
-            site == 'Thoracic_spine' |
-            site == 'Lumbosacral_spine' ~ 'Spinal column',
-        TRUE ~ 'other'
-    )) %>% 
-    # Nest by body region and body site
-    group_by(Sex, region, site) %>% 
-    nest() %>% 
-    # Boostrap data
-    mutate(boot = map(.x = data,
-                      ~ boot(data = .x,
-                             statistic = prop_func, 
-                             R = 999,
-                             stype = 'i'))) %>% 
-    # Get CI
-    mutate(ci = map(.x = boot,
-                    ~ boot.ci(.x, type = 'perc'))) %>% 
-    # Extract ci data
-    mutate(point_est = map(.x = ci,
-                           ~ .x$t0),
-           lower_ci = map(.x = ci,
-                          ~ .x$percent[[4]]),
-           upper_ci = map(.x = ci,
-                          ~ .x$percent[[5]])) %>% 
-    # Remove columns
-    select(-data, -boot, -ci) %>% 
-    # Unnest
-    unnest(cols = c(point_est, lower_ci, upper_ci))
-
-# Re-nest by body region and generate figures and tables
-sex_boot2 <- sex_boot %>% 
-    group_by(region) %>% 
-    nest() %>% 
-    # Fix site labels
-    mutate(data = map(.x = data,
-                      ~ .x %>% 
-                          mutate(site = str_replace_all(site,
-                                                        pattern = '_',
-                                                        replacement = ' '),
-                                 site = str_replace_all(site, 
-                                                        pattern = '\\.',
-                                                        replacement = ' & ')))) %>% 
-    # Re-order sites by point_est
-    mutate(data = map(.x = data,
-                      ~ .x %>% 
-                          mutate(site = fct_reorder(site, 
-                                                    point_est)))) %>% 
-    # Plot data
-    mutate(plots = map2(.x = data,
-                        .y = region,
-                       ~ .x %>% 
-                           ggplot(data = .) +
-                           aes(x = site,
-                               y = point_est,
-                               ymin = lower_ci,
-                               ymax = upper_ci,
-                               fill = Sex) +
-                           geom_linerange(position = position_dodge2(width = 0.6),
-                                          size = 1,
-                                          colour = '#000000') +
-                           geom_point(shape = 21,
-                                      colour = '#000000',
-                                      position = position_dodge2(width = 0.6),
-                                      size = 6,
-                                      stroke = 1) +
-                           coord_flip() +
-                           labs(title = .y,
-                                subtitle = '(Point estimate with 95%CI)',
-                                y = 'Proportion with pain') +
-                           scale_y_continuous(limits = c(0, 1)) +
-                           scale_fill_manual(values = c('#000000', '#FFFFFF')) +
-                           theme_minimal(base_size = 18) +
-                           theme(plot.title = element_text(size = 18),
-                                 plot.subtitle = element_text(size = 12),
-                                 legend.title = element_blank(),
-                                 legend.position = 'top',
-                                 axis.title.y = element_blank(),
-                                 panel.grid = element_blank(),
-                                 axis.text = element_text(colour = '#000000'),
-                                 axis.line = element_line(size = 0.5),
-                                 axis.ticks = element_line(size = 0.5)))) %>% 
-    # Tabulate data
-    mutate(tables = map2(.x = data,
-                         .y = region,
-                         ~ .x %>% 
-                             kable(caption = .y,
-                                   digits = 2)))
-```
-
-## Tabulated proportions (with 95% CIs), by age and body region
-
-```{r tabulated_sex, results = 'asis'}
-walk(sex_boot2$tables, ~ print(.x))
-```
-
-## Plotted proportions (with 95% CIs), by age and body region
-
-```{r plotted_sex}
-walk(sex_boot2$plots, ~ print(.x))
-```
-
-## Hypothesis tests
-
-### Process data
-
-```{r process_sex2}
-sex_tab <- sex %>% 
-    # Convert to long format and nest
-    pivot_longer(cols = -Sex,
-                 names_to = 'site',
-                 values_to = 'pain_present') %>% 
-    group_by(site) %>% 
-    nest() %>% 
-    # Remove site with only one outcome (based on skimr summary)
-    filter(site != 'Upper_back') %>% 
-    # Perform chi-square test
-    mutate(chi = map(.x = data,
-                     ~ with(.x, chisq.test(pain_present, Sex)))) %>% 
-    # Perform logistic regression
-    mutate(logistic = map(.x = data,
-                          ~ glm(factor(pain_present) ~ factor(Sex),
-                                data = .x,
-                                family = binomial()))) %>% 
-    # Extract test statistics
-    mutate(stat = map(.x = chi,
-                      ~ .x$statistic[[1]]),
-           p_value = map(.x = chi,
-                         ~ .x$p.value),
-           OR = map(.x = logistic,
-                    ~ exp(coef(.x))[[2]]),
-           lower_ci = map(.x = logistic,
-                          ~ exp(confint(.x))[2, 1]),
-           upper_ci = map(.x = logistic,
-                          ~ exp(confint(.x))[2, 2])) 
-
-# Calculate adjusted p-values and then add to nested dataframe
-adj_p <- p.adjust(p = sex_tab$p_value,
-                  method = 'holm')
-sex_tab$adj_p <- adj_p
-
-# Generate table for each pain site
-sex_tab <- sex_tab %>% 
-    mutate(tab = pmap(.l = list(site, stat, adj_p, OR, lower_ci, upper_ci),
-                      ~ data.frame(site = ..1,
-                                   statistic = ..2,
-                                   df = 1,
-                                   holm_pvalue = ..3,
-                                   OR_Male = ..4,
-                                   lower_ci = ..5, 
-                                   upper_ci = ..6))) 
-```
-
-### Tabulate hypothesis test results
-
-```{r hypothesis_sex, results = 'asis'}
-# Bind tables and print
-bind_rows(sex_tab$tab) %>% 
-    arrange(holm_pvalue) %>% 
-    kable(caption = 'Sex vs body sites: hypothesis test results',
-          digits = 3)
-```
-
-----
-
-# By age
-
-## Process data
-
-```{r process_age}
-# Select age data
-age <- demo[, c('ID', 'Age')]
-
-# Join to boot_data & remove ID, Whole_body, Upper_back
-age <- left_join(data, age) %>% 
-    select(-ID, -Whole_body, -Upper_back)
-
-# Get complete cases
-age <- age[complete.cases(age), ]
-
-# Pivot and add age group categories (10 year periods)
-age_boot <- age %>% 
-    # Pivot to long format
-    pivot_longer(cols = -Age,
-                 names_to = 'site',
-                 values_to = 'pain_present') %>% 
-    # Add age categories
-    mutate(age_group = case_when(
-        Age < 28 ~ '18-27',
-        Age >= 28 & Age < 38 ~ '28-37',
-        Age >= 38 & Age < 48 ~ '38-47',
-        Age >= 48 & Age < 58 ~ '48-57',
-        Age >= 58 & Age < 68 ~ '58-67',
-        Age >= 68 & Age < 78 ~ '68-77',
-        Age >= 78 & Age < 88 ~ '78-87'
-    )) 
-
-# Print count per age group
-age_boot %>% 
-    group_by(site, age_group) %>% 
-    summarise(count = n()) %>% 
-    filter(site == 'Abdomen') %>% 
-    ungroup() %>% 
-    select(-site) %>% 
-    kable(caption = 'Participant count per age group')
-
-# Generate CIs
-age_boot2 <- age_boot %>% 
-    # Remove age
-    select(-Age) %>% 
-    # Remove categories with less than 20 counts
-    filter(age_group != '68-77') %>% 
-    # Nest by age group and body site
-    group_by(age_group, site) %>% 
-    nest() %>% 
-    # Boostrap data
-    mutate(boot = map(.x = data,
-                      ~ boot(data = .x,
-                             statistic = prop_func, 
-                             R = 999,
-                             stype = 'i'))) %>% 
-    # Get CI
-    mutate(ci = map(.x = boot,
-                    ~ boot.ci(.x, type = 'perc'))) %>% 
-    # Extract ci data
-    mutate(point_est = map(.x = ci,
-                           ~ .x$t0),
-           lower_ci = map(.x = ci,
-                          ~ .x$percent[[4]]),
-           upper_ci = map(.x = ci,
-                          ~ .x$percent[[5]])) %>% 
-    # Remove columns
-    select(-data, -boot, -ci) %>% 
-    # Unnest
-    unnest(cols = c(point_est, lower_ci, upper_ci)) %>% 
-    ungroup()
-
-# Re-nest by body region and generate figures and tables
-age_boot2 <- age_boot2 %>% 
-    # Fix site labels
-    mutate(site = str_replace_all(site,
-                                  pattern = '_',
-                                  replacement = ' '),
-           site = str_replace_all(site, 
-                                  pattern = '\\.',
-                                  replacement = ' & ')) %>% 
-    # Group and nest
-    group_by(site) %>% 
-    nest() %>% 
-    # Plot data
-    mutate(plots = map2(.x = data,
-                        .y = site,
-                       ~ .x %>% 
-                           ggplot(data = .) +
-                           aes(x = age_group,
-                               y = point_est,
-                               ymin = lower_ci,
-                               ymax = upper_ci) +
-                           geom_linerange(size = 1,
-                                          colour = '#000000') +
-                           geom_point(colour = '#000000',
-                                      size = 6) +
-                           labs(title = .y,
-                                subtitle = '(Point estimate with 95%CI)',
-                                x = 'Age group (Years)',
-                                y = 'Proportion with pain') +
-                           scale_y_continuous(limits = c(0, 1)) +
-                           theme_minimal(base_size = 18) +
-                           theme(plot.title = element_text(size = 18),
-                                 plot.subtitle = element_text(size = 12),
-                                 panel.grid = element_blank(),
-                                 axis.text = element_text(colour = '#000000'),
-                                 axis.line = element_line(size = 0.5),
-                                 axis.ticks = element_line(size = 0.5)))) %>% 
-    # Tabulate data
-    mutate(tables = map2(.x = data,
-                         .y = site,
-                         ~ .x %>% 
-                             kable(caption = .y,
-                                   digits = 2)))
-```
-
-## Tabulated proportions (with 95% CIs), by age group and body site
-
-```{r tabulated_age, results = 'asis'}
-walk(age_boot2$tables, ~ print(.x))
-```
-
-## Plotted proportions (with 95% CIs), by age group and body site
-
-```{r plotted_age}
-walk(age_boot2$plots, ~ print(.x))
-```
-
-## Hypothesis tests
-
-### Process data
-
-```{r process_age2}
-age_tab <- age %>% 
-    # Convert to long format and nest
-    pivot_longer(cols = -Age,
-                 names_to = 'site',
-                 values_to = 'pain_present') %>% 
-    group_by(site) %>% 
-    nest() %>% 
-    # Remove site with only one outcome (based on skimr summary)
-    filter(site != 'Upper_back') %>% 
-    # Perform logistic regression
-    mutate(logistic = map(.x = data,
-                          ~ glm(factor(pain_present) ~ Age,
-                                data = .x,
-                                family = binomial()))) %>% 
-    # Extract test statistics
-    mutate(OR = map(.x = logistic,
-                    ~ exp(coef(.x))[[2]]),
-           lower_ci = map(.x = logistic,
-                          ~ exp(confint(.x))[2, 1]),
-           upper_ci = map(.x = logistic,
-                          ~ exp(confint(.x))[2, 2]),
-           p_value = map(.x = logistic,
-                         ~ coef(summary(.x))[2, 4])) 
-
-# Calculate adjusted p-values and then add to nested dataframe
-adj_p <- p.adjust(p = age_tab$p_value,
-                  method = 'holm')
-
-age_tab$adj_p <- adj_p
-
-# Generate table for each pain site
-age_tab <- age_tab %>% 
-    mutate(tab = pmap(.l = list(site, adj_p, OR, lower_ci, upper_ci),
-                      ~ data.frame(site = ..1,
-                                   holm_pvalue = ..2,
-                                   OR_Yes = ..3,
-                                   lower_ci = ..4, 
-                                   upper_ci = ..5))) 
-```
-
-### Tabulate hypothesis test results
-
-```{r hypothesis_age, results = 'asis'}
-# Bind tables and print
-bind_rows(age_tab$tab) %>% 
-    arrange(holm_pvalue) %>% 
-    kable(caption = 'Age vs body sites: hypothesis test results',
-          digits = 3)
+```{r session}
+sessionInfo()
 ```
