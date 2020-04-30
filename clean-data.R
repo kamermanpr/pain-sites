@@ -6,10 +6,10 @@
 
 # Load packages
 library(tidyverse)
-library(lubridate)
 library(skimr)
 library(knitr)
 
+# Set skimr outputs
 skim <- skim_with(factor = sfl(ordered = NULL),
                   numeric = sfl(hist = NULL))
 
@@ -25,6 +25,10 @@ if(!dir.exists('data-cleaned')) {
 ############################################################
 # In some cases DOB was given, this needed to be converted to 
 # age in years for de-identification purposes
+# 
+# # Load packages
+# library(tidyverse)
+# library(lubridate)
 #
 # # Import data
 # ## data-original.csv is not available to outside individuals or organizations 
@@ -476,7 +480,7 @@ data <- data %>%
     select(-starts_with('Education')) %>% 
     left_join(temp) 
 
-# Fix pain record timespan
+# Fix pain record time span
 timing_temp <- data %>% 
     select(ID, Pain_week, Pain_month) %>% 
     pivot_longer(cols = -ID,
@@ -557,9 +561,14 @@ data %>%
     summarise(Count = n()) %>% 
     kable(caption = 'Sample size by study site')
 
-# Remove sites with n < 10 
+# Fix two mis-coded sites (RISI => RESI, and RBP => RPB)
 data <- data %>% 
-    filter(!str_detect(ID, pattern = 'RISI') & !str_detect(ID, pattern = 'RBP'))
+    mutate(ID = str_replace(ID, 
+                            pattern = 'RISI',
+                            replacement = 'RESI'),
+           ID = str_replace(ID, 
+                            pattern = 'RBP',
+                            replacement = 'RPB'))
 
 ############################################################
 #                                                          #
