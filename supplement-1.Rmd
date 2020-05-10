@@ -29,10 +29,6 @@ knitr::opts_chunk$set(echo = TRUE,
 
 ----
 
-Note: Sites RBP and RISI removed at data cleaning stage because n < 10. 
-
-----
-
 # Import and check data
 
 ```{r import}
@@ -57,25 +53,22 @@ glimpse(demo)
 ```{r numerical_sites}
 demo %>% 
     # Remove ID column
-    select(-ID) %>% 
+    select(-ID, -Site) %>% 
     # Convert character to factor
     mutate_if(is.character, factor) %>% 
     skim()
 ```
 
-## By site
+## By study site
 
 ### Sample size
 
 ```{r numerical_size}
 demo %>% 
     # Select ID
-    select(ID) %>% 
-    # Clean-up ID column to keep only study site information
-    mutate(ID = str_remove(ID, 
-                           pattern = '[0-9][0-9]?[0-9]?[0-9]?')) %>%
-    # Group data 
-    group_by(ID) %>% 
+    select(Site) %>% 
+    # Group by study site
+    group_by(Site) %>% 
     summarise(Count = n()) %>% 
     kable(caption = 'Sample size by study site')
 ```
@@ -84,17 +77,16 @@ demo %>%
 
 ```{r numerical_demo}
 demo %>% 
-    # Clean-up ID column to keep only study site information
-    mutate(ID = str_remove(ID, 
-                           pattern = '[0-9][0-9]?[0-9]?[0-9]?')) %>%
     # Convert character to factor
     mutate_if(is.character, factor) %>% 
+    # Remove ID
+    select(-ID) %>% 
     # Group by site
-    group_by(ID) %>%
+    group_by(Site) %>%
     skim()
 ```
 
-----
+\newpage
 
 # Session information
 

@@ -1,596 +1,597 @@
-ID,Head,Throat,Shoulder,Shoulder_bilateral,Arms,Elbows,Elbows_bilateral,Wrists.Hands,Wrists.Hands_bilateral,Chest,Upper_back,Lower_back,Abdomen,Cervical_spine,Thoracic_spine,Lumbosacral_spine,Groin,Hips,Hips_bilateral,Legs,Knees,Knees_bilateral,Ankles.Feet,Ankles.Feet_bilateral,Buttocks,Sex,Age,Employment_status,CD4_recent,ART_currently,Pain_worst,Pain_least,Pain_now,Education,Rating_period
-RPB73,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Other,391,Yes,NA,NA,NA,Tertiary,Weekly
-RPB74,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,571,Yes,NA,NA,NA,Secondary,Weekly
-RPB75,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Other,591,Yes,4,4,1,Secondary,Weekly
-RPB76,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,207,Yes,10,5,5,Primary,Weekly
-RPB77,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,126,Yes,10,5,1,Secondary,Weekly
-RPB78,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,32,Unemployed,225,Yes,6,4,5,Secondary,Weekly
-RPB80,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,543,Yes,6,3,2,Secondary,Weekly
-RPB81,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,Yes,Female,37,Unemployed,410,Yes,9,6,7,Secondary,Weekly
-RPB84,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Part-time work,74,Yes,8,4,1,Secondary,Weekly
-RPB85,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Full-time work,212,Yes,NA,NA,NA,Secondary,Weekly
-RPB103,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Other,579,Yes,NA,NA,NA,Secondary,Weekly
-RPB104,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,24,Unemployed,346,Yes,5,2,2,Secondary,Weekly
-RPB105,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,Other,602,Yes,8,5,4,Secondary,Weekly
-RPB106,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,26,Unemployed,519,Yes,9,6,5,Primary,Weekly
-RPB107,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Female,34,Unemployed,261,Yes,9,5,4,Secondary,Weekly
-RPB108,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,277,Yes,NA,NA,NA,Tertiary,Weekly
-RPB109,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,287,Yes,9,9,6,Secondary,Weekly
-RPB110,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,397,Yes,6,4,8,Secondary,Weekly
-RPB111,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,133,Yes,NA,NA,NA,Secondary,Weekly
-RPB112,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,30,Unemployed,124,Yes,10,10,9,Secondary,Weekly
-RPB132,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,300,Yes,8,5,4,Secondary,Weekly
-RPB133,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,34,Other,206,Yes,9,5,8,Secondary,Weekly
-RPB134,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,437,Yes,8,5,3,Secondary,Weekly
-RPB135,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,31,Other,479,Yes,8,5,4,Secondary,Weekly
-RPB136,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Part-time work,224,Yes,9,5,9,Secondary,Weekly
-RPB139,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,Other,447,Yes,6,4,3,Secondary,Weekly
-RPB140,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,29,Other,327,Yes,NA,NA,NA,Secondary,Weekly
-RPB124,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Full-time work,635,Yes,8,5,2,Tertiary,Weekly
-RPB125,Yes,No,Yes,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Other,430,Yes,8,6,9,Secondary,Weekly
-RPB04,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Other,153,Yes,9,6,3,Secondary,Weekly
-RPB06,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,308,Yes,10,5,4,Primary,Weekly
-RPB07,Yes,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,22,Unemployed,184,Yes,8,5,6,Secondary,Weekly
-RPB08,Yes,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,26,Other,317,Yes,6,3,1,Tertiary,Weekly
-RPB09,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Yes,Female,31,Unemployed,452,Yes,8,5,10,Primary,Weekly
-RPB10,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,Yes,No,No,Female,37,Unemployed,308,Yes,6,3,1,Secondary,Weekly
-RPB11,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,38,Part-time work,590,Yes,10,10,7,Secondary,Weekly
-RPB12,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,188,Yes,10,4,3,Secondary,Weekly
-RPB14,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,348,Yes,NA,NA,NA,Secondary,Weekly
-RPB15,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,216,Yes,6,4,8,Secondary,Weekly
-RPB42,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,26,Unemployed,288,Yes,5,3,1,Secondary,Weekly
-RPB44,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,29,Unemployed,165,Yes,7,3,2,Secondary,Weekly
-RPB46,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,226,Yes,7,3,3,Secondary,Weekly
-RPB48,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,34,Other,561,Yes,8,4,2,Secondary,Weekly
-RPB49,Yes,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Female,26,Unemployed,236,Yes,10,4,9,Secondary,Weekly
-RPB50,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,479,Yes,5,2,1,Tertiary,Weekly
-RPB51,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,31,Part-time work,311,Yes,5,3,2,Secondary,Weekly
-RPB52,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,26,Unemployed,353,Yes,6,4,3,Tertiary,Weekly
-RPB53,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,114,Yes,9,5,5,Secondary,Weekly
-RPB54,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,872,Yes,7,4,2,Primary,Weekly
-RPB55,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,881,Yes,8,8,6,Secondary,Weekly
-RPB57,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,388,Yes,4,2,1,Tertiary,Weekly
-RPB58,Yes,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,500,Yes,8,5,6,Primary,Weekly
-RPB59,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Female,34,Unemployed,452,Yes,6,3,3,Secondary,Weekly
-RPB60,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,26,Unemployed,340,Yes,NA,NA,NA,Secondary,Weekly
-RPB32,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,777,Yes,NA,NA,NA,Primary,Weekly
-RPB33,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Other,140,Yes,NA,NA,NA,Secondary,Weekly
-RPB34,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,673,Yes,6,5,2,Secondary,Weekly
-RPB35,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Part-time work,714,Yes,10,5,5,Secondary,Weekly
-RPB36,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,39,Unemployed,501,Yes,10,10,5,Secondary,Weekly
-RPB37,No,No,Yes,Yes,No,No,No,No,No,Yes,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,30,Other,233,Yes,7,5,3,Secondary,Weekly
-RPB38,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,30,Unemployed,360,Yes,5,2,4,Tertiary,Weekly
-RPB41,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,Female,27,Unemployed,379,Yes,8,3,10,Primary,Weekly
-RPB39,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,325,Yes,6,3,2,Primary,Weekly
-RPD08,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,154,Yes,NA,NA,NA,Secondary,Weekly
-RPD09,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,21,Unemployed,184,No,5,3,2,Secondary,Weekly
-RPD10,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,30,Other,173,No,6,4,2,Secondary,Weekly
-RPD11,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,24,Unemployed,274,Yes,9,5,10,Secondary,Weekly
-RPC11,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,281,Yes,8,4,2,Secondary,Weekly
-RPB16,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,659,Yes,NA,NA,NA,Secondary,Weekly
-RPC,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,115,No,10,10,8,Secondary,Weekly
-RPA11,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,220,Yes,6,4,2,Secondary,Weekly
-RPA12,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Other,275,Yes,5,3,3,Secondary,Weekly
-RPA13,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,35,Part-time work,72,Yes,5,3,1,Secondary,Weekly
-RPA14,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,32,Unemployed,109,Yes,10,6,4,Primary,Weekly
-RPA15,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,306,Yes,10,6,8,Secondary,Weekly
-RPA17,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Female,28,Other,313,Yes,9,9,5,Secondary,Weekly
-RPA18,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Other,203,Yes,NA,NA,NA,Secondary,Weekly
-RPA02,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,Yes,No,No,Female,30,Part-time work,146,Yes,10,6,3,Primary,Weekly
-RPA03,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,33,Part-time work,26,Yes,5,2,4,Secondary,Weekly
-RPA04,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Unemployed,176,Yes,5,5,2,Secondary,Weekly
-RPA05,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,149,Yes,9,4,4,Primary,Weekly
-RPA06,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,240,Yes,10,5,0,Secondary,Weekly
-RPA07,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,36,Yes,5,3,1,Primary,Weekly
-RPA09,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,29,Unemployed,155,Yes,6,3,2,Secondary,Weekly
-RPA10,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,22,Unemployed,181,Yes,9,5,3,Secondary,Weekly
-RPD01,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Other,173,No,7,4,3,Tertiary,Weekly
-RPD02,Yes,Yes,Yes,Yes,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,37,Part-time work,145,No,5,3,2,Secondary,Weekly
-RPD03,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,209,Yes,NA,NA,NA,Primary,Weekly
-RPD04,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,133,Yes,7,3,3,Tertiary,Weekly
-RPD06,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,152,No,6,4,1,Secondary,Weekly
-RPD07,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,25,Part-time work,295,No,8,8,8,Secondary,Weekly
-RPA19,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,24,Other,98,No,NA,NA,NA,Tertiary,Weekly
-RPA20,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,114,No,NA,NA,NA,Secondary,Weekly
-RPA21,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,58,Yes,NA,NA,NA,Secondary,Weekly
-RPA22,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,221,Yes,9,6,6,Secondary,Weekly
-RPC01,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,Yes,Yes,No,No,Yes,No,Yes,No,Yes,Yes,No,Yes,No,Yes,Female,34,Unemployed,101,No,8,4,5,Secondary,Weekly
-RPC02,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,32,Other,159,No,10,4,6,Secondary,Weekly
-RPC03,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,246,No,8,8,1,Secondary,Weekly
-RPC04,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Other,261,No,9,7,3,Secondary,Weekly
-RPC05,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,174,No,9,5,3,Secondary,Weekly
-RPC06,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,Yes,Yes,No,No,No,Female,34,Unemployed,192,No,8,5,5,Secondary,Weekly
-RPB141,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,165,Yes,7,5,3,Secondary,Weekly
-RPB142,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,20,Other,202,Yes,NA,NA,NA,Tertiary,Weekly
-RPB143,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,29,Unemployed,165,Yes,NA,NA,NA,Secondary,Weekly
-RPB144,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,213,Yes,8,5,5,NA,Weekly
-RPB17,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Part-time work,596,Yes,NA,NA,NA,Tertiary,Weekly
-RPB19,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,Unemployed,1040,Yes,6,4,5,Secondary,Weekly
-RPB20,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Unemployed,382,Yes,9,5,3,Secondary,Weekly
-RPB21,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,Yes,No,Yes,No,No,No,No,No,Female,30,Unemployed,487,Yes,7,5,4,Secondary,Weekly
-RPC07,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,24,Other,175,No,7,4,5,Secondary,Weekly
-RPC08,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,28,Full-time work,213,No,7,3,1,Tertiary,Weekly
-RPC10,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,29,Part-time work,174,Yes,5,2,2,Secondary,Weekly
-RPC12,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Unemployed,166,No,9,6,5,Primary,Weekly
-RPC14,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Other,NA,No,9,8,5,Tertiary,Weekly
-RPC15,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,23,Unemployed,305,No,NA,NA,NA,Secondary,Weekly
-RPB88,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,20,Unemployed,191,Yes,9,4,3,Secondary,Weekly
-RPB89,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Unemployed,667,Yes,9,9,5,Secondary,Weekly
-RPB90,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Part-time work,1032,Yes,NA,NA,NA,Secondary,Weekly
-RPB93,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,32,Other,301,Yes,9,5,1,Tertiary,Weekly
-RPB94,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Other,774,Yes,NA,NA,NA,Secondary,Weekly
-RPB95,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,54,Yes,NA,NA,NA,NA,Weekly
-RPB98,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Unemployed,187,Yes,NA,NA,NA,Secondary,Weekly
-RPB99,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,249,Yes,8,4,6,Secondary,Weekly
-RPB100,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,576,Yes,7,3,3,Secondary,Weekly
-RPA01,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,32,Part-time work,170,Yes,4,2,5,Primary,Weekly
-RPB113,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,Yes,No,No,No,No,Yes,Female,32,Other,560,Yes,9,6,9,Secondary,Weekly
-RPB114,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,262,Yes,NA,NA,NA,Secondary,Weekly
-RPB116,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Full-time work,484,Yes,8,5,4,Tertiary,Weekly
-RPB117,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,385,Yes,10,5,4,Secondary,Weekly
-RPB118,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,40,Unemployed,NA,Yes,7,5,10,Primary,Weekly
-RPB119,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,212,Yes,9,9,8,Primary,Weekly
-RPB120,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,266,Yes,9,6,6,Tertiary,Weekly
-RPB121,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,282,Yes,9,6,2,Secondary,Weekly
-RPB122,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Unemployed,50,Yes,10,6,8,Secondary,Weekly
-RPB123,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,NA,Yes,9,5,4,Tertiary,Weekly
-RPB40,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,NA,Yes,4,4,3,Secondary,Weekly
-RPB22,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Other,360,Yes,6,4,2,Tertiary,Weekly
-RPB23,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,23,Unemployed,245,Yes,5,2,5,Secondary,Weekly
-RPB24,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,20,Unemployed,700,Yes,NA,NA,NA,Secondary,Weekly
-RPB25,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,39,Unemployed,237,Yes,7,3,2,Secondary,Weekly
-RPB26,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Unemployed,502,Yes,8,4,8,Secondary,Weekly
-RPB27,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,310,Yes,6,2,2,Secondary,Weekly
-RPB28,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,911,Yes,9,3,0,Secondary,Weekly
-RPB29,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,24,Unemployed,281,Yes,8,5,4,Secondary,Weekly
-RPB30,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,170,Yes,8,5,9,Secondary,Weekly
-RPB31,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,38,Other,282,Yes,8,7,5,Secondary,Weekly
-STIG01,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,50,Full-time work,NA,Yes,8,3,3,Primary,Weekly
-STIG02,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Unemployed,291,Yes,9,4,6,Tertiary,Weekly
-STIG03,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,26,Unemployed,1138,Yes,6,3,0,Secondary,Weekly
-STIG04,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Female,58,Full-time work,1092,Yes,9,4,3,Primary,Weekly
-STIG05,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,34,Full-time work,906,Yes,8,5,3,Secondary,Weekly
-STIG06,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,45,Other,236,Yes,8,6,5,Tertiary,Weekly
-STIG07,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,55,Full-time work,232,Yes,9,5,6,Tertiary,Weekly
-STIG08,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Unemployed,288,Yes,8,6,7,Secondary,Weekly
-STIG09,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Male,51,Unemployed,295,Yes,10,8,8,Tertiary,Weekly
-STIG10,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,48,Unemployed,442,Yes,8,4,6,Primary,Weekly
-STIG11,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,461,Yes,8,2,4,Tertiary,Weekly
-STIG12,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Full-time work,291,Yes,7,3,3,Tertiary,Weekly
-STIG13,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Female,49,Part-time work,533,Yes,6,2,2,Secondary,Weekly
-STIG14,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,46,Full-time work,616,Yes,7,3,1,Primary,Weekly
-STIG15,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,65,Unemployed,440,Yes,8,7,8,Secondary,Weekly
-STIG16,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,39,Full-time work,NA,Yes,9,4,2,Tertiary,Weekly
-STIG17,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,50,Unemployed,330,Yes,10,7,3,Secondary,Weekly
-STIG18,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,63,Unemployed,223,Yes,7,6,5,NA,Weekly
-STIG19,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,44,Unemployed,NA,Yes,8,8,8,Secondary,Weekly
-STIG20,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Part-time work,NA,Yes,10,5,4,Tertiary,Weekly
-STIG21,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,NA,Yes,8,3,1,Tertiary,Weekly
-STIG22,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,44,Full-time work,NA,Yes,8,6,6,Secondary,Weekly
-STIG23,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,40,Full-time work,620,Yes,8,7,5,Secondary,Weekly
-STIG24,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,37,Full-time work,NA,Yes,9,8,7,Secondary,Weekly
-STIG25,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,58,Part-time work,NA,Yes,6,4,6,NA,Weekly
-STIG26,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,57,Full-time work,NA,Yes,7,5,6,Primary,Weekly
-STIG27,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Male,41,Full-time work,NA,Yes,5,3,4,Tertiary,Weekly
-STIG28,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,51,Unemployed,NA,Yes,8,7,3,Secondary,Weekly
-STIG29,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,57,Unemployed,NA,Yes,6,3,2,Primary,Weekly
-STIG30,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,43,Unemployed,NA,Yes,10,8,8,Secondary,Weekly
-STIG31,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,54,Full-time work,583,Yes,8,6,6,Secondary,Weekly
-STIG32,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Part-time work,NA,Yes,8,2,5,Secondary,Weekly
-STIG33,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,NA,Yes,8,3,3,Secondary,Weekly
-STIG34,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,48,Part-time work,NA,Yes,4,1,0,Tertiary,Weekly
-STIG35,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,421,Yes,5,1,4,Secondary,Weekly
-STIG36,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,Yes,No,No,Female,55,Full-time work,429,Yes,9,6,9,Secondary,Weekly
-STIG37,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,36,Unemployed,NA,Yes,5,2,3,Primary,Weekly
-STIG38,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,53,Full-time work,NA,NA,7,4,7,Secondary,Weekly
-STIG39,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,50,Part-time work,NA,Yes,10,4,10,Primary,Weekly
-STIG40,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,40,Full-time work,NA,Yes,4,2,2,Secondary,Weekly
-STIG41,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,Female,32,Full-time work,1086,Yes,7,3,0,Tertiary,Weekly
-STIG42,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,48,Unemployed,NA,Yes,10,5,10,Secondary,Weekly
-STIG43,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,50,Full-time work,415,Yes,7,3,7,Tertiary,Weekly
-STIG44,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,53,Part-time work,NA,Yes,7,3,3,Secondary,Weekly
-STIG45,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,44,Unemployed,NA,Yes,7,3,7,Secondary,Weekly
-STIG46,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,54,Unemployed,50,Yes,10,4,5,Secondary,Weekly
-STIG47,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,59,Unemployed,NA,Yes,10,5,8,Primary,Weekly
-STIG48,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,39,Full-time work,60,Yes,9,6,8,Secondary,Weekly
-STIG49,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,579,Yes,8,4,4,Secondary,Weekly
-STIG50,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Full-time work,498,Yes,9,2,5,Secondary,Weekly
-RESI01,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,35,Full-time work,21,Yes,8,3,8,Secondary,Weekly
-RESI02,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,Yes,No,No,No,Yes,Female,44,Unemployed,894,Yes,6,6,4,Secondary,Weekly
-RESI03,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Male,38,Part-time work,465,Yes,9,5,7,Tertiary,Weekly
-RESI04,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Full-time work,576,Yes,10,7,3,Secondary,Weekly
-RESI05,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,Yes,Yes,No,Yes,No,Yes,Male,59,Unemployed,827,Yes,7,4,4,Primary,Weekly
-RESI06,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,59,Unemployed,NA,Yes,5,3,2,Secondary,Weekly
-RESI07,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,Female,35,Unemployed,20,Yes,9,2,3,Secondary,Weekly
-RESI09,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,34,Part-time work,7300,Yes,7,4,2,Primary,Weekly
-RESI35,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Full-time work,682,Yes,7,3,0,Secondary,Weekly
-RESI45,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,No,No,Female,45,Unemployed,209,Yes,8,3,3,Secondary,Weekly
-RESI21,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,34,Part-time work,NA,Yes,3,0,1,Secondary,Weekly
-RESI23,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,47,Unemployed,386,Yes,10,4,5,Secondary,Weekly
-RESI31,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Unemployed,NA,Yes,10,2,0,Tertiary,Weekly
-RESI34,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,49,Full-time work,NA,No,5,1,0,NA,Weekly
-RESI36,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,No,No,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,No,No,Female,50,Unemployed,416,Yes,7,4,6,Secondary,Weekly
-RESI37,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,Female,32,Full-time work,263,Yes,7,4,0,Secondary,Weekly
-RESI40,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,42,Unemployed,286,Yes,9,6,6,Secondary,Weekly
-RESI44,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Female,41,Full-time work,441,Yes,8,5,10,Secondary,Weekly
-RESI52,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,45,Unemployed,NA,Yes,8,4,5,Primary,Weekly
-RESI61,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Unemployed,30,Yes,6,3,5,Secondary,Weekly
-RESI62,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Female,37,Part-time work,312,Yes,9,4,4,Secondary,Weekly
-RESI64,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Male,55,Full-time work,216,Yes,5,3,3,Primary,Weekly
-RESI66,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,57,Full-time work,30,No,10,4,2,Secondary,Weekly
-RESI67,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,34,Unemployed,97,Yes,8,3,0,Tertiary,Weekly
-RESI69,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Male,48,Part-time work,1000,Yes,4,2,2,Secondary,Weekly
-RESI71,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Full-time work,NA,Yes,10,6,3,Secondary,Weekly
-RESI72,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,Female,48,Unemployed,552,Yes,8,3,0,Secondary,Weekly
-RESI74,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Male,41,Part-time work,257,Yes,7,5,5,Secondary,Weekly
-RESI73,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,50,Full-time work,617,Yes,7,3,6,Secondary,Weekly
-RESI75,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,41,Part-time work,46,Yes,5,2,0,Primary,Weekly
-RESI76,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Part-time work,258,Yes,8,4,4,Secondary,Weekly
-RESI77,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Unemployed,227,Yes,7,2,8,Secondary,Weekly
-RESI78,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,30,Full-time work,1230,Yes,7,2,3,Secondary,Weekly
-RESI82,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,19,Other,405,Yes,8,3,4,Secondary,Weekly
-RESI86,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,46,Full-time work,442,Yes,7,4,3,Secondary,Weekly
-RESI89,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,61,Unemployed,476,Yes,8,3,0,Primary,Weekly
-RESI90,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,50,Part-time work,653,Yes,10,3,0,NA,Weekly
-RESI92,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,35,Full-time work,299,Yes,9,3,5,Secondary,Weekly
-RESI93,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,63,Full-time work,676,Yes,6,4,2,Primary,Weekly
-RESI97,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,64,Unemployed,567,Yes,7,2,1,Primary,Weekly
-RESI98,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,42,Unemployed,274,Yes,10,5,0,Secondary,Weekly
-RESI100,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,42,Full-time work,785,Yes,8,4,5,Secondary,Weekly
-RESI102,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,Female,33,Full-time work,1232,Yes,9,4,0,Tertiary,Weekly
-RESI105,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,Male,49,Unemployed,505,Yes,8,2,4,Primary,Weekly
-RESI112,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,40,Full-time work,381,Yes,5,2,3,Tertiary,Weekly
-RESI115,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Female,33,Full-time work,575,No,10,7,7,Tertiary,Weekly
-RESI116,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,Yes,Male,27,Full-time work,306,Yes,8,5,4,Tertiary,Weekly
-RESI117,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Unemployed,245,Yes,8,2,0,Primary,Weekly
-RESI120,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,39,Unemployed,NA,Yes,6,3,7,Secondary,Weekly
-RESI122,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,35,Unemployed,11,Yes,8,5,6,Secondary,Weekly
-RESI124,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,642,Yes,8,2,5,Secondary,Weekly
-RESI127,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,46,Unemployed,NA,NA,8,2,7,Secondary,Weekly
-RESI129,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,Female,38,Unemployed,NA,Yes,9,4,3,Secondary,Weekly
-RESI130,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,Male,44,Unemployed,649,Yes,8,4,10,Secondary,Weekly
-RESI131,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,213,Yes,5,1,0,Tertiary,Weekly
-RESI132,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,30,Part-time work,496,Yes,8,4,3,Primary,Weekly
-RESI133,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,Female,58,Unemployed,789,Yes,10,8,8,Secondary,Weekly
-RESI134,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Male,44,Full-time work,NA,Yes,7,6,3,Secondary,Weekly
-RESI135,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,Female,48,Full-time work,NA,Yes,8,2,0,Tertiary,Weekly
-RESI136,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Female,45,Unemployed,662,Yes,6,3,0,Tertiary,Weekly
-RESI139,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,44,Full-time work,966,Yes,6,2,5,Secondary,Weekly
-RESI140,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,Yes,No,No,Female,55,Unemployed,663,Yes,9,2,7,NA,Weekly
-RESI141,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Part-time work,219,Yes,8,5,9,Primary,Weekly
-RESI143,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,49,Unemployed,NA,Yes,5,2,2,Secondary,Weekly
-RESI144,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,52,Unemployed,751,Yes,6,3,0,Secondary,Weekly
-RESI146,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,59,Full-time work,689,Yes,7,6,3,Secondary,Weekly
-RESI148,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,Male,42,Full-time work,107,Yes,5,2,5,Secondary,Weekly
-RESI150,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,51,Full-time work,NA,Yes,8,3,2,Secondary,Weekly
-RESI151,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Unemployed,176,Yes,6,2,4,Secondary,Weekly
-RESI152,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Male,55,Unemployed,NA,Yes,6,1,1,Secondary,Weekly
-RESI153,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,46,Full-time work,964,Yes,8,4,7,Secondary,Weekly
-RESI154,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Yes,Yes,No,No,No,Female,34,Full-time work,844,Yes,9,6,5,Tertiary,Weekly
-RESI155,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,56,Part-time work,723,Yes,8,6,5,Secondary,Weekly
-RESI156,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,66,Unemployed,458,Yes,10,6,9,Primary,Weekly
-RESI159,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Male,49,Unemployed,385,Yes,9,3,0,Secondary,Weekly
-RESI161,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,43,Unemployed,NA,Yes,7,5,7,Secondary,Weekly
-RESI162,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,Yes,No,No,Female,37,Unemployed,540,Yes,10,5,7,Tertiary,Weekly
-RESI163,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,51,Unemployed,NA,Yes,8,4,7,Primary,Weekly
-RESI164,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,50,Unemployed,578,Yes,9,7,3,Secondary,Weekly
-RESI165,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,46,Unemployed,673,Yes,10,5,7,Secondary,Weekly
-RESI167,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,42,Part-time work,671,Yes,8,4,2,Secondary,Weekly
-RESI168,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,45,Full-time work,113,Yes,8,3,8,Secondary,Weekly
-RESI170,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Male,59,Part-time work,357,Yes,8,3,5,NA,Weekly
-RESI173,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,40,Unemployed,605,Yes,10,7,7,Secondary,Weekly
-RESI178,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,Yes,No,No,Male,35,Full-time work,256,Yes,8,3,3,Secondary,Weekly
-RESI18,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,31,Unemployed,206,Yes,7,1,10,Secondary,Weekly
-RESI185,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,41,Unemployed,210,Yes,8,3,4,Primary,Weekly
-RESI186,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,46,Full-time work,295,Yes,6,2,3,Secondary,Weekly
-RESI187,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Male,34,Unemployed,258,Yes,10,5,3,Primary,Weekly
-RESI189,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,56,Full-time work,482,Yes,8,4,6,Tertiary,Weekly
-RESI191,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,35,Unemployed,285,Yes,7,3,5,Secondary,Weekly
-RESI192,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,49,Part-time work,397,Yes,10,5,4,Tertiary,Weekly
-RESI193,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,Male,57,Full-time work,575,Yes,9,0,6,Primary,Weekly
-RESI194,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,45,Full-time work,162,Yes,5,1,2,Secondary,Weekly
-RESI195,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,40,Part-time work,181,Yes,8,6,4,Primary,Weekly
-RESI196,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,50,Full-time work,257,Yes,5,1,3,Primary,Weekly
-RESI197,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,49,Unemployed,333,Yes,4,2,2,Secondary,Weekly
-RESI198,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Full-time work,319,Yes,5,2,2,Tertiary,Weekly
-DD1,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Part-time work,NA,Yes,8,4,6,Secondary,Weekly
-DD2,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Female,40,Unemployed,339,Yes,8,2,6,Secondary,Weekly
-DD4,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,36,Full-time work,177,Yes,5,1,0,Secondary,Weekly
-DD5,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,58,Unemployed,392,Yes,7,10,5,Primary,Weekly
-DD6,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,NA,Yes,7,2,2,Secondary,Weekly
-DD7,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,Female,32,Unemployed,295,Yes,8,3,9,Secondary,Weekly
-DD8,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Unemployed,227,Yes,7,3,3,Secondary,Weekly
-DD9,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,37,Full-time work,667,Yes,10,3,0,Secondary,Weekly
-DD10,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,46,Unemployed,386,Yes,10,5,0,Secondary,Weekly
-DD11,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,474,Yes,9,3,9,Secondary,Weekly
-DD12,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Full-time work,682,Yes,0,0,0,Secondary,Weekly
-DD14,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No,Female,34,Part-time work,450,Yes,10,3,2,Primary,Weekly
-DD15,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Part-time work,258,Yes,6,3,0,Secondary,Weekly
-DD16,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,496,Yes,7,3,0,Secondary,Weekly
-DD17,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,43,Full-time work,354,Yes,10,3,3,Secondary,Weekly
-DD19,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,NA,Yes,9,3,0,Secondary,Weekly
-DD20,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,35,Unemployed,NA,Yes,8,4,5,Tertiary,Weekly
-DD23,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Male,41,Part-time work,256,Yes,10,2,6,Secondary,Weekly
-DD24,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Female,44,Full-time work,226,Yes,6,3,3,Secondary,Weekly
-DD25,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Full-time work,NA,Yes,10,2,2,Secondary,Weekly
-DD26,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,41,Unemployed,NA,Yes,5,1,0,Primary,Weekly
-DD27,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,97,Yes,6,3,0,Tertiary,Weekly
-DD30,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Female,39,Unemployed,NA,Yes,10,4,10,Primary,Weekly
-DD31,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,42,Part-time work,443,Yes,6,2,6,Primary,Weekly
-DD32,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Full-time work,145,Yes,5,2,1,Secondary,Weekly
-DD33,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,42,Unemployed,274,Yes,10,4,0,Tertiary,Weekly
-DD34,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,42,Full-time work,785,Yes,8,3,2,Secondary,Weekly
-DD35,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,642,Yes,8,2,5,Secondary,Weekly
-DD37,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,27,Full-time work,NA,Yes,7,3,1,Tertiary,Weekly
-DD39,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,40,Full-time work,840,Yes,8,3,0,Tertiary,Weekly
-DD40,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Female,38,Unemployed,NA,Yes,7,2,5,Secondary,Weekly
-DD41,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,Male,44,Unemployed,649,Yes,8,5,9,Secondary,Weekly
-DD43,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Male,40,Unemployed,NA,Yes,5,2,10,NA,Weekly
-DD44,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,38,Unemployed,741,Yes,9,4,4,Secondary,Weekly
-DD46,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,44,Full-time work,NA,Yes,8,2,6,Secondary,Weekly
-DD48,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,40,Full-time work,381,Yes,7,2,0,Tertiary,Weekly
-DD49,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,49,Unemployed,NA,Yes,7,3,5,Secondary,Weekly
-DD50,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Male,39,Full-time work,107,Yes,10,3,9,NA,Weekly
-DD51,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,43,Unemployed,NA,No,7,2,7,Secondary,Weekly
-DD52,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,41,Unemployed,210,Yes,5,1,2,Primary,Weekly
-DD53,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,Male,50,Unemployed,578,Yes,9,3,4,Secondary,Weekly
-DD54,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,35,Full-time work,256,Yes,7,3,3,Secondary,Weekly
-DD55,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,35,Unemployed,NA,Yes,7,3,3,Secondary,Weekly
-DD56,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,34,Unemployed,258,Yes,10,5,3,Secondary,Weekly
-DD57,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,49,Unemployed,333,Yes,5,2,3,Secondary,Weekly
-DD58,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,33,Unemployed,16,Yes,6,4,6,Secondary,Weekly
-DD60,Yes,Yes,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,44,Full-time work,63,Yes,8,4,8,Secondary,Weekly
-DD61,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,43,Part-time work,368,Yes,6,4,4,Tertiary,Weekly
-DD62,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,NA,Yes,9,6,10,Secondary,Weekly
-DD63,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,364,Yes,8,2,8,Secondary,Weekly
-DD64,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,Female,48,Unemployed,543,Yes,10,5,4,Tertiary,Weekly
-DD65,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,41,Unemployed,NA,Yes,6,2,9,Primary,Weekly
-DD66,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Unemployed,760,Yes,8,3,2,Primary,Weekly
-DD68,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,46,Unemployed,1090,Yes,6,3,9,Secondary,Weekly
-DD69,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,34,Full-time work,464,Yes,7,5,3,Secondary,Weekly
-DD70,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,31,Unemployed,1095,Yes,5,3,3,Secondary,Weekly
-RESI183,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,31,Unemployed,325,Yes,7,1,10,Secondary,Weekly
-DD42,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,42,Unemployed,NA,Yes,7,2,6,Secondary,Weekly
-DD38,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,33,Full-time work,575,No,8,1,5,Tertiary,Weekly
-DD36,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Other,245,Yes,10,4,9,Primary,Weekly
-DD45,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,30,Unemployed,NA,Yes,5,2,0,Secondary,Weekly
-NM0005,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,47,Full-time work,209,Yes,4,4,2,Secondary,Monthly
-NM0006,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,35,Full-time work,329,Yes,5,5,5,Secondary,Monthly
-NM0007,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Female,28,Unemployed,196,Yes,5,5,6,Secondary,Monthly
-NM0009,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Female,47,Part-time work,338,No,6,6,3,Primary,Monthly
-NM0010,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Full-time work,69,No,10,8,9,Secondary,Monthly
-NM0011,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,31,Unemployed,19,Yes,3,3,3,Secondary,Monthly
-NM0012,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,NA,Yes,3,5,2,Secondary,Monthly
-NM0013,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,50,Other,2000,Yes,NA,0,0,Primary,Monthly
-NM0014,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Female,26,Unemployed,1,Yes,0,NA,0,Secondary,Monthly
-NM0015,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,30,Unemployed,110,Yes,4,2,4,Secondary,Monthly
-NM0017,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,28,Full-time work,61,Yes,5,4,0,Tertiary,Monthly
-NM0023,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,Yes,Yes,No,Yes,No,No,Male,37,Full-time work,5,Yes,5,5,5,Secondary,Monthly
-NM0025,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Full-time work,228,Yes,3,3,3,Tertiary,Monthly
-NM0026,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,42,Unemployed,144,Yes,10,10,2,Secondary,Monthly
-NM0027,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,Female,36,Unemployed,84,No,4,0,0,Secondary,Monthly
-NM0029,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,47,Unemployed,248,Yes,10,5,0,Primary,Monthly
-NM0030,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,35,Full-time work,12,Yes,7,3,7,Secondary,Monthly
-NM0031,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,200,Yes,8,6,6,Secondary,Monthly
-NM0034,Yes,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,40,Part-time work,287,No,2,1,3,Secondary,Monthly
-NM0035,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Full-time work,NA,Yes,5,5,7,Secondary,Monthly
-NM0036,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,36,Unemployed,147,Yes,10,10,6,Secondary,Monthly
-NM0037,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Female,29,Unemployed,298,No,6,3,4,Secondary,Monthly
-NM0039,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,43,Unemployed,231,Yes,10,2,6,Secondary,Monthly
-NM0040,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,35,Full-time work,4,Yes,10,10,10,Secondary,Monthly
-NM0002,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Male,35,Unemployed,35,Yes,10,2,0,Secondary,Monthly
-NM0056,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,37,Unemployed,338,Yes,8,9,2,Secondary,Monthly
-NM0057,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,23,Unemployed,18,Yes,4,3,0,Tertiary,Monthly
-NM0058,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,58,Full-time work,NA,Yes,8,5,8,NA,Monthly
-NM0059,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,200,Yes,10,1,0,Secondary,Monthly
-NM0050,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,309,No,10,10,5,Secondary,Monthly
-NM0051,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Male,39,Unemployed,308,No,7,2,3,Primary,Monthly
-NM0053,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Male,30,Unemployed,150,Yes,0,5,1,Secondary,Monthly
-NM0055,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,56,Unemployed,159,Yes,6,2,1,Secondary,Monthly
-NM0041,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Unemployed,118,No,8,8,4,Secondary,Monthly
-NM0042,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,202,Yes,0,0,0,Secondary,Monthly
-NM0043,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,Yes,Female,31,Unemployed,247,Yes,10,10,9,Secondary,Monthly
-NM0044,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,Yes,No,No,Female,38,Unemployed,101,Yes,10,9,9,Primary,Monthly
-NM0048,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,8,Yes,5,3,0,Primary,Monthly
-NM0062,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,27,Full-time work,300,Yes,8,8,5,Tertiary,Monthly
-NM0064,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,61,Yes,4,1,2,Secondary,Monthly
-NM0065,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Male,45,Unemployed,200,Yes,8,5,0,Secondary,Monthly
-NM0066,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,53,Yes,4,0,5,Secondary,Monthly
-NM0067,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Full-time work,7,Yes,10,4,0,Secondary,Monthly
-NM0068,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Male,44,Unemployed,NA,Yes,8,4,2,Primary,Monthly
-NM0070,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,30,Full-time work,426,No,3,0,1,Secondary,Monthly
-NM0072,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,41,Full-time work,250,No,4,1,1,Secondary,Monthly
-NM0073,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,Female,32,Full-time work,400,No,8,1,7,Secondary,Monthly
-NM0075,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,41,Full-time work,316,No,6,5,4,Secondary,Monthly
-NM0076,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,No,No,Female,34,Unemployed,494,Yes,10,0,10,Tertiary,Monthly
-NM0077,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,43,Unemployed,170,Yes,5,0,0,NA,Monthly
-NM0078,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Unemployed,1,Yes,10,6,9,Secondary,Monthly
-NM0079,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,43,Unemployed,NA,Yes,5,0,0,Primary,Monthly
-NM0080,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Unemployed,94,Yes,7,2,4,Secondary,Monthly
-NM0081,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,110,No,4,3,0,Tertiary,Monthly
-NM0082,Yes,No,Yes,Yes,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,34,Full-time work,130,Yes,10,0,0,Secondary,Monthly
-NM0085,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,35,Unemployed,285,Yes,4,10,6,Secondary,Monthly
-NM0086,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,40,Unemployed,NA,Yes,6,3,1,NA,Monthly
-NM0087,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,44,Unemployed,NA,Yes,9,2,0,NA,Monthly
-NM0089,Yes,Yes,Yes,Yes,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Male,45,Part-time work,57,Yes,10,5,10,Secondary,Monthly
-NM0090,Yes,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,55,Unemployed,NA,Yes,2,1,0,Secondary,Monthly
-NM0091,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,52,Unemployed,NA,No,3,2,0,Secondary,Monthly
-NM0092,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,25,Unemployed,152,Yes,5,3,4,Tertiary,Monthly
-NM0093,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Male,47,Unemployed,NA,Yes,3,0,1,Secondary,Monthly
-NM0095,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,Female,24,Unemployed,432,No,3,0,0,Secondary,Monthly
-NM0096,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Unemployed,NA,NA,10,0,0,Secondary,Monthly
-NM0097,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,NA,308,No,3,2,0,Secondary,Monthly
-NM0098,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,Full-time work,NA,Yes,9,5,5,Primary,Monthly
-NM0100,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Yes,Yes,Yes,No,Yes,Female,36,Unemployed,200,Yes,10,10,10,Primary,Monthly
-NM0101,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Female,35,Unemployed,172,No,10,4,7,Primary,Monthly
-NM0102,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,48,Unemployed,NA,Yes,3,1,3,Primary,Monthly
-NM0104,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Female,53,Unemployed,NA,Yes,10,0,7,Secondary,Monthly
-NM0106,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,36,Yes,5,1,3,Secondary,Monthly
-NM0107,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,4,Yes,6,0,0,Secondary,Monthly
-NM0108,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,Female,39,Full-time work,47,No,7,1,0,Secondary,Monthly
-NM0110,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Male,49,Unemployed,27,Yes,5,2,2,Secondary,Monthly
-NM0111,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,29,Unemployed,56,Yes,9,4,2,Secondary,Monthly
-NM0112,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,52,Unemployed,174,Yes,9,3,0,Secondary,Monthly
-NM0113,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,39,Unemployed,364,No,6,2,2,Primary,Monthly
-NM0114,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,154,Yes,10,4,7,Secondary,Monthly
-NM0119,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,36,Full-time work,19,Yes,2,2,0,NA,Monthly
-NM0120,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Unemployed,120,Yes,5,0,7,Secondary,Monthly
-NM0122,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,32,Unemployed,315,Yes,5,2,6,Primary,Monthly
-NM0124,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,35,Full-time work,88,Yes,7,4,2,Primary,Monthly
-NM0128,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,21,Unemployed,17,No,10,2,1,Secondary,Monthly
-NM0129,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,20,Unemployed,238,No,8,6,8,Secondary,Monthly
-NM0130,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,37,Unemployed,334,No,9,5,6,Secondary,Monthly
-NM0133,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Female,40,Unemployed,226,No,10,3,1,NA,Monthly
-NM0134,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,Yes,No,No,Female,26,Unemployed,637,No,5,2,5,Secondary,Monthly
-NM0136,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,Female,58,Unemployed,106,Yes,10,2,0,Secondary,Monthly
-NM0138,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,37,Unemployed,50,Yes,4,2,1,Secondary,Monthly
-NM0143,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,44,Unemployed,159,Yes,6,2,5,Secondary,Monthly
-NM0146,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,18,No,10,0,10,Secondary,Monthly
-NM0147,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,109,Yes,6,3,4,Secondary,Monthly
-NM0149,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,37,Unemployed,132,Yes,10,10,8,Secondary,Monthly
-NM0150,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Full-time work,103,Yes,5,2,0,Secondary,Monthly
-NM0151,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,42,Unemployed,184,Yes,6,3,10,Secondary,Monthly
-NM0152,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,Female,38,Full-time work,101,Yes,10,1,3,Secondary,Monthly
-NM0153,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,32,Unemployed,321,No,10,4,0,Secondary,Monthly
-NM0154,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,44,Full-time work,334,No,6,1,0,Secondary,Monthly
-NM0155,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,65,Yes,7,3,0,Secondary,Monthly
-NM0158,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,171,No,7,2,7,Secondary,Monthly
-NM0159,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,30,Unemployed,440,No,6,3,1,Secondary,Monthly
-NM0160,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Part-time work,802,No,6,3,7,Secondary,Monthly
-NM0161,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,No,Female,41,Unemployed,372,No,10,3,10,Primary,Monthly
-NM0162,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,43,Unemployed,381,No,9,9,9,Primary,Monthly
-NM0165,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,45,Unemployed,340,Yes,2,2,0,Primary,Monthly
-NM0166,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,NA,NA,3,3,2,Secondary,Monthly
-NM0167,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Unemployed,235,Yes,1,1,1,Primary,Monthly
-NM0169,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,43,Unemployed,154,Yes,10,5,8,Secondary,Monthly
-NM0172,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,200,NA,10,3,4,Primary,Monthly
-NM0173,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,41,Unemployed,182,No,4,3,5,Secondary,Monthly
-NM0174,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,Unemployed,155,Yes,3,0,0,Primary,Monthly
-NM0176,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,44,Unemployed,196,Yes,4,2,0,Secondary,Monthly
-NM0177,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,Male,34,Unemployed,129,Yes,5,2,5,Secondary,Monthly
-NM0178,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,Male,45,Full-time work,150,Yes,6,3,2,Secondary,Monthly
-NM0179,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,67,Unemployed,117,Yes,5,2,1,Primary,Monthly
-NM0180,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,39,Full-time work,NA,Yes,2,1,1,NA,Monthly
-NM0181,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,Female,34,Full-time work,55,Yes,6,3,3,Secondary,Monthly
-NM0182,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,24,Unemployed,2,Yes,1,0,1,Secondary,Monthly
-NM1503,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,61,Yes,2,2,0,Secondary,Monthly
-NM1506,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Unemployed,72,Yes,1,1,1,Secondary,Monthly
-NM1509,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Full-time work,85,Yes,10,10,7,Secondary,Monthly
-NM1500,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,42,NA,109,Yes,5,5,5,Primary,Monthly
-NM1512,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,45,Full-time work,302,No,10,10,3,Primary,Monthly
-NM1513,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,6,Yes,10,10,0,Secondary,Monthly
-NM1514,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Full-time work,157,No,5,5,5,Secondary,Monthly
-NM1517,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Full-time work,194,Yes,4,4,0,Primary,Monthly
-NM1518,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Full-time work,367,No,10,10,0,Secondary,Monthly
-NM1519,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Full-time work,471,No,5,5,5,Secondary,Monthly
-NM1520,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Full-time work,480,No,4,4,0,Secondary,Monthly
-NM1524,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,No,Female,28,Full-time work,112,Yes,10,1,10,Secondary,Monthly
-NM1525,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,48,Full-time work,159,Yes,4,1,0,Primary,Monthly
-NM6030,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Part-time work,289,No,10,9,10,Secondary,Monthly
-NM6029,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,35,Unemployed,236,No,8,8,10,Secondary,Monthly
-NM6028,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Male,41,Unemployed,40,No,10,0,0,Primary,Monthly
-NM6026,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,45,Unemployed,855,No,10,7,10,Primary,Monthly
-NM6025,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,Female,37,Unemployed,388,No,10,9,10,Secondary,Monthly
-NM6024,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,36,Unemployed,963,No,10,5,10,Primary,Monthly
-NM6023,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,278,No,10,1,0,Secondary,Monthly
-NM6022,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Female,35,NA,478,No,10,4,0,Secondary,Monthly
-NM6021,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,53,Unemployed,187,Yes,10,5,10,NA,Monthly
-NM6020,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,NA,No,10,9,10,Primary,Monthly
-NM6019,Yes,No,Yes,Yes,No,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Male,34,NA,31,Yes,10,4,6,NA,Monthly
-NM6018,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,32,NA,125,Yes,7,0,0,Primary,Monthly
-NM6017,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,34,NA,12,Yes,4,2,1,Secondary,Monthly
-NM6016,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,42,NA,225,No,10,4,6,NA,Monthly
-NM6015,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Male,29,NA,NA,No,10,8,4,Secondary,Monthly
-NM6014,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Full-time work,315,No,10,1,1,Secondary,Monthly
-NM6001,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,NA,360,Yes,10,1,0,Primary,Monthly
-NM6002,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,63,NA,960,No,10,9,10,NA,Monthly
-NM6000,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,38,NA,251,No,7,6,9,Secondary,Monthly
-NM6004,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,28,NA,48,Yes,6,4,4,Secondary,Monthly
-NM6005,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Part-time work,84,Yes,10,5,7,NA,Monthly
-NM6007,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,25,NA,303,No,10,10,10,Secondary,Monthly
-NM6008,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Male,76,NA,415,No,10,5,9,NA,Monthly
-NM6010,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,41,Part-time work,NA,Yes,10,4,3,Primary,Monthly
-NM6012,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Male,45,NA,458,No,10,5,10,Secondary,Monthly
-NM6013,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,40,NA,89,No,8,5,10,Primary,Monthly
-NM6031,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Female,55,NA,633,No,10,3,10,NA,Monthly
-NM6032,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,NA,410,No,8,6,9,Primary,Monthly
-NM6033,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Female,58,NA,184,Yes,7,3,3,NA,Monthly
-NM6034,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,43,NA,341,No,8,8,8,NA,Monthly
-NM6035,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,38,NA,128,Yes,10,5,5,Secondary,Monthly
-NM6037,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,25,NA,299,No,10,5,3,Secondary,Monthly
-NM6038,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Full-time work,376,No,5,2,0,Secondary,Monthly
-NM6039,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Male,41,NA,380,Yes,7,3,3,Secondary,Monthly
-NM6040,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,23,NA,115,No,4,4,7,Secondary,Monthly
-NM6041,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,40,NA,234,Yes,9,8,10,NA,Monthly
-NM6042,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,NA,849,No,9,4,9,Primary,Monthly
-NM6043,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,48,NA,321,No,9,2,3,NA,Monthly
-NM6045,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,31,NA,350,No,8,4,2,Secondary,Monthly
-NM6046,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,28,NA,222,Yes,5,4,7,Secondary,Monthly
-NM6047,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Male,20,NA,475,No,2,0,1,Secondary,Monthly
-NM6048,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,NA,142,No,3,3,3,Primary,Monthly
-NM6049,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,NA,301,No,9,9,9,Secondary,Monthly
-NM6050,No,Yes,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,21,NA,NA,No,6,6,9,Secondary,Monthly
-NM6052,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,NA,412,No,8,8,4,Secondary,Monthly
-NM6053,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,NA,116,Yes,6,8,7,Primary,Monthly
-NM6054,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Unemployed,196,Yes,9,4,7,NA,Monthly
-NM6101,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Unemployed,202,Yes,0,0,0,Secondary,Monthly
-NM6102,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,NA,Unemployed,NA,No,4,2,5,Primary,Monthly
-NM6103,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Male,NA,Unemployed,NA,No,4,3,1,NA,Monthly
-NM6104,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,34,Full-time work,456,No,8,3,6,Secondary,Monthly
-NM6106,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Male,43,Unemployed,195,No,7,3,2,Secondary,Monthly
-NM6107,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,71,Full-time work,354,No,5,3,1,NA,Monthly
-NM6108,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Unemployed,265,Yes,3,2,1,Primary,Monthly
-NM6109,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,21,Unemployed,386,No,3,1,0,Secondary,Monthly
-NM6112,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Full-time work,51,No,5,2,1,Secondary,Monthly
-NM6114,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Unemployed,170,No,5,4,4,Secondary,Monthly
-NM6115,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Full-time work,NA,No,2,1,1,Secondary,Monthly
-NM6116,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,30,Unemployed,183,No,4,3,2,Secondary,Monthly
-NM6117,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,119,No,5,4,3,NA,Monthly
-NM6118,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Full-time work,131,Yes,3,1,0,Secondary,Monthly
-NM6119,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,30,Unemployed,163,No,5,3,1,Secondary,Monthly
-NM6120,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,36,Unemployed,140,Yes,5,3,4,Secondary,Monthly
-NM6121,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Unemployed,123,No,5,3,3,NA,Monthly
-NM6122,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,170,Yes,3,2,2,Primary,Monthly
-NM6123,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,203,No,5,2,2,Secondary,Monthly
-NM6124,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Male,39,Unemployed,120,No,4,3,4,NA,Monthly
-NM6125,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,207,No,4,5,3,Primary,Monthly
-NM6126,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Unemployed,171,Yes,5,4,1,Secondary,Monthly
-NM6127,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Male,55,Unemployed,230,No,4,4,2,Secondary,Monthly
-NM6201,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Full-time work,563,Yes,8,5,1,Secondary,Monthly
-NM6204,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,42,Full-time work,40,Yes,0,0,1,Primary,Monthly
-NM6205,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,Male,34,Full-time work,246,Yes,8,5,7,Secondary,Monthly
-NM6210,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,33,NA,425,Yes,8,5,2,Primary,Monthly
-NM6211,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,NA,63,Yes,8,4,5,Secondary,Monthly
-NM6214,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,NA,NA,NA,No,2,1,2,Primary,Monthly
-NM6220,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Full-time work,213,Yes,10,3,4,Tertiary,Monthly
-NM6221,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,187,No,9,3,7,Secondary,Monthly
-NM6223,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,42,Part-time work,NA,No,8,5,9,NA,Monthly
-NM6224,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Full-time work,NA,No,9,5,7,Secondary,Monthly
-NM6229,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,29,Part-time work,NA,No,10,5,NA,Secondary,Monthly
-NM6234,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,129,Yes,6,4,4,Secondary,Monthly
-NM6236,No,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,34,Unemployed,NA,Yes,8,3,5,Secondary,Monthly
-NM6239,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,36,NA,26,Yes,7,4,3,Secondary,Monthly
-NM6240,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,42,Unemployed,293,No,7,4,0,Secondary,Monthly
-NM2002,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,33,Full-time work,910,No,10,10,10,Secondary,Monthly
-NM2004,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,31,Unemployed,NA,No,1,1,0,Secondary,Monthly
-NM2005,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Male,26,Full-time work,329,No,3,0,0,NA,Monthly
-NM2008,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,NA,No,9,6,3,Secondary,Monthly
-NM2009,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,549,No,10,6,0,Secondary,Monthly
-NM2010,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,37,Full-time work,NA,Yes,5,3,3,Secondary,Monthly
-NM2011,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,41,Full-time work,NA,Yes,2,1,1,Secondary,Monthly
-NM2012,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Yes,No,Yes,Female,24,Unemployed,310,Yes,8,8,8,Secondary,Monthly
-NM2015,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,No,No,Female,43,Unemployed,NA,No,10,8,8,Secondary,Monthly
-NM2018,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,31,Full-time work,NA,No,7,4,0,NA,Monthly
-NM2019,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,29,Full-time work,NA,Yes,7,3,1,Secondary,Monthly
-NM2020,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Male,29,Full-time work,235,No,3,1,1,Secondary,Monthly
-NM7010,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,36,NA,NA,No,10,10,10,Secondary,Monthly
-NM7009,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,NA,13,No,10,3,10,Secondary,Monthly
-NM7008,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Female,28,NA,135,Yes,10,5,5,Secondary,Monthly
-NM7007,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,29,NA,301,Yes,10,5,3,Secondary,Monthly
-NM7006,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,28,NA,98,No,8,5,5,Secondary,Monthly
-NM7005,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,34,NA,284,Yes,4,1,2,Secondary,Monthly
-NM7004,Yes,No,Yes,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,26,NA,182,Yes,8,8,5,Secondary,Monthly
-NM7003,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Male,40,NA,83,No,10,10,10,Secondary,Monthly
-NM7002,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Unemployed,4,Yes,10,5,5,Secondary,Monthly
-NM7001,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,NA,108,No,3,0,0,Secondary,Monthly
-NM7000,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,25,NA,NA,Yes,5,3,0,Secondary,Monthly
+ID,Head,Throat,Shoulder,Shoulder_bilateral,Arms,Elbows,Elbows_bilateral,Wrists.Hands,Wrists.Hands_bilateral,Chest,Upper_back,Lower_back,Abdomen,Cervical_spine,Thoracic_spine,Lumbosacral_spine,Groin,Hips,Hips_bilateral,Legs,Knees,Knees_bilateral,Ankles.Feet,Ankles.Feet_bilateral,Buttocks,Sex,Age,Employment_status,CD4_recent,ART_currently,Pain_worst,Pain_least,Pain_now,Education,Rating_period,Site
+RPB73,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Other,391,Yes,NA,NA,NA,Tertiary,Weekly,RP
+RPB74,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,571,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB75,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Other,591,Yes,4,4,1,Secondary,Weekly,RP
+RPB76,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,207,Yes,10,5,5,Primary,Weekly,RP
+RPB77,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,126,Yes,10,5,1,Secondary,Weekly,RP
+RPB78,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,32,Unemployed,225,Yes,6,4,5,Secondary,Weekly,RP
+RPB80,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,543,Yes,6,3,2,Secondary,Weekly,RP
+RPB81,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,Yes,Female,37,Unemployed,410,Yes,9,6,7,Secondary,Weekly,RP
+RPB84,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Part-time work,74,Yes,8,4,1,Secondary,Weekly,RP
+RPB85,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Full-time work,212,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB103,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Other,579,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB104,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,24,Unemployed,346,Yes,5,2,2,Secondary,Weekly,RP
+RPB105,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,Other,602,Yes,8,5,4,Secondary,Weekly,RP
+RPB106,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,26,Unemployed,519,Yes,9,6,5,Primary,Weekly,RP
+RPB107,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Female,34,Unemployed,261,Yes,9,5,4,Secondary,Weekly,RP
+RPB108,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,277,Yes,NA,NA,NA,Tertiary,Weekly,RP
+RPB109,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,287,Yes,9,9,6,Secondary,Weekly,RP
+RPB110,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,397,Yes,6,4,8,Secondary,Weekly,RP
+RPB111,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,133,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB112,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,30,Unemployed,124,Yes,10,10,9,Secondary,Weekly,RP
+RPB132,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,300,Yes,8,5,4,Secondary,Weekly,RP
+RPB133,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,34,Other,206,Yes,9,5,8,Secondary,Weekly,RP
+RPB134,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,437,Yes,8,5,3,Secondary,Weekly,RP
+RPB135,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,31,Other,479,Yes,8,5,4,Secondary,Weekly,RP
+RPB136,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Part-time work,224,Yes,9,5,9,Secondary,Weekly,RP
+RPB139,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,Other,447,Yes,6,4,3,Secondary,Weekly,RP
+RPB140,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,29,Other,327,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB124,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Full-time work,635,Yes,8,5,2,Tertiary,Weekly,RP
+RPB125,Yes,No,Yes,Yes,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Other,430,Yes,8,6,9,Secondary,Weekly,RP
+RPB04,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Other,153,Yes,9,6,3,Secondary,Weekly,RP
+RPB06,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,308,Yes,10,5,4,Primary,Weekly,RP
+RPB07,Yes,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,22,Unemployed,184,Yes,8,5,6,Secondary,Weekly,RP
+RPB08,Yes,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,26,Other,317,Yes,6,3,1,Tertiary,Weekly,RP
+RPB09,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Yes,Female,31,Unemployed,452,Yes,8,5,10,Primary,Weekly,RP
+RPB10,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,Yes,No,No,Female,37,Unemployed,308,Yes,6,3,1,Secondary,Weekly,RP
+RPB11,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,38,Part-time work,590,Yes,10,10,7,Secondary,Weekly,RP
+RPB12,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,188,Yes,10,4,3,Secondary,Weekly,RP
+RPB14,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,348,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB15,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,216,Yes,6,4,8,Secondary,Weekly,RP
+RPB42,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,26,Unemployed,288,Yes,5,3,1,Secondary,Weekly,RP
+RBP43,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,38,Other,155,Yes,7,5,10,Secondary,Weekly,RP
+RPB44,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,29,Unemployed,165,Yes,7,3,2,Secondary,Weekly,RP
+RPB46,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,226,Yes,7,3,3,Secondary,Weekly,RP
+RBP47,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,23,Unemployed,387,Yes,10,10,3,Secondary,Weekly,RP
+RPB48,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,34,Other,561,Yes,8,4,2,Secondary,Weekly,RP
+RPB49,Yes,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Female,26,Unemployed,236,Yes,10,4,9,Secondary,Weekly,RP
+RPB50,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,479,Yes,5,2,1,Tertiary,Weekly,RP
+RPB51,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,31,Part-time work,311,Yes,5,3,2,Secondary,Weekly,RP
+RPB52,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,26,Unemployed,353,Yes,6,4,3,Tertiary,Weekly,RP
+RPB53,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,114,Yes,9,5,5,Secondary,Weekly,RP
+RPB54,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,872,Yes,7,4,2,Primary,Weekly,RP
+RPB55,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,881,Yes,8,8,6,Secondary,Weekly,RP
+RPB57,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,388,Yes,4,2,1,Tertiary,Weekly,RP
+RPB58,Yes,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,500,Yes,8,5,6,Primary,Weekly,RP
+RPB59,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Female,34,Unemployed,452,Yes,6,3,3,Secondary,Weekly,RP
+RPB60,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,26,Unemployed,340,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB32,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,777,Yes,NA,NA,NA,Primary,Weekly,RP
+RPB33,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Other,140,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB34,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,673,Yes,6,5,2,Secondary,Weekly,RP
+RPB35,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Part-time work,714,Yes,10,5,5,Secondary,Weekly,RP
+RPB36,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,39,Unemployed,501,Yes,10,10,5,Secondary,Weekly,RP
+RPB37,No,No,Yes,Yes,No,No,No,No,No,Yes,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,30,Other,233,Yes,7,5,3,Secondary,Weekly,RP
+RPB38,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,30,Unemployed,360,Yes,5,2,4,Tertiary,Weekly,RP
+RPB41,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,Female,27,Unemployed,379,Yes,8,3,10,Primary,Weekly,RP
+RPB39,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,325,Yes,6,3,2,Primary,Weekly,RP
+RPD08,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,154,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPD09,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,21,Unemployed,184,No,5,3,2,Secondary,Weekly,RP
+RPD10,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,30,Other,173,No,6,4,2,Secondary,Weekly,RP
+RPD11,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,24,Unemployed,274,Yes,9,5,10,Secondary,Weekly,RP
+RPC11,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,281,Yes,8,4,2,Secondary,Weekly,RP
+RPB16,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,659,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPC,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,115,No,10,10,8,Secondary,Weekly,RP
+RPA11,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,220,Yes,6,4,2,Secondary,Weekly,RP
+RPA12,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Other,275,Yes,5,3,3,Secondary,Weekly,RP
+RPA13,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,35,Part-time work,72,Yes,5,3,1,Secondary,Weekly,RP
+RPA14,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,32,Unemployed,109,Yes,10,6,4,Primary,Weekly,RP
+RPA15,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,306,Yes,10,6,8,Secondary,Weekly,RP
+RPA17,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Female,28,Other,313,Yes,9,9,5,Secondary,Weekly,RP
+RPA18,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Other,203,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPA02,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,Yes,No,No,Female,30,Part-time work,146,Yes,10,6,3,Primary,Weekly,RP
+RPA03,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,33,Part-time work,26,Yes,5,2,4,Secondary,Weekly,RP
+RPA04,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Unemployed,176,Yes,5,5,2,Secondary,Weekly,RP
+RPA05,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,149,Yes,9,4,4,Primary,Weekly,RP
+RPA06,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,240,Yes,10,5,0,Secondary,Weekly,RP
+RPA07,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,36,Yes,5,3,1,Primary,Weekly,RP
+RPA09,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,29,Unemployed,155,Yes,6,3,2,Secondary,Weekly,RP
+RPA10,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,22,Unemployed,181,Yes,9,5,3,Secondary,Weekly,RP
+RPD01,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Other,173,No,7,4,3,Tertiary,Weekly,RP
+RPD02,Yes,Yes,Yes,Yes,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,37,Part-time work,145,No,5,3,2,Secondary,Weekly,RP
+RPD03,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,209,Yes,NA,NA,NA,Primary,Weekly,RP
+RPD04,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,133,Yes,7,3,3,Tertiary,Weekly,RP
+RPD06,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,152,No,6,4,1,Secondary,Weekly,RP
+RPD07,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,25,Part-time work,295,No,8,8,8,Secondary,Weekly,RP
+RPA19,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,24,Other,98,No,NA,NA,NA,Tertiary,Weekly,RP
+RPA20,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,114,No,NA,NA,NA,Secondary,Weekly,RP
+RPA21,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,58,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPA22,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,221,Yes,9,6,6,Secondary,Weekly,RP
+RPC01,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,Yes,Yes,No,No,Yes,No,Yes,No,Yes,Yes,No,Yes,No,Yes,Female,34,Unemployed,101,No,8,4,5,Secondary,Weekly,RP
+RPC02,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,32,Other,159,No,10,4,6,Secondary,Weekly,RP
+RPC03,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,246,No,8,8,1,Secondary,Weekly,RP
+RPC04,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Other,261,No,9,7,3,Secondary,Weekly,RP
+RPC05,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,174,No,9,5,3,Secondary,Weekly,RP
+RPC06,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,Yes,Yes,No,No,No,Female,34,Unemployed,192,No,8,5,5,Secondary,Weekly,RP
+RPB141,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,165,Yes,7,5,3,Secondary,Weekly,RP
+RPB142,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,20,Other,202,Yes,NA,NA,NA,Tertiary,Weekly,RP
+RPB143,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,29,Unemployed,165,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB144,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,213,Yes,8,5,5,NA,Weekly,RP
+RPB17,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Part-time work,596,Yes,NA,NA,NA,Tertiary,Weekly,RP
+RPB19,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,Unemployed,1040,Yes,6,4,5,Secondary,Weekly,RP
+RPB20,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Unemployed,382,Yes,9,5,3,Secondary,Weekly,RP
+RPB21,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,Yes,No,Yes,No,No,No,No,No,Female,30,Unemployed,487,Yes,7,5,4,Secondary,Weekly,RP
+RPC07,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,24,Other,175,No,7,4,5,Secondary,Weekly,RP
+RPC08,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,28,Full-time work,213,No,7,3,1,Tertiary,Weekly,RP
+RPC10,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,29,Part-time work,174,Yes,5,2,2,Secondary,Weekly,RP
+RPC12,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Unemployed,166,No,9,6,5,Primary,Weekly,RP
+RPC14,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Other,NA,No,9,8,5,Tertiary,Weekly,RP
+RPC15,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,23,Unemployed,305,No,NA,NA,NA,Secondary,Weekly,RP
+RPB88,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,20,Unemployed,191,Yes,9,4,3,Secondary,Weekly,RP
+RPB89,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Unemployed,667,Yes,9,9,5,Secondary,Weekly,RP
+RPB90,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Part-time work,1032,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB93,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,32,Other,301,Yes,9,5,1,Tertiary,Weekly,RP
+RPB94,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Other,774,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB95,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,54,Yes,NA,NA,NA,NA,Weekly,RP
+RPB98,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Unemployed,187,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB99,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,249,Yes,8,4,6,Secondary,Weekly,RP
+RPB100,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,576,Yes,7,3,3,Secondary,Weekly,RP
+RPA01,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,32,Part-time work,170,Yes,4,2,5,Primary,Weekly,RP
+RPB113,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,Yes,No,No,No,No,Yes,Female,32,Other,560,Yes,9,6,9,Secondary,Weekly,RP
+RPB114,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,262,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB116,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Full-time work,484,Yes,8,5,4,Tertiary,Weekly,RP
+RPB117,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,385,Yes,10,5,4,Secondary,Weekly,RP
+RPB118,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,40,Unemployed,NA,Yes,7,5,10,Primary,Weekly,RP
+RPB119,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,212,Yes,9,9,8,Primary,Weekly,RP
+RPB120,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,266,Yes,9,6,6,Tertiary,Weekly,RP
+RPB121,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,282,Yes,9,6,2,Secondary,Weekly,RP
+RPB122,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Unemployed,50,Yes,10,6,8,Secondary,Weekly,RP
+RPB123,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,NA,Yes,9,5,4,Tertiary,Weekly,RP
+RPB40,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,NA,Yes,4,4,3,Secondary,Weekly,RP
+RPB22,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Other,360,Yes,6,4,2,Tertiary,Weekly,RP
+RPB23,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,23,Unemployed,245,Yes,5,2,5,Secondary,Weekly,RP
+RPB24,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,20,Unemployed,700,Yes,NA,NA,NA,Secondary,Weekly,RP
+RPB25,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,39,Unemployed,237,Yes,7,3,2,Secondary,Weekly,RP
+RPB26,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Unemployed,502,Yes,8,4,8,Secondary,Weekly,RP
+RPB27,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,310,Yes,6,2,2,Secondary,Weekly,RP
+RPB28,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,911,Yes,9,3,0,Secondary,Weekly,RP
+RPB29,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,24,Unemployed,281,Yes,8,5,4,Secondary,Weekly,RP
+RPB30,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,170,Yes,8,5,9,Secondary,Weekly,RP
+RPB31,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,38,Other,282,Yes,8,7,5,Secondary,Weekly,RP
+STIG01,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,50,Full-time work,NA,Yes,8,3,3,Primary,Weekly,STIG
+STIG02,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Unemployed,291,Yes,9,4,6,Tertiary,Weekly,STIG
+STIG03,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,26,Unemployed,1138,Yes,6,3,0,Secondary,Weekly,STIG
+STIG04,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Female,58,Full-time work,1092,Yes,9,4,3,Primary,Weekly,STIG
+STIG05,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,34,Full-time work,906,Yes,8,5,3,Secondary,Weekly,STIG
+STIG06,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,45,Other,236,Yes,8,6,5,Tertiary,Weekly,STIG
+STIG07,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,55,Full-time work,232,Yes,9,5,6,Tertiary,Weekly,STIG
+STIG08,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Unemployed,288,Yes,8,6,7,Secondary,Weekly,STIG
+STIG09,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Male,51,Unemployed,295,Yes,10,8,8,Tertiary,Weekly,STIG
+STIG10,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,48,Unemployed,442,Yes,8,4,6,Primary,Weekly,STIG
+STIG11,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,461,Yes,8,2,4,Tertiary,Weekly,STIG
+STIG12,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Full-time work,291,Yes,7,3,3,Tertiary,Weekly,STIG
+STIG13,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Female,49,Part-time work,533,Yes,6,2,2,Secondary,Weekly,STIG
+STIG14,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,46,Full-time work,616,Yes,7,3,1,Primary,Weekly,STIG
+STIG15,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,65,Unemployed,440,Yes,8,7,8,Secondary,Weekly,STIG
+STIG16,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,39,Full-time work,NA,Yes,9,4,2,Tertiary,Weekly,STIG
+STIG17,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,50,Unemployed,330,Yes,10,7,3,Secondary,Weekly,STIG
+STIG18,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,63,Unemployed,223,Yes,7,6,5,NA,Weekly,STIG
+STIG19,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,44,Unemployed,NA,Yes,8,8,8,Secondary,Weekly,STIG
+STIG20,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Part-time work,NA,Yes,10,5,4,Tertiary,Weekly,STIG
+STIG21,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,NA,Yes,8,3,1,Tertiary,Weekly,STIG
+STIG22,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,44,Full-time work,NA,Yes,8,6,6,Secondary,Weekly,STIG
+STIG23,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,40,Full-time work,620,Yes,8,7,5,Secondary,Weekly,STIG
+STIG24,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,37,Full-time work,NA,Yes,9,8,7,Secondary,Weekly,STIG
+STIG25,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,58,Part-time work,NA,Yes,6,4,6,NA,Weekly,STIG
+STIG26,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,57,Full-time work,NA,Yes,7,5,6,Primary,Weekly,STIG
+STIG27,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Male,41,Full-time work,NA,Yes,5,3,4,Tertiary,Weekly,STIG
+STIG28,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,51,Unemployed,NA,Yes,8,7,3,Secondary,Weekly,STIG
+STIG29,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,57,Unemployed,NA,Yes,6,3,2,Primary,Weekly,STIG
+STIG30,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,43,Unemployed,NA,Yes,10,8,8,Secondary,Weekly,STIG
+STIG31,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,54,Full-time work,583,Yes,8,6,6,Secondary,Weekly,STIG
+STIG32,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Part-time work,NA,Yes,8,2,5,Secondary,Weekly,STIG
+STIG33,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,NA,Yes,8,3,3,Secondary,Weekly,STIG
+STIG34,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,48,Part-time work,NA,Yes,4,1,0,Tertiary,Weekly,STIG
+STIG35,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,421,Yes,5,1,4,Secondary,Weekly,STIG
+STIG36,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,Yes,No,No,Female,55,Full-time work,429,Yes,9,6,9,Secondary,Weekly,STIG
+STIG37,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,36,Unemployed,NA,Yes,5,2,3,Primary,Weekly,STIG
+STIG38,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,53,Full-time work,NA,NA,7,4,7,Secondary,Weekly,STIG
+STIG39,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,50,Part-time work,NA,Yes,10,4,10,Primary,Weekly,STIG
+STIG40,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,40,Full-time work,NA,Yes,4,2,2,Secondary,Weekly,STIG
+STIG41,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,Female,32,Full-time work,1086,Yes,7,3,0,Tertiary,Weekly,STIG
+STIG42,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,48,Unemployed,NA,Yes,10,5,10,Secondary,Weekly,STIG
+STIG43,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,50,Full-time work,415,Yes,7,3,7,Tertiary,Weekly,STIG
+STIG44,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,53,Part-time work,NA,Yes,7,3,3,Secondary,Weekly,STIG
+STIG45,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,44,Unemployed,NA,Yes,7,3,7,Secondary,Weekly,STIG
+STIG46,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,54,Unemployed,50,Yes,10,4,5,Secondary,Weekly,STIG
+STIG47,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,59,Unemployed,NA,Yes,10,5,8,Primary,Weekly,STIG
+STIG48,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,39,Full-time work,60,Yes,9,6,8,Secondary,Weekly,STIG
+STIG49,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,579,Yes,8,4,4,Secondary,Weekly,STIG
+STIG50,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Full-time work,498,Yes,9,2,5,Secondary,Weekly,STIG
+RESI01,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Female,35,Full-time work,21,Yes,8,3,8,Secondary,Weekly,RESI
+RESI02,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,Yes,No,No,No,Yes,Female,44,Unemployed,894,Yes,6,6,4,Secondary,Weekly,RESI
+RESI03,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Male,38,Part-time work,465,Yes,9,5,7,Tertiary,Weekly,RESI
+RESI04,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Full-time work,576,Yes,10,7,3,Secondary,Weekly,RESI
+RESI05,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,Yes,Yes,No,Yes,No,Yes,Male,59,Unemployed,827,Yes,7,4,4,Primary,Weekly,RESI
+RESI06,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,59,Unemployed,NA,Yes,5,3,2,Secondary,Weekly,RESI
+RESI07,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,Female,35,Unemployed,20,Yes,9,2,3,Secondary,Weekly,RESI
+RESI35,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Full-time work,682,Yes,7,3,0,Secondary,Weekly,RESI
+RESI45,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,No,No,Female,45,Unemployed,209,Yes,8,3,3,Secondary,Weekly,RESI
+RESI21,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,34,Part-time work,NA,Yes,3,0,1,Secondary,Weekly,RESI
+RESI23,No,No,Yes,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,47,Unemployed,386,Yes,10,4,5,Secondary,Weekly,RESI
+RESI31,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Unemployed,NA,Yes,10,2,0,Tertiary,Weekly,RESI
+RESI34,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,49,Full-time work,NA,No,5,1,0,NA,Weekly,RESI
+RESI36,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,No,No,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,No,No,Female,50,Unemployed,416,Yes,7,4,6,Secondary,Weekly,RESI
+RESI37,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,Female,32,Full-time work,263,Yes,7,4,0,Secondary,Weekly,RESI
+RESI40,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,42,Unemployed,286,Yes,9,6,6,Secondary,Weekly,RESI
+RESI44,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Female,41,Full-time work,441,Yes,8,5,10,Secondary,Weekly,RESI
+RISI48,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,Female,41,Part-time work,915,Yes,7,2,1,Primary,Weekly,RESI
+RESI52,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,45,Unemployed,NA,Yes,8,4,5,Primary,Weekly,RESI
+RESI61,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Unemployed,30,Yes,6,3,5,Secondary,Weekly,RESI
+RESI62,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Female,37,Part-time work,312,Yes,9,4,4,Secondary,Weekly,RESI
+RESI64,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Male,55,Full-time work,216,Yes,5,3,3,Primary,Weekly,RESI
+RESI66,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,57,Full-time work,30,No,10,4,2,Secondary,Weekly,RESI
+RESI67,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,34,Unemployed,97,Yes,8,3,0,Tertiary,Weekly,RESI
+RESI69,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Male,48,Part-time work,1000,Yes,4,2,2,Secondary,Weekly,RESI
+RESI71,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Full-time work,NA,Yes,10,6,3,Secondary,Weekly,RESI
+RESI72,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Yes,No,No,No,No,No,Female,48,Unemployed,552,Yes,8,3,0,Secondary,Weekly,RESI
+RESI74,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Male,41,Part-time work,257,Yes,7,5,5,Secondary,Weekly,RESI
+RESI73,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,50,Full-time work,617,Yes,7,3,6,Secondary,Weekly,RESI
+RESI75,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,41,Part-time work,46,Yes,5,2,0,Primary,Weekly,RESI
+RESI76,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Part-time work,258,Yes,8,4,4,Secondary,Weekly,RESI
+RESI77,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Unemployed,227,Yes,7,2,8,Secondary,Weekly,RESI
+RESI78,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,30,Full-time work,1230,Yes,7,2,3,Secondary,Weekly,RESI
+RESI82,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,19,Other,405,Yes,8,3,4,Secondary,Weekly,RESI
+RESI86,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,46,Full-time work,442,Yes,7,4,3,Secondary,Weekly,RESI
+RESI89,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,61,Unemployed,476,Yes,8,3,0,Primary,Weekly,RESI
+RESI90,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,50,Part-time work,653,Yes,10,3,0,NA,Weekly,RESI
+RESI92,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,35,Full-time work,299,Yes,9,3,5,Secondary,Weekly,RESI
+RESI93,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,63,Full-time work,676,Yes,6,4,2,Primary,Weekly,RESI
+RESI97,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,64,Unemployed,567,Yes,7,2,1,Primary,Weekly,RESI
+RESI98,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,42,Unemployed,274,Yes,10,5,0,Secondary,Weekly,RESI
+RESI100,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,42,Full-time work,785,Yes,8,4,5,Secondary,Weekly,RESI
+RESI102,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,Female,33,Full-time work,1232,Yes,9,4,0,Tertiary,Weekly,RESI
+RESI105,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,Male,49,Unemployed,505,Yes,8,2,4,Primary,Weekly,RESI
+RESI112,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,40,Full-time work,381,Yes,5,2,3,Tertiary,Weekly,RESI
+RESI115,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Female,33,Full-time work,575,No,10,7,7,Tertiary,Weekly,RESI
+RESI116,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,Yes,Male,27,Full-time work,306,Yes,8,5,4,Tertiary,Weekly,RESI
+RESI117,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Unemployed,245,Yes,8,2,0,Primary,Weekly,RESI
+RESI120,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,39,Unemployed,NA,Yes,6,3,7,Secondary,Weekly,RESI
+RESI122,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,35,Unemployed,11,Yes,8,5,6,Secondary,Weekly,RESI
+RESI124,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,642,Yes,8,2,5,Secondary,Weekly,RESI
+RESI127,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,46,Unemployed,NA,NA,8,2,7,Secondary,Weekly,RESI
+RESI129,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,Female,38,Unemployed,NA,Yes,9,4,3,Secondary,Weekly,RESI
+RESI130,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,Male,44,Unemployed,649,Yes,8,4,10,Secondary,Weekly,RESI
+RESI131,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,213,Yes,5,1,0,Tertiary,Weekly,RESI
+RESI132,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,30,Part-time work,496,Yes,8,4,3,Primary,Weekly,RESI
+RESI133,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,Female,58,Unemployed,789,Yes,10,8,8,Secondary,Weekly,RESI
+RESI134,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Male,44,Full-time work,NA,Yes,7,6,3,Secondary,Weekly,RESI
+RESI135,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,Female,48,Full-time work,NA,Yes,8,2,0,Tertiary,Weekly,RESI
+RESI136,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Female,45,Unemployed,662,Yes,6,3,0,Tertiary,Weekly,RESI
+RESI139,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,44,Full-time work,966,Yes,6,2,5,Secondary,Weekly,RESI
+RESI140,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,Yes,No,No,Female,55,Unemployed,663,Yes,9,2,7,NA,Weekly,RESI
+RESI141,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Part-time work,219,Yes,8,5,9,Primary,Weekly,RESI
+RESI143,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,49,Unemployed,NA,Yes,5,2,2,Secondary,Weekly,RESI
+RESI144,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,52,Unemployed,751,Yes,6,3,0,Secondary,Weekly,RESI
+RESI146,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,59,Full-time work,689,Yes,7,6,3,Secondary,Weekly,RESI
+RESI148,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,Male,42,Full-time work,107,Yes,5,2,5,Secondary,Weekly,RESI
+RESI150,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,51,Full-time work,NA,Yes,8,3,2,Secondary,Weekly,RESI
+RESI151,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Unemployed,176,Yes,6,2,4,Secondary,Weekly,RESI
+RESI152,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Male,55,Unemployed,NA,Yes,6,1,1,Secondary,Weekly,RESI
+RESI153,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,46,Full-time work,964,Yes,8,4,7,Secondary,Weekly,RESI
+RESI154,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Yes,Yes,No,No,No,Female,34,Full-time work,844,Yes,9,6,5,Tertiary,Weekly,RESI
+RESI155,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,56,Part-time work,723,Yes,8,6,5,Secondary,Weekly,RESI
+RESI156,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,66,Unemployed,458,Yes,10,6,9,Primary,Weekly,RESI
+RESI159,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Male,49,Unemployed,385,Yes,9,3,0,Secondary,Weekly,RESI
+RESI161,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,43,Unemployed,NA,Yes,7,5,7,Secondary,Weekly,RESI
+RESI162,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,No,No,Yes,No,No,Female,37,Unemployed,540,Yes,10,5,7,Tertiary,Weekly,RESI
+RESI163,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,51,Unemployed,NA,Yes,8,4,7,Primary,Weekly,RESI
+RESI164,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,50,Unemployed,578,Yes,9,7,3,Secondary,Weekly,RESI
+RESI165,No,No,Yes,No,Yes,Yes,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,46,Unemployed,673,Yes,10,5,7,Secondary,Weekly,RESI
+RESI167,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,42,Part-time work,671,Yes,8,4,2,Secondary,Weekly,RESI
+RESI168,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,45,Full-time work,113,Yes,8,3,8,Secondary,Weekly,RESI
+RESI170,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Male,59,Part-time work,357,Yes,8,3,5,NA,Weekly,RESI
+RESI173,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,40,Unemployed,605,Yes,10,7,7,Secondary,Weekly,RESI
+RESI178,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,Yes,No,No,Male,35,Full-time work,256,Yes,8,3,3,Secondary,Weekly,RESI
+RESI18,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,31,Unemployed,206,Yes,7,1,10,Secondary,Weekly,RESI
+RESI185,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,41,Unemployed,210,Yes,8,3,4,Primary,Weekly,RESI
+RESI186,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,46,Full-time work,295,Yes,6,2,3,Secondary,Weekly,RESI
+RESI187,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Male,34,Unemployed,258,Yes,10,5,3,Primary,Weekly,RESI
+RESI189,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,56,Full-time work,482,Yes,8,4,6,Tertiary,Weekly,RESI
+RESI191,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,35,Unemployed,285,Yes,7,3,5,Secondary,Weekly,RESI
+RESI192,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Female,49,Part-time work,397,Yes,10,5,4,Tertiary,Weekly,RESI
+RESI193,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,Yes,Male,57,Full-time work,575,Yes,9,0,6,Primary,Weekly,RESI
+RESI194,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,45,Full-time work,162,Yes,5,1,2,Secondary,Weekly,RESI
+RESI195,No,No,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,40,Part-time work,181,Yes,8,6,4,Primary,Weekly,RESI
+RESI196,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,50,Full-time work,257,Yes,5,1,3,Primary,Weekly,RESI
+RESI197,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,49,Unemployed,333,Yes,4,2,2,Secondary,Weekly,RESI
+RESI198,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Full-time work,319,Yes,5,2,2,Tertiary,Weekly,RESI
+DD1,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Part-time work,NA,Yes,8,4,6,Secondary,Weekly,DD
+DD2,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Female,40,Unemployed,339,Yes,8,2,6,Secondary,Weekly,DD
+DD4,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,36,Full-time work,177,Yes,5,1,0,Secondary,Weekly,DD
+DD5,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,58,Unemployed,392,Yes,7,10,5,Primary,Weekly,DD
+DD6,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,NA,Yes,7,2,2,Secondary,Weekly,DD
+DD7,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Yes,No,No,No,No,Female,32,Unemployed,295,Yes,8,3,9,Secondary,Weekly,DD
+DD8,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Unemployed,227,Yes,7,3,3,Secondary,Weekly,DD
+DD9,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,37,Full-time work,667,Yes,10,3,0,Secondary,Weekly,DD
+DD10,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,46,Unemployed,386,Yes,10,5,0,Secondary,Weekly,DD
+DD11,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,474,Yes,9,3,9,Secondary,Weekly,DD
+DD12,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Full-time work,682,Yes,0,0,0,Secondary,Weekly,DD
+DD14,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No,Female,34,Part-time work,450,Yes,10,3,2,Primary,Weekly,DD
+DD15,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Part-time work,258,Yes,6,3,0,Secondary,Weekly,DD
+DD16,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,496,Yes,7,3,0,Secondary,Weekly,DD
+DD17,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,43,Full-time work,354,Yes,10,3,3,Secondary,Weekly,DD
+DD19,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,NA,Yes,9,3,0,Secondary,Weekly,DD
+DD20,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,35,Unemployed,NA,Yes,8,4,5,Tertiary,Weekly,DD
+DD23,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Male,41,Part-time work,256,Yes,10,2,6,Secondary,Weekly,DD
+DD24,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Female,44,Full-time work,226,Yes,6,3,3,Secondary,Weekly,DD
+DD25,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Full-time work,NA,Yes,10,2,2,Secondary,Weekly,DD
+DD26,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,41,Unemployed,NA,Yes,5,1,0,Primary,Weekly,DD
+DD27,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,97,Yes,6,3,0,Tertiary,Weekly,DD
+DD30,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Female,39,Unemployed,NA,Yes,10,4,10,Primary,Weekly,DD
+DD31,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,42,Part-time work,443,Yes,6,2,6,Primary,Weekly,DD
+DD32,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Full-time work,145,Yes,5,2,1,Secondary,Weekly,DD
+DD33,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,Female,42,Unemployed,274,Yes,10,4,0,Tertiary,Weekly,DD
+DD34,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,42,Full-time work,785,Yes,8,3,2,Secondary,Weekly,DD
+DD35,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,642,Yes,8,2,5,Secondary,Weekly,DD
+DD37,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,27,Full-time work,NA,Yes,7,3,1,Tertiary,Weekly,DD
+DD39,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,40,Full-time work,840,Yes,8,3,0,Tertiary,Weekly,DD
+DD40,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Female,38,Unemployed,NA,Yes,7,2,5,Secondary,Weekly,DD
+DD41,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,Male,44,Unemployed,649,Yes,8,5,9,Secondary,Weekly,DD
+DD43,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Male,40,Unemployed,NA,Yes,5,2,10,NA,Weekly,DD
+DD44,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,38,Unemployed,741,Yes,9,4,4,Secondary,Weekly,DD
+DD46,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,44,Full-time work,NA,Yes,8,2,6,Secondary,Weekly,DD
+DD48,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,40,Full-time work,381,Yes,7,2,0,Tertiary,Weekly,DD
+DD49,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,49,Unemployed,NA,Yes,7,3,5,Secondary,Weekly,DD
+DD50,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,Male,39,Full-time work,107,Yes,10,3,9,NA,Weekly,DD
+DD51,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,43,Unemployed,NA,No,7,2,7,Secondary,Weekly,DD
+DD52,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,41,Unemployed,210,Yes,5,1,2,Primary,Weekly,DD
+DD53,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,Male,50,Unemployed,578,Yes,9,3,4,Secondary,Weekly,DD
+DD54,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,35,Full-time work,256,Yes,7,3,3,Secondary,Weekly,DD
+DD55,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,35,Unemployed,NA,Yes,7,3,3,Secondary,Weekly,DD
+DD56,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,34,Unemployed,258,Yes,10,5,3,Secondary,Weekly,DD
+DD57,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,49,Unemployed,333,Yes,5,2,3,Secondary,Weekly,DD
+DD58,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,33,Unemployed,16,Yes,6,4,6,Secondary,Weekly,DD
+DD60,Yes,Yes,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,44,Full-time work,63,Yes,8,4,8,Secondary,Weekly,DD
+DD61,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,43,Part-time work,368,Yes,6,4,4,Tertiary,Weekly,DD
+DD62,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,NA,Yes,9,6,10,Secondary,Weekly,DD
+DD63,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,364,Yes,8,2,8,Secondary,Weekly,DD
+DD64,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,Yes,No,No,Female,48,Unemployed,543,Yes,10,5,4,Tertiary,Weekly,DD
+DD65,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,41,Unemployed,NA,Yes,6,2,9,Primary,Weekly,DD
+DD66,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Unemployed,760,Yes,8,3,2,Primary,Weekly,DD
+DD68,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,46,Unemployed,1090,Yes,6,3,9,Secondary,Weekly,DD
+DD69,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,34,Full-time work,464,Yes,7,5,3,Secondary,Weekly,DD
+DD70,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,31,Unemployed,1095,Yes,5,3,3,Secondary,Weekly,DD
+RESI183,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,31,Unemployed,325,Yes,7,1,10,Secondary,Weekly,RESI
+DD42,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,42,Unemployed,NA,Yes,7,2,6,Secondary,Weekly,DD
+DD38,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,33,Full-time work,575,No,8,1,5,Tertiary,Weekly,DD
+DD36,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Other,245,Yes,10,4,9,Primary,Weekly,DD
+DD45,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,30,Unemployed,NA,Yes,5,2,0,Secondary,Weekly,DD
+NM0005,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,47,Full-time work,209,Yes,4,4,2,Secondary,Monthly,NM
+NM0006,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,35,Full-time work,329,Yes,5,5,5,Secondary,Monthly,NM
+NM0007,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Female,28,Unemployed,196,Yes,5,5,6,Secondary,Monthly,NM
+NM0009,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Female,47,Part-time work,338,No,6,6,3,Primary,Monthly,NM
+NM0010,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Full-time work,69,No,10,8,9,Secondary,Monthly,NM
+NM0011,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,31,Unemployed,19,Yes,3,3,3,Secondary,Monthly,NM
+NM0012,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Unemployed,NA,Yes,3,5,2,Secondary,Monthly,NM
+NM0014,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Female,26,Unemployed,1,Yes,0,NA,0,Secondary,Monthly,NM
+NM0015,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,30,Unemployed,110,Yes,4,2,4,Secondary,Monthly,NM
+NM0017,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,28,Full-time work,61,Yes,5,4,0,Tertiary,Monthly,NM
+NM0023,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,Yes,No,No,Yes,Yes,No,Yes,No,No,Male,37,Full-time work,5,Yes,5,5,5,Secondary,Monthly,NM
+NM0025,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Full-time work,228,Yes,3,3,3,Tertiary,Monthly,NM
+NM0026,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,42,Unemployed,144,Yes,10,10,2,Secondary,Monthly,NM
+NM0027,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,Female,36,Unemployed,84,No,4,0,0,Secondary,Monthly,NM
+NM0029,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,47,Unemployed,248,Yes,10,5,0,Primary,Monthly,NM
+NM0030,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,35,Full-time work,12,Yes,7,3,7,Secondary,Monthly,NM
+NM0031,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,200,Yes,8,6,6,Secondary,Monthly,NM
+NM0034,Yes,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,40,Part-time work,287,No,2,1,3,Secondary,Monthly,NM
+NM0035,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Full-time work,NA,Yes,5,5,7,Secondary,Monthly,NM
+NM0036,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,36,Unemployed,147,Yes,10,10,6,Secondary,Monthly,NM
+NM0037,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Female,29,Unemployed,298,No,6,3,4,Secondary,Monthly,NM
+NM0039,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,43,Unemployed,231,Yes,10,2,6,Secondary,Monthly,NM
+NM0040,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,35,Full-time work,4,Yes,10,10,10,Secondary,Monthly,NM
+NM0002,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Male,35,Unemployed,35,Yes,10,2,0,Secondary,Monthly,NM
+NM0056,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,37,Unemployed,338,Yes,8,9,2,Secondary,Monthly,NM
+NM0057,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,23,Unemployed,18,Yes,4,3,0,Tertiary,Monthly,NM
+NM0058,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,58,Full-time work,NA,Yes,8,5,8,NA,Monthly,NM
+NM0059,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,200,Yes,10,1,0,Secondary,Monthly,NM
+NM0050,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,309,No,10,10,5,Secondary,Monthly,NM
+NM0051,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Male,39,Unemployed,308,No,7,2,3,Primary,Monthly,NM
+NM0053,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Male,30,Unemployed,150,Yes,0,5,1,Secondary,Monthly,NM
+NM0055,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,56,Unemployed,159,Yes,6,2,1,Secondary,Monthly,NM
+NM0041,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Unemployed,118,No,8,8,4,Secondary,Monthly,NM
+NM0042,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,202,Yes,0,0,0,Secondary,Monthly,NM
+NM0043,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,Yes,Female,31,Unemployed,247,Yes,10,10,9,Secondary,Monthly,NM
+NM0044,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,Yes,No,No,Female,38,Unemployed,101,Yes,10,9,9,Primary,Monthly,NM
+NM0048,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,8,Yes,5,3,0,Primary,Monthly,NM
+NM0062,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,27,Full-time work,300,Yes,8,8,5,Tertiary,Monthly,NM
+NM0064,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,61,Yes,4,1,2,Secondary,Monthly,NM
+NM0065,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Male,45,Unemployed,200,Yes,8,5,0,Secondary,Monthly,NM
+NM0066,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,53,Yes,4,0,5,Secondary,Monthly,NM
+NM0067,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Full-time work,7,Yes,10,4,0,Secondary,Monthly,NM
+NM0068,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Male,44,Unemployed,NA,Yes,8,4,2,Primary,Monthly,NM
+NM0070,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,30,Full-time work,426,No,3,0,1,Secondary,Monthly,NM
+NM0072,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,41,Full-time work,250,No,4,1,1,Secondary,Monthly,NM
+NM0073,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No,Female,32,Full-time work,400,No,8,1,7,Secondary,Monthly,NM
+NM0075,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,41,Full-time work,316,No,6,5,4,Secondary,Monthly,NM
+NM0076,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,No,No,Female,34,Unemployed,494,Yes,10,0,10,Tertiary,Monthly,NM
+NM0077,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,43,Unemployed,170,Yes,5,0,0,NA,Monthly,NM
+NM0078,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Unemployed,1,Yes,10,6,9,Secondary,Monthly,NM
+NM0079,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,43,Unemployed,NA,Yes,5,0,0,Primary,Monthly,NM
+NM0080,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Unemployed,94,Yes,7,2,4,Secondary,Monthly,NM
+NM0081,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,110,No,4,3,0,Tertiary,Monthly,NM
+NM0082,Yes,No,Yes,Yes,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,34,Full-time work,130,Yes,10,0,0,Secondary,Monthly,NM
+NM0085,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,35,Unemployed,285,Yes,4,10,6,Secondary,Monthly,NM
+NM0086,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,40,Unemployed,NA,Yes,6,3,1,NA,Monthly,NM
+NM0087,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,44,Unemployed,NA,Yes,9,2,0,NA,Monthly,NM
+NM0089,Yes,Yes,Yes,Yes,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Male,45,Part-time work,57,Yes,10,5,10,Secondary,Monthly,NM
+NM0090,Yes,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,55,Unemployed,NA,Yes,2,1,0,Secondary,Monthly,NM
+NM0091,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,52,Unemployed,NA,No,3,2,0,Secondary,Monthly,NM
+NM0092,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,25,Unemployed,152,Yes,5,3,4,Tertiary,Monthly,NM
+NM0093,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Male,47,Unemployed,NA,Yes,3,0,1,Secondary,Monthly,NM
+NM0095,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,Female,24,Unemployed,432,No,3,0,0,Secondary,Monthly,NM
+NM0096,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Unemployed,NA,NA,10,0,0,Secondary,Monthly,NM
+NM0097,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,NA,308,No,3,2,0,Secondary,Monthly,NM
+NM0098,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,Full-time work,NA,Yes,9,5,5,Primary,Monthly,NM
+NM0100,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,Yes,No,No,Yes,Yes,No,No,No,Yes,Yes,Yes,No,Yes,Female,36,Unemployed,200,Yes,10,10,10,Primary,Monthly,NM
+NM0101,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Female,35,Unemployed,172,No,10,4,7,Primary,Monthly,NM
+NM0102,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,48,Unemployed,NA,Yes,3,1,3,Primary,Monthly,NM
+NM0104,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Female,53,Unemployed,NA,Yes,10,0,7,Secondary,Monthly,NM
+NM0106,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,36,Yes,5,1,3,Secondary,Monthly,NM
+NM0107,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,27,Unemployed,4,Yes,6,0,0,Secondary,Monthly,NM
+NM0108,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,Female,39,Full-time work,47,No,7,1,0,Secondary,Monthly,NM
+NM0110,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Male,49,Unemployed,27,Yes,5,2,2,Secondary,Monthly,NM
+NM0111,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,29,Unemployed,56,Yes,9,4,2,Secondary,Monthly,NM
+NM0112,Yes,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,52,Unemployed,174,Yes,9,3,0,Secondary,Monthly,NM
+NM0113,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,Female,39,Unemployed,364,No,6,2,2,Primary,Monthly,NM
+NM0114,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,154,Yes,10,4,7,Secondary,Monthly,NM
+NM0119,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,36,Full-time work,19,Yes,2,2,0,NA,Monthly,NM
+NM0120,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,25,Unemployed,120,Yes,5,0,7,Secondary,Monthly,NM
+NM0122,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,32,Unemployed,315,Yes,5,2,6,Primary,Monthly,NM
+NM0124,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,35,Full-time work,88,Yes,7,4,2,Primary,Monthly,NM
+NM0128,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,21,Unemployed,17,No,10,2,1,Secondary,Monthly,NM
+NM0129,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,20,Unemployed,238,No,8,6,8,Secondary,Monthly,NM
+NM0130,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,37,Unemployed,334,No,9,5,6,Secondary,Monthly,NM
+NM0133,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Female,40,Unemployed,226,No,10,3,1,NA,Monthly,NM
+NM0134,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes,Yes,No,No,Female,26,Unemployed,637,No,5,2,5,Secondary,Monthly,NM
+NM0136,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,No,Female,58,Unemployed,106,Yes,10,2,0,Secondary,Monthly,NM
+NM0138,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,37,Unemployed,50,Yes,4,2,1,Secondary,Monthly,NM
+NM0143,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,44,Unemployed,159,Yes,6,2,5,Secondary,Monthly,NM
+NM0146,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,32,Unemployed,18,No,10,0,10,Secondary,Monthly,NM
+NM0147,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,109,Yes,6,3,4,Secondary,Monthly,NM
+NM0149,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,37,Unemployed,132,Yes,10,10,8,Secondary,Monthly,NM
+NM0150,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Full-time work,103,Yes,5,2,0,Secondary,Monthly,NM
+NM0151,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,42,Unemployed,184,Yes,6,3,10,Secondary,Monthly,NM
+NM0152,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,No,No,No,No,Female,38,Full-time work,101,Yes,10,1,3,Secondary,Monthly,NM
+NM0153,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,32,Unemployed,321,No,10,4,0,Secondary,Monthly,NM
+NM0154,Yes,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,44,Full-time work,334,No,6,1,0,Secondary,Monthly,NM
+NM0155,No,No,No,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,65,Yes,7,3,0,Secondary,Monthly,NM
+NM0158,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,171,No,7,2,7,Secondary,Monthly,NM
+NM0159,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,30,Unemployed,440,No,6,3,1,Secondary,Monthly,NM
+NM0160,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,Part-time work,802,No,6,3,7,Secondary,Monthly,NM
+NM0161,Yes,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Yes,No,No,Female,41,Unemployed,372,No,10,3,10,Primary,Monthly,NM
+NM0162,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,Male,43,Unemployed,381,No,9,9,9,Primary,Monthly,NM
+NM0165,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,45,Unemployed,340,Yes,2,2,0,Primary,Monthly,NM
+NM0166,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,NA,NA,3,3,2,Secondary,Monthly,NM
+NM0167,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Unemployed,235,Yes,1,1,1,Primary,Monthly,NM
+NM0169,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,43,Unemployed,154,Yes,10,5,8,Secondary,Monthly,NM
+NM0172,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,200,NA,10,3,4,Primary,Monthly,NM
+NM0173,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,41,Unemployed,182,No,4,3,5,Secondary,Monthly,NM
+NM0174,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,Unemployed,155,Yes,3,0,0,Primary,Monthly,NM
+NM0176,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,44,Unemployed,196,Yes,4,2,0,Secondary,Monthly,NM
+NM0177,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,Male,34,Unemployed,129,Yes,5,2,5,Secondary,Monthly,NM
+NM0178,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,Male,45,Full-time work,150,Yes,6,3,2,Secondary,Monthly,NM
+NM0179,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,67,Unemployed,117,Yes,5,2,1,Primary,Monthly,NM
+NM0180,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,39,Full-time work,NA,Yes,2,1,1,NA,Monthly,NM
+NM0181,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Yes,No,Yes,Female,34,Full-time work,55,Yes,6,3,3,Secondary,Monthly,NM
+NM0182,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,24,Unemployed,2,Yes,1,0,1,Secondary,Monthly,NM
+NM1503,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,61,Yes,2,2,0,Secondary,Monthly,NM
+NM1506,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Unemployed,72,Yes,1,1,1,Secondary,Monthly,NM
+NM1509,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Full-time work,85,Yes,10,10,7,Secondary,Monthly,NM
+NM1500,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,42,NA,109,Yes,5,5,5,Primary,Monthly,NM
+NM1512,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,45,Full-time work,302,No,10,10,3,Primary,Monthly,NM
+NM1513,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,6,Yes,10,10,0,Secondary,Monthly,NM
+NM1514,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,32,Full-time work,157,No,5,5,5,Secondary,Monthly,NM
+NM1517,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Full-time work,194,Yes,4,4,0,Primary,Monthly,NM
+NM1518,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Full-time work,367,No,10,10,0,Secondary,Monthly,NM
+NM1519,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,27,Full-time work,471,No,5,5,5,Secondary,Monthly,NM
+NM1520,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,34,Full-time work,480,No,4,4,0,Secondary,Monthly,NM
+NM1524,Yes,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No,No,No,No,Yes,No,No,Female,28,Full-time work,112,Yes,10,1,10,Secondary,Monthly,NM
+NM1525,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,48,Full-time work,159,Yes,4,1,0,Primary,Monthly,NM
+NM6030,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Part-time work,289,No,10,9,10,Secondary,Monthly,NM
+NM6029,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,35,Unemployed,236,No,8,8,10,Secondary,Monthly,NM
+NM6028,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Male,41,Unemployed,40,No,10,0,0,Primary,Monthly,NM
+NM6026,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,45,Unemployed,855,No,10,7,10,Primary,Monthly,NM
+NM6025,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,Female,37,Unemployed,388,No,10,9,10,Secondary,Monthly,NM
+NM6024,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,36,Unemployed,963,No,10,5,10,Primary,Monthly,NM
+NM6023,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,33,Unemployed,278,No,10,1,0,Secondary,Monthly,NM
+NM6022,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,No,No,No,No,No,No,No,No,Female,35,NA,478,No,10,4,0,Secondary,Monthly,NM
+NM6021,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,53,Unemployed,187,Yes,10,5,10,NA,Monthly,NM
+NM6020,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,Unemployed,NA,No,10,9,10,Primary,Monthly,NM
+NM6019,Yes,No,Yes,Yes,No,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Male,34,NA,31,Yes,10,4,6,NA,Monthly,NM
+NM6018,No,No,No,No,Yes,Yes,No,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,32,NA,125,Yes,7,0,0,Primary,Monthly,NM
+NM6017,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,34,NA,12,Yes,4,2,1,Secondary,Monthly,NM
+NM6016,No,Yes,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,42,NA,225,No,10,4,6,NA,Monthly,NM
+NM6015,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,Male,29,NA,NA,No,10,8,4,Secondary,Monthly,NM
+NM6014,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Full-time work,315,No,10,1,1,Secondary,Monthly,NM
+NM6001,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,NA,360,Yes,10,1,0,Primary,Monthly,NM
+NM6002,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,63,NA,960,No,10,9,10,NA,Monthly,NM
+NM6000,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,Female,38,NA,251,No,7,6,9,Secondary,Monthly,NM
+NM6004,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,28,NA,48,Yes,6,4,4,Secondary,Monthly,NM
+NM6005,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,Part-time work,84,Yes,10,5,7,NA,Monthly,NM
+NM6007,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,25,NA,303,No,10,10,10,Secondary,Monthly,NM
+NM6008,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Male,76,NA,415,No,10,5,9,NA,Monthly,NM
+NM6010,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,41,Part-time work,NA,Yes,10,4,3,Primary,Monthly,NM
+NM6012,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Male,45,NA,458,No,10,5,10,Secondary,Monthly,NM
+NM6013,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,40,NA,89,No,8,5,10,Primary,Monthly,NM
+NM6031,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Female,55,NA,633,No,10,3,10,NA,Monthly,NM
+NM6032,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,31,NA,410,No,8,6,9,Primary,Monthly,NM
+NM6033,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Female,58,NA,184,Yes,7,3,3,NA,Monthly,NM
+NM6034,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,43,NA,341,No,8,8,8,NA,Monthly,NM
+NM6035,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,38,NA,128,Yes,10,5,5,Secondary,Monthly,NM
+NM6037,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,25,NA,299,No,10,5,3,Secondary,Monthly,NM
+NM6038,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Full-time work,376,No,5,2,0,Secondary,Monthly,NM
+NM6039,No,No,Yes,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Male,41,NA,380,Yes,7,3,3,Secondary,Monthly,NM
+NM6040,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,23,NA,115,No,4,4,7,Secondary,Monthly,NM
+NM6041,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,40,NA,234,Yes,9,8,10,NA,Monthly,NM
+NM6042,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,NA,849,No,9,4,9,Primary,Monthly,NM
+NM6043,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,48,NA,321,No,9,2,3,NA,Monthly,NM
+NM6045,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,31,NA,350,No,8,4,2,Secondary,Monthly,NM
+NM6046,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,Female,28,NA,222,Yes,5,4,7,Secondary,Monthly,NM
+NM6047,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,Male,20,NA,475,No,2,0,1,Secondary,Monthly,NM
+NM6048,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,NA,142,No,3,3,3,Primary,Monthly,NM
+NM6049,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,NA,301,No,9,9,9,Secondary,Monthly,NM
+NM6050,No,Yes,No,No,No,No,No,No,No,Yes,No,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Female,21,NA,NA,No,6,6,9,Secondary,Monthly,NM
+NM6052,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,NA,412,No,8,8,4,Secondary,Monthly,NM
+NM6053,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,28,NA,116,Yes,6,8,7,Primary,Monthly,NM
+NM6054,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Unemployed,196,Yes,9,4,7,NA,Monthly,NM
+NM6101,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Unemployed,202,Yes,0,0,0,Secondary,Monthly,NM
+NM6102,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Female,NA,Unemployed,NA,No,4,2,5,Primary,Monthly,NM
+NM6103,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Male,NA,Unemployed,NA,No,4,3,1,NA,Monthly,NM
+NM6104,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,34,Full-time work,456,No,8,3,6,Secondary,Monthly,NM
+NM6106,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,Male,43,Unemployed,195,No,7,3,2,Secondary,Monthly,NM
+NM6107,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,Female,71,Full-time work,354,No,5,3,1,NA,Monthly,NM
+NM6108,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Unemployed,265,Yes,3,2,1,Primary,Monthly,NM
+NM6109,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,21,Unemployed,386,No,3,1,0,Secondary,Monthly,NM
+NM6112,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,NA,Full-time work,51,No,5,2,1,Secondary,Monthly,NM
+NM6114,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,38,Unemployed,170,No,5,4,4,Secondary,Monthly,NM
+NM6115,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,39,Full-time work,NA,No,2,1,1,Secondary,Monthly,NM
+NM6116,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,30,Unemployed,183,No,4,3,2,Secondary,Monthly,NM
+NM6117,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,37,Unemployed,119,No,5,4,3,NA,Monthly,NM
+NM6118,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,41,Full-time work,131,Yes,3,1,0,Secondary,Monthly,NM
+NM6119,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,30,Unemployed,163,No,5,3,1,Secondary,Monthly,NM
+NM6120,Yes,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,36,Unemployed,140,Yes,5,3,4,Secondary,Monthly,NM
+NM6121,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,40,Unemployed,123,No,5,3,3,NA,Monthly,NM
+NM6122,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,170,Yes,3,2,2,Primary,Monthly,NM
+NM6123,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,203,No,5,2,2,Secondary,Monthly,NM
+NM6124,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Male,39,Unemployed,120,No,4,3,4,NA,Monthly,NM
+NM6125,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Unemployed,207,No,4,5,3,Primary,Monthly,NM
+NM6126,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,33,Unemployed,171,Yes,5,4,1,Secondary,Monthly,NM
+NM6127,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Male,55,Unemployed,230,No,4,4,2,Secondary,Monthly,NM
+NM6201,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Full-time work,563,Yes,8,5,1,Secondary,Monthly,NM
+NM6204,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,42,Full-time work,40,Yes,0,0,1,Primary,Monthly,NM
+NM6205,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,Male,34,Full-time work,246,Yes,8,5,7,Secondary,Monthly,NM
+NM6210,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,33,NA,425,Yes,8,5,2,Primary,Monthly,NM
+NM6211,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,NA,63,Yes,8,4,5,Secondary,Monthly,NM
+NM6214,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,NA,NA,NA,No,2,1,2,Primary,Monthly,NM
+NM6220,Yes,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Full-time work,213,Yes,10,3,4,Tertiary,Monthly,NM
+NM6221,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,187,No,9,3,7,Secondary,Monthly,NM
+NM6223,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,42,Part-time work,NA,No,8,5,9,NA,Monthly,NM
+NM6224,No,No,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,36,Full-time work,NA,No,9,5,7,Secondary,Monthly,NM
+NM6229,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,29,Part-time work,NA,No,10,5,NA,Secondary,Monthly,NM
+NM6234,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,34,Unemployed,129,Yes,6,4,4,Secondary,Monthly,NM
+NM6236,No,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,No,No,Yes,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,34,Unemployed,NA,Yes,8,3,5,Secondary,Monthly,NM
+NM6239,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,36,NA,26,Yes,7,4,3,Secondary,Monthly,NM
+NM6240,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Female,42,Unemployed,293,No,7,4,0,Secondary,Monthly,NM
+NM2002,No,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,Yes,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,33,Full-time work,910,No,10,10,10,Secondary,Monthly,NM
+NM2004,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,31,Unemployed,NA,No,1,1,0,Secondary,Monthly,NM
+NM2005,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Male,26,Full-time work,329,No,3,0,0,NA,Monthly,NM
+NM2008,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,30,Unemployed,NA,No,9,6,3,Secondary,Monthly,NM
+NM2009,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Female,35,Unemployed,549,No,10,6,0,Secondary,Monthly,NM
+NM2010,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,37,Full-time work,NA,Yes,5,3,3,Secondary,Monthly,NM
+NM2011,No,No,No,No,Yes,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,Female,41,Full-time work,NA,Yes,2,1,1,Secondary,Monthly,NM
+NM2012,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,No,No,Yes,No,Yes,Female,24,Unemployed,310,Yes,8,8,8,Secondary,Monthly,NM
+NM2015,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,Yes,Yes,No,No,Female,43,Unemployed,NA,No,10,8,8,Secondary,Monthly,NM
+NM2018,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Female,31,Full-time work,NA,No,7,4,0,NA,Monthly,NM
+NM2019,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Male,29,Full-time work,NA,Yes,7,3,1,Secondary,Monthly,NM
+NM2020,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Male,29,Full-time work,235,No,3,1,1,Secondary,Monthly,NM
+NM7010,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,36,NA,NA,No,10,10,10,Secondary,Monthly,NM
+NM7009,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Female,32,NA,13,No,10,3,10,Secondary,Monthly,NM
+NM7008,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,Yes,No,No,Female,28,NA,135,Yes,10,5,5,Secondary,Monthly,NM
+NM7007,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,Yes,Yes,No,No,Female,29,NA,301,Yes,10,5,3,Secondary,Monthly,NM
+NM7006,No,Yes,No,No,No,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,28,NA,98,No,8,5,5,Secondary,Monthly,NM
+NM7005,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Male,34,NA,284,Yes,4,1,2,Secondary,Monthly,NM
+NM7004,Yes,No,Yes,No,Yes,No,No,No,No,Yes,No,No,Yes,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,26,NA,182,Yes,8,8,5,Secondary,Monthly,NM
+NM7003,No,No,No,No,No,No,No,No,No,Yes,No,No,Yes,Yes,No,Yes,No,No,No,Yes,Yes,Yes,Yes,No,No,Male,40,NA,83,No,10,10,10,Secondary,Monthly,NM
+NM7002,No,No,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,No,No,No,No,Male,37,Unemployed,4,Yes,10,5,5,Secondary,Monthly,NM
+NM7001,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,35,NA,108,No,3,0,0,Secondary,Monthly,NM
+NM7000,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,Female,25,NA,NA,Yes,5,3,0,Secondary,Monthly,NM

@@ -1,596 +1,597 @@
-ID,Sex,Age,Employment_status,CD4_recent,ART_currently,Education
-RPB73,Female,36,Other,391,Yes,Tertiary
-RPB74,Female,27,Unemployed,571,Yes,Secondary
-RPB75,Female,39,Other,591,Yes,Secondary
-RPB76,Female,36,Unemployed,207,Yes,Primary
-RPB77,Female,31,Unemployed,126,Yes,Secondary
-RPB78,Female,32,Unemployed,225,Yes,Secondary
-RPB80,Female,28,Unemployed,543,Yes,Secondary
-RPB81,Female,37,Unemployed,410,Yes,Secondary
-RPB84,Female,31,Part-time work,74,Yes,Secondary
-RPB85,Female,25,Full-time work,212,Yes,Secondary
-RPB103,Female,31,Other,579,Yes,Secondary
-RPB104,Female,24,Unemployed,346,Yes,Secondary
-RPB105,Female,35,Other,602,Yes,Secondary
-RPB106,Female,26,Unemployed,519,Yes,Primary
-RPB107,Female,34,Unemployed,261,Yes,Secondary
-RPB108,Female,33,Unemployed,277,Yes,Tertiary
-RPB109,Female,27,Unemployed,287,Yes,Secondary
-RPB110,Female,34,Unemployed,397,Yes,Secondary
-RPB111,Female,30,Unemployed,133,Yes,Secondary
-RPB112,Female,30,Unemployed,124,Yes,Secondary
-RPB132,Female,35,Unemployed,300,Yes,Secondary
-RPB133,Female,34,Other,206,Yes,Secondary
-RPB134,Female,28,Unemployed,437,Yes,Secondary
-RPB135,Female,31,Other,479,Yes,Secondary
-RPB136,Female,37,Part-time work,224,Yes,Secondary
-RPB139,Female,35,Other,447,Yes,Secondary
-RPB140,Female,29,Other,327,Yes,Secondary
-RPB124,Female,27,Full-time work,635,Yes,Tertiary
-RPB125,Female,25,Other,430,Yes,Secondary
-RPB04,Female,33,Other,153,Yes,Secondary
-RPB06,Female,35,Unemployed,308,Yes,Primary
-RPB07,Female,22,Unemployed,184,Yes,Secondary
-RPB08,Female,26,Other,317,Yes,Tertiary
-RPB09,Female,31,Unemployed,452,Yes,Primary
-RPB10,Female,37,Unemployed,308,Yes,Secondary
-RPB11,Female,38,Part-time work,590,Yes,Secondary
-RPB12,Female,27,Unemployed,188,Yes,Secondary
-RPB14,Female,36,Unemployed,348,Yes,Secondary
-RPB15,Female,37,Unemployed,216,Yes,Secondary
-RPB42,Female,26,Unemployed,288,Yes,Secondary
-RPB44,Female,29,Unemployed,165,Yes,Secondary
-RPB46,Female,31,Unemployed,226,Yes,Secondary
-RPB48,Female,34,Other,561,Yes,Secondary
-RPB49,Female,26,Unemployed,236,Yes,Secondary
-RPB50,Female,37,Unemployed,479,Yes,Tertiary
-RPB51,Female,31,Part-time work,311,Yes,Secondary
-RPB52,Female,26,Unemployed,353,Yes,Tertiary
-RPB53,Female,30,Unemployed,114,Yes,Secondary
-RPB54,Female,28,Unemployed,872,Yes,Primary
-RPB55,Female,30,Unemployed,881,Yes,Secondary
-RPB57,Female,34,Unemployed,388,Yes,Tertiary
-RPB58,Female,30,Unemployed,500,Yes,Primary
-RPB59,Female,34,Unemployed,452,Yes,Secondary
-RPB60,Female,26,Unemployed,340,Yes,Secondary
-RPB32,Female,34,Unemployed,777,Yes,Primary
-RPB33,Female,31,Other,140,Yes,Secondary
-RPB34,Female,33,Unemployed,673,Yes,Secondary
-RPB35,Female,39,Part-time work,714,Yes,Secondary
-RPB36,Female,39,Unemployed,501,Yes,Secondary
-RPB37,Female,30,Other,233,Yes,Secondary
-RPB38,Female,30,Unemployed,360,Yes,Tertiary
-RPB41,Female,27,Unemployed,379,Yes,Primary
-RPB39,Female,27,Unemployed,325,Yes,Primary
-RPD08,Female,30,Unemployed,154,Yes,Secondary
-RPD09,Female,21,Unemployed,184,No,Secondary
-RPD10,Female,30,Other,173,No,Secondary
-RPD11,Female,24,Unemployed,274,Yes,Secondary
-RPC11,Female,27,Unemployed,281,Yes,Secondary
-RPB16,Female,28,Unemployed,659,Yes,Secondary
-RPC,Female,27,Unemployed,115,No,Secondary
-RPA11,Female,31,Unemployed,220,Yes,Secondary
-RPA12,Female,33,Other,275,Yes,Secondary
-RPA13,Female,35,Part-time work,72,Yes,Secondary
-RPA14,Female,32,Unemployed,109,Yes,Primary
-RPA15,Female,33,Unemployed,306,Yes,Secondary
-RPA17,Female,28,Other,313,Yes,Secondary
-RPA18,Female,30,Other,203,Yes,Secondary
-RPA02,Female,30,Part-time work,146,Yes,Primary
-RPA03,Female,33,Part-time work,26,Yes,Secondary
-RPA04,Female,25,Unemployed,176,Yes,Secondary
-RPA05,Female,35,Unemployed,149,Yes,Primary
-RPA06,Female,27,Unemployed,240,Yes,Secondary
-RPA07,Female,30,Unemployed,36,Yes,Primary
-RPA09,Female,29,Unemployed,155,Yes,Secondary
-RPA10,Female,22,Unemployed,181,Yes,Secondary
-RPD01,Female,37,Other,173,No,Tertiary
-RPD02,Female,37,Part-time work,145,No,Secondary
-RPD03,Female,34,Unemployed,209,Yes,Primary
-RPD04,Female,27,Unemployed,133,Yes,Tertiary
-RPD06,Female,31,Unemployed,152,No,Secondary
-RPD07,Female,25,Part-time work,295,No,Secondary
-RPA19,Female,24,Other,98,No,Tertiary
-RPA20,Female,31,Unemployed,114,No,Secondary
-RPA21,Female,31,Unemployed,58,Yes,Secondary
-RPA22,Female,36,Unemployed,221,Yes,Secondary
-RPC01,Female,34,Unemployed,101,No,Secondary
-RPC02,Female,32,Other,159,No,Secondary
-RPC03,Female,32,Unemployed,246,No,Secondary
-RPC04,Female,27,Other,261,No,Secondary
-RPC05,Female,30,Unemployed,174,No,Secondary
-RPC06,Female,34,Unemployed,192,No,Secondary
-RPB141,Female,28,Unemployed,165,Yes,Secondary
-RPB142,Female,20,Other,202,Yes,Tertiary
-RPB143,Female,29,Unemployed,165,Yes,Secondary
-RPB144,Female,35,Unemployed,213,Yes,NA
-RPB17,Female,35,Part-time work,596,Yes,Tertiary
-RPB19,Female,35,Unemployed,1040,Yes,Secondary
-RPB20,Female,40,Unemployed,382,Yes,Secondary
-RPB21,Female,30,Unemployed,487,Yes,Secondary
-RPC07,Female,24,Other,175,No,Secondary
-RPC08,Female,28,Full-time work,213,No,Tertiary
-RPC10,Female,29,Part-time work,174,Yes,Secondary
-RPC12,Female,40,Unemployed,166,No,Primary
-RPC14,Female,NA,Other,NA,No,Tertiary
-RPC15,Female,23,Unemployed,305,No,Secondary
-RPB88,Female,20,Unemployed,191,Yes,Secondary
-RPB89,Female,25,Unemployed,667,Yes,Secondary
-RPB90,Female,36,Part-time work,1032,Yes,Secondary
-RPB93,Female,32,Other,301,Yes,Tertiary
-RPB94,Female,28,Other,774,Yes,Secondary
-RPB95,Female,36,Unemployed,54,Yes,NA
-RPB98,Female,NA,Unemployed,187,Yes,Secondary
-RPB99,Female,33,Unemployed,249,Yes,Secondary
-RPB100,Female,30,Unemployed,576,Yes,Secondary
-RPA01,Female,32,Part-time work,170,Yes,Primary
-RPB113,Female,32,Other,560,Yes,Secondary
-RPB114,Female,28,Unemployed,262,Yes,Secondary
-RPB116,Female,33,Full-time work,484,Yes,Tertiary
-RPB117,Female,30,Unemployed,385,Yes,Secondary
-RPB118,Female,40,Unemployed,NA,Yes,Primary
-RPB119,Female,32,Unemployed,212,Yes,Primary
-RPB120,Female,34,Unemployed,266,Yes,Tertiary
-RPB121,Female,28,Unemployed,282,Yes,Secondary
-RPB122,Female,39,Unemployed,50,Yes,Secondary
-RPB123,Female,27,Unemployed,NA,Yes,Tertiary
-RPB40,Female,35,Unemployed,NA,Yes,Secondary
-RPB22,Female,39,Other,360,Yes,Tertiary
-RPB23,Female,23,Unemployed,245,Yes,Secondary
-RPB24,Female,20,Unemployed,700,Yes,Secondary
-RPB25,Female,39,Unemployed,237,Yes,Secondary
-RPB26,Female,25,Unemployed,502,Yes,Secondary
-RPB27,Female,30,Unemployed,310,Yes,Secondary
-RPB28,Female,34,Unemployed,911,Yes,Secondary
-RPB29,Female,24,Unemployed,281,Yes,Secondary
-RPB30,Female,28,Unemployed,170,Yes,Secondary
-RPB31,Female,38,Other,282,Yes,Secondary
-STIG01,Female,50,Full-time work,NA,Yes,Primary
-STIG02,Female,38,Unemployed,291,Yes,Tertiary
-STIG03,Female,26,Unemployed,1138,Yes,Secondary
-STIG04,Female,58,Full-time work,1092,Yes,Primary
-STIG05,Female,34,Full-time work,906,Yes,Secondary
-STIG06,Male,45,Other,236,Yes,Tertiary
-STIG07,Female,55,Full-time work,232,Yes,Tertiary
-STIG08,Female,25,Unemployed,288,Yes,Secondary
-STIG09,Male,51,Unemployed,295,Yes,Tertiary
-STIG10,Female,48,Unemployed,442,Yes,Primary
-STIG11,Female,37,Unemployed,461,Yes,Tertiary
-STIG12,Female,32,Full-time work,291,Yes,Tertiary
-STIG13,Female,49,Part-time work,533,Yes,Secondary
-STIG14,Female,46,Full-time work,616,Yes,Primary
-STIG15,Female,65,Unemployed,440,Yes,Secondary
-STIG16,Female,39,Full-time work,NA,Yes,Tertiary
-STIG17,Female,50,Unemployed,330,Yes,Secondary
-STIG18,Female,63,Unemployed,223,Yes,NA
-STIG19,Female,44,Unemployed,NA,Yes,Secondary
-STIG20,Female,38,Part-time work,NA,Yes,Tertiary
-STIG21,Female,32,Unemployed,NA,Yes,Tertiary
-STIG22,Female,44,Full-time work,NA,Yes,Secondary
-STIG23,Female,40,Full-time work,620,Yes,Secondary
-STIG24,Female,37,Full-time work,NA,Yes,Secondary
-STIG25,Female,58,Part-time work,NA,Yes,NA
-STIG26,Female,57,Full-time work,NA,Yes,Primary
-STIG27,Male,41,Full-time work,NA,Yes,Tertiary
-STIG28,Male,51,Unemployed,NA,Yes,Secondary
-STIG29,Female,57,Unemployed,NA,Yes,Primary
-STIG30,Female,43,Unemployed,NA,Yes,Secondary
-STIG31,Female,54,Full-time work,583,Yes,Secondary
-STIG32,Female,35,Part-time work,NA,Yes,Secondary
-STIG33,Female,35,Unemployed,NA,Yes,Secondary
-STIG34,Female,48,Part-time work,NA,Yes,Tertiary
-STIG35,Female,36,Unemployed,421,Yes,Secondary
-STIG36,Female,55,Full-time work,429,Yes,Secondary
-STIG37,Male,36,Unemployed,NA,Yes,Primary
-STIG38,Female,53,Full-time work,NA,NA,Secondary
-STIG39,Female,50,Part-time work,NA,Yes,Primary
-STIG40,Male,40,Full-time work,NA,Yes,Secondary
-STIG41,Female,32,Full-time work,1086,Yes,Tertiary
-STIG42,Female,48,Unemployed,NA,Yes,Secondary
-STIG43,Female,50,Full-time work,415,Yes,Tertiary
-STIG44,Female,53,Part-time work,NA,Yes,Secondary
-STIG45,Female,44,Unemployed,NA,Yes,Secondary
-STIG46,Female,54,Unemployed,50,Yes,Secondary
-STIG47,Female,59,Unemployed,NA,Yes,Primary
-STIG48,Female,39,Full-time work,60,Yes,Secondary
-STIG49,Female,32,Unemployed,579,Yes,Secondary
-STIG50,Female,39,Full-time work,498,Yes,Secondary
-RESI01,Female,35,Full-time work,21,Yes,Secondary
-RESI02,Female,44,Unemployed,894,Yes,Secondary
-RESI03,Male,38,Part-time work,465,Yes,Tertiary
-RESI04,Male,32,Full-time work,576,Yes,Secondary
-RESI05,Male,59,Unemployed,827,Yes,Primary
-RESI06,Female,59,Unemployed,NA,Yes,Secondary
-RESI07,Female,35,Unemployed,20,Yes,Secondary
-RESI09,Male,34,Part-time work,7300,Yes,Primary
-RESI35,Female,36,Full-time work,682,Yes,Secondary
-RESI45,Female,45,Unemployed,209,Yes,Secondary
-RESI21,Female,34,Part-time work,NA,Yes,Secondary
-RESI23,Male,47,Unemployed,386,Yes,Secondary
-RESI31,Female,38,Unemployed,NA,Yes,Tertiary
-RESI34,Female,49,Full-time work,NA,No,NA
-RESI36,Female,50,Unemployed,416,Yes,Secondary
-RESI37,Female,32,Full-time work,263,Yes,Secondary
-RESI40,Female,42,Unemployed,286,Yes,Secondary
-RESI44,Female,41,Full-time work,441,Yes,Secondary
-RESI52,Female,45,Unemployed,NA,Yes,Primary
-RESI61,Female,40,Unemployed,30,Yes,Secondary
-RESI62,Female,37,Part-time work,312,Yes,Secondary
-RESI64,Male,55,Full-time work,216,Yes,Primary
-RESI66,Female,57,Full-time work,30,No,Secondary
-RESI67,Female,34,Unemployed,97,Yes,Tertiary
-RESI69,Male,48,Part-time work,1000,Yes,Secondary
-RESI71,Female,40,Full-time work,NA,Yes,Secondary
-RESI72,Female,48,Unemployed,552,Yes,Secondary
-RESI74,Male,41,Part-time work,257,Yes,Secondary
-RESI73,Female,50,Full-time work,617,Yes,Secondary
-RESI75,Male,41,Part-time work,46,Yes,Primary
-RESI76,Female,33,Part-time work,258,Yes,Secondary
-RESI77,Male,37,Unemployed,227,Yes,Secondary
-RESI78,Female,30,Full-time work,1230,Yes,Secondary
-RESI82,Female,19,Other,405,Yes,Secondary
-RESI86,Female,46,Full-time work,442,Yes,Secondary
-RESI89,Female,61,Unemployed,476,Yes,Primary
-RESI90,Female,50,Part-time work,653,Yes,NA
-RESI92,Female,35,Full-time work,299,Yes,Secondary
-RESI93,Female,63,Full-time work,676,Yes,Primary
-RESI97,Female,64,Unemployed,567,Yes,Primary
-RESI98,Female,42,Unemployed,274,Yes,Secondary
-RESI100,Female,42,Full-time work,785,Yes,Secondary
-RESI102,Female,33,Full-time work,1232,Yes,Tertiary
-RESI105,Male,49,Unemployed,505,Yes,Primary
-RESI112,Male,40,Full-time work,381,Yes,Tertiary
-RESI115,Female,33,Full-time work,575,No,Tertiary
-RESI116,Male,27,Full-time work,306,Yes,Tertiary
-RESI117,Female,33,Unemployed,245,Yes,Primary
-RESI120,Female,39,Unemployed,NA,Yes,Secondary
-RESI122,Male,35,Unemployed,11,Yes,Secondary
-RESI124,Female,33,Unemployed,642,Yes,Secondary
-RESI127,Male,46,Unemployed,NA,NA,Secondary
-RESI129,Female,38,Unemployed,NA,Yes,Secondary
-RESI130,Male,44,Unemployed,649,Yes,Secondary
-RESI131,Female,30,Unemployed,213,Yes,Tertiary
-RESI132,Female,30,Part-time work,496,Yes,Primary
-RESI133,Female,58,Unemployed,789,Yes,Secondary
-RESI134,Male,44,Full-time work,NA,Yes,Secondary
-RESI135,Female,48,Full-time work,NA,Yes,Tertiary
-RESI136,Female,45,Unemployed,662,Yes,Tertiary
-RESI139,Female,44,Full-time work,966,Yes,Secondary
-RESI140,Female,55,Unemployed,663,Yes,NA
-RESI141,Female,35,Part-time work,219,Yes,Primary
-RESI143,Male,49,Unemployed,NA,Yes,Secondary
-RESI144,Female,52,Unemployed,751,Yes,Secondary
-RESI146,Female,59,Full-time work,689,Yes,Secondary
-RESI148,Male,42,Full-time work,107,Yes,Secondary
-RESI150,Female,51,Full-time work,NA,Yes,Secondary
-RESI151,Male,32,Unemployed,176,Yes,Secondary
-RESI152,Male,55,Unemployed,NA,Yes,Secondary
-RESI153,Female,46,Full-time work,964,Yes,Secondary
-RESI154,Female,34,Full-time work,844,Yes,Tertiary
-RESI155,Female,56,Part-time work,723,Yes,Secondary
-RESI156,Female,66,Unemployed,458,Yes,Primary
-RESI159,Male,49,Unemployed,385,Yes,Secondary
-RESI161,Male,43,Unemployed,NA,Yes,Secondary
-RESI162,Female,37,Unemployed,540,Yes,Tertiary
-RESI163,Female,51,Unemployed,NA,Yes,Primary
-RESI164,Male,50,Unemployed,578,Yes,Secondary
-RESI165,Female,46,Unemployed,673,Yes,Secondary
-RESI167,Female,42,Part-time work,671,Yes,Secondary
-RESI168,Female,45,Full-time work,113,Yes,Secondary
-RESI170,Male,59,Part-time work,357,Yes,NA
-RESI173,Female,40,Unemployed,605,Yes,Secondary
-RESI178,Male,35,Full-time work,256,Yes,Secondary
-RESI18,Female,31,Unemployed,206,Yes,Secondary
-RESI185,Male,41,Unemployed,210,Yes,Primary
-RESI186,Male,46,Full-time work,295,Yes,Secondary
-RESI187,Male,34,Unemployed,258,Yes,Primary
-RESI189,Female,56,Full-time work,482,Yes,Tertiary
-RESI191,Male,35,Unemployed,285,Yes,Secondary
-RESI192,Female,49,Part-time work,397,Yes,Tertiary
-RESI193,Male,57,Full-time work,575,Yes,Primary
-RESI194,Male,45,Full-time work,162,Yes,Secondary
-RESI195,Male,40,Part-time work,181,Yes,Primary
-RESI196,Female,50,Full-time work,257,Yes,Primary
-RESI197,Male,49,Unemployed,333,Yes,Secondary
-RESI198,Female,40,Full-time work,319,Yes,Tertiary
-DD1,Female,37,Part-time work,NA,Yes,Secondary
-DD2,Female,40,Unemployed,339,Yes,Secondary
-DD4,Female,36,Full-time work,177,Yes,Secondary
-DD5,Female,58,Unemployed,392,Yes,Primary
-DD6,Female,33,Unemployed,NA,Yes,Secondary
-DD7,Female,32,Unemployed,295,Yes,Secondary
-DD8,Male,37,Unemployed,227,Yes,Secondary
-DD9,Female,37,Full-time work,667,Yes,Secondary
-DD10,Male,46,Unemployed,386,Yes,Secondary
-DD11,Female,31,Unemployed,474,Yes,Secondary
-DD12,Female,36,Full-time work,682,Yes,Secondary
-DD14,Female,34,Part-time work,450,Yes,Primary
-DD15,Female,33,Part-time work,258,Yes,Secondary
-DD16,Female,30,Unemployed,496,Yes,Secondary
-DD17,Female,43,Full-time work,354,Yes,Secondary
-DD19,Female,37,Unemployed,NA,Yes,Secondary
-DD20,Female,35,Unemployed,NA,Yes,Tertiary
-DD23,Male,41,Part-time work,256,Yes,Secondary
-DD24,Female,44,Full-time work,226,Yes,Secondary
-DD25,Female,40,Full-time work,NA,Yes,Secondary
-DD26,Male,41,Unemployed,NA,Yes,Primary
-DD27,Female,34,Unemployed,97,Yes,Tertiary
-DD30,Female,39,Unemployed,NA,Yes,Primary
-DD31,Female,42,Part-time work,443,Yes,Primary
-DD32,Female,31,Full-time work,145,Yes,Secondary
-DD33,Female,42,Unemployed,274,Yes,Tertiary
-DD34,Female,42,Full-time work,785,Yes,Secondary
-DD35,Female,33,Unemployed,642,Yes,Secondary
-DD37,Male,27,Full-time work,NA,Yes,Tertiary
-DD39,Female,40,Full-time work,840,Yes,Tertiary
-DD40,Female,38,Unemployed,NA,Yes,Secondary
-DD41,Male,44,Unemployed,649,Yes,Secondary
-DD43,Male,40,Unemployed,NA,Yes,NA
-DD44,Male,38,Unemployed,741,Yes,Secondary
-DD46,Male,44,Full-time work,NA,Yes,Secondary
-DD48,Male,40,Full-time work,381,Yes,Tertiary
-DD49,Male,49,Unemployed,NA,Yes,Secondary
-DD50,Male,39,Full-time work,107,Yes,NA
-DD51,Male,43,Unemployed,NA,No,Secondary
-DD52,Male,41,Unemployed,210,Yes,Primary
-DD53,Male,50,Unemployed,578,Yes,Secondary
-DD54,Male,35,Full-time work,256,Yes,Secondary
-DD55,Male,35,Unemployed,NA,Yes,Secondary
-DD56,Male,34,Unemployed,258,Yes,Secondary
-DD57,Male,49,Unemployed,333,Yes,Secondary
-DD58,Male,33,Unemployed,16,Yes,Secondary
-DD60,Female,44,Full-time work,63,Yes,Secondary
-DD61,Female,43,Part-time work,368,Yes,Tertiary
-DD62,Female,35,Unemployed,NA,Yes,Secondary
-DD63,Female,36,Unemployed,364,Yes,Secondary
-DD64,Female,48,Unemployed,543,Yes,Tertiary
-DD65,Female,41,Unemployed,NA,Yes,Primary
-DD66,Female,39,Unemployed,760,Yes,Primary
-DD68,Female,46,Unemployed,1090,Yes,Secondary
-DD69,Female,34,Full-time work,464,Yes,Secondary
-DD70,Female,31,Unemployed,1095,Yes,Secondary
-RESI183,Female,31,Unemployed,325,Yes,Secondary
-DD42,Male,42,Unemployed,NA,Yes,Secondary
-DD38,Female,33,Full-time work,575,No,Tertiary
-DD36,Female,33,Other,245,Yes,Primary
-DD45,Female,30,Unemployed,NA,Yes,Secondary
-NM0005,Male,47,Full-time work,209,Yes,Secondary
-NM0006,Female,35,Full-time work,329,Yes,Secondary
-NM0007,Female,28,Unemployed,196,Yes,Secondary
-NM0009,Female,47,Part-time work,338,No,Primary
-NM0010,Female,36,Full-time work,69,No,Secondary
-NM0011,Male,31,Unemployed,19,Yes,Secondary
-NM0012,Female,28,Unemployed,NA,Yes,Secondary
-NM0013,Female,50,Other,2000,Yes,Primary
-NM0014,Female,26,Unemployed,1,Yes,Secondary
-NM0015,Female,30,Unemployed,110,Yes,Secondary
-NM0017,Female,28,Full-time work,61,Yes,Tertiary
-NM0023,Male,37,Full-time work,5,Yes,Secondary
-NM0025,Female,32,Full-time work,228,Yes,Tertiary
-NM0026,Female,42,Unemployed,144,Yes,Secondary
-NM0027,Female,36,Unemployed,84,No,Secondary
-NM0029,Male,47,Unemployed,248,Yes,Primary
-NM0030,Female,35,Full-time work,12,Yes,Secondary
-NM0031,Female,32,Unemployed,200,Yes,Secondary
-NM0034,Female,40,Part-time work,287,No,Secondary
-NM0035,Female,33,Full-time work,NA,Yes,Secondary
-NM0036,Female,36,Unemployed,147,Yes,Secondary
-NM0037,Female,29,Unemployed,298,No,Secondary
-NM0039,Female,43,Unemployed,231,Yes,Secondary
-NM0040,Female,35,Full-time work,4,Yes,Secondary
-NM0002,Male,35,Unemployed,35,Yes,Secondary
-NM0056,Female,37,Unemployed,338,Yes,Secondary
-NM0057,Female,23,Unemployed,18,Yes,Tertiary
-NM0058,Female,58,Full-time work,NA,Yes,NA
-NM0059,Female,36,Unemployed,200,Yes,Secondary
-NM0050,Female,36,Unemployed,309,No,Secondary
-NM0051,Male,39,Unemployed,308,No,Primary
-NM0053,Male,30,Unemployed,150,Yes,Secondary
-NM0055,Female,56,Unemployed,159,Yes,Secondary
-NM0041,Male,32,Unemployed,118,No,Secondary
-NM0042,Female,31,Unemployed,202,Yes,Secondary
-NM0043,Female,31,Unemployed,247,Yes,Secondary
-NM0044,Female,38,Unemployed,101,Yes,Primary
-NM0048,Female,31,Unemployed,8,Yes,Primary
-NM0062,Female,27,Full-time work,300,Yes,Tertiary
-NM0064,Female,32,Unemployed,61,Yes,Secondary
-NM0065,Male,45,Unemployed,200,Yes,Secondary
-NM0066,Female,33,Unemployed,53,Yes,Secondary
-NM0067,Female,41,Full-time work,7,Yes,Secondary
-NM0068,Male,44,Unemployed,NA,Yes,Primary
-NM0070,Male,30,Full-time work,426,No,Secondary
-NM0072,Female,41,Full-time work,250,No,Secondary
-NM0073,Female,32,Full-time work,400,No,Secondary
-NM0075,Male,41,Full-time work,316,No,Secondary
-NM0076,Female,34,Unemployed,494,Yes,Tertiary
-NM0077,Female,43,Unemployed,170,Yes,NA
-NM0078,Male,37,Unemployed,1,Yes,Secondary
-NM0079,Male,43,Unemployed,NA,Yes,Primary
-NM0080,Female,41,Unemployed,94,Yes,Secondary
-NM0081,Female,32,Unemployed,110,No,Tertiary
-NM0082,Female,34,Full-time work,130,Yes,Secondary
-NM0085,Female,35,Unemployed,285,Yes,Secondary
-NM0086,Male,40,Unemployed,NA,Yes,NA
-NM0087,Female,44,Unemployed,NA,Yes,NA
-NM0089,Male,45,Part-time work,57,Yes,Secondary
-NM0090,Male,55,Unemployed,NA,Yes,Secondary
-NM0091,Male,52,Unemployed,NA,No,Secondary
-NM0092,Female,25,Unemployed,152,Yes,Tertiary
-NM0093,Male,47,Unemployed,NA,Yes,Secondary
-NM0095,Female,24,Unemployed,432,No,Secondary
-NM0096,Female,41,Unemployed,NA,NA,Secondary
-NM0097,Female,32,NA,308,No,Secondary
-NM0098,Female,35,Full-time work,NA,Yes,Primary
-NM0100,Female,36,Unemployed,200,Yes,Primary
-NM0101,Female,35,Unemployed,172,No,Primary
-NM0102,Female,48,Unemployed,NA,Yes,Primary
-NM0104,Female,53,Unemployed,NA,Yes,Secondary
-NM0106,Female,32,Unemployed,36,Yes,Secondary
-NM0107,Female,27,Unemployed,4,Yes,Secondary
-NM0108,Female,39,Full-time work,47,No,Secondary
-NM0110,Male,49,Unemployed,27,Yes,Secondary
-NM0111,Female,29,Unemployed,56,Yes,Secondary
-NM0112,Female,52,Unemployed,174,Yes,Secondary
-NM0113,Female,39,Unemployed,364,No,Primary
-NM0114,Female,34,Unemployed,154,Yes,Secondary
-NM0119,Female,36,Full-time work,19,Yes,NA
-NM0120,Female,25,Unemployed,120,Yes,Secondary
-NM0122,Female,32,Unemployed,315,Yes,Primary
-NM0124,Female,35,Full-time work,88,Yes,Primary
-NM0128,Female,21,Unemployed,17,No,Secondary
-NM0129,Female,20,Unemployed,238,No,Secondary
-NM0130,Female,37,Unemployed,334,No,Secondary
-NM0133,Female,40,Unemployed,226,No,NA
-NM0134,Female,26,Unemployed,637,No,Secondary
-NM0136,Female,58,Unemployed,106,Yes,Secondary
-NM0138,Male,37,Unemployed,50,Yes,Secondary
-NM0143,Female,44,Unemployed,159,Yes,Secondary
-NM0146,Female,32,Unemployed,18,No,Secondary
-NM0147,Female,31,Unemployed,109,Yes,Secondary
-NM0149,Female,37,Unemployed,132,Yes,Secondary
-NM0150,Female,41,Full-time work,103,Yes,Secondary
-NM0151,Female,42,Unemployed,184,Yes,Secondary
-NM0152,Female,38,Full-time work,101,Yes,Secondary
-NM0153,Female,32,Unemployed,321,No,Secondary
-NM0154,Female,44,Full-time work,334,No,Secondary
-NM0155,Female,34,Unemployed,65,Yes,Secondary
-NM0158,Female,37,Unemployed,171,No,Secondary
-NM0159,Female,30,Unemployed,440,No,Secondary
-NM0160,Female,28,Part-time work,802,No,Secondary
-NM0161,Female,41,Unemployed,372,No,Primary
-NM0162,Male,43,Unemployed,381,No,Primary
-NM0165,Female,45,Unemployed,340,Yes,Primary
-NM0166,Female,36,Unemployed,NA,NA,Secondary
-NM0167,Male,37,Unemployed,235,Yes,Primary
-NM0169,Female,43,Unemployed,154,Yes,Secondary
-NM0172,Female,31,Unemployed,200,NA,Primary
-NM0173,Female,41,Unemployed,182,No,Secondary
-NM0174,Female,35,Unemployed,155,Yes,Primary
-NM0176,Male,44,Unemployed,196,Yes,Secondary
-NM0177,Male,34,Unemployed,129,Yes,Secondary
-NM0178,Male,45,Full-time work,150,Yes,Secondary
-NM0179,Female,67,Unemployed,117,Yes,Primary
-NM0180,Female,39,Full-time work,NA,Yes,NA
-NM0181,Female,34,Full-time work,55,Yes,Secondary
-NM0182,Female,24,Unemployed,2,Yes,Secondary
-NM1503,Female,35,Unemployed,61,Yes,Secondary
-NM1506,Female,40,Unemployed,72,Yes,Secondary
-NM1509,Female,41,Full-time work,85,Yes,Secondary
-NM1500,Female,42,NA,109,Yes,Primary
-NM1512,Female,45,Full-time work,302,No,Primary
-NM1513,Female,30,Unemployed,6,Yes,Secondary
-NM1514,Male,32,Full-time work,157,No,Secondary
-NM1517,Female,34,Full-time work,194,Yes,Primary
-NM1518,Female,38,Full-time work,367,No,Secondary
-NM1519,Female,27,Full-time work,471,No,Secondary
-NM1520,Female,34,Full-time work,480,No,Secondary
-NM1524,Female,28,Full-time work,112,Yes,Secondary
-NM1525,Male,48,Full-time work,159,Yes,Primary
-NM6030,Female,40,Part-time work,289,No,Secondary
-NM6029,Female,35,Unemployed,236,No,Secondary
-NM6028,Male,41,Unemployed,40,No,Primary
-NM6026,Male,45,Unemployed,855,No,Primary
-NM6025,Female,37,Unemployed,388,No,Secondary
-NM6024,Female,36,Unemployed,963,No,Primary
-NM6023,Female,33,Unemployed,278,No,Secondary
-NM6022,Female,35,NA,478,No,Secondary
-NM6021,Female,53,Unemployed,187,Yes,NA
-NM6020,Female,31,Unemployed,NA,No,Primary
-NM6019,Male,34,NA,31,Yes,NA
-NM6018,Female,32,NA,125,Yes,Primary
-NM6017,Female,34,NA,12,Yes,Secondary
-NM6016,Female,42,NA,225,No,NA
-NM6015,Male,29,NA,NA,No,Secondary
-NM6014,Female,NA,Full-time work,315,No,Secondary
-NM6001,Female,40,NA,360,Yes,Primary
-NM6002,Male,63,NA,960,No,NA
-NM6000,Female,38,NA,251,No,Secondary
-NM6004,Female,28,NA,48,Yes,Secondary
-NM6005,Female,32,Part-time work,84,Yes,NA
-NM6007,Female,25,NA,303,No,Secondary
-NM6008,Male,76,NA,415,No,NA
-NM6010,Female,41,Part-time work,NA,Yes,Primary
-NM6012,Male,45,NA,458,No,Secondary
-NM6013,Female,40,NA,89,No,Primary
-NM6031,Female,55,NA,633,No,NA
-NM6032,Female,31,NA,410,No,Primary
-NM6033,Female,58,NA,184,Yes,NA
-NM6034,Female,43,NA,341,No,NA
-NM6035,Female,38,NA,128,Yes,Secondary
-NM6037,Female,25,NA,299,No,Secondary
-NM6038,Male,37,Full-time work,376,No,Secondary
-NM6039,Male,41,NA,380,Yes,Secondary
-NM6040,Female,23,NA,115,No,Secondary
-NM6041,Female,40,NA,234,Yes,NA
-NM6042,Female,32,NA,849,No,Primary
-NM6043,Female,48,NA,321,No,NA
-NM6045,Female,31,NA,350,No,Secondary
-NM6046,Female,28,NA,222,Yes,Secondary
-NM6047,Male,20,NA,475,No,Secondary
-NM6048,Male,37,NA,142,No,Primary
-NM6049,Female,41,NA,301,No,Secondary
-NM6050,Female,21,NA,NA,No,Secondary
-NM6052,Female,38,NA,412,No,Secondary
-NM6053,Female,28,NA,116,Yes,Primary
-NM6054,Female,38,Unemployed,196,Yes,NA
-NM6101,Female,NA,Unemployed,202,Yes,Secondary
-NM6102,Female,NA,Unemployed,NA,No,Primary
-NM6103,Male,NA,Unemployed,NA,No,NA
-NM6104,Female,34,Full-time work,456,No,Secondary
-NM6106,Male,43,Unemployed,195,No,Secondary
-NM6107,Female,71,Full-time work,354,No,NA
-NM6108,Female,41,Unemployed,265,Yes,Primary
-NM6109,Female,21,Unemployed,386,No,Secondary
-NM6112,Female,NA,Full-time work,51,No,Secondary
-NM6114,Female,38,Unemployed,170,No,Secondary
-NM6115,Female,39,Full-time work,NA,No,Secondary
-NM6116,Female,30,Unemployed,183,No,Secondary
-NM6117,Female,37,Unemployed,119,No,NA
-NM6118,Female,41,Full-time work,131,Yes,Secondary
-NM6119,Female,30,Unemployed,163,No,Secondary
-NM6120,Male,36,Unemployed,140,Yes,Secondary
-NM6121,Female,40,Unemployed,123,No,NA
-NM6122,Female,36,Unemployed,170,Yes,Primary
-NM6123,Female,30,Unemployed,203,No,Secondary
-NM6124,Male,39,Unemployed,120,No,NA
-NM6125,Female,36,Unemployed,207,No,Primary
-NM6126,Female,33,Unemployed,171,Yes,Secondary
-NM6127,Male,55,Unemployed,230,No,Secondary
-NM6201,Female,35,Full-time work,563,Yes,Secondary
-NM6204,Male,42,Full-time work,40,Yes,Primary
-NM6205,Male,34,Full-time work,246,Yes,Secondary
-NM6210,Female,33,NA,425,Yes,Primary
-NM6211,Female,35,NA,63,Yes,Secondary
-NM6214,Male,NA,NA,NA,No,Primary
-NM6220,Female,30,Full-time work,213,Yes,Tertiary
-NM6221,Female,35,Unemployed,187,No,Secondary
-NM6223,Female,42,Part-time work,NA,No,NA
-NM6224,Female,36,Full-time work,NA,No,Secondary
-NM6229,Female,29,Part-time work,NA,No,Secondary
-NM6234,Female,34,Unemployed,129,Yes,Secondary
-NM6236,Female,34,Unemployed,NA,Yes,Secondary
-NM6239,Male,36,NA,26,Yes,Secondary
-NM6240,Female,42,Unemployed,293,No,Secondary
-NM2002,Female,33,Full-time work,910,No,Secondary
-NM2004,Male,31,Unemployed,NA,No,Secondary
-NM2005,Male,26,Full-time work,329,No,NA
-NM2008,Female,30,Unemployed,NA,No,Secondary
-NM2009,Female,35,Unemployed,549,No,Secondary
-NM2010,Female,37,Full-time work,NA,Yes,Secondary
-NM2011,Female,41,Full-time work,NA,Yes,Secondary
-NM2012,Female,24,Unemployed,310,Yes,Secondary
-NM2015,Female,43,Unemployed,NA,No,Secondary
-NM2018,Female,31,Full-time work,NA,No,NA
-NM2019,Male,29,Full-time work,NA,Yes,Secondary
-NM2020,Male,29,Full-time work,235,No,Secondary
-NM7010,Female,36,NA,NA,No,Secondary
-NM7009,Female,32,NA,13,No,Secondary
-NM7008,Female,28,NA,135,Yes,Secondary
-NM7007,Female,29,NA,301,Yes,Secondary
-NM7006,Female,28,NA,98,No,Secondary
-NM7005,Male,34,NA,284,Yes,Secondary
-NM7004,Female,26,NA,182,Yes,Secondary
-NM7003,Male,40,NA,83,No,Secondary
-NM7002,Male,37,Unemployed,4,Yes,Secondary
-NM7001,Female,35,NA,108,No,Secondary
-NM7000,Female,25,NA,NA,Yes,Secondary
+ID,Site,Sex,Age,Employment_status,CD4_recent,ART_currently,Education
+RPB73,RP,Female,36,Other,391,Yes,Tertiary
+RPB74,RP,Female,27,Unemployed,571,Yes,Secondary
+RPB75,RP,Female,39,Other,591,Yes,Secondary
+RPB76,RP,Female,36,Unemployed,207,Yes,Primary
+RPB77,RP,Female,31,Unemployed,126,Yes,Secondary
+RPB78,RP,Female,32,Unemployed,225,Yes,Secondary
+RPB80,RP,Female,28,Unemployed,543,Yes,Secondary
+RPB81,RP,Female,37,Unemployed,410,Yes,Secondary
+RPB84,RP,Female,31,Part-time work,74,Yes,Secondary
+RPB85,RP,Female,25,Full-time work,212,Yes,Secondary
+RPB103,RP,Female,31,Other,579,Yes,Secondary
+RPB104,RP,Female,24,Unemployed,346,Yes,Secondary
+RPB105,RP,Female,35,Other,602,Yes,Secondary
+RPB106,RP,Female,26,Unemployed,519,Yes,Primary
+RPB107,RP,Female,34,Unemployed,261,Yes,Secondary
+RPB108,RP,Female,33,Unemployed,277,Yes,Tertiary
+RPB109,RP,Female,27,Unemployed,287,Yes,Secondary
+RPB110,RP,Female,34,Unemployed,397,Yes,Secondary
+RPB111,RP,Female,30,Unemployed,133,Yes,Secondary
+RPB112,RP,Female,30,Unemployed,124,Yes,Secondary
+RPB132,RP,Female,35,Unemployed,300,Yes,Secondary
+RPB133,RP,Female,34,Other,206,Yes,Secondary
+RPB134,RP,Female,28,Unemployed,437,Yes,Secondary
+RPB135,RP,Female,31,Other,479,Yes,Secondary
+RPB136,RP,Female,37,Part-time work,224,Yes,Secondary
+RPB139,RP,Female,35,Other,447,Yes,Secondary
+RPB140,RP,Female,29,Other,327,Yes,Secondary
+RPB124,RP,Female,27,Full-time work,635,Yes,Tertiary
+RPB125,RP,Female,25,Other,430,Yes,Secondary
+RPB04,RP,Female,33,Other,153,Yes,Secondary
+RPB06,RP,Female,35,Unemployed,308,Yes,Primary
+RPB07,RP,Female,22,Unemployed,184,Yes,Secondary
+RPB08,RP,Female,26,Other,317,Yes,Tertiary
+RPB09,RP,Female,31,Unemployed,452,Yes,Primary
+RPB10,RP,Female,37,Unemployed,308,Yes,Secondary
+RPB11,RP,Female,38,Part-time work,590,Yes,Secondary
+RPB12,RP,Female,27,Unemployed,188,Yes,Secondary
+RPB14,RP,Female,36,Unemployed,348,Yes,Secondary
+RPB15,RP,Female,37,Unemployed,216,Yes,Secondary
+RPB42,RP,Female,26,Unemployed,288,Yes,Secondary
+RBP43,RP,Female,38,Other,155,Yes,Secondary
+RPB44,RP,Female,29,Unemployed,165,Yes,Secondary
+RPB46,RP,Female,31,Unemployed,226,Yes,Secondary
+RBP47,RP,Female,23,Unemployed,387,Yes,Secondary
+RPB48,RP,Female,34,Other,561,Yes,Secondary
+RPB49,RP,Female,26,Unemployed,236,Yes,Secondary
+RPB50,RP,Female,37,Unemployed,479,Yes,Tertiary
+RPB51,RP,Female,31,Part-time work,311,Yes,Secondary
+RPB52,RP,Female,26,Unemployed,353,Yes,Tertiary
+RPB53,RP,Female,30,Unemployed,114,Yes,Secondary
+RPB54,RP,Female,28,Unemployed,872,Yes,Primary
+RPB55,RP,Female,30,Unemployed,881,Yes,Secondary
+RPB57,RP,Female,34,Unemployed,388,Yes,Tertiary
+RPB58,RP,Female,30,Unemployed,500,Yes,Primary
+RPB59,RP,Female,34,Unemployed,452,Yes,Secondary
+RPB60,RP,Female,26,Unemployed,340,Yes,Secondary
+RPB32,RP,Female,34,Unemployed,777,Yes,Primary
+RPB33,RP,Female,31,Other,140,Yes,Secondary
+RPB34,RP,Female,33,Unemployed,673,Yes,Secondary
+RPB35,RP,Female,39,Part-time work,714,Yes,Secondary
+RPB36,RP,Female,39,Unemployed,501,Yes,Secondary
+RPB37,RP,Female,30,Other,233,Yes,Secondary
+RPB38,RP,Female,30,Unemployed,360,Yes,Tertiary
+RPB41,RP,Female,27,Unemployed,379,Yes,Primary
+RPB39,RP,Female,27,Unemployed,325,Yes,Primary
+RPD08,RP,Female,30,Unemployed,154,Yes,Secondary
+RPD09,RP,Female,21,Unemployed,184,No,Secondary
+RPD10,RP,Female,30,Other,173,No,Secondary
+RPD11,RP,Female,24,Unemployed,274,Yes,Secondary
+RPC11,RP,Female,27,Unemployed,281,Yes,Secondary
+RPB16,RP,Female,28,Unemployed,659,Yes,Secondary
+RPC,RP,Female,27,Unemployed,115,No,Secondary
+RPA11,RP,Female,31,Unemployed,220,Yes,Secondary
+RPA12,RP,Female,33,Other,275,Yes,Secondary
+RPA13,RP,Female,35,Part-time work,72,Yes,Secondary
+RPA14,RP,Female,32,Unemployed,109,Yes,Primary
+RPA15,RP,Female,33,Unemployed,306,Yes,Secondary
+RPA17,RP,Female,28,Other,313,Yes,Secondary
+RPA18,RP,Female,30,Other,203,Yes,Secondary
+RPA02,RP,Female,30,Part-time work,146,Yes,Primary
+RPA03,RP,Female,33,Part-time work,26,Yes,Secondary
+RPA04,RP,Female,25,Unemployed,176,Yes,Secondary
+RPA05,RP,Female,35,Unemployed,149,Yes,Primary
+RPA06,RP,Female,27,Unemployed,240,Yes,Secondary
+RPA07,RP,Female,30,Unemployed,36,Yes,Primary
+RPA09,RP,Female,29,Unemployed,155,Yes,Secondary
+RPA10,RP,Female,22,Unemployed,181,Yes,Secondary
+RPD01,RP,Female,37,Other,173,No,Tertiary
+RPD02,RP,Female,37,Part-time work,145,No,Secondary
+RPD03,RP,Female,34,Unemployed,209,Yes,Primary
+RPD04,RP,Female,27,Unemployed,133,Yes,Tertiary
+RPD06,RP,Female,31,Unemployed,152,No,Secondary
+RPD07,RP,Female,25,Part-time work,295,No,Secondary
+RPA19,RP,Female,24,Other,98,No,Tertiary
+RPA20,RP,Female,31,Unemployed,114,No,Secondary
+RPA21,RP,Female,31,Unemployed,58,Yes,Secondary
+RPA22,RP,Female,36,Unemployed,221,Yes,Secondary
+RPC01,RP,Female,34,Unemployed,101,No,Secondary
+RPC02,RP,Female,32,Other,159,No,Secondary
+RPC03,RP,Female,32,Unemployed,246,No,Secondary
+RPC04,RP,Female,27,Other,261,No,Secondary
+RPC05,RP,Female,30,Unemployed,174,No,Secondary
+RPC06,RP,Female,34,Unemployed,192,No,Secondary
+RPB141,RP,Female,28,Unemployed,165,Yes,Secondary
+RPB142,RP,Female,20,Other,202,Yes,Tertiary
+RPB143,RP,Female,29,Unemployed,165,Yes,Secondary
+RPB144,RP,Female,35,Unemployed,213,Yes,NA
+RPB17,RP,Female,35,Part-time work,596,Yes,Tertiary
+RPB19,RP,Female,35,Unemployed,1040,Yes,Secondary
+RPB20,RP,Female,40,Unemployed,382,Yes,Secondary
+RPB21,RP,Female,30,Unemployed,487,Yes,Secondary
+RPC07,RP,Female,24,Other,175,No,Secondary
+RPC08,RP,Female,28,Full-time work,213,No,Tertiary
+RPC10,RP,Female,29,Part-time work,174,Yes,Secondary
+RPC12,RP,Female,40,Unemployed,166,No,Primary
+RPC14,RP,Female,NA,Other,NA,No,Tertiary
+RPC15,RP,Female,23,Unemployed,305,No,Secondary
+RPB88,RP,Female,20,Unemployed,191,Yes,Secondary
+RPB89,RP,Female,25,Unemployed,667,Yes,Secondary
+RPB90,RP,Female,36,Part-time work,1032,Yes,Secondary
+RPB93,RP,Female,32,Other,301,Yes,Tertiary
+RPB94,RP,Female,28,Other,774,Yes,Secondary
+RPB95,RP,Female,36,Unemployed,54,Yes,NA
+RPB98,RP,Female,NA,Unemployed,187,Yes,Secondary
+RPB99,RP,Female,33,Unemployed,249,Yes,Secondary
+RPB100,RP,Female,30,Unemployed,576,Yes,Secondary
+RPA01,RP,Female,32,Part-time work,170,Yes,Primary
+RPB113,RP,Female,32,Other,560,Yes,Secondary
+RPB114,RP,Female,28,Unemployed,262,Yes,Secondary
+RPB116,RP,Female,33,Full-time work,484,Yes,Tertiary
+RPB117,RP,Female,30,Unemployed,385,Yes,Secondary
+RPB118,RP,Female,40,Unemployed,NA,Yes,Primary
+RPB119,RP,Female,32,Unemployed,212,Yes,Primary
+RPB120,RP,Female,34,Unemployed,266,Yes,Tertiary
+RPB121,RP,Female,28,Unemployed,282,Yes,Secondary
+RPB122,RP,Female,39,Unemployed,50,Yes,Secondary
+RPB123,RP,Female,27,Unemployed,NA,Yes,Tertiary
+RPB40,RP,Female,35,Unemployed,NA,Yes,Secondary
+RPB22,RP,Female,39,Other,360,Yes,Tertiary
+RPB23,RP,Female,23,Unemployed,245,Yes,Secondary
+RPB24,RP,Female,20,Unemployed,700,Yes,Secondary
+RPB25,RP,Female,39,Unemployed,237,Yes,Secondary
+RPB26,RP,Female,25,Unemployed,502,Yes,Secondary
+RPB27,RP,Female,30,Unemployed,310,Yes,Secondary
+RPB28,RP,Female,34,Unemployed,911,Yes,Secondary
+RPB29,RP,Female,24,Unemployed,281,Yes,Secondary
+RPB30,RP,Female,28,Unemployed,170,Yes,Secondary
+RPB31,RP,Female,38,Other,282,Yes,Secondary
+STIG01,STIG,Female,50,Full-time work,NA,Yes,Primary
+STIG02,STIG,Female,38,Unemployed,291,Yes,Tertiary
+STIG03,STIG,Female,26,Unemployed,1138,Yes,Secondary
+STIG04,STIG,Female,58,Full-time work,1092,Yes,Primary
+STIG05,STIG,Female,34,Full-time work,906,Yes,Secondary
+STIG06,STIG,Male,45,Other,236,Yes,Tertiary
+STIG07,STIG,Female,55,Full-time work,232,Yes,Tertiary
+STIG08,STIG,Female,25,Unemployed,288,Yes,Secondary
+STIG09,STIG,Male,51,Unemployed,295,Yes,Tertiary
+STIG10,STIG,Female,48,Unemployed,442,Yes,Primary
+STIG11,STIG,Female,37,Unemployed,461,Yes,Tertiary
+STIG12,STIG,Female,32,Full-time work,291,Yes,Tertiary
+STIG13,STIG,Female,49,Part-time work,533,Yes,Secondary
+STIG14,STIG,Female,46,Full-time work,616,Yes,Primary
+STIG15,STIG,Female,65,Unemployed,440,Yes,Secondary
+STIG16,STIG,Female,39,Full-time work,NA,Yes,Tertiary
+STIG17,STIG,Female,50,Unemployed,330,Yes,Secondary
+STIG18,STIG,Female,63,Unemployed,223,Yes,NA
+STIG19,STIG,Female,44,Unemployed,NA,Yes,Secondary
+STIG20,STIG,Female,38,Part-time work,NA,Yes,Tertiary
+STIG21,STIG,Female,32,Unemployed,NA,Yes,Tertiary
+STIG22,STIG,Female,44,Full-time work,NA,Yes,Secondary
+STIG23,STIG,Female,40,Full-time work,620,Yes,Secondary
+STIG24,STIG,Female,37,Full-time work,NA,Yes,Secondary
+STIG25,STIG,Female,58,Part-time work,NA,Yes,NA
+STIG26,STIG,Female,57,Full-time work,NA,Yes,Primary
+STIG27,STIG,Male,41,Full-time work,NA,Yes,Tertiary
+STIG28,STIG,Male,51,Unemployed,NA,Yes,Secondary
+STIG29,STIG,Female,57,Unemployed,NA,Yes,Primary
+STIG30,STIG,Female,43,Unemployed,NA,Yes,Secondary
+STIG31,STIG,Female,54,Full-time work,583,Yes,Secondary
+STIG32,STIG,Female,35,Part-time work,NA,Yes,Secondary
+STIG33,STIG,Female,35,Unemployed,NA,Yes,Secondary
+STIG34,STIG,Female,48,Part-time work,NA,Yes,Tertiary
+STIG35,STIG,Female,36,Unemployed,421,Yes,Secondary
+STIG36,STIG,Female,55,Full-time work,429,Yes,Secondary
+STIG37,STIG,Male,36,Unemployed,NA,Yes,Primary
+STIG38,STIG,Female,53,Full-time work,NA,NA,Secondary
+STIG39,STIG,Female,50,Part-time work,NA,Yes,Primary
+STIG40,STIG,Male,40,Full-time work,NA,Yes,Secondary
+STIG41,STIG,Female,32,Full-time work,1086,Yes,Tertiary
+STIG42,STIG,Female,48,Unemployed,NA,Yes,Secondary
+STIG43,STIG,Female,50,Full-time work,415,Yes,Tertiary
+STIG44,STIG,Female,53,Part-time work,NA,Yes,Secondary
+STIG45,STIG,Female,44,Unemployed,NA,Yes,Secondary
+STIG46,STIG,Female,54,Unemployed,50,Yes,Secondary
+STIG47,STIG,Female,59,Unemployed,NA,Yes,Primary
+STIG48,STIG,Female,39,Full-time work,60,Yes,Secondary
+STIG49,STIG,Female,32,Unemployed,579,Yes,Secondary
+STIG50,STIG,Female,39,Full-time work,498,Yes,Secondary
+RESI01,RESI,Female,35,Full-time work,21,Yes,Secondary
+RESI02,RESI,Female,44,Unemployed,894,Yes,Secondary
+RESI03,RESI,Male,38,Part-time work,465,Yes,Tertiary
+RESI04,RESI,Male,32,Full-time work,576,Yes,Secondary
+RESI05,RESI,Male,59,Unemployed,827,Yes,Primary
+RESI06,RESI,Female,59,Unemployed,NA,Yes,Secondary
+RESI07,RESI,Female,35,Unemployed,20,Yes,Secondary
+RESI35,RESI,Female,36,Full-time work,682,Yes,Secondary
+RESI45,RESI,Female,45,Unemployed,209,Yes,Secondary
+RESI21,RESI,Female,34,Part-time work,NA,Yes,Secondary
+RESI23,RESI,Male,47,Unemployed,386,Yes,Secondary
+RESI31,RESI,Female,38,Unemployed,NA,Yes,Tertiary
+RESI34,RESI,Female,49,Full-time work,NA,No,NA
+RESI36,RESI,Female,50,Unemployed,416,Yes,Secondary
+RESI37,RESI,Female,32,Full-time work,263,Yes,Secondary
+RESI40,RESI,Female,42,Unemployed,286,Yes,Secondary
+RESI44,RESI,Female,41,Full-time work,441,Yes,Secondary
+RISI48,RESI,Female,41,Part-time work,915,Yes,Primary
+RESI52,RESI,Female,45,Unemployed,NA,Yes,Primary
+RESI61,RESI,Female,40,Unemployed,30,Yes,Secondary
+RESI62,RESI,Female,37,Part-time work,312,Yes,Secondary
+RESI64,RESI,Male,55,Full-time work,216,Yes,Primary
+RESI66,RESI,Female,57,Full-time work,30,No,Secondary
+RESI67,RESI,Female,34,Unemployed,97,Yes,Tertiary
+RESI69,RESI,Male,48,Part-time work,1000,Yes,Secondary
+RESI71,RESI,Female,40,Full-time work,NA,Yes,Secondary
+RESI72,RESI,Female,48,Unemployed,552,Yes,Secondary
+RESI74,RESI,Male,41,Part-time work,257,Yes,Secondary
+RESI73,RESI,Female,50,Full-time work,617,Yes,Secondary
+RESI75,RESI,Male,41,Part-time work,46,Yes,Primary
+RESI76,RESI,Female,33,Part-time work,258,Yes,Secondary
+RESI77,RESI,Male,37,Unemployed,227,Yes,Secondary
+RESI78,RESI,Female,30,Full-time work,1230,Yes,Secondary
+RESI82,RESI,Female,19,Other,405,Yes,Secondary
+RESI86,RESI,Female,46,Full-time work,442,Yes,Secondary
+RESI89,RESI,Female,61,Unemployed,476,Yes,Primary
+RESI90,RESI,Female,50,Part-time work,653,Yes,NA
+RESI92,RESI,Female,35,Full-time work,299,Yes,Secondary
+RESI93,RESI,Female,63,Full-time work,676,Yes,Primary
+RESI97,RESI,Female,64,Unemployed,567,Yes,Primary
+RESI98,RESI,Female,42,Unemployed,274,Yes,Secondary
+RESI100,RESI,Female,42,Full-time work,785,Yes,Secondary
+RESI102,RESI,Female,33,Full-time work,1232,Yes,Tertiary
+RESI105,RESI,Male,49,Unemployed,505,Yes,Primary
+RESI112,RESI,Male,40,Full-time work,381,Yes,Tertiary
+RESI115,RESI,Female,33,Full-time work,575,No,Tertiary
+RESI116,RESI,Male,27,Full-time work,306,Yes,Tertiary
+RESI117,RESI,Female,33,Unemployed,245,Yes,Primary
+RESI120,RESI,Female,39,Unemployed,NA,Yes,Secondary
+RESI122,RESI,Male,35,Unemployed,11,Yes,Secondary
+RESI124,RESI,Female,33,Unemployed,642,Yes,Secondary
+RESI127,RESI,Male,46,Unemployed,NA,NA,Secondary
+RESI129,RESI,Female,38,Unemployed,NA,Yes,Secondary
+RESI130,RESI,Male,44,Unemployed,649,Yes,Secondary
+RESI131,RESI,Female,30,Unemployed,213,Yes,Tertiary
+RESI132,RESI,Female,30,Part-time work,496,Yes,Primary
+RESI133,RESI,Female,58,Unemployed,789,Yes,Secondary
+RESI134,RESI,Male,44,Full-time work,NA,Yes,Secondary
+RESI135,RESI,Female,48,Full-time work,NA,Yes,Tertiary
+RESI136,RESI,Female,45,Unemployed,662,Yes,Tertiary
+RESI139,RESI,Female,44,Full-time work,966,Yes,Secondary
+RESI140,RESI,Female,55,Unemployed,663,Yes,NA
+RESI141,RESI,Female,35,Part-time work,219,Yes,Primary
+RESI143,RESI,Male,49,Unemployed,NA,Yes,Secondary
+RESI144,RESI,Female,52,Unemployed,751,Yes,Secondary
+RESI146,RESI,Female,59,Full-time work,689,Yes,Secondary
+RESI148,RESI,Male,42,Full-time work,107,Yes,Secondary
+RESI150,RESI,Female,51,Full-time work,NA,Yes,Secondary
+RESI151,RESI,Male,32,Unemployed,176,Yes,Secondary
+RESI152,RESI,Male,55,Unemployed,NA,Yes,Secondary
+RESI153,RESI,Female,46,Full-time work,964,Yes,Secondary
+RESI154,RESI,Female,34,Full-time work,844,Yes,Tertiary
+RESI155,RESI,Female,56,Part-time work,723,Yes,Secondary
+RESI156,RESI,Female,66,Unemployed,458,Yes,Primary
+RESI159,RESI,Male,49,Unemployed,385,Yes,Secondary
+RESI161,RESI,Male,43,Unemployed,NA,Yes,Secondary
+RESI162,RESI,Female,37,Unemployed,540,Yes,Tertiary
+RESI163,RESI,Female,51,Unemployed,NA,Yes,Primary
+RESI164,RESI,Male,50,Unemployed,578,Yes,Secondary
+RESI165,RESI,Female,46,Unemployed,673,Yes,Secondary
+RESI167,RESI,Female,42,Part-time work,671,Yes,Secondary
+RESI168,RESI,Female,45,Full-time work,113,Yes,Secondary
+RESI170,RESI,Male,59,Part-time work,357,Yes,NA
+RESI173,RESI,Female,40,Unemployed,605,Yes,Secondary
+RESI178,RESI,Male,35,Full-time work,256,Yes,Secondary
+RESI18,RESI,Female,31,Unemployed,206,Yes,Secondary
+RESI185,RESI,Male,41,Unemployed,210,Yes,Primary
+RESI186,RESI,Male,46,Full-time work,295,Yes,Secondary
+RESI187,RESI,Male,34,Unemployed,258,Yes,Primary
+RESI189,RESI,Female,56,Full-time work,482,Yes,Tertiary
+RESI191,RESI,Male,35,Unemployed,285,Yes,Secondary
+RESI192,RESI,Female,49,Part-time work,397,Yes,Tertiary
+RESI193,RESI,Male,57,Full-time work,575,Yes,Primary
+RESI194,RESI,Male,45,Full-time work,162,Yes,Secondary
+RESI195,RESI,Male,40,Part-time work,181,Yes,Primary
+RESI196,RESI,Female,50,Full-time work,257,Yes,Primary
+RESI197,RESI,Male,49,Unemployed,333,Yes,Secondary
+RESI198,RESI,Female,40,Full-time work,319,Yes,Tertiary
+DD1,DD,Female,37,Part-time work,NA,Yes,Secondary
+DD2,DD,Female,40,Unemployed,339,Yes,Secondary
+DD4,DD,Female,36,Full-time work,177,Yes,Secondary
+DD5,DD,Female,58,Unemployed,392,Yes,Primary
+DD6,DD,Female,33,Unemployed,NA,Yes,Secondary
+DD7,DD,Female,32,Unemployed,295,Yes,Secondary
+DD8,DD,Male,37,Unemployed,227,Yes,Secondary
+DD9,DD,Female,37,Full-time work,667,Yes,Secondary
+DD10,DD,Male,46,Unemployed,386,Yes,Secondary
+DD11,DD,Female,31,Unemployed,474,Yes,Secondary
+DD12,DD,Female,36,Full-time work,682,Yes,Secondary
+DD14,DD,Female,34,Part-time work,450,Yes,Primary
+DD15,DD,Female,33,Part-time work,258,Yes,Secondary
+DD16,DD,Female,30,Unemployed,496,Yes,Secondary
+DD17,DD,Female,43,Full-time work,354,Yes,Secondary
+DD19,DD,Female,37,Unemployed,NA,Yes,Secondary
+DD20,DD,Female,35,Unemployed,NA,Yes,Tertiary
+DD23,DD,Male,41,Part-time work,256,Yes,Secondary
+DD24,DD,Female,44,Full-time work,226,Yes,Secondary
+DD25,DD,Female,40,Full-time work,NA,Yes,Secondary
+DD26,DD,Male,41,Unemployed,NA,Yes,Primary
+DD27,DD,Female,34,Unemployed,97,Yes,Tertiary
+DD30,DD,Female,39,Unemployed,NA,Yes,Primary
+DD31,DD,Female,42,Part-time work,443,Yes,Primary
+DD32,DD,Female,31,Full-time work,145,Yes,Secondary
+DD33,DD,Female,42,Unemployed,274,Yes,Tertiary
+DD34,DD,Female,42,Full-time work,785,Yes,Secondary
+DD35,DD,Female,33,Unemployed,642,Yes,Secondary
+DD37,DD,Male,27,Full-time work,NA,Yes,Tertiary
+DD39,DD,Female,40,Full-time work,840,Yes,Tertiary
+DD40,DD,Female,38,Unemployed,NA,Yes,Secondary
+DD41,DD,Male,44,Unemployed,649,Yes,Secondary
+DD43,DD,Male,40,Unemployed,NA,Yes,NA
+DD44,DD,Male,38,Unemployed,741,Yes,Secondary
+DD46,DD,Male,44,Full-time work,NA,Yes,Secondary
+DD48,DD,Male,40,Full-time work,381,Yes,Tertiary
+DD49,DD,Male,49,Unemployed,NA,Yes,Secondary
+DD50,DD,Male,39,Full-time work,107,Yes,NA
+DD51,DD,Male,43,Unemployed,NA,No,Secondary
+DD52,DD,Male,41,Unemployed,210,Yes,Primary
+DD53,DD,Male,50,Unemployed,578,Yes,Secondary
+DD54,DD,Male,35,Full-time work,256,Yes,Secondary
+DD55,DD,Male,35,Unemployed,NA,Yes,Secondary
+DD56,DD,Male,34,Unemployed,258,Yes,Secondary
+DD57,DD,Male,49,Unemployed,333,Yes,Secondary
+DD58,DD,Male,33,Unemployed,16,Yes,Secondary
+DD60,DD,Female,44,Full-time work,63,Yes,Secondary
+DD61,DD,Female,43,Part-time work,368,Yes,Tertiary
+DD62,DD,Female,35,Unemployed,NA,Yes,Secondary
+DD63,DD,Female,36,Unemployed,364,Yes,Secondary
+DD64,DD,Female,48,Unemployed,543,Yes,Tertiary
+DD65,DD,Female,41,Unemployed,NA,Yes,Primary
+DD66,DD,Female,39,Unemployed,760,Yes,Primary
+DD68,DD,Female,46,Unemployed,1090,Yes,Secondary
+DD69,DD,Female,34,Full-time work,464,Yes,Secondary
+DD70,DD,Female,31,Unemployed,1095,Yes,Secondary
+RESI183,RESI,Female,31,Unemployed,325,Yes,Secondary
+DD42,DD,Male,42,Unemployed,NA,Yes,Secondary
+DD38,DD,Female,33,Full-time work,575,No,Tertiary
+DD36,DD,Female,33,Other,245,Yes,Primary
+DD45,DD,Female,30,Unemployed,NA,Yes,Secondary
+NM0005,NM,Male,47,Full-time work,209,Yes,Secondary
+NM0006,NM,Female,35,Full-time work,329,Yes,Secondary
+NM0007,NM,Female,28,Unemployed,196,Yes,Secondary
+NM0009,NM,Female,47,Part-time work,338,No,Primary
+NM0010,NM,Female,36,Full-time work,69,No,Secondary
+NM0011,NM,Male,31,Unemployed,19,Yes,Secondary
+NM0012,NM,Female,28,Unemployed,NA,Yes,Secondary
+NM0014,NM,Female,26,Unemployed,1,Yes,Secondary
+NM0015,NM,Female,30,Unemployed,110,Yes,Secondary
+NM0017,NM,Female,28,Full-time work,61,Yes,Tertiary
+NM0023,NM,Male,37,Full-time work,5,Yes,Secondary
+NM0025,NM,Female,32,Full-time work,228,Yes,Tertiary
+NM0026,NM,Female,42,Unemployed,144,Yes,Secondary
+NM0027,NM,Female,36,Unemployed,84,No,Secondary
+NM0029,NM,Male,47,Unemployed,248,Yes,Primary
+NM0030,NM,Female,35,Full-time work,12,Yes,Secondary
+NM0031,NM,Female,32,Unemployed,200,Yes,Secondary
+NM0034,NM,Female,40,Part-time work,287,No,Secondary
+NM0035,NM,Female,33,Full-time work,NA,Yes,Secondary
+NM0036,NM,Female,36,Unemployed,147,Yes,Secondary
+NM0037,NM,Female,29,Unemployed,298,No,Secondary
+NM0039,NM,Female,43,Unemployed,231,Yes,Secondary
+NM0040,NM,Female,35,Full-time work,4,Yes,Secondary
+NM0002,NM,Male,35,Unemployed,35,Yes,Secondary
+NM0056,NM,Female,37,Unemployed,338,Yes,Secondary
+NM0057,NM,Female,23,Unemployed,18,Yes,Tertiary
+NM0058,NM,Female,58,Full-time work,NA,Yes,NA
+NM0059,NM,Female,36,Unemployed,200,Yes,Secondary
+NM0050,NM,Female,36,Unemployed,309,No,Secondary
+NM0051,NM,Male,39,Unemployed,308,No,Primary
+NM0053,NM,Male,30,Unemployed,150,Yes,Secondary
+NM0055,NM,Female,56,Unemployed,159,Yes,Secondary
+NM0041,NM,Male,32,Unemployed,118,No,Secondary
+NM0042,NM,Female,31,Unemployed,202,Yes,Secondary
+NM0043,NM,Female,31,Unemployed,247,Yes,Secondary
+NM0044,NM,Female,38,Unemployed,101,Yes,Primary
+NM0048,NM,Female,31,Unemployed,8,Yes,Primary
+NM0062,NM,Female,27,Full-time work,300,Yes,Tertiary
+NM0064,NM,Female,32,Unemployed,61,Yes,Secondary
+NM0065,NM,Male,45,Unemployed,200,Yes,Secondary
+NM0066,NM,Female,33,Unemployed,53,Yes,Secondary
+NM0067,NM,Female,41,Full-time work,7,Yes,Secondary
+NM0068,NM,Male,44,Unemployed,NA,Yes,Primary
+NM0070,NM,Male,30,Full-time work,426,No,Secondary
+NM0072,NM,Female,41,Full-time work,250,No,Secondary
+NM0073,NM,Female,32,Full-time work,400,No,Secondary
+NM0075,NM,Male,41,Full-time work,316,No,Secondary
+NM0076,NM,Female,34,Unemployed,494,Yes,Tertiary
+NM0077,NM,Female,43,Unemployed,170,Yes,NA
+NM0078,NM,Male,37,Unemployed,1,Yes,Secondary
+NM0079,NM,Male,43,Unemployed,NA,Yes,Primary
+NM0080,NM,Female,41,Unemployed,94,Yes,Secondary
+NM0081,NM,Female,32,Unemployed,110,No,Tertiary
+NM0082,NM,Female,34,Full-time work,130,Yes,Secondary
+NM0085,NM,Female,35,Unemployed,285,Yes,Secondary
+NM0086,NM,Male,40,Unemployed,NA,Yes,NA
+NM0087,NM,Female,44,Unemployed,NA,Yes,NA
+NM0089,NM,Male,45,Part-time work,57,Yes,Secondary
+NM0090,NM,Male,55,Unemployed,NA,Yes,Secondary
+NM0091,NM,Male,52,Unemployed,NA,No,Secondary
+NM0092,NM,Female,25,Unemployed,152,Yes,Tertiary
+NM0093,NM,Male,47,Unemployed,NA,Yes,Secondary
+NM0095,NM,Female,24,Unemployed,432,No,Secondary
+NM0096,NM,Female,41,Unemployed,NA,NA,Secondary
+NM0097,NM,Female,32,NA,308,No,Secondary
+NM0098,NM,Female,35,Full-time work,NA,Yes,Primary
+NM0100,NM,Female,36,Unemployed,200,Yes,Primary
+NM0101,NM,Female,35,Unemployed,172,No,Primary
+NM0102,NM,Female,48,Unemployed,NA,Yes,Primary
+NM0104,NM,Female,53,Unemployed,NA,Yes,Secondary
+NM0106,NM,Female,32,Unemployed,36,Yes,Secondary
+NM0107,NM,Female,27,Unemployed,4,Yes,Secondary
+NM0108,NM,Female,39,Full-time work,47,No,Secondary
+NM0110,NM,Male,49,Unemployed,27,Yes,Secondary
+NM0111,NM,Female,29,Unemployed,56,Yes,Secondary
+NM0112,NM,Female,52,Unemployed,174,Yes,Secondary
+NM0113,NM,Female,39,Unemployed,364,No,Primary
+NM0114,NM,Female,34,Unemployed,154,Yes,Secondary
+NM0119,NM,Female,36,Full-time work,19,Yes,NA
+NM0120,NM,Female,25,Unemployed,120,Yes,Secondary
+NM0122,NM,Female,32,Unemployed,315,Yes,Primary
+NM0124,NM,Female,35,Full-time work,88,Yes,Primary
+NM0128,NM,Female,21,Unemployed,17,No,Secondary
+NM0129,NM,Female,20,Unemployed,238,No,Secondary
+NM0130,NM,Female,37,Unemployed,334,No,Secondary
+NM0133,NM,Female,40,Unemployed,226,No,NA
+NM0134,NM,Female,26,Unemployed,637,No,Secondary
+NM0136,NM,Female,58,Unemployed,106,Yes,Secondary
+NM0138,NM,Male,37,Unemployed,50,Yes,Secondary
+NM0143,NM,Female,44,Unemployed,159,Yes,Secondary
+NM0146,NM,Female,32,Unemployed,18,No,Secondary
+NM0147,NM,Female,31,Unemployed,109,Yes,Secondary
+NM0149,NM,Female,37,Unemployed,132,Yes,Secondary
+NM0150,NM,Female,41,Full-time work,103,Yes,Secondary
+NM0151,NM,Female,42,Unemployed,184,Yes,Secondary
+NM0152,NM,Female,38,Full-time work,101,Yes,Secondary
+NM0153,NM,Female,32,Unemployed,321,No,Secondary
+NM0154,NM,Female,44,Full-time work,334,No,Secondary
+NM0155,NM,Female,34,Unemployed,65,Yes,Secondary
+NM0158,NM,Female,37,Unemployed,171,No,Secondary
+NM0159,NM,Female,30,Unemployed,440,No,Secondary
+NM0160,NM,Female,28,Part-time work,802,No,Secondary
+NM0161,NM,Female,41,Unemployed,372,No,Primary
+NM0162,NM,Male,43,Unemployed,381,No,Primary
+NM0165,NM,Female,45,Unemployed,340,Yes,Primary
+NM0166,NM,Female,36,Unemployed,NA,NA,Secondary
+NM0167,NM,Male,37,Unemployed,235,Yes,Primary
+NM0169,NM,Female,43,Unemployed,154,Yes,Secondary
+NM0172,NM,Female,31,Unemployed,200,NA,Primary
+NM0173,NM,Female,41,Unemployed,182,No,Secondary
+NM0174,NM,Female,35,Unemployed,155,Yes,Primary
+NM0176,NM,Male,44,Unemployed,196,Yes,Secondary
+NM0177,NM,Male,34,Unemployed,129,Yes,Secondary
+NM0178,NM,Male,45,Full-time work,150,Yes,Secondary
+NM0179,NM,Female,67,Unemployed,117,Yes,Primary
+NM0180,NM,Female,39,Full-time work,NA,Yes,NA
+NM0181,NM,Female,34,Full-time work,55,Yes,Secondary
+NM0182,NM,Female,24,Unemployed,2,Yes,Secondary
+NM1503,NM,Female,35,Unemployed,61,Yes,Secondary
+NM1506,NM,Female,40,Unemployed,72,Yes,Secondary
+NM1509,NM,Female,41,Full-time work,85,Yes,Secondary
+NM1500,NM,Female,42,NA,109,Yes,Primary
+NM1512,NM,Female,45,Full-time work,302,No,Primary
+NM1513,NM,Female,30,Unemployed,6,Yes,Secondary
+NM1514,NM,Male,32,Full-time work,157,No,Secondary
+NM1517,NM,Female,34,Full-time work,194,Yes,Primary
+NM1518,NM,Female,38,Full-time work,367,No,Secondary
+NM1519,NM,Female,27,Full-time work,471,No,Secondary
+NM1520,NM,Female,34,Full-time work,480,No,Secondary
+NM1524,NM,Female,28,Full-time work,112,Yes,Secondary
+NM1525,NM,Male,48,Full-time work,159,Yes,Primary
+NM6030,NM,Female,40,Part-time work,289,No,Secondary
+NM6029,NM,Female,35,Unemployed,236,No,Secondary
+NM6028,NM,Male,41,Unemployed,40,No,Primary
+NM6026,NM,Male,45,Unemployed,855,No,Primary
+NM6025,NM,Female,37,Unemployed,388,No,Secondary
+NM6024,NM,Female,36,Unemployed,963,No,Primary
+NM6023,NM,Female,33,Unemployed,278,No,Secondary
+NM6022,NM,Female,35,NA,478,No,Secondary
+NM6021,NM,Female,53,Unemployed,187,Yes,NA
+NM6020,NM,Female,31,Unemployed,NA,No,Primary
+NM6019,NM,Male,34,NA,31,Yes,NA
+NM6018,NM,Female,32,NA,125,Yes,Primary
+NM6017,NM,Female,34,NA,12,Yes,Secondary
+NM6016,NM,Female,42,NA,225,No,NA
+NM6015,NM,Male,29,NA,NA,No,Secondary
+NM6014,NM,Female,NA,Full-time work,315,No,Secondary
+NM6001,NM,Female,40,NA,360,Yes,Primary
+NM6002,NM,Male,63,NA,960,No,NA
+NM6000,NM,Female,38,NA,251,No,Secondary
+NM6004,NM,Female,28,NA,48,Yes,Secondary
+NM6005,NM,Female,32,Part-time work,84,Yes,NA
+NM6007,NM,Female,25,NA,303,No,Secondary
+NM6008,NM,Male,76,NA,415,No,NA
+NM6010,NM,Female,41,Part-time work,NA,Yes,Primary
+NM6012,NM,Male,45,NA,458,No,Secondary
+NM6013,NM,Female,40,NA,89,No,Primary
+NM6031,NM,Female,55,NA,633,No,NA
+NM6032,NM,Female,31,NA,410,No,Primary
+NM6033,NM,Female,58,NA,184,Yes,NA
+NM6034,NM,Female,43,NA,341,No,NA
+NM6035,NM,Female,38,NA,128,Yes,Secondary
+NM6037,NM,Female,25,NA,299,No,Secondary
+NM6038,NM,Male,37,Full-time work,376,No,Secondary
+NM6039,NM,Male,41,NA,380,Yes,Secondary
+NM6040,NM,Female,23,NA,115,No,Secondary
+NM6041,NM,Female,40,NA,234,Yes,NA
+NM6042,NM,Female,32,NA,849,No,Primary
+NM6043,NM,Female,48,NA,321,No,NA
+NM6045,NM,Female,31,NA,350,No,Secondary
+NM6046,NM,Female,28,NA,222,Yes,Secondary
+NM6047,NM,Male,20,NA,475,No,Secondary
+NM6048,NM,Male,37,NA,142,No,Primary
+NM6049,NM,Female,41,NA,301,No,Secondary
+NM6050,NM,Female,21,NA,NA,No,Secondary
+NM6052,NM,Female,38,NA,412,No,Secondary
+NM6053,NM,Female,28,NA,116,Yes,Primary
+NM6054,NM,Female,38,Unemployed,196,Yes,NA
+NM6101,NM,Female,NA,Unemployed,202,Yes,Secondary
+NM6102,NM,Female,NA,Unemployed,NA,No,Primary
+NM6103,NM,Male,NA,Unemployed,NA,No,NA
+NM6104,NM,Female,34,Full-time work,456,No,Secondary
+NM6106,NM,Male,43,Unemployed,195,No,Secondary
+NM6107,NM,Female,71,Full-time work,354,No,NA
+NM6108,NM,Female,41,Unemployed,265,Yes,Primary
+NM6109,NM,Female,21,Unemployed,386,No,Secondary
+NM6112,NM,Female,NA,Full-time work,51,No,Secondary
+NM6114,NM,Female,38,Unemployed,170,No,Secondary
+NM6115,NM,Female,39,Full-time work,NA,No,Secondary
+NM6116,NM,Female,30,Unemployed,183,No,Secondary
+NM6117,NM,Female,37,Unemployed,119,No,NA
+NM6118,NM,Female,41,Full-time work,131,Yes,Secondary
+NM6119,NM,Female,30,Unemployed,163,No,Secondary
+NM6120,NM,Male,36,Unemployed,140,Yes,Secondary
+NM6121,NM,Female,40,Unemployed,123,No,NA
+NM6122,NM,Female,36,Unemployed,170,Yes,Primary
+NM6123,NM,Female,30,Unemployed,203,No,Secondary
+NM6124,NM,Male,39,Unemployed,120,No,NA
+NM6125,NM,Female,36,Unemployed,207,No,Primary
+NM6126,NM,Female,33,Unemployed,171,Yes,Secondary
+NM6127,NM,Male,55,Unemployed,230,No,Secondary
+NM6201,NM,Female,35,Full-time work,563,Yes,Secondary
+NM6204,NM,Male,42,Full-time work,40,Yes,Primary
+NM6205,NM,Male,34,Full-time work,246,Yes,Secondary
+NM6210,NM,Female,33,NA,425,Yes,Primary
+NM6211,NM,Female,35,NA,63,Yes,Secondary
+NM6214,NM,Male,NA,NA,NA,No,Primary
+NM6220,NM,Female,30,Full-time work,213,Yes,Tertiary
+NM6221,NM,Female,35,Unemployed,187,No,Secondary
+NM6223,NM,Female,42,Part-time work,NA,No,NA
+NM6224,NM,Female,36,Full-time work,NA,No,Secondary
+NM6229,NM,Female,29,Part-time work,NA,No,Secondary
+NM6234,NM,Female,34,Unemployed,129,Yes,Secondary
+NM6236,NM,Female,34,Unemployed,NA,Yes,Secondary
+NM6239,NM,Male,36,NA,26,Yes,Secondary
+NM6240,NM,Female,42,Unemployed,293,No,Secondary
+NM2002,NM,Female,33,Full-time work,910,No,Secondary
+NM2004,NM,Male,31,Unemployed,NA,No,Secondary
+NM2005,NM,Male,26,Full-time work,329,No,NA
+NM2008,NM,Female,30,Unemployed,NA,No,Secondary
+NM2009,NM,Female,35,Unemployed,549,No,Secondary
+NM2010,NM,Female,37,Full-time work,NA,Yes,Secondary
+NM2011,NM,Female,41,Full-time work,NA,Yes,Secondary
+NM2012,NM,Female,24,Unemployed,310,Yes,Secondary
+NM2015,NM,Female,43,Unemployed,NA,No,Secondary
+NM2018,NM,Female,31,Full-time work,NA,No,NA
+NM2019,NM,Male,29,Full-time work,NA,Yes,Secondary
+NM2020,NM,Male,29,Full-time work,235,No,Secondary
+NM7010,NM,Female,36,NA,NA,No,Secondary
+NM7009,NM,Female,32,NA,13,No,Secondary
+NM7008,NM,Female,28,NA,135,Yes,Secondary
+NM7007,NM,Female,29,NA,301,Yes,Secondary
+NM7006,NM,Female,28,NA,98,No,Secondary
+NM7005,NM,Male,34,NA,284,Yes,Secondary
+NM7004,NM,Female,26,NA,182,Yes,Secondary
+NM7003,NM,Male,40,NA,83,No,Secondary
+NM7002,NM,Male,37,Unemployed,4,Yes,Secondary
+NM7001,NM,Female,35,NA,108,No,Secondary
+NM7000,NM,Female,25,NA,NA,Yes,Secondary

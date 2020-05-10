@@ -508,6 +508,10 @@ data %>%
     mutate_if(is.character, factor) %>% 
     skim()
 
+### Remove CD4_recent values > 1500 cells/mm3
+data <- data %>% 
+    filter(is.na(CD4_recent) | CD4_recent <= 1500)
+
 ### Remove Urban / rural
 data <- data %>% 
     select(-`Urban or rural`)
@@ -549,26 +553,33 @@ data <- data %>%
 data <- data %>% 
     select(-ART_D4T.previous)
 
+# Add study site column
+data <- data %>% 
+    # Clean-up ID column to keep only study site information
+    mutate(Site = str_remove(ID, 
+                           pattern = '[0-9][0-9]?[0-9]?[0-9]?')) %>% 
+    # Fix RP? (all from the same site, just different group allocation)
+    mutate(Site = ifelse(Site == 'RPA' | Site == 'RPB' | Site == 'RPC' | Site == 'RPD',
+                         yes = 'RP',
+                         no = Site))
+
 # Check sample size per site
 data %>% 
-    # Select ID
-    select(ID) %>% 
-    # Clean-up ID column to keep only study site information
-    mutate(ID = str_remove(ID, 
-                           pattern = '[0-9][0-9]?[0-9]?[0-9]?')) %>%
+    # Select Site
+    select(Site) %>% 
     # Group data 
-    group_by(ID) %>% 
+    group_by(Site) %>% 
     summarise(Count = n()) %>% 
     kable(caption = 'Sample size by study site')
 
-# Fix two mis-coded sites (RISI => RESI, and RBP => RPB)
+# Fix two mis-coded sites (RISI => RESI, and RBP => RP)
 data <- data %>% 
-    mutate(ID = str_replace(ID, 
+    mutate(Site = str_replace(Site, 
                             pattern = 'RISI',
                             replacement = 'RESI'),
-           ID = str_replace(ID, 
+           Site = str_replace(Site, 
                             pattern = 'RBP',
-                            replacement = 'RPB'))
+                            replacement = 'RP'))
 
 ############################################################
 #                                                          #
@@ -599,7 +610,7 @@ write_rds(sites, path = 'data-cleaned/data-pain-sites.rds')
 ############################################################
 # Extract data from complete dataset
 arthritis <- data %>% 
-    select(ID, ends_with('bilateral'))
+    select(ID, Site, ends_with('bilateral'))
 
 # Write to file
 write_csv(arthritis, path = 'data-cleaned/data-rheumatoid-arthritis.csv')
@@ -612,7 +623,7 @@ write_rds(arthritis, path = 'data-cleaned/data-rheumatoid-arthritis.rds')
 ############################################################
 # Extract data from complete dataset
 demo <- data %>% 
-    select(ID, 27:31, 35)
+    select(ID, Site, 27:31, 35)
 
 # Write to file
 write_csv(demo, path = 'data-cleaned/data-demographics.csv')
@@ -625,7 +636,7 @@ write_rds(demo, path = 'data-cleaned/data-demographics.rds')
 ############################################################
 # Extract data from complete dataset
 pain <- data %>% 
-    select(ID, 32:34, 36)
+    select(ID, Site, 32:34, 36)
 
 # Write to file
 write_csv(pain, path = 'data-cleaned/data-pain-intensity.csv')

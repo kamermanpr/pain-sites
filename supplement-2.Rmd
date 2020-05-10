@@ -13,6 +13,10 @@ library(skimr)
 library(knitr)
 library(boot)
 library(lme4)
+library(patchwork)
+
+# Outputs
+options(scipen = 99999)
 
 # Create figures folder
 if(!dir.exists('figures')){
@@ -31,10 +35,6 @@ knitr::opts_chunk$set(echo = TRUE,
                       fig.width = 7,
                       fig.path = 'figures/supplement-2/')
 ```
-
-----
-
-Note: Sites RBP and RISI removed at data cleaning stage because n < 10. 
 
 ----
 
@@ -65,7 +65,7 @@ glimpse(demo)
 
 ```{r numerical_sites}
 data %>% 
-    select(-ID) %>% 
+    select(-ID, -Site) %>% 
     mutate_if(is.character, factor) %>% 
     skim()
 ```
@@ -74,7 +74,7 @@ data %>%
 
 ```{r numerical_demo}
 demo %>% 
-    select(-ID) %>% 
+    select(-ID, -Site) %>% 
     mutate_if(is.character, factor) %>% 
     skim()
 ```
@@ -86,8 +86,16 @@ demo %>%
 prop_func <- function(d, i){
     dat <- d[i, ]
     dat_vec <- dat[[1]]
-    dat_prop <- mean(dat_vec == 'Yes')
+    dat_prop <- mean(dat_vec == 'Yes', na.rm = TRUE)
     dat_prop
+}
+
+# Median
+median_func <- function(d, i){
+    dat <- d[i, ]
+    dat_vec <- dat[[1]]
+    dat_median <- median(dat_vec, na.rm = TRUE)
+    dat_median
 }
 ```
 
@@ -108,32 +116,32 @@ prop <- data[, !(names(data) %in% c('ID', 'Upper_back'))]
 prop_boot <- prop %>% 
     # Pivot to long format
     pivot_longer(cols = everything(),
-                 names_to = 'site',
+                 names_to = 'body_site',
                  values_to = 'pain_present') %>% 
     # Add body regions
     mutate(region = case_when(
-        site == 'Chest' |
-            site == 'Head' |
-            site == 'Throat' |
-            site == 'Shoulder' ~ 'Head and upper torso',
-        site == 'Lower_back' |
-            site == 'Abdomen' |
-            site == 'Hips' |
-            site == 'Buttocks' |
-            site == 'Groin' ~ 'Lower torso',
-        site == 'Legs' |
-            site == 'Knees' |
-            site == 'Ankles.Feet' ~ 'Lower limbs',
-        site == 'Arms' |
-            site == 'Elbows' |
-            site == 'Wrists.Hands' ~ 'Upper limbs',
-        site == 'Cervical_spine' |
-            site == 'Thoracic_spine' |
-            site == 'Lumbosacral_spine' ~ 'Spinal column',
+        body_site == 'Chest' |
+            body_site == 'Head' |
+            body_site == 'Throat' |
+            body_site == 'Shoulder' ~ 'Head and upper torso',
+        body_site == 'Lower_back' |
+            body_site == 'Abdomen' |
+            body_site == 'Hips' |
+            body_site == 'Buttocks' |
+            body_site == 'Groin' ~ 'Lower torso',
+        body_site == 'Legs' |
+            body_site == 'Knees' |
+            body_site == 'Ankles.Feet' ~ 'Lower limbs',
+        body_site == 'Arms' |
+            body_site == 'Elbows' |
+            body_site == 'Wrists.Hands' ~ 'Upper limbs',
+        body_site == 'Cervical_spine' |
+            body_site == 'Thoracic_spine' |
+            body_site == 'Lumbosacral_spine' ~ 'Spinal column',
         TRUE ~ 'other'
     )) %>% 
     # Nest by body region and body site
-    group_by(region, site) %>% 
+    group_by(region, body_site) %>% 
     nest() %>% 
     # Boostrap data
     mutate(boot = map(.x = data,
@@ -165,33 +173,37 @@ prop_boot2 <- prop_boot %>%
     # Fix site labels
     mutate(data = map(.x = data,
                       ~ .x %>% 
-                          mutate(site = str_replace_all(site,
+                          mutate(body_site = str_replace_all(body_site,
                                                         pattern = '_',
                                                         replacement = ' '),
-                                 site = str_replace_all(site, 
+                                 body_site = str_replace_all(body_site, 
                                                         pattern = '\\.',
-                                                        replacement = ' & ')))) %>% 
+                                                        replacement = ' & '),
+                                 body_site = str_replace_all(body_site,
+                                                        pattern = 'Lower back',
+                                                        replacement = 'Flank')))) %>% 
     # Re-order sites by point_est
     mutate(data = map(.x = data,
                       ~ .x %>% 
-                          mutate(site = fct_reorder(site, 
+                          mutate(body_site = fct_reorder(body_site, 
                                                     point_est)))) %>% 
     # Plot data
     mutate(plots = map2(.x = data,
                         .y = region,
                        ~ .x %>% 
                            ggplot(data = .) +
-                           aes(x = site,
+                           aes(x = body_site,
                                y = point_est,
                                ymin = lower_ci,
                                ymax = upper_ci) +
-                           geom_linerange(size = 1) +
-                           geom_point(size = 6) +
+                           geom_hline(yintercept = 0.1,
+                                      linetype = 2) +
+                           geom_pointrange(size = 1) +
                            coord_flip() +
                             labs(title = .y,
                                  subtitle = '(Point estimate with 95%CI)',
                                  y = 'Proportion with pain') +
-                            scale_y_continuous(limits = c(0, 1)) +
+                            scale_y_continuous(limits = c(0, 0.4)) +
                             theme_minimal(base_size = 18) +
                             theme(plot.title = element_text(size = 18),
                                   plot.subtitle = element_text(size = 12),
@@ -216,8 +228,32 @@ walk(prop_boot2$tables, ~ print(.x))
 
 ## Plotted proportions (with 95% CIs), by body region
 
-```{r plotted_prop}
-walk(prop_boot2$plots, ~ print(.x))
+```{r plotted_prop, fig.height = 9, fig.width = 8}
+upper <- prop_boot2$plots[[1]] +
+    theme(axis.title.x = element_blank())
+
+arm <- prop_boot2$plots[[2]] +
+    theme(axis.title.x = element_blank())
+
+lower <- prop_boot2$plots[[3]] +
+    theme(axis.title.x = element_blank())
+
+spine <- prop_boot2$plots[[4]]
+
+leg <- prop_boot2$plots[[5]]
+
+# Patchwork
+plot_prop <- upper + lower + arm + leg + spine + 
+    plot_layout(ncol = 2)
+
+# Output
+plot_prop
+
+# Save
+ggsave(filename = 'figures/figure_1.png', 
+       plot = plot_prop,
+       width = 12, 
+       height = 12)
 ```
 
 ----
@@ -233,40 +269,40 @@ set.seed(2020)
 # Select sex data
 sex <- demo[, c('ID', 'Sex')]
 
-# Join to boot_data & remove ID and Upper_back (only one outcome -- no pain)
+# Join to boot_data & remove ID, site, and upper_back (only one outcome -- no pain)
 sex <- left_join(data, sex) %>% 
-    select(-ID, -Upper_back)
+    select(-ID, -Site, -Upper_back)
 
 # Bootstrap CIs
 sex_boot <- sex %>% 
     # Pivot to long format
     pivot_longer(cols = -Sex,
-                 names_to = 'site',
+                 names_to = 'body_site',
                  values_to = 'pain_present') %>% 
     # Add body regions
     mutate(region = case_when(
-        site == 'Chest' |
-            site == 'Head' |
-            site == 'Throat' |
-            site == 'Shoulder' ~ 'Head and upper torso',
-        site == 'Lower_back' |
-            site == 'Abdomen' |
-            site == 'Hips' |
-            site == 'Buttocks' |
-            site == 'Groin' ~ 'Lower torso',
-        site == 'Legs' |
-            site == 'Knees' |
-            site == 'Ankles.Feet' ~ 'Lower limbs',
-        site == 'Arms' |
-            site == 'Elbows' |
-            site == 'Wrists.Hands' ~ 'Upper limbs',
-        site == 'Cervical_spine' |
-            site == 'Thoracic_spine' |
-            site == 'Lumbosacral_spine' ~ 'Spinal column',
+        body_site == 'Chest' |
+            body_site == 'Head' |
+            body_site == 'Throat' |
+            body_site == 'Shoulder' ~ 'Head and upper torso',
+        body_site == 'Lower_back' |
+            body_site == 'Abdomen' |
+            body_site == 'Hips' |
+            body_site == 'Buttocks' |
+            body_site == 'Groin' ~ 'Lower torso',
+        body_site == 'Legs' |
+            body_site == 'Knees' |
+            body_site == 'Ankles.Feet' ~ 'Lower limbs',
+        body_site == 'Arms' |
+            body_site == 'Elbows' |
+            body_site == 'Wrists.Hands' ~ 'Upper limbs',
+        body_site == 'Cervical_spine' |
+            body_site == 'Thoracic_spine' |
+            body_site == 'Lumbosacral_spine' ~ 'Spinal column',
         TRUE ~ 'other'
     )) %>% 
     # Nest by body region and body site
-    group_by(Sex, region, site) %>% 
+    group_by(Sex, region, body_site) %>% 
     nest() %>% 
     # Boostrap data
     mutate(boot = map(.x = data,
@@ -298,23 +334,23 @@ sex_boot2 <- sex_boot %>%
     # Fix site labels
     mutate(data = map(.x = data,
                       ~ .x %>% 
-                          mutate(site = str_replace_all(site,
+                          mutate(body_site = str_replace_all(body_site,
                                                         pattern = '_',
                                                         replacement = ' '),
-                                 site = str_replace_all(site, 
+                                 body_site = str_replace_all(body_site, 
                                                         pattern = '\\.',
                                                         replacement = ' & ')))) %>% 
     # Re-order sites by point_est
     mutate(data = map(.x = data,
                       ~ .x %>% 
-                          mutate(site = fct_reorder(site, 
+                          mutate(body_site = fct_reorder(body_site, 
                                                     point_est)))) %>% 
     # Plot data
     mutate(plots = map2(.x = data,
                         .y = region,
                        ~ .x %>% 
                            ggplot(data = .) +
-                           aes(x = site,
+                           aes(x = body_site,
                                y = point_est,
                                ymin = lower_ci,
                                ymax = upper_ci,
@@ -367,6 +403,8 @@ walk(sex_boot2$plots, ~ print(.x))
 
 # By age
 
+For ease of tabulation and plotting in this section of the supplement, I divided age into seven age categories. However for data analysis (see: Logistic regression, section 7), I have analysed age as a continuous variable. 
+
 ## Process data
 
 ```{r process_age}
@@ -376,9 +414,10 @@ set.seed(2020)
 # Select age data
 age <- demo[, c('ID', 'Age')]
 
-# Join to boot_data & remove ID and Upper_back (only one outcome -- no pain)
+# Join to boot_data & remove ID, study site, and upper_back 
+# (only one outcome -- no pain)
 age <- left_join(data, age) %>% 
-    select(-ID, -Upper_back)
+    select(-ID, -Site, -Upper_back)
 
 # Get complete cases
 age <- age[complete.cases(age), ]
@@ -387,7 +426,7 @@ age <- age[complete.cases(age), ]
 age_boot <- age %>% 
     # Pivot to long format
     pivot_longer(cols = -Age,
-                 names_to = 'site',
+                 names_to = 'body_site',
                  values_to = 'pain_present') %>% 
     # Add age categories
     mutate(age_group = case_when(
@@ -402,11 +441,11 @@ age_boot <- age %>%
 
 # Print count per age group
 age_boot %>% 
-    group_by(site, age_group) %>% 
+    group_by(body_site, age_group) %>% 
     summarise(count = n()) %>% 
-    filter(site == 'Abdomen') %>% 
+    filter(body_site == 'Abdomen') %>% 
     ungroup() %>% 
-    select(-site) %>% 
+    select(-body_site) %>% 
     kable(caption = 'Participant count per age group')
 
 # Generate CIs
@@ -416,7 +455,7 @@ age_boot2 <- age_boot %>%
     # Remove categories with less than 20 counts
     filter(age_group != '68-77') %>% 
     # Nest by age group and body site
-    group_by(age_group, site) %>% 
+    group_by(age_group, body_site) %>% 
     nest() %>% 
     # Boostrap data
     mutate(boot = map(.x = data,
@@ -445,19 +484,19 @@ age_boot2 <- age_boot %>%
 # Re-nest by body region and generate figures and tables
 age_boot2 <- age_boot2 %>% 
     # Fix site labels
-    mutate(site = str_replace_all(site,
+    mutate(body_site = str_replace_all(body_site,
                                   pattern = '_',
                                   replacement = ' '),
-           site = str_replace_all(site, 
+           body_site = str_replace_all(body_site, 
                                   pattern = '\\.',
                                   replacement = ' & ')) %>% 
     # Group and nest
-    group_by(site) %>% 
+    group_by(body_site) %>% 
     nest() %>% 
     # Arrange age groups
     # Plot data
     mutate(plots = map2(.x = data,
-                        .y = site,
+                        .y = body_site,
                        ~ .x %>% 
                            ggplot(data = .) +
                            aes(x = age_group,
@@ -484,7 +523,7 @@ age_boot2 <- age_boot2 %>%
                                  axis.ticks = element_line(size = 0.5)))) %>% 
     # Tabulate data
     mutate(tables = map2(.x = data,
-                         .y = site,
+                         .y = body_site,
                          ~ .x %>% 
                              arrange(age_group) %>% 
                              kable(caption = str_glue('{.y} (Age group 68-77 years removed because n = 2)'),
@@ -507,6 +546,8 @@ walk(age_boot2$plots, ~ print(.x))
 
 # By most recent CD4 T-cell count
 
+For ease of tabulation and plotting in this section of the supplement, I divided the most recent CD4 T-cell count into six categories. However for data analysis (see: Logistic regression, section 7), I have analysed CD4 T-cell count as a continuous variable. 
+
 ## Process data
 
 ```{r process_cd4}
@@ -516,9 +557,10 @@ set.seed(2020)
 # Select CD4 recent data
 cd4 <- demo[, c('ID', 'CD4_recent')]
 
-# Join to boot_data & remove ID and Upper_back (only one outcome -- no pain)
+# Join to boot_data & remove ID, study site, and upper_back 
+# (only one outcome -- no pain)
 cd4 <- left_join(data, cd4) %>% 
-    select(-ID, -Upper_back)
+    select(-ID, -Site, -Upper_back)
 
 # Get complete cases
 cd4 <- cd4[complete.cases(cd4), ]
@@ -527,7 +569,7 @@ cd4 <- cd4[complete.cases(cd4), ]
 cd4_boot <- cd4 %>% 
     # Pivot to long format
     pivot_longer(cols = -CD4_recent,
-                 names_to = 'site',
+                 names_to = 'body_site',
                  values_to = 'pain_present') %>% 
     # Add CD4 recent categories
     mutate(cd4_group = case_when(
@@ -541,11 +583,11 @@ cd4_boot <- cd4 %>%
 
 # Print count per CD4 recent group
 cd4_boot %>% 
-    group_by(site, cd4_group) %>% 
+    group_by(body_site, cd4_group) %>% 
     summarise(count = n()) %>% 
-    filter(site == 'Abdomen') %>% 
+    filter(body_site == 'Abdomen') %>% 
     ungroup() %>% 
-    select(-site) %>% 
+    select(-body_site) %>% 
     kable(caption = 'Participant count per CD4 group')
 
 # Generate CIs
@@ -553,7 +595,7 @@ cd4_boot2 <- cd4_boot %>%
     # Remove CD4 recent
     select(-CD4_recent) %>% 
     # Nest by CD4 recent group and body site
-    group_by(cd4_group, site) %>% 
+    group_by(cd4_group, body_site) %>% 
     nest() %>% 
     # Boostrap data
     mutate(boot = map(.x = data,
@@ -582,19 +624,19 @@ cd4_boot2 <- cd4_boot %>%
 # Re-nest by body region and generate figures and tables
 cd4_boot2 <- cd4_boot2 %>% 
     # Fix site labels
-    mutate(site = str_replace_all(site,
+    mutate(body_site = str_replace_all(body_site,
                                   pattern = '_',
                                   replacement = ' '),
-           site = str_replace_all(site, 
+           body_site = str_replace_all(body_site, 
                                   pattern = '\\.',
                                   replacement = ' & ')) %>% 
     # Group and nest
-    group_by(site) %>% 
+    group_by(body_site) %>% 
     nest() %>% 
     # Arrange CD4 recent groups
     # Plot data
     mutate(plots = map2(.x = data,
-                        .y = site,
+                        .y = body_site,
                        ~ .x %>% 
                            ggplot(data = .) +
                            aes(x = cd4_group,
@@ -619,7 +661,7 @@ cd4_boot2 <- cd4_boot2 %>%
                                  axis.ticks = element_line(size = 0.5)))) %>% 
     # Tabulate data
     mutate(tables = map2(.x = data,
-                         .y = site,
+                         .y = body_site,
                          ~ .x %>% 
                              arrange(cd4_group) %>% 
                              kable(caption = .y,
@@ -640,108 +682,699 @@ walk(cd4_boot2$plots, ~ print(.x))
 
 ----
 
-# Logistic regression (generalised linear mixed model)
+# Logistic regression
 
-Note: Age treated as a continuous variable, not like the categories used in the figures shwon above.
+Note: Age and CD4 T-cell count treated as a continuous variable, not like the categories used in the figures shown above.
 
 ## Process data
 
-Extract cases with complete data for CD4 T-cell count, age, and sex.
+Extract and process data on study site, participant ID, CD4 T-cell count, age, and sex.
 
 ```{r process_glm}
 # Select demographic data
-demo_glmm <- demo[, c('ID', 'CD4_recent', 'Sex', 'Age')] %>% 
-    # Generate site codes
-    mutate(Study_site = str_remove(ID,
-                                   pattern = '[0-9][0-9]?[0-9]?[0-9]?[0-9]?')) %>% 
-    # Set column names
-    set_names(nm = c('ID', 'CD4_recent', 'Sex', 'Age', 'Study_site'))
+demo_log <- demo[, c('ID', 'Site', 'CD4_recent', 'Sex', 'Age')] 
 
-# Process data and remove incomplete cases
-data_glmm <- data %>% 
+# Process data
+data_log <- data %>% 
     # Join with extracted demographics data (demo_reduced)
-    left_join(demo_glmm) %>% 
+    left_join(demo_log) %>% 
     # Remove upper back (only one outcome -- no pain) and ID
-    select(-ID, -Upper_back) %>% 
-    # Extract complete cases
-    filter(complete.cases(.))
+    select(-ID, -Upper_back) 
 
 # Convert data_glm to long format
-data_glmm.long <- data_glmm %>% 
-    pivot_longer(cols = -c(CD4_recent, Age, Sex, Study_site),
+data_log.long <- data_log %>% 
+    pivot_longer(cols = -c(CD4_recent, Age, Sex, Site),
                  names_to = 'Pain_site',
                  values_to = 'Pain_present')
 
-# Extract vector of body sites where the proportion with pain was >= 10%
-## Stops "Singular" fit warning when performing GLMM
-high_prop <- data_glmm.long %>% 
-    group_by(Pain_site, Pain_present) %>% 
-    summarise(n = n()) %>% 
-    mutate(total = sum(n),
-           prop = n/total) %>% 
-    filter(Pain_present == 'Yes') %>% 
-    filter(prop >= 0.10) %>% 
-    .$Pain_site
+# Scale Age and CD4_recent
+data_log.long <- data_log.long %>% 
+    mutate_if(is.numeric, scale)
 
-# Filter for pain sites selected above
-data_glmm.filtered <- data_glmm.long %>% 
-    filter(Pain_site %in% high_prop)
-```
-
-## Tabulate number of cases in original and GLM datasets
-
-```{r table_1}
-# Get number of cases in original data
-nrow(demo_glmm)
-
-# Get number of cases in data_reduced
-nrow(data_glmm)
-
-# Tabulate number of cases by each study sits: original vs glm
-original <- demo_glmm %>%
-    group_by(Study_site) %>% 
-    summarise(Count1 = n()) 
-
-glmm <- data_glmm %>% 
-    group_by(Study_site) %>% 
-    summarise(Count2 = n())
-
-original %>% 
-    left_join(glmm) %>% 
-    kable(caption = 'Number of cases at each study site (original dataset)',
-          col.names = c('Study site', 'Original', 'GLM'))
-```
-
-## Tabulate the pain sites removed
-
-Sites removed because proportion of cases with pain at each site was < 0.1.
-
-```{r table_2}
-data_glmm.long %>% 
-    filter(!Pain_site %in% high_prop) %>% 
-    select(Pain_site) %>% 
-    distinct() %>% 
-    mutate(Pain_site = str_replace(Pain_site, 
-                                   pattern = '_',
-                                   replacement = ' '),
-           Pain_site = str_replace(Pain_site, 
-                                   pattern = '\\.',
-                                   replacement = ' & ')) %>% 
-    kable(caption = 'Removed pain sites',
-          col.names = 'Pain sites')
-```
-
-## GLMM
-
-```{r glmm, results = 'asis'}
-# Perform GLMM on each remaining body site
-glmm_mods <- data_glmm.filtered %>% 
-    # Scale Age and CD4_recent
-    mutate_if(is.numeric, scale) %>% 
-    # Dummy code outcome variable
+# Dummy code outcome variable
+data_log.long <- data_log.long %>% 
     mutate(Pain_present = ifelse(Pain_present == 'No',
                                  yes = 0,
-                                 no = 1)) %>% 
+                                 no = 1)) 
+```
+
+## Family-wise error correction
+
+Alpha threshold for significance was corrected to control the family-wise error rate. The correction was applied to the results of the likelihood ratio tests comparing null models to full models. We chose the conservative Bonferroni correction. 
+
+## Run `glmer` model for every body site to check for issues
+
+P-values reported for the likelihood ratio tests below are uncorrected for multiple comparisons.
+
+```{r checks}
+#-- Head --#
+head <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Head') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = head,
+              family = binomial())
+    
+## Full model
+head_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = head,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, head_mod, test = 'LR')
+
+## Significant, therefore, print summary
+## (family-wise error correction, alpha = 0.0024)
+
+summary(head_mod)
+
+#-- Throat --#
+throat <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Throat') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = throat,
+              family = binomial())
+    
+## Full model
+thrt_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = throat,
+              family = binomial())
+
+## Fit is singular, print model to check SD of random effect 
+thrt_mod
+
+#-- Shoulder --#
+shoulder <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Shoulder') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = shoulder,
+              family = binomial())
+    
+## Full model
+shdr_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = shoulder,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, shdr_mod, test = 'LR')
+
+## No significant difference between null and full model
+
+#-- Arm --#
+arms <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Arms') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = arms,
+              family = binomial())
+    
+## Full model
+arms_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = arms,
+              family = binomial())
+
+## Fit is singular, print model to check SD of random effect
+arms_mod
+
+#-- Elbow --#
+elbow <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Elbows') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = elbow,
+              family = binomial())
+    
+## Full model
+elbw_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = elbow,
+              family = binomial())
+
+## Fit is singular, print model to check SD of random effect
+elbw_mod
+
+#-- Wrist & hand --#
+hand <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Wrists.Hands') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = hand,
+              family = binomial())
+    
+## Full model
+hand_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = hand,
+              family = binomial())
+
+## Fit is singular, print model to check SD of random effect 
+hand_mod
+
+#-- Chest --#
+chest <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Chest') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = chest,
+              family = binomial())
+    
+## Full model
+chst_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = chest,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, chst_mod, test = 'LR')
+
+## No significant difference in null and full models
+
+#-- Abdomen --#
+abdomen <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Abdomen') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = abdomen,
+              family = binomial())
+    
+## Full model
+abdm_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = abdomen,
+              family = binomial())
+
+## Fit is singular, print model to check SD of random effect 
+abdm_mod
+
+#-- Lower back (flank) --#
+low_back <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Lower_back') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = low_back,
+              family = binomial())
+    
+## Full model
+back_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = low_back,
+              family = binomial())
+
+## Fit is singular, print model to check SD of random effect 
+back_mod
+
+#-- Groin --#
+groin <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Groin') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = groin,
+              family = binomial())
+    
+## Full model
+groin_mod <- glmer(Pain_present ~ 
+                   Age + 
+                   Sex + 
+                   CD4_recent + 
+                   (1|Site),
+               data = groin,
+               family = binomial())
+
+## Compare models 
+anova(null_mod, groin_mod, test = 'LR')
+
+## No significant difference between null and full model
+
+#-- Buttocks --#
+buttocks <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Buttocks') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = buttocks,
+              family = binomial())
+    
+## Full model
+butt_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = buttocks,
+              family = binomial())
+
+## Fit is singular, print model to check SD of random effect 
+butt_mod
+
+#-- Hips --#
+hips <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Hips') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = hips,
+              family = binomial())
+    
+## Full model
+hips_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = hips,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, hips_mod, test = 'LR')
+
+## No significant difference between null and full model
+
+#-- Legs --#
+legs <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Legs') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = legs,
+              family = binomial())
+    
+## Full model
+legs_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = legs,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, legs_mod, test = 'LR')
+
+## No significant difference between the null and full models 
+## (family-wise error correction, alpha = 0.0024)
+
+#-- Knees --#
+knees <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Knees') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = knees,
+              family = binomial())
+    
+## Full model
+knee_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = knees,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, knee_mod, test = 'LR')
+
+## No significant difference between the null and full models 
+## (family-wise error correction, alpha = 0.0024)
+
+#-- Ankles.Feet --#
+ankles <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Ankles.Feet') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = ankles,
+              family = binomial())
+    
+## Full model
+ankl_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = ankles,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, ankl_mod, test = 'LR')
+
+## No significant difference between the null and full models 
+## (family-wise error correction, alpha = 0.0024)
+
+#-- Cervical spine --#
+cervical <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Cervical_spine') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = cervical,
+              family = binomial())
+    
+## Full model
+neck_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = cervical,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, neck_mod, test = 'LR')
+
+## No significant difference between null and full models
+
+#-- Thoracic spine --#
+thoracic <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Thoracic_spine') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = thoracic,
+              family = binomial())
+    
+## Full model
+thrx_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = thoracic,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, thrx_mod, test = 'LR')
+
+## No significant difference between null and full models
+
+# Lumbosacral spine
+lumbar <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Lumbosacral_spine') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glmer(Pain_present ~ 1 + (1|Site),
+              data = lumbar,
+              family = binomial())
+    
+## Full model
+lmbr_mod <- glmer(Pain_present ~ 
+                  Age + 
+                  Sex + 
+                  CD4_recent + 
+                  (1|Site),
+              data = lumbar,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, lmbr_mod, test = 'LR')
+
+## No significant difference between null and full models
+```
+
+Body sites with models that generated an _"is singular"_ error included:
+
+- Throat
+
+- Arms
+
+- Elbows 
+
+- Wrists & hands
+
+- Abdomen
+
+- Lower back (flanks)
+
+- Buttocks
+
+All these models had a random error variance of 0 (or tending to 0), indicating that **site** was not contributing to the model and could be removed. That is, there is not enough additional site-level variation to warrant adding a random effect to explain all the observed variation. Analyzed these using `glm`, not `glmm`, and check for issues.
+
+## Run `glm` for selected body sites to check for issues
+
+P-values reported for the likelihood ratio tests below are uncorrected for multiple comparisons.
+
+```{r checks_glm, warning = TRUE, message = TRUE}
+#-- Throat --#
+throat <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Throat') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glm(Pain_present ~ 1,
+                data = throat,
+                family = binomial())
+    
+## Full model
+thrt_mod <- glm(Pain_present ~ 
+                Age + 
+                Sex + 
+                CD4_recent,
+              data = throat,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, thrt_mod, test = 'LR')
+
+## No significant difference between the null and full models
+
+#-- Arms --#
+arms <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Arms') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glm(Pain_present ~ 1,
+                data = arms,
+                family = binomial())
+    
+## Full model
+arms_mod <- glm(Pain_present ~ 
+                Age + 
+                Sex + 
+                CD4_recent,
+              data = arms,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, arms_mod, test = 'LR')
+
+## No significant difference between the null and full models
+
+#-- Elbow --#
+elbows <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Elbows') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glm(Pain_present ~ 1,
+                data = elbows,
+                family = binomial())
+    
+## Full model
+elbw_mod <- glm(Pain_present ~ 
+                Age + 
+                Sex + 
+                CD4_recent,
+              data = elbows,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, elbw_mod, test = 'LR')
+
+## No significant difference between the null and full models
+
+#-- Wrist & hand --#
+wrists <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Wrists.Hands') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glm(Pain_present ~ 1,
+                data = wrists,
+                family = binomial())
+    
+## Full model
+wrst_mod <- glm(Pain_present ~ 
+                Age + 
+                Sex + 
+                CD4_recent,
+              data = wrists,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, wrst_mod, test = 'LR')
+
+## No significant difference between the null and full models 
+## (family-wise error correction, alpha = 0.0024)
+
+#-- Abdomen --#
+abdomen <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Abdomen') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glm(Pain_present ~ 1,
+                data = abdomen,
+                family = binomial())
+    
+## Full model
+abdm_mod <- glm(Pain_present ~ 
+                Age + 
+                Sex + 
+                CD4_recent,
+              data = abdomen,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, abdm_mod, test = 'LR')
+
+## No significant difference between the null and full models 
+## (family-wise error correction, alpha = 0.0024)
+
+#-- Lower back (flank) --#
+low_back <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Lower_back') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glm(Pain_present ~ 1,
+                data = low_back,
+                family = binomial())
+    
+## Full model
+back_mod <- glm(Pain_present ~ 
+                Age + 
+                Sex + 
+                CD4_recent,
+              data = low_back,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, back_mod, test = 'LR')
+
+## No significant difference between the null and full models
+
+#-- Buttocks --#
+buttocks <- data_log.long %>% 
+    # Filter by pain site
+    filter(Pain_site == 'Buttocks') %>% 
+    filter(complete.cases(.))
+
+## Null
+null_mod <- glm(Pain_present ~ 1,
+                data = buttocks,
+                family = binomial())
+    
+## Full model
+butt_mod <- glm(Pain_present ~ 
+                Age + 
+                Sex + 
+                CD4_recent,
+              data = buttocks,
+              family = binomial())
+
+## Compare models 
+anova(null_mod, butt_mod, test = 'LR')
+
+## No significant difference between the null and full models
+```
+
+## GLMM data for tabulation and plotting
+
+Perform GLMM on selected body sites (head, shoulders, chest, groin, hips, legs, knees, ankles and feet, cervical spine, thoracic spine, and lumbosacral spine) to extract fixed effect odds ratios (with 95% CIs) to tabulate and to produce forest plots.
+
+```{r glmm}
+# Perform GLMM on each selected body sites
+glmm_mods <- data_log.long %>% 
+    filter(complete.cases(.)) %>% 
+    # remove body sites with glmm singular fits
+    filter(!Pain_site %in% c("Throat", "Arms", "Elbows", "Lower_back",
+                             "Wrists.Hands", "Abdomen", "Buttocks")) %>% 
     # Group and then nest by Pain_site
     group_by(Pain_site) %>% 
     nest() %>% 
@@ -751,32 +1384,1006 @@ glmm_mods <- data_glmm.filtered %>%
                                       Age + 
                                       Sex + 
                                       CD4_recent + 
-                                      (1|Study_site),
-                                data = .x,
-                                family = binomial(),
-                                control = glmerControl(optimizer = 
-                                                           c('bobyqa', 
-                                                             'bobyqa'))))) %>% 
-    # Extract effect sizes and p-values
+                                      (1|Site),
+                                  data = .x,
+                                  family = binomial())),
+           null = map(.x = data,
+                      ~glmer(Pain_present ~ 1 +
+                                 (1|Site),
+                             data = .x,
+                             family = binomial())))  %>% 
+    # Perform likelihood ratio test
+    mutate(LRT = map2(.x = logistic,
+                      .y = null,
+                      ~ anova(.y, .x, test = 'LR'))) %>% 
+    # Extract LRT p-values and correct for multiple comparisons
+    mutate(LRT_p = map(.x = LRT,
+                       ~ .x[, 8][[2]]),
+           LRT_p.corrected = map(.x = LRT_p,
+                                 ~ p.adjust(p = .x,
+                                            method = 'bonferroni',
+                                            n = 21))) %>% 
+    # Extract effect sizes
     mutate(OR = map(.x = logistic,
                     ~ exp(fixef(.x))),
            CI = map(.x = logistic,
                           ~ exp(confint.merMod(.x, 
-                                               method = 'Wald')[2:5, ])),
-           p_value = map(.x = logistic,
-                         ~ coef(summary(.x))[, 4])) %>% 
+                                               method = 'Wald')[2:5, ]))) %>% 
+    ungroup() %>% 
+    mutate(Pain_site = str_replace(Pain_site,
+                                   pattern = '_',
+                                   replacement = ' ')) %>% 
+    mutate(Pain_site = str_replace(Pain_site, 
+                                   pattern = '\\.',
+                                   replacement = ' & ')) %>% 
     # Bind data into a dataframe and tabulate,
-    mutate(df = pmap(.l = list(OR, CI, p_value, Pain_site),
-                     ~ cbind(..1, ..2, ..3) %>% 
-                         kable(caption = ..4,
+    mutate(df = pmap(.l = list(OR, CI, LRT_p.corrected, Pain_site),
+                     ~ cbind(..1, ..2) %>% 
+                         .[2:4, ] %>% 
+                         kable(caption = str_glue('{..4} (GLMM; LRT corrected p-value = {round(..3, 3)})'),
+                               digits = 3,
                                col.names = c('OR', 'Wald lower 95%CI', 
-                                             'Wald upper 95%CI', 'p-value'))))
+                                             'Wald upper 95%CI')))) %>% 
+    # Generate forest plot data
+    mutate(forest_data = map2(.x = OR, 
+                              .y = CI,
+                              # Create the dataframe
+                              ~ as.data.frame(cbind(.x, .y)) %>% 
+                                  set_names(nm = c('OR', 'lower_ci', 
+                                                   'upper_ci')) %>% 
+                                  .[-1, ] %>% 
+                                  rownames_to_column() %>% 
+                                  mutate(rowname = case_when(
+                                      rowname == 'Age' ~ 'Age',
+                                      rowname == 'SexMale' ~ 'Sex (male)',
+                                      rowname == 'CD4_recent' ~ 'CD4 T-cells'
+                                      )) %>% 
+                                  # Round digits to 2 decimal places
+                                  mutate_if(is.numeric, round, 2) %>% 
+                                  # Paste CI range
+                                  mutate(ci_range = paste0('(', lower_ci, ' to ', 
+                                                           upper_ci, ')')) %>% 
+                                  # Cut short confidence interval for plotting
+                                  mutate(upper_ci = ifelse(upper_ci > 4,
+                                                           yes = 4,
+                                                           no = upper_ci)))) %>% 
+    # Generate forest plots
+    mutate(forest_plots = pmap(.l = list(forest_data, Pain_site, LRT_p.corrected),
+                              ~ ..1 %>% 
+                                  ggplot(data = .) +
+                                  aes(x = OR,
+                                      xmin = lower_ci,
+                                      xmax = upper_ci,
+                                      y = rowname,
+                                      label = ci_range) +
+                                  geom_pointrange(size = 1) +
+                                  geom_vline(xintercept = 1,
+                                             linetype = 2) +
+                                  scale_x_continuous(limits = c(-0.5, 8),
+                                                     breaks = c(0, 1, 2, 3, 4)) +
+                                  geom_text(x = 4.5, hjust = 0, size = 5) +
+                                  annotate(geom = 'text',
+                                           label = '95% CI',
+                                           size = 5,
+                                           fontface = 2,
+                                           x = 4.5,
+                                           y = 3.3,
+                                           hjust = 0) +
+                                  labs(title = ..2,
+                                       subtitle = str_glue('(GLMM | LRT corrected p-value =  {round(..3, 3)})'),
+                                       x = 'Odds ratio') +
+                                  theme_minimal(base_size = 18) +
+                                  theme(plot.title = element_text(size = 18),
+                                        plot.subtitle = element_text(size = 12),
+                                        panel.grid = element_blank(),
+                                        axis.title.y = element_blank(),
+                                        axis.text = element_text(colour = '#000000'),
+                                        axis.line = element_line(size = 0.5),
+                                        axis.ticks = element_line(size = 0.5))))
+```
 
-# Print OR for fixed effects with Wald-type 95% CIs and p-values
+## GLM data for tabulation and plotting
+
+Perform GLM on selected body sites (throat, arms, elbows, wrists and hands, abdomen, and buttocks) to extract fixed effect odds ratios (with 95% CIs) to tabulate and to produce forest plots.
+
+```{r glm}
+# Perform GLM on each selected body sites
+glm_mods <- data_log.long %>% 
+    filter(complete.cases(.)) %>% 
+    # Retain body sites with glmm singular fits
+    filter(Pain_site %in% c("Throat", "Arms", "Elbows", "Lower_back",
+                            "Wrists.Hands", "Abdomen", "Buttocks")) %>% 
+    # Change lower_back to flank
+    mutate(Pain_site = ifelse(Pain_site == 'Lower_back',
+                              yes = 'Lower back/flanks',
+                              no = Pain_site)) %>% 
+    # Group and then nest by Pain_site
+    group_by(Pain_site) %>% 
+    nest() %>% 
+    # Perform logistic regression
+    mutate(logistic = map(.x = data,
+                          ~ glm(Pain_present ~ 
+                                    Age + 
+                                    Sex + 
+                                    CD4_recent,
+                                data = .x,
+                                family = binomial())),
+           null = map(.x = data,
+                      ~glm(Pain_present ~ 1,
+                             data = .x,
+                             family = binomial()))) %>% 
+    # Perform likelihood ratio test
+    mutate(LRT = map2(.x = logistic,
+                      .y = null,
+                      ~ anova(.y, .x, test = 'LR'))) %>% 
+    # Extract LRT p-values and correct for multiple comparisons
+    mutate(LRT_p = map(.x = LRT,
+                       ~ .x[, 5][[2]]),
+           LRT_p.corrected = map(.x = LRT_p,
+                                 ~ p.adjust(p = .x,
+                                            method = 'bonferroni',
+                                            n = 21))) %>%
+    # Extract effect sizes
+    mutate(OR = map(.x = logistic,
+                    ~ exp(coef(.x))),
+           CI = map(.x = logistic,
+                          ~ exp(confint.default(.x)))) %>% 
+    ungroup() %>% 
+    mutate(Pain_site = str_replace(Pain_site,
+                                   pattern = '_',
+                                   replacement = ' ')) %>% 
+    mutate(Pain_site = str_replace(Pain_site, 
+                                   pattern = '\\.',
+                                   replacement = ' & ')) %>% 
+    # Bind data into a dataframe and tabulate,
+    mutate(df = pmap(.l = list(OR, CI, LRT_p.corrected, Pain_site),
+                     ~ cbind(..1, ..2) %>% 
+                         .[2:4, ] %>% 
+                         kable(caption = str_glue('{..4} (GLM; LRT corrected p-value = {round(..3, 3)})'),
+                               digits = 3,
+                               col.names = c('OR', 'Wald lower 95%CI', 
+                                             'Wald upper 95%CI')))) %>% 
+    # Generate forest plot data
+    mutate(forest_data = map2(.x = OR, 
+                              .y = CI,
+                              # Create the dataframe
+                              ~ as.data.frame(cbind(.x, .y)) %>% 
+                                  set_names(nm = c('OR', 'lower_ci', 
+                                                   'upper_ci')) %>% 
+                                  .[-1, ] %>% 
+                                  rownames_to_column() %>% 
+                                  mutate(rowname = case_when(
+                                      rowname == 'Age' ~ 'Age',
+                                      rowname == 'SexMale' ~ 'Sex (male)',
+                                      rowname == 'CD4_recent' ~ 'CD4 T-cells'
+                                      )) %>% 
+                                  # Round digits to 2 decimal places
+                                  mutate_if(is.numeric, round, 2) %>% 
+                                  # Paste CI range
+                                  mutate(ci_range = paste0('(', lower_ci, ' to ', 
+                                                           upper_ci, ')')) %>% 
+                                  # Cut short confidence interval for plotting
+                                  mutate(upper_ci = ifelse(upper_ci > 4,
+                                                           yes = 4,
+                                                           no = upper_ci)))) %>% 
+    # Generate forest plots
+    mutate(forest_plots = pmap(.l = list(forest_data, Pain_site, LRT_p.corrected),
+                              ~ ..1 %>% 
+                                  ggplot(data = .) +
+                                  aes(x = OR,
+                                      xmin = lower_ci,
+                                      xmax = upper_ci,
+                                      y = rowname,
+                                      label = ci_range) +
+                                  geom_pointrange(size = 1) +
+                                  geom_vline(xintercept = 1,
+                                             linetype = 2) +
+                                  scale_x_continuous(limits = c(-0.5, 8),
+                                                     breaks = c(0, 1, 2, 3, 4)) +
+                                  geom_text(x = 4.5, hjust = 0, size = 5) +
+                                  annotate(geom = 'text',
+                                           label = '95% CI',
+                                           size = 5,
+                                           fontface = 2,
+                                           x = 4.5,
+                                           y = 3.3,
+                                           hjust = 0) +
+                                  labs(title = ..2,
+                                       subtitle = str_glue('(GLM | LRT corrected p-value =  {round(..3, 3)})'),
+                                       x = 'Odds ratio') +
+                                  theme_minimal(base_size = 18) +
+                                  theme(plot.title = element_text(size = 18),
+                                        plot.subtitle = element_text(size = 12),
+                                        panel.grid = element_blank(),
+                                        axis.title.y = element_blank(),
+                                        axis.text = element_text(colour = '#000000'),
+                                        axis.line = element_line(size = 0.5),
+                                        axis.ticks = element_line(size = 0.5))))
+```
+
+## Tabulated results (fixed effects) 
+
+### GLMM tabulations
+
+```{r glmm_tabulated, results = 'asis'}
+# Print OR for fixed effects with 95% CIs and p-values
 walk(glmm_mods$df, ~print(.x))
 ```
 
-----
+### GLM tabulations
+
+```{r glm_tabulated, results = 'asis'}
+# Print OR for fixed effects with 95% CIs and p-values
+walk(glm_mods$df, ~print(.x))
+```
+
+## Plotted results (fixed effects)
+
+Includes both GLM and GLMM results.
+
+```{r forest, fig.width = 9, fig.height = 8}
+# Extract and process sub-plots from GLMM data
+head <- glmm_mods$forest_plots[[1]] +
+    theme(axis.title.x = element_blank())
+
+shoulder <- glmm_mods$forest_plots[[2]] +
+    theme(axis.text.y = element_blank(),
+          axis.title.x = element_blank())
+
+chest <- glmm_mods$forest_plots[[3]] + 
+    theme(axis.text.y = element_blank(),
+          axis.title.x = element_blank())
+
+cervical <- glmm_mods$forest_plots[[4]] +
+    theme(axis.text.y = element_blank())
+
+thoracic<- glmm_mods$forest_plots[[5]] 
+
+lumbar <- glmm_mods$forest_plots[[6]] +
+    theme(axis.text.y = element_blank())
+
+groin <- glmm_mods$forest_plots[[7]] + 
+    theme(axis.text.y = element_blank(),
+          axis.title.x = element_blank())
+
+hips <- glmm_mods$forest_plots[[8]] +
+    theme(axis.text.y = element_blank(),
+          axis.title.x = element_blank())
+
+legs <- glmm_mods$forest_plots[[9]] +
+    theme(axis.title.x = element_blank())
+
+knees <- glmm_mods$forest_plots[[10]] +
+    theme(axis.text.y = element_blank(),
+          axis.title.x = element_blank())
+
+ankles.feet <- glmm_mods$forest_plots[[11]] +
+    theme(axis.text.y = element_blank())
+
+# Extract and process sub-plots from GLM data
+throat <- glm_mods$forest_plots[[1]] +
+    theme(axis.title.x = element_blank(),
+          axis.text.y = element_blank())
+
+arms <- glm_mods$forest_plots[[2]] +
+    theme(axis.text.y = element_blank(),
+          axis.title.x = element_blank())
+
+elbows <- glm_mods$forest_plots[[3]] + 
+    theme(axis.title.x = element_blank())
+
+wrists.hands <- glm_mods$forest_plots[[4]] +
+    theme(axis.text.y = element_blank(),
+          axis.title.x = element_blank())
+
+flank <- glm_mods$forest_plots[[5]] + 
+    theme(axis.title.x = element_blank())
+
+abdomen <- glm_mods$forest_plots[[6]] +
+    theme(axis.title.x = element_blank(),
+          axis.text.y = element_blank())
+
+buttocks <- glm_mods$forest_plots[[7]] + 
+    theme(axis.text.y = element_blank(),
+          axis.title.x = element_blank())
+
+# Patchwork
+log_patch <- head + throat + chest + abdomen + flank + groin +
+    shoulder + arms + elbows + wrists.hands +
+    buttocks + hips + legs + knees + ankles.feet + 
+    cervical + thoracic + lumbar +
+    plot_layout(ncol = 4)
+
+# Save 
+ggsave(filename = 'figures/figure_2.png',
+       plot = log_patch,
+       width = 16,
+       height = 18)
+```
+
+\begin{figure}[!h]
+    \center{\includegraphics[width=\textwidth]{figures/figure_2.png}}
+    \caption{Plotted results (fixed effects)}
+\end{figure}
+
+\newpage
+
+# Summary plots
+
+## Body sites with a point estimate pain proportion >10%
+
+```{r publication_fig}
+# Set seed
+set.seed(2020)
+
+# Generate a filter to extract sites with >10% pain prevalence
+filter <- data_log %>% 
+    select(-Site, -CD4_recent, -Age, -Sex) %>% 
+    pivot_longer(cols = everything(),
+                 names_to = 'Site',
+                 values_to = 'Response') %>% 
+    group_by(Site, Response) %>% 
+    summarise(count = n()) %>% 
+    mutate(total = sum(count),
+           prop = count/total) %>% 
+    filter(Response == 'Yes')
+
+filter_geq10 <- filter(filter, prop >= 0.1) %>% 
+    .$Site
+
+# Generate new dataset
+data_geq10 <- data_log %>% 
+    pivot_longer(cols = -c(Site, CD4_recent, Sex, Age),
+                 names_to = 'Pain_site',
+                 values_to = 'Pain_present') %>% 
+    # Filter by filter_geq10
+    filter(Pain_site %in% filter_geq10) 
+
+pubs_nofacet <- data_geq10 %>%
+    group_by(Pain_site) %>% 
+    nest() %>% 
+    # Boostrap data
+    mutate(boot = map(.x = data,
+                      ~ boot(data = .x[, 'Pain_present'],
+                             statistic = prop_func, 
+                             R = 999,
+                             stype = 'i',
+                             parallel = 'multicore',
+                             ncpus = 4))) %>% 
+    # Get CI
+    mutate(ci = map(.x = boot,
+                    ~ boot.ci(.x, type = 'perc'))) %>% 
+    # Extract ci data
+    mutate(point_est = map(.x = ci,
+                           ~ .x$t0),
+           lower_ci = map(.x = ci,
+                          ~ .x$percent[[4]]),
+           upper_ci = map(.x = ci,
+                          ~ .x$percent[[5]])) %>% 
+    # Remove columns
+    select(-boot, -ci) %>% 
+    # Unnest
+    unnest(cols = c(data, point_est, lower_ci, upper_ci)) %>% 
+    ungroup()
+
+plot_nofacet <- pubs_nofacet %>% 
+    select(-CD4_recent, -Sex, -Age, -Pain_present, -Site) %>% 
+    distinct() %>%
+    mutate(Pain_site = str_replace(Pain_site,
+                                   pattern = '_',
+                                   replacement = ' ')) %>% 
+    mutate(Pain_site = str_replace(Pain_site, 
+                                   pattern = '\\.',
+                                   replacement = ' & ')) %>% 
+    mutate(Pain_site = factor(Pain_site,
+                              levels = c('Head', 'Chest', 'Abdomen', 'Groin',
+                                         'Legs', 'Knees', 'Ankles & Feet',
+                                         'Thoracic spine', 'Lumbosacral spine'),
+                              ordered = TRUE)) %>% 
+    ggplot(data = .) + 
+    aes(x = fct_rev(Pain_site),
+        y = point_est,
+        ymin = lower_ci,
+        ymax = upper_ci) +
+    geom_linerange(size = 1) +
+    geom_point(size = 5) +
+    coord_flip() +
+    labs(title = 'Body sites',
+         subtitle = '(Point estimate with 95%CI)',
+         y = 'Proportion of participants with pain') +
+    scale_y_continuous(limits = c(0, 0.6)) +
+    theme_minimal(base_size = 18) +
+    theme(plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          axis.title.y = element_blank(),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5))
+
+#-- Body sites by sex --#
+pubs_nofacet.sex <- data_geq10 %>% 
+    group_by(Pain_site, Sex) %>% 
+    nest() %>% 
+    # Boostrap data
+    mutate(boot = map(.x = data,
+                      ~ boot(data = .x[, 'Pain_present'],
+                             statistic = prop_func, 
+                             R = 999,
+                             stype = 'i',
+                             parallel = 'multicore',
+                             ncpus = 4))) %>% 
+    # Get CI
+    mutate(ci = map(.x = boot,
+                    ~ boot.ci(.x, type = 'perc'))) %>% 
+    # Extract ci data
+    mutate(point_est = map(.x = ci,
+                           ~ .x$t0),
+           lower_ci = map(.x = ci,
+                          ~ .x$percent[[4]]),
+           upper_ci = map(.x = ci,
+                          ~ .x$percent[[5]])) %>% 
+    # Remove columns
+    select(-boot, -ci) %>% 
+    # Unnest
+    unnest(cols = c(data, point_est, lower_ci, upper_ci)) %>% 
+    ungroup()
+
+plot_nofacet.sex <- pubs_nofacet.sex %>% 
+    select(-CD4_recent, -Age, -Pain_present, -Site) %>% 
+    distinct() %>%
+    mutate(Pain_site = str_replace(Pain_site,
+                                   pattern = '_',
+                                   replacement = ' ')) %>% 
+    mutate(Pain_site = str_replace(Pain_site, 
+                                   pattern = '\\.',
+                                   replacement = ' & ')) %>% 
+    mutate(Pain_site = factor(Pain_site,
+                              levels = c('Head', 'Chest', 'Abdomen', 'Groin',
+                                         'Legs', 'Knees', 'Ankles & Feet',
+                                         'Thoracic spine', 'Lumbosacral spine'),
+                              ordered = TRUE)) %>% 
+    ggplot(data = .) + 
+    aes(x = fct_rev(Pain_site),
+        y = point_est,
+        ymin = lower_ci,
+        ymax = upper_ci,
+        fill = Sex) +
+    geom_linerange(position = position_dodge2(width = 0.6),
+                   size = 1,
+                   colour = '#000000') +
+    geom_point(shape = 21,
+               colour = '#000000',
+               position = position_dodge2(width = 0.6),
+               size = 4,
+               stroke = 1) +
+    coord_flip() +
+    labs(title = 'Body sites by sex',
+         subtitle = '(Point estimate with 95%CI)',
+         y = 'Proportion of participants with pain') +
+    scale_y_continuous(limits = c(0, 0.6)) +
+    scale_fill_manual(values = c('#FFFFFF', '#000000')) +
+    theme_minimal(base_size = 18) +
+    theme(legend.position = c(0.8, 0.1),
+          legend.title = element_blank(),
+          plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          axis.title.y = element_blank(),
+          axis.text.y = element_blank(),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5))
+
+#-- Body sites by age --#
+pubs_nofacet.age <- data_geq10 %>%  
+    select(-CD4_recent, -Site, -Sex) %>% 
+    mutate(Pain_site = str_replace(Pain_site,
+                                   pattern = '_',
+                                   replacement = ' ')) %>% 
+    mutate(Pain_site = str_replace(Pain_site, 
+                                   pattern = '\\.',
+                                   replacement = ' & ')) %>% 
+    group_by(Pain_site, Pain_present) %>% 
+    nest() %>% 
+    mutate(boot = map(.x = data,
+                      ~ boot(data = .x,
+                             statistic = median_func, 
+                             R = 999,
+                             stype = 'i',
+                             parallel = 'multicore',
+                             ncpus = 4))) %>% 
+    # Get CI
+    mutate(ci = map(.x = boot,
+                    ~ boot.ci(.x, type = 'perc'))) %>% 
+    # Extract ci data
+    mutate(point_est = map(.x = ci,
+                           ~ .x$t0),
+           lower_ci = map(.x = ci,
+                          ~ .x$percent[[4]]),
+           upper_ci = map(.x = ci,
+                          ~ .x$percent[[5]])) %>% 
+    # Remove columns
+    select(-boot, -ci) %>% 
+    # Unnest
+    unnest(cols = c(data, point_est, lower_ci, upper_ci)) %>% 
+    ungroup() %>% 
+    mutate(Pain_site = factor(Pain_site,
+                              levels = c('Head', 'Chest', 'Abdomen', 'Groin',
+                                         'Legs', 'Knees', 'Ankles & Feet',
+                                         'Thoracic spine', 'Lumbosacral spine'),
+                              ordered = TRUE)) %>% 
+    select(-Age) %>% 
+    distinct()
+
+plot_nofacet.age <- pubs_nofacet.age %>% 
+    ggplot(data = .) + 
+    aes(x = fct_rev(Pain_site),
+        y = point_est,
+        ymin = lower_ci,
+        ymax = upper_ci,
+        fill = Pain_present) +
+    geom_linerange(position = position_dodge2(width = 0.6),
+                   size = 1,
+                   colour = '#000000') +
+    geom_point(shape = 21,
+               colour = '#000000',
+               position = position_dodge2(width = 0.6),
+               size = 4,
+               stroke = 1) +
+    coord_flip() +
+    labs(title = 'Body sites by median age',
+         subtitle = '(Point estimate with 95%CI)',
+         y = 'Age (years)') +
+    scale_fill_manual(values = c('#FFFFFF', '#000000'),
+                      labels = c('No pain', 'Pain present')) +
+    scale_y_continuous(limits = c(31, 45),
+                       breaks = c(31, 35, 39, 43)) +
+    theme_minimal(base_size = 18) +
+    theme(legend.position = c(0.8, 0.95),
+          legend.title = element_blank(),
+          plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          axis.title.y = element_blank(),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5))
+
+#-- Body sites by CD4 --#
+pubs_nofacet.cd4 <- data_geq10 %>% 
+    select(-Age, -Site, -Sex) %>% 
+    mutate(Pain_site = str_replace(Pain_site,
+                                   pattern = '_',
+                                   replacement = ' ')) %>% 
+    mutate(Pain_site = str_replace(Pain_site, 
+                                   pattern = '\\.',
+                                   replacement = ' & ')) %>% 
+    group_by(Pain_site, Pain_present) %>% 
+    nest() %>% 
+    mutate(boot = map(.x = data,
+                      ~ boot(data = .x,
+                             statistic = median_func, 
+                             R = 999,
+                             stype = 'i',
+                             parallel = 'multicore',
+                             ncpus = 4))) %>% 
+    # Get CI
+    mutate(ci = map(.x = boot,
+                    ~ boot.ci(.x, type = 'perc'))) %>% 
+    # Extract ci data
+    mutate(point_est = map(.x = ci,
+                           ~ .x$t0),
+           lower_ci = map(.x = ci,
+                          ~ .x$percent[[4]]),
+           upper_ci = map(.x = ci,
+                          ~ .x$percent[[5]])) %>% 
+    # Remove columns
+    select(-boot, -ci) %>% 
+    # Unnest
+    unnest(cols = c(data, point_est, lower_ci, upper_ci)) %>% 
+    ungroup() %>% 
+    mutate(Pain_site = factor(Pain_site,
+                              levels = c('Head', 'Chest', 'Abdomen', 'Groin',
+                                         'Legs', 'Knees', 'Ankles & Feet',
+                                         'Thoracic spine', 'Lumbosacral spine'),
+                              ordered = TRUE)) %>% 
+    select(-CD4_recent) %>% 
+    distinct()
+
+plot_nofacet.cd4 <- pubs_nofacet.cd4 %>% 
+    ggplot(data = .) + 
+    aes(x = fct_rev(Pain_site),
+        y = point_est,
+        ymin = lower_ci,
+        ymax = upper_ci,
+        fill = Pain_present) +
+    geom_linerange(position = position_dodge2(width = 0.6),
+                   size = 1,
+                   colour = '#000000') +
+    geom_point(shape = 21,
+               colour = '#000000',
+               position = position_dodge2(width = 0.6),
+               size = 4,
+               stroke = 1) +
+    coord_flip() +
+    labs(title = 'Body sites by median CD4 T-cell count',
+         subtitle = '(Point estimate with 95%CI)',
+         y = expression('CD4 T-cell count (cell.mm'^-3*')')) +
+    scale_fill_manual(values = c('#FFFFFF', '#000000'),
+                      labels = c('No pain', 'Pain present')) +
+    scale_y_continuous(limits = c(100, 500),
+                       breaks = c(100, 200, 300, 400, 500)) +
+    theme_minimal(base_size = 18) +
+    theme(legend.position = c(0.8, 0.95),
+          legend.title = element_blank(),
+          plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          axis.title.y = element_blank(),
+          axis.text.y = element_blank(),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5))
+```
+
+```{r publication_fig2, fig.width = 9, fig.height = 8}
+# Patchwork
+pub_plot <- plot_nofacet + plot_nofacet.sex + 
+    plot_nofacet.age + plot_nofacet.cd4 + 
+    plot_layout(ncol = 2)
+
+# Save
+ggsave(filename = 'figures/figure_supp1.png', 
+       width = 14, 
+       height = 12)
+```
+
+\begin{figure}[!h]
+    \center{\includegraphics[width=\textwidth]{figures/figure_supp1.png}}
+    \caption{Body sites with a point estimate pain proportion >10\%}
+\end{figure}
+
+## Body sites with a point estimate pain proportion <10%
+
+```{r supplement_figs}
+# Set seed
+set.seed(2020)
+
+# Generate filter
+filter_less10 <- filter(filter, prop < 0.1) %>% 
+    .$Site
+
+# Generate new dataset
+data_less10 <- data_log %>% 
+    pivot_longer(cols = -c(Site, CD4_recent, Sex, Age),
+                 names_to = 'Pain_site',
+                 values_to = 'Pain_present') %>% 
+    # Filter by filter_geq10
+    filter(Pain_site %in% filter_less10) 
+
+pubs_nofacet2 <- data_less10 %>%
+    group_by(Pain_site) %>% 
+    nest() %>% 
+    # Boostrap data
+    mutate(boot = map(.x = data,
+                      ~ boot(data = .x[, 'Pain_present'],
+                             statistic = prop_func, 
+                             R = 999,
+                             stype = 'i',
+                             parallel = 'multicore',
+                             ncpus = 4))) %>% 
+    # Get CI
+    mutate(ci = map(.x = boot,
+                    ~ boot.ci(.x, type = 'perc'))) %>% 
+    # Extract ci data
+    mutate(point_est = map(.x = ci,
+                           ~ .x$t0),
+           lower_ci = map(.x = ci,
+                          ~ .x$percent[[4]]),
+           upper_ci = map(.x = ci,
+                          ~ .x$percent[[5]])) %>% 
+    # Remove columns
+    select(-boot, -ci) %>% 
+    # Unnest
+    unnest(cols = c(data, point_est, lower_ci, upper_ci)) %>% 
+    ungroup()
+
+plot_nofacet2 <- pubs_nofacet2 %>% 
+    select(-CD4_recent, -Sex, -Age, -Pain_present, -Site) %>% 
+    distinct() %>%
+    mutate(Pain_site = str_replace(Pain_site,
+                                   pattern = '_',
+                                   replacement = ' ')) %>% 
+    mutate(Pain_site = str_replace(Pain_site, 
+                                   pattern = '\\.',
+                                   replacement = ' & ')) %>% 
+    mutate(Pain_site = ifelse(Pain_site == 'Lower back',
+                              yes = 'Lower back/flanks',
+                              no = Pain_site)) %>% 
+    mutate(Pain_site = factor(Pain_site,
+                              levels = c('Throat', 'Shoulder', 'Arms',
+                                         'Elbows', 'Wrists & Hands', 
+                                         'Lower back/flanks', 'Hips',
+                                         'Buttocks', 'Cervical spine'),
+                              ordered = TRUE)) %>% 
+    ggplot(data = .) + 
+    aes(x = fct_rev(Pain_site),
+        y = point_est,
+        ymin = lower_ci,
+        ymax = upper_ci) +
+    geom_linerange(size = 1) +
+    geom_point(size = 5) +
+    coord_flip() +
+    labs(title = 'Body sites',
+         subtitle = '(Body sites with <10% pain; Point estimate with 95%CI)',
+         y = 'Proportion of participants with pain') +
+    scale_y_continuous(limits = c(0, 0.3)) +
+    theme_minimal(base_size = 18) +
+    theme(plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          axis.title.y = element_blank(),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5))
+
+#-- Body sites by sex --#
+pubs_nofacet.sex2 <- data_less10 %>% 
+    group_by(Pain_site, Sex) %>% 
+    nest() %>% 
+    # Boostrap data
+    mutate(boot = map(.x = data,
+                      ~ boot(data = .x[, 'Pain_present'],
+                             statistic = prop_func, 
+                             R = 999,
+                             stype = 'i',
+                             parallel = 'multicore',
+                             ncpus = 4))) %>% 
+    # Get CI
+    mutate(ci = map(.x = boot,
+                    ~ boot.ci(.x, type = 'perc'))) %>% 
+    # Extract ci data
+    mutate(point_est = map(.x = ci,
+                           ~ .x$t0),
+           lower_ci = map(.x = ci,
+                          ~ .x$percent[[4]]),
+           upper_ci = map(.x = ci,
+                          ~ .x$percent[[5]])) %>% 
+    # Remove columns
+    select(-boot, -ci) %>% 
+    # Unnest
+    unnest(cols = c(data, point_est, lower_ci, upper_ci)) %>% 
+    ungroup()
+
+plot_nofacet.sex2 <- pubs_nofacet.sex2 %>% 
+    select(-CD4_recent, -Age, -Pain_present, -Site) %>% 
+    distinct() %>%
+    mutate(Pain_site = str_replace(Pain_site,
+                                   pattern = '_',
+                                   replacement = ' ')) %>% 
+    mutate(Pain_site = str_replace(Pain_site, 
+                                   pattern = '\\.',
+                                   replacement = ' & ')) %>% 
+    mutate(Pain_site = ifelse(Pain_site == 'Lower back',
+                              yes = 'Lower back/flanks',
+                              no = Pain_site)) %>% 
+    mutate(Pain_site = factor(Pain_site,
+                              levels = c('Throat', 'Shoulder', 'Arms',
+                                         'Elbows', 'Wrists & Hands', 
+                                         'Lower back/flanks', 'Hips',
+                                         'Buttocks', 'Cervical spine'),
+                              ordered = TRUE)) %>%
+    ggplot(data = .) + 
+    aes(x = fct_rev(Pain_site),
+        y = point_est,
+        ymin = lower_ci,
+        ymax = upper_ci,
+        fill = Sex) +
+    geom_linerange(position = position_dodge2(width = 0.6),
+                   size = 1,
+                   colour = '#000000') +
+    geom_point(shape = 21,
+               colour = '#000000',
+               position = position_dodge2(width = 0.6),
+               size = 4,
+               stroke = 1) +
+    coord_flip() +
+    labs(title = 'Body sites by sex',
+         subtitle = '(Body sites with <10% pain; Point estimate with 95%CI)',
+         y = 'Proportion of participants with pain') +
+    scale_y_continuous(limits = c(0, 0.3)) +
+    scale_fill_manual(values = c('#FFFFFF', '#000000')) +
+    theme_minimal(base_size = 18) +
+    theme(legend.position = c(0.8, 0.1),
+          legend.title = element_blank(),
+          plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          axis.title.y = element_blank(),
+          axis.text.y = element_blank(),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5))
+
+#-- Body sites by age --#
+pubs_nofacet.age2 <- data_less10 %>%  
+    select(-CD4_recent, -Site, -Sex) %>% 
+    mutate(Pain_site = str_replace(Pain_site,
+                                   pattern = '_',
+                                   replacement = ' ')) %>% 
+    mutate(Pain_site = str_replace(Pain_site, 
+                                   pattern = '\\.',
+                                   replacement = ' & ')) %>% 
+    group_by(Pain_site, Pain_present) %>% 
+    nest() %>% 
+    mutate(boot = map(.x = data,
+                      ~ boot(data = .x,
+                             statistic = median_func, 
+                             R = 999,
+                             stype = 'i',
+                             parallel = 'multicore',
+                             ncpus = 4))) %>% 
+    # Get CI
+    mutate(ci = map(.x = boot,
+                    ~ boot.ci(.x, type = 'perc'))) %>% 
+    # Extract ci data
+    mutate(point_est = map(.x = ci,
+                           ~ .x$t0),
+           lower_ci = map(.x = ci,
+                          ~ .x$percent[[4]]),
+           upper_ci = map(.x = ci,
+                          ~ .x$percent[[5]])) %>% 
+    # Remove columns
+    select(-boot, -ci) %>% 
+    # Unnest
+    unnest(cols = c(data, point_est, lower_ci, upper_ci)) %>% 
+    ungroup() %>% 
+    mutate(Pain_site = ifelse(Pain_site == 'Lower back',
+                              yes = 'Lower back/flanks',
+                              no = Pain_site)) %>% 
+    mutate(Pain_site = factor(Pain_site,
+                              levels = c('Throat', 'Shoulder', 'Arms',
+                                         'Elbows', 'Wrists & Hands', 
+                                         'Lower back/flanks', 'Hips',
+                                         'Buttocks', 'Cervical spine'),
+                              ordered = TRUE)) %>%
+    select(-Age) %>% 
+    distinct()
+
+plot_nofacet.age2 <- pubs_nofacet.age2 %>% 
+    ggplot(data = .) + 
+    aes(x = fct_rev(Pain_site),
+        y = point_est,
+        ymin = lower_ci,
+        ymax = upper_ci,
+        fill = Pain_present) +
+    geom_linerange(position = position_dodge2(width = 0.6),
+                   size = 1,
+                   colour = '#000000') +
+    geom_point(shape = 21,
+               colour = '#000000',
+               position = position_dodge2(width = 0.6),
+               size = 4,
+               stroke = 1) +
+    coord_flip() +
+    labs(title = 'Body sites by median age',
+         subtitle = '(Body sites with <10% pain; Point estimate with 95%CI)',
+         y = 'Age (years)') +
+    scale_fill_manual(values = c('#FFFFFF', '#000000'),
+                      labels = c('No pain', 'Pain present')) +
+    scale_y_continuous(limits = c(27, 47),
+                       breaks = c(27, 31, 35, 39, 43, 47)) +
+    theme_minimal(base_size = 18) +
+    theme(legend.position = c(0.8, 0.1),
+          legend.title = element_blank(),
+          plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          axis.title.y = element_blank(),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5))
+
+#-- Body sites by CD4 --#
+pubs_nofacet.cd42 <- data_less10 %>% 
+    select(-Age, -Site, -Sex) %>% 
+    mutate(Pain_site = str_replace(Pain_site,
+                                   pattern = '_',
+                                   replacement = ' ')) %>% 
+    mutate(Pain_site = str_replace(Pain_site, 
+                                   pattern = '\\.',
+                                   replacement = ' & ')) %>% 
+    group_by(Pain_site, Pain_present) %>% 
+    nest() %>% 
+    mutate(boot = map(.x = data,
+                      ~ boot(data = .x,
+                             statistic = median_func, 
+                             R = 999,
+                             stype = 'i',
+                             parallel = 'multicore',
+                             ncpus = 4))) %>% 
+    # Get CI
+    mutate(ci = map(.x = boot,
+                    ~ boot.ci(.x, type = 'perc'))) %>% 
+    # Extract ci data
+    mutate(point_est = map(.x = ci,
+                           ~ .x$t0),
+           lower_ci = map(.x = ci,
+                          ~ .x$percent[[4]]),
+           upper_ci = map(.x = ci,
+                          ~ .x$percent[[5]])) %>% 
+    # Remove columns
+    select(-boot, -ci) %>% 
+    # Unnest
+    unnest(cols = c(data, point_est, lower_ci, upper_ci)) %>% 
+    ungroup() %>% 
+    mutate(Pain_site = ifelse(Pain_site == 'Lower back',
+                              yes = 'Lower back/flanks',
+                              no = Pain_site)) %>% 
+    mutate(Pain_site = factor(Pain_site,
+                              levels = c('Throat', 'Shoulder', 'Arms',
+                                         'Elbows', 'Wrists & Hands', 
+                                         'Lower back/flanks', 'Hips',
+                                         'Buttocks', 'Cervical spine'),
+                              ordered = TRUE)) %>%
+    select(-CD4_recent) %>% 
+    distinct()
+
+plot_nofacet.cd42 <- pubs_nofacet.cd42 %>% 
+    ggplot(data = .) + 
+    aes(x = fct_rev(Pain_site),
+        y = point_est,
+        ymin = lower_ci,
+        ymax = upper_ci,
+        fill = Pain_present) +
+    geom_linerange(position = position_dodge2(width = 0.6),
+                   size = 1,
+                   colour = '#000000') +
+    geom_point(shape = 21,
+               colour = '#000000',
+               position = position_dodge2(width = 0.6),
+               size = 4,
+               stroke = 1) +
+    coord_flip() +
+    labs(title = 'Body sites by median CD4 T-cell count',
+         subtitle = '(Body sites with <10% pain; Point estimate with 95%CI)',
+         y = expression('CD4 T-cell count (cell.mm'^-3*')')) +
+    scale_fill_manual(values = c('#FFFFFF', '#000000'),
+                      labels = c('No pain', 'Pain present')) +
+    scale_y_continuous(limits = c(50, 600),
+                       breaks = c(100, 200, 300, 400, 500, 600)) +
+    theme_minimal(base_size = 18) +
+    theme(legend.position = c(0.8, 0.95),
+          legend.title = element_blank(),
+          plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          axis.title.y = element_blank(),
+          axis.text.y = element_blank(),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5))
+```
+
+```{r supplement_fig2}
+# Patchwork
+pub_plot2 <- plot_nofacet2 + plot_nofacet.sex2 + 
+    plot_nofacet.age2 + plot_nofacet.cd42 + 
+    plot_layout(ncol = 2)
+
+# Save
+ggsave(filename = 'figures/figure_supp2.png', 
+       width = 14, 
+       height = 12)
+```
+
+\begin{figure}[!h]
+    \center{\includegraphics[width=\textwidth]{figures/figure_supp2.png}}
+    \caption{Body sites with a point estimate pain proportion <10\%}
+\end{figure}
+
+\newpage
 
 # Session information
 
