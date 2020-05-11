@@ -1474,7 +1474,7 @@ glmm_mods <- data_log.long %>%
                                        x = 'Odds ratio') +
                                   theme_minimal(base_size = 18) +
                                   theme(plot.title = element_text(size = 18),
-                                        plot.subtitle = element_text(size = 12),
+                                        plot.subtitle = element_text(size = 14),
                                         panel.grid = element_blank(),
                                         axis.title.y = element_blank(),
                                         axis.text = element_text(colour = '#000000'),
@@ -1593,7 +1593,7 @@ glm_mods <- data_log.long %>%
                                        x = 'Odds ratio') +
                                   theme_minimal(base_size = 18) +
                                   theme(plot.title = element_text(size = 18),
-                                        plot.subtitle = element_text(size = 12),
+                                        plot.subtitle = element_text(size = 14),
                                         panel.grid = element_blank(),
                                         axis.title.y = element_blank(),
                                         axis.text = element_text(colour = '#000000'),
