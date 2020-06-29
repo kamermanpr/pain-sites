@@ -1,6 +1,6 @@
 ---
 title: "Supplement 1"
-subtitle: "Demopgraphics"
+subtitle: "Demographics"
 author: "Peter Kamerman" 
 date: "Last knitted: `r format(Sys.Date(), '%d %B %Y')`"
 mainfont: Helvetica
