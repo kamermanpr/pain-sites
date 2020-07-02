@@ -84,13 +84,19 @@ demo %>%
 ```{r acute_chronic}
 # Based on pain definition used in the study
 ## Acute assessing pain in the last 1 week or 1 month.
-## Chronic assessing pain in the last 3 months
+## Chronic assessing persistent pain in the last 3 months
 demo <- demo %>% 
-    mutate(Pain = case_when(
+    mutate(Pain_def = case_when(
         Site == 'RP' |
             Site == 'NM' ~ 'Acute',
         TRUE ~ 'Chronic'
     ))
+
+# Tabulate
+demo %>% 
+    select(Pain_def) %>% 
+    mutate(Pain_def = factor(Pain_def)) %>% 
+    skim()
 ```
 
 ## Boostrap functions
@@ -529,6 +535,7 @@ age_boot2 <- age_boot2 %>%
                                 x = 'Age group (Years)',
                                 y = 'Proportion with pain') +
                            scale_y_continuous(limits = c(0, 1)) +
+                           coord_flip() +
                            theme_minimal(base_size = 18) +
                            theme(plot.title = element_text(size = 18),
                                  plot.subtitle = element_text(size = 12),
@@ -668,6 +675,7 @@ cd4_boot2 <- cd4_boot2 %>%
                                 x = expression('CD4 group (cells.mm'^-3*')'),
                                 y = 'Proportion with pain') +
                            scale_y_continuous(limits = c(0, 1)) +
+                           coord_flip() +
                            theme_minimal(base_size = 18) +
                            theme(plot.title = element_text(size = 18),
                                  plot.subtitle = element_text(size = 12),
@@ -700,7 +708,7 @@ walk(cd4_boot2$plots, ~ print(.x))
 
 # By pain definition
 
-Pain in the last week or month (acute) versus pain for the last 3 months (chronic)
+Pain in the last week or month (acute) versus persistent pain for the last 3 months (chronic)
 
 ## Process data
 
@@ -709,7 +717,7 @@ Pain in the last week or month (acute) versus pain for the last 3 months (chroni
 set.seed(2020)
 
 # Select pain data
-pain <- demo[, c('ID', 'Pain')]
+pain <- demo[, c('ID', 'Pain_def')]
 
 # Join to boot_data & remove ID, site, and upper_back (only one outcome -- no pain)
 pain <- left_join(data, pain) %>% 
@@ -718,7 +726,7 @@ pain <- left_join(data, pain) %>%
 # Bootstrap CIs
 pain_boot <- pain %>% 
     # Pivot to long format
-    pivot_longer(cols = -Pain,
+    pivot_longer(cols = -Pain_def,
                  names_to = 'body_site',
                  values_to = 'pain_present') %>% 
     # Add body regions
@@ -744,7 +752,7 @@ pain_boot <- pain %>%
         TRUE ~ 'other'
     )) %>% 
     # Nest by body region and body site
-    group_by(Pain, region, body_site) %>% 
+    group_by(Pain_def, region, body_site) %>% 
     nest() %>% 
     # Boostrap data
     mutate(boot = map(.x = data,
@@ -796,7 +804,7 @@ pain_boot2 <- pain_boot %>%
                                y = point_est,
                                ymin = lower_ci,
                                ymax = upper_ci,
-                               fill = Pain) +
+                               fill = Pain_def) +
                            geom_linerange(position = position_dodge2(width = 0.6),
                                           size = 1,
                                           colour = '#000000') +
@@ -845,35 +853,37 @@ walk(pain_boot2$plots, ~ print(.x))
 
 # Logistic regression
 
-Note: Age and CD4 T-cell count treated as a continuous variable, not like the categories used in the figures shown above.
+Note: Age and CD4 T-cell count treated as a continuous variables.
+
+Note: Age and CD-4 T-cell count were scaled and centered.
 
 ## Process data
 
-Extract and process data on study site, participant ID, CD4 T-cell count, age, sex, and pain chronicity.
+Extract and process data on study site, participant ID, CD4 T-cell count, age, sex, and pain definition.
 
 ```{r process_glm}
 # Select demographic data
-demo_log <- demo[, c('ID', 'Site', 'CD4_recent', 'Sex', 'Age', 'Pain')] 
+demo_logit <- demo[, c('ID', 'Site', 'CD4_recent', 'Sex', 'Age', 'Pain_def')] 
 
 # Process data
-data_log <- data %>% 
+data_logit <- data %>% 
     # Join with extracted demographics data (demo_reduced)
-    left_join(demo_log) %>% 
+    left_join(demo_logit) %>% 
     # Remove upper back (only one outcome -- no pain) and ID
     select(-ID, -Upper_back) 
 
 # Convert data_glm to long format
-data_log.long <- data_log %>% 
-    pivot_longer(cols = -c(CD4_recent, Age, Sex, Site, Pain),
+data_logit.long <- data_logit %>% 
+    pivot_longer(cols = -c(CD4_recent, Age, Sex, Site, Pain_def),
                  names_to = 'Pain_site',
                  values_to = 'Pain_present')
 
 # Scale Age and CD4_recent
-data_log.long <- data_log.long %>% 
+data_logit.long <- data_logit.long %>% 
     mutate_if(is.numeric, scale)
 
 # Dummy code outcome variable
-data_log.long <- data_log.long %>% 
+data_logit.long <- data_logit.long %>% 
     mutate(Pain_present = ifelse(Pain_present == 'No',
                                  yes = 0,
                                  no = 1)) 
@@ -883,13 +893,13 @@ data_log.long <- data_log.long %>%
 
 Alpha threshold for significance was corrected to control the family-wise error rate. The correction was applied to the results of the likelihood ratio tests comparing null models to full models. We chose the conservative Dunn-Bonferroni correction. 
 
-## Run `glmer` model for every body site to check for issues
+## Run `glmer` model for every body site
 
-P-values reported for the likelihood ratio tests below are uncorrected for multiple comparisons.
+Note: p-values reported for the likelihood ratio tests below are uncorrected for multiple comparisons.
 
 ```{r checks}
 #-- Head --#
-head <- data_log.long %>% 
+head <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Head') %>% 
     filter(complete.cases(.))
@@ -904,7 +914,7 @@ head_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = head,
               family = binomial())
@@ -912,13 +922,13 @@ head_mod <- glmer(Pain_present ~
 ## Compare models 
 anova(null_mod, head_mod, test = 'LR')
 
-## Significant, therefore, print summary
+## Significant
 ## (family-wise error correction, alpha = 0.0024)
-
+## Print model
 summary(head_mod)
 
 #-- Throat --#
-throat <- data_log.long %>% 
+throat <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Throat') %>% 
     filter(complete.cases(.))
@@ -933,16 +943,17 @@ thrt_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = throat,
               family = binomial())
 
 ## Fit is singular, print model to check SD of random effect 
-thrt_mod
+## Print model
+summary(thrt_mod)
 
 #-- Shoulder --#
-shoulder <- data_log.long %>% 
+shoulder <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Shoulder') %>% 
     filter(complete.cases(.))
@@ -957,7 +968,7 @@ shdr_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = shoulder,
               family = binomial())
@@ -966,9 +977,12 @@ shdr_mod <- glmer(Pain_present ~
 anova(null_mod, shdr_mod, test = 'LR')
 
 ## No significant difference between null and full model
+## Print model
+## Print model
+summary(shdr_mod)
 
 #-- Arm --#
-arms <- data_log.long %>% 
+arms <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Arms') %>% 
     filter(complete.cases(.))
@@ -983,16 +997,17 @@ arms_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = arms,
               family = binomial())
 
 ## Fit is singular, print model to check SD of random effect
-arms_mod
+## Print model
+summary(arms_mod)
 
 #-- Elbow --#
-elbow <- data_log.long %>% 
+elbow <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Elbows') %>% 
     filter(complete.cases(.))
@@ -1007,16 +1022,17 @@ elbw_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = elbow,
               family = binomial())
 
 ## Fit is singular, print model to check SD of random effect
-elbw_mod
+## Print model
+summary(elbw_mod)
 
 #-- Wrist & hand --#
-hand <- data_log.long %>% 
+hand <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Wrists.Hands') %>% 
     filter(complete.cases(.))
@@ -1031,16 +1047,17 @@ hand_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = hand,
               family = binomial())
 
 ## Fit is singular, print model to check SD of random effect 
-hand_mod
+## Print model
+summary(hand_mod)
 
 #-- Chest --#
-chest <- data_log.long %>% 
+chest <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Chest') %>% 
     filter(complete.cases(.))
@@ -1055,7 +1072,7 @@ chst_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = chest,
               family = binomial())
@@ -1064,9 +1081,12 @@ chst_mod <- glmer(Pain_present ~
 anova(null_mod, chst_mod, test = 'LR')
 
 ## No significant difference in null and full models
+## Print model
+## Print model
+summary(chst_mod)
 
 #-- Abdomen --#
-abdomen <- data_log.long %>% 
+abdomen <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Abdomen') %>% 
     filter(complete.cases(.))
@@ -1081,16 +1101,17 @@ abdm_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = abdomen,
               family = binomial())
 
 ## Fit is singular, print model to check SD of random effect 
-abdm_mod
+## Print model
+summary(abdm_mod)
 
 #-- Lower back (flank) --#
-low_back <- data_log.long %>% 
+low_back <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Lower_back') %>% 
     filter(complete.cases(.))
@@ -1105,16 +1126,17 @@ back_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = low_back,
               family = binomial())
 
 ## Fit is singular, print model to check SD of random effect 
-back_mod
+## Print model
+summary(back_mod)
 
 #-- Groin --#
-groin <- data_log.long %>% 
+groin <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Groin') %>% 
     filter(complete.cases(.))
@@ -1129,7 +1151,7 @@ groin_mod <- glmer(Pain_present ~
                    Age + 
                    Sex + 
                    CD4_recent + 
-                   Pain +
+                   Pain_def +
                    (1|Site),
                data = groin,
                family = binomial())
@@ -1138,9 +1160,11 @@ groin_mod <- glmer(Pain_present ~
 anova(null_mod, groin_mod, test = 'LR')
 
 ## No significant difference between null and full model
+## Print model
+summary(groin_mod)
 
 #-- Buttocks --#
-buttocks <- data_log.long %>% 
+buttocks <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Buttocks') %>% 
     filter(complete.cases(.))
@@ -1155,16 +1179,17 @@ butt_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = buttocks,
               family = binomial())
 
 ## Fit is singular, print model to check SD of random effect 
-butt_mod
+## Print model
+summary(butt_mod)
 
 #-- Hips --#
-hips <- data_log.long %>% 
+hips <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Hips') %>% 
     filter(complete.cases(.))
@@ -1179,7 +1204,7 @@ hips_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = hips,
               family = binomial())
@@ -1188,9 +1213,11 @@ hips_mod <- glmer(Pain_present ~
 anova(null_mod, hips_mod, test = 'LR')
 
 ## No significant difference between null and full model
+## Print model
+summary(hips_mod)
 
 #-- Legs --#
-legs <- data_log.long %>% 
+legs <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Legs') %>% 
     filter(complete.cases(.))
@@ -1205,16 +1232,17 @@ legs_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = legs,
               family = binomial())
 
 ## Fit is singular, print model to check SD of random effect 
-legs_mod
+## Print model
+summary(legs_mod)
 
 #-- Knees --#
-knees <- data_log.long %>% 
+knees <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Knees') %>% 
     filter(complete.cases(.))
@@ -1229,16 +1257,17 @@ knee_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = knees,
               family = binomial())
 
 ## Fit is singular, print model to check SD of random effect 
-knee_mod
+## Print model
+summary(knee_mod)
 
 #-- Ankles.Feet --#
-ankles <- data_log.long %>% 
+ankles <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Ankles.Feet') %>% 
     filter(complete.cases(.))
@@ -1253,16 +1282,17 @@ ankl_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = ankles,
               family = binomial())
 
 ## Fit is singular, print model to check SD of random effect 
-ankl_mod
+## Print model
+summary(ankl_mod)
 
 #-- Cervical spine --#
-cervical <- data_log.long %>% 
+cervical <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Cervical_spine') %>% 
     filter(complete.cases(.))
@@ -1277,7 +1307,7 @@ neck_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = cervical,
               family = binomial())
@@ -1286,9 +1316,11 @@ neck_mod <- glmer(Pain_present ~
 anova(null_mod, neck_mod, test = 'LR')
 
 ## No significant difference between null and full models
+## Print model
+summary(neck_mod)
 
 #-- Thoracic spine --#
-thoracic <- data_log.long %>% 
+thoracic <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Thoracic_spine') %>% 
     filter(complete.cases(.))
@@ -1303,7 +1335,7 @@ thrx_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = thoracic,
               family = binomial())
@@ -1312,9 +1344,11 @@ thrx_mod <- glmer(Pain_present ~
 anova(null_mod, thrx_mod, test = 'LR')
 
 ## No significant difference between null and full models
+## Print model
+summary(thrx_mod)
 
 # Lumbosacral spine
-lumbar <- data_log.long %>% 
+lumbar <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Lumbosacral_spine') %>% 
     filter(complete.cases(.))
@@ -1329,7 +1363,7 @@ lmbr_mod <- glmer(Pain_present ~
                   Age + 
                   Sex + 
                   CD4_recent + 
-                  Pain +
+                  Pain_def +
                   (1|Site),
               data = lumbar,
               family = binomial())
@@ -1338,6 +1372,8 @@ lmbr_mod <- glmer(Pain_present ~
 anova(null_mod, lmbr_mod, test = 'LR')
 
 ## No significant difference between null and full models
+## Print model
+summary(lmbr_mod)
 ```
 
 Body sites with models that generated an _"is singular"_ error included:
@@ -1364,13 +1400,13 @@ Body sites with models that generated an _"is singular"_ error included:
 
 All these models had a random error variance of 0 (or tending to 0), indicating that **site** was not contributing to the model and could be removed. That is, there is not enough additional site-level variation to warrant adding a random effect to explain all the observed variation. Analyzed these using `glm`, not `glmm`, and check for issues.
 
-## Run `glm` for selected body sites to check for issues
+## Run `glm` for selected body sites
 
-P-values reported for the likelihood ratio tests below are uncorrected for multiple comparisons.
+Note: p-values reported for the likelihood ratio tests below are uncorrected for multiple comparisons.
 
 ```{r checks_glm, warning = TRUE, message = TRUE}
 #-- Throat --#
-throat <- data_log.long %>% 
+throat <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Throat') %>% 
     filter(complete.cases(.))
@@ -1385,7 +1421,7 @@ thrt_mod <- glm(Pain_present ~
                 Age + 
                 Sex + 
                 CD4_recent  +
-                Pain,
+                Pain_def,
               data = throat,
               family = binomial())
 
@@ -1393,9 +1429,11 @@ thrt_mod <- glm(Pain_present ~
 anova(null_mod, thrt_mod, test = 'LR')
 
 ## No significant difference between the null and full models
+## Print model
+summary(thrt_mod)
 
 #-- Arms --#
-arms <- data_log.long %>% 
+arms <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Arms') %>% 
     filter(complete.cases(.))
@@ -1410,7 +1448,7 @@ arms_mod <- glm(Pain_present ~
                 Age + 
                 Sex + 
                 CD4_recent  +
-                Pain,
+                Pain_def,
               data = arms,
               family = binomial())
 
@@ -1418,9 +1456,11 @@ arms_mod <- glm(Pain_present ~
 anova(null_mod, arms_mod, test = 'LR')
 
 ## No significant difference between the null and full models
+## Print model
+summary(arms_mod)
 
 #-- Elbow --#
-elbows <- data_log.long %>% 
+elbows <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Elbows') %>% 
     filter(complete.cases(.))
@@ -1435,7 +1475,7 @@ elbw_mod <- glm(Pain_present ~
                 Age + 
                 Sex + 
                 CD4_recent  +
-                Pain,
+                Pain_def,
               data = elbows,
               family = binomial())
 
@@ -1443,9 +1483,11 @@ elbw_mod <- glm(Pain_present ~
 anova(null_mod, elbw_mod, test = 'LR')
 
 ## No significant difference between the null and full models
+## Print model
+summary(elbw_mod)
 
 #-- Wrist & hand --#
-wrists <- data_log.long %>% 
+wrists <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Wrists.Hands') %>% 
     filter(complete.cases(.))
@@ -1460,7 +1502,7 @@ wrst_mod <- glm(Pain_present ~
                 Age + 
                 Sex + 
                 CD4_recent  +
-                Pain,
+                Pain_def,
               data = wrists,
               family = binomial())
 
@@ -1469,9 +1511,11 @@ anova(null_mod, wrst_mod, test = 'LR')
 
 ## No significant difference between the null and full models 
 ## (family-wise error correction, alpha = 0.0024)
+## Print model
+summary(wrst_mod)
 
 #-- Abdomen --#
-abdomen <- data_log.long %>% 
+abdomen <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Abdomen') %>% 
     filter(complete.cases(.))
@@ -1486,7 +1530,7 @@ abdm_mod <- glm(Pain_present ~
                 Age + 
                 Sex + 
                 CD4_recent  +
-                Pain,
+                Pain_def,
               data = abdomen,
               family = binomial())
 
@@ -1495,9 +1539,11 @@ anova(null_mod, abdm_mod, test = 'LR')
 
 ## No significant difference between the null and full models 
 ## (family-wise error correction, alpha = 0.0024)
+## Print model
+summary(abdm_mod)
 
 #-- Lower back (flank) --#
-low_back <- data_log.long %>% 
+low_back <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Lower_back') %>% 
     filter(complete.cases(.))
@@ -1512,7 +1558,7 @@ back_mod <- glm(Pain_present ~
                 Age + 
                 Sex + 
                 CD4_recent  +
-                Pain,
+                Pain_def,
               data = low_back,
               family = binomial())
 
@@ -1520,9 +1566,11 @@ back_mod <- glm(Pain_present ~
 anova(null_mod, back_mod, test = 'LR')
 
 ## No significant difference between the null and full models
+## Print model
+summary(back_mod)
 
 #-- Buttocks --#
-buttocks <- data_log.long %>% 
+buttocks <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Buttocks') %>% 
     filter(complete.cases(.))
@@ -1537,7 +1585,7 @@ butt_mod <- glm(Pain_present ~
                 Age + 
                 Sex + 
                 CD4_recent  +
-                Pain,
+                Pain_def,
               data = buttocks,
               family = binomial())
 
@@ -1545,9 +1593,11 @@ butt_mod <- glm(Pain_present ~
 anova(null_mod, butt_mod, test = 'LR')
 
 ## No significant difference between the null and full models
+## Print model
+summary(butt_mod)
 
 #-- Legs --#
-legs <- data_log.long %>% 
+legs <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Legs') %>% 
     filter(complete.cases(.))
@@ -1562,7 +1612,7 @@ legs_mod <- glm(Pain_present ~
                 Age + 
                 Sex + 
                 CD4_recent +
-                Pain,
+                Pain_def,
               data = legs,
               family = binomial())
 
@@ -1574,7 +1624,7 @@ anova(null_mod, legs_mod, test = 'LR')
 summary(legs_mod)
 
 #-- Knees --#
-knees <- data_log.long %>% 
+knees <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Knees') %>% 
     filter(complete.cases(.))
@@ -1589,7 +1639,7 @@ knee_mod <- glm(Pain_present ~
                 Age + 
                 Sex + 
                 CD4_recent +
-                Pain, 
+                Pain_def, 
               data = knees,
               family = binomial())
 
@@ -1601,7 +1651,7 @@ anova(null_mod, knee_mod, test = 'LR')
 summary(knee_mod)
 
 #-- Ankles/feet --#
-ankles <- data_log.long %>% 
+ankles <- data_logit.long %>% 
     # Filter by pain site
     filter(Pain_site == 'Ankles.Feet') %>% 
     filter(complete.cases(.))
@@ -1616,7 +1666,7 @@ ankl_mod <- glm(Pain_present ~
                 Age + 
                 Sex + 
                 CD4_recent +
-                Pain, 
+                Pain_def, 
               data = ankles,
               family = binomial())
 
@@ -1630,11 +1680,11 @@ summary(ankl_mod)
 
 ## GLMM data for tabulation and plotting
 
-Perform GLMM on selected body sites (head, shoulders, chest, groin, hips, cervical spine, thoracic spine, and lumbosacral spine) to extract fixed effect odds ratios (with 95% CIs) to tabulate and to produce forest plots.
+Perform GLMM on selected body sites (head, shoulders, chest, hips, cervical spine, thoracic spine, and lumbosacral spine) to extract fixed effect odds ratios (with 95% CIs) to tabulate and to produce forest plots.
 
 ```{r glmm}
 # Perform GLMM on each selected body sites
-glmm_mods <- data_log.long %>% 
+glmm_mods <- data_logit.long %>% 
     filter(complete.cases(.)) %>% 
     # remove body sites with glmm singular fits
     filter(!Pain_site %in% c("Throat", "Arms", "Elbows", "Lower_back",
@@ -1649,7 +1699,7 @@ glmm_mods <- data_log.long %>%
                                       Age + 
                                       Sex + 
                                       CD4_recent + 
-                                      Pain +
+                                      Pain_def +
                                       (1|Site),
                                   data = .x,
                                   family = binomial())),
@@ -1703,7 +1753,7 @@ glmm_mods <- data_log.long %>%
                                       rowname == 'Age' ~ 'Age',
                                       rowname == 'SexMale' ~ 'Sex (male)',
                                       rowname == 'CD4_recent' ~ 'CD4 T-cells',
-                                      rowname == 'PainChronic' ~ 'Pain (chronic)'
+                                      rowname == 'Pain_defChronic' ~ 'Pain (chronic)'
                                       )) %>% 
                                   # Round digits to 2 decimal places
                                   mutate_if(is.numeric, round, 2) %>% 
@@ -1755,7 +1805,7 @@ Perform GLM on selected body sites (throat, arms, elbows, wrists and hands, abdo
 
 ```{r glm}
 # Perform GLM on each selected body sites
-glm_mods <- data_log.long %>% 
+glm_mods <- data_logit.long %>% 
     filter(complete.cases(.)) %>% 
     # Retain body sites with glmm singular fits
     filter(Pain_site %in% c("Throat", "Arms", "Elbows", "Lower_back",
@@ -1774,7 +1824,7 @@ glm_mods <- data_log.long %>%
                                     Age + 
                                     Sex + 
                                     CD4_recent +
-                                    Pain,
+                                    Pain_def,
                                 data = .x,
                                 family = binomial())),
            null = map(.x = data,
@@ -1825,7 +1875,7 @@ glm_mods <- data_log.long %>%
                                       rowname == 'Age' ~ 'Age',
                                       rowname == 'SexMale' ~ 'Sex (male)',
                                       rowname == 'CD4_recent' ~ 'CD4 T-cells',
-                                      rowname == 'PainChronic' ~ 'Pain (chronic)'
+                                      rowname == 'Pain_defChronic' ~ 'Pain (chronic)'
                                       )) %>% 
                                   # Round digits to 2 decimal places
                                   mutate_if(is.numeric, round, 2) %>% 
@@ -1987,8 +2037,8 @@ ggsave(filename = 'figures/figure_2.png',
 set.seed(2020)
 
 # Generate a filter to extract sites with >10% pain prevalence
-filter <- data_log %>% 
-    select(-Site, -CD4_recent, -Age, -Sex, -Pain) %>% 
+filter <- data_logit %>% 
+    select(-Site, -CD4_recent, -Age, -Sex, -Pain_def) %>% 
     pivot_longer(cols = everything(),
                  names_to = 'Site',
                  values_to = 'Response') %>% 
@@ -2002,8 +2052,8 @@ filter_geq10 <- filter(filter, prop >= 0.1) %>%
     .$Site
 
 # Generate new dataset
-data_geq10 <- data_log %>% 
-    pivot_longer(cols = -c(Site, CD4_recent, Sex, Age, Pain),
+data_geq10 <- data_logit %>% 
+    pivot_longer(cols = -c(Site, CD4_recent, Sex, Age, Pain_def),
                  names_to = 'Pain_site',
                  values_to = 'Pain_present') %>% 
     # Filter by filter_geq10
@@ -2037,7 +2087,7 @@ pubs_nofacet <- data_geq10 %>%
     ungroup()
 
 plot_nofacet <- pubs_nofacet %>% 
-    select(-CD4_recent, -Sex, -Age, -Pain_present, -Site, -Pain) %>% 
+    select(-CD4_recent, -Sex, -Age, -Pain_present, -Site, -Pain_def) %>% 
     distinct() %>%
     mutate(Pain_site = str_replace(Pain_site,
                                    pattern = '_',
@@ -2100,7 +2150,7 @@ pubs_nofacet.sex <- data_geq10 %>%
     ungroup()
 
 plot_nofacet.sex <- pubs_nofacet.sex %>% 
-    select(-CD4_recent, -Age, -Pain_present, -Site, -Pain) %>% 
+    select(-CD4_recent, -Age, -Pain_present, -Site, -Pain_def) %>% 
     distinct() %>%
     mutate(Pain_site = str_replace(Pain_site,
                                    pattern = '_',
@@ -2146,8 +2196,8 @@ plot_nofacet.sex <- pubs_nofacet.sex %>%
           axis.ticks = element_line(size = 0.5))
 
 #-- Body sites by pain chronicity --#
-pubs_nofacet.pain <- data_geq10 %>% 
-    group_by(Pain_site, Pain) %>% 
+pubs_nofacet.pain_def <- data_geq10 %>% 
+    group_by(Pain_site, Pain_def) %>% 
     nest() %>% 
     # Boostrap data
     mutate(boot = map(.x = data,
@@ -2173,7 +2223,7 @@ pubs_nofacet.pain <- data_geq10 %>%
     unnest(cols = c(data, point_est, lower_ci, upper_ci)) %>% 
     ungroup()
 
-plot_nofacet.pain <- pubs_nofacet.pain %>% 
+plot_nofacet.pain_def <- pubs_nofacet.pain_def %>% 
     select(-CD4_recent, -Age, -Pain_present, -Site, -Sex) %>% 
     distinct() %>%
     mutate(Pain_site = str_replace(Pain_site,
@@ -2192,7 +2242,7 @@ plot_nofacet.pain <- pubs_nofacet.pain %>%
         y = point_est,
         ymin = lower_ci,
         ymax = upper_ci,
-        fill = Pain) +
+        fill = Pain_def) +
     geom_linerange(position = position_dodge2(width = 0.6),
                    size = 1,
                    colour = '#000000') +
@@ -2220,7 +2270,7 @@ plot_nofacet.pain <- pubs_nofacet.pain %>%
 
 #-- Body sites by age --#
 pubs_nofacet.age <- data_geq10 %>%  
-    select(-CD4_recent, -Site, -Sex, -Pain) %>% 
+    select(-CD4_recent, -Site, -Sex, -Pain_def) %>% 
     mutate(Pain_site = str_replace(Pain_site,
                                    pattern = '_',
                                    replacement = ' ')) %>% 
@@ -2296,7 +2346,7 @@ plot_nofacet.age <- pubs_nofacet.age %>%
 
 #-- Body sites by CD4 --#
 pubs_nofacet.cd4 <- data_geq10 %>% 
-    select(-Age, -Site, -Sex, -Pain) %>% 
+    select(-Age, -Site, -Sex, -Pain_def) %>% 
     mutate(Pain_site = str_replace(Pain_site,
                                    pattern = '_',
                                    replacement = ' ')) %>% 
@@ -2372,7 +2422,7 @@ plot_nofacet.cd4 <- pubs_nofacet.cd4 %>%
 
 ```{r supplementary_fig2, fig.width = 9, fig.height = 8}
 # Patchwork
-pub_plot <- plot_nofacet + plot_nofacet.sex + plot_nofacet.pain +
+pub_plot <- plot_nofacet + plot_nofacet.sex + plot_nofacet.pain_def +
     plot_nofacet.age + plot_nofacet.cd4 + 
     plot_layout(ncol = 2)
 
@@ -2398,8 +2448,8 @@ filter_less10 <- filter(filter, prop < 0.1) %>%
     .$Site
 
 # Generate new dataset
-data_less10 <- data_log %>% 
-    pivot_longer(cols = -c(Site, CD4_recent, Sex, Age, Pain),
+data_less10 <- data_logit %>% 
+    pivot_longer(cols = -c(Site, CD4_recent, Sex, Age, Pain_def),
                  names_to = 'Pain_site',
                  values_to = 'Pain_present') %>% 
     # Filter by filter_geq10
@@ -2433,7 +2483,7 @@ pubs_nofacet2 <- data_less10 %>%
     ungroup()
 
 plot_nofacet2 <- pubs_nofacet2 %>% 
-    select(-CD4_recent, -Sex, -Age, -Pain_present, -Site, -Pain) %>% 
+    select(-CD4_recent, -Sex, -Age, -Pain_present, -Site, -Pain_def) %>% 
     distinct() %>%
     mutate(Pain_site = str_replace(Pain_site,
                                    pattern = '_',
@@ -2500,7 +2550,7 @@ pubs_nofacet.sex2 <- data_less10 %>%
     ungroup()
 
 plot_nofacet.sex2 <- pubs_nofacet.sex2 %>% 
-    select(-CD4_recent, -Age, -Pain_present, -Site, -Pain) %>% 
+    select(-CD4_recent, -Age, -Pain_present, -Site, -Pain_def) %>% 
     distinct() %>%
     mutate(Pain_site = str_replace(Pain_site,
                                    pattern = '_',
@@ -2551,7 +2601,7 @@ plot_nofacet.sex2 <- pubs_nofacet.sex2 %>%
 
 #-- Body sites by pain chronicity --#
 pubs_nofacet.pain2 <- data_less10 %>% 
-    group_by(Pain_site, Pain) %>% 
+    group_by(Pain_site, Pain_def) %>% 
     nest() %>% 
     # Boostrap data
     mutate(boot = map(.x = data,
@@ -2600,7 +2650,7 @@ plot_nofacet.pain2 <- pubs_nofacet.pain2 %>%
         y = point_est,
         ymin = lower_ci,
         ymax = upper_ci,
-        fill = Pain) +
+        fill = Pain_def) +
     geom_linerange(position = position_dodge2(width = 0.6),
                    size = 1,
                    colour = '#000000') +
@@ -2628,7 +2678,7 @@ plot_nofacet.pain2 <- pubs_nofacet.pain2 %>%
 
 #-- Body sites by age --#
 pubs_nofacet.age2 <- data_less10 %>%  
-    select(-CD4_recent, -Site, -Sex, -Pain) %>% 
+    select(-CD4_recent, -Site, -Sex, -Pain_def) %>% 
     mutate(Pain_site = str_replace(Pain_site,
                                    pattern = '_',
                                    replacement = ' ')) %>% 
@@ -2708,7 +2758,7 @@ plot_nofacet.age2 <- pubs_nofacet.age2 %>%
 
 #-- Body sites by CD4 --#
 pubs_nofacet.cd42 <- data_less10 %>% 
-    select(-Age, -Site, -Sex, -Pain) %>% 
+    select(-Age, -Site, -Sex, -Pain_def) %>% 
     mutate(Pain_site = str_replace(Pain_site,
                                    pattern = '_',
                                    replacement = ' ')) %>% 
