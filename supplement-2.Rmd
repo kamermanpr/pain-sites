@@ -920,7 +920,7 @@ head_mod <- glmer(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, head_mod, test = 'LR')
+anova(null_mod, head_mod, test = 'LRT')
 
 ## Significant
 ## (family-wise error correction, alpha = 0.0024)
@@ -974,7 +974,7 @@ shdr_mod <- glmer(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, shdr_mod, test = 'LR')
+anova(null_mod, shdr_mod, test = 'LRT')
 
 ## No significant difference between null and full model
 ## Print model
@@ -1078,7 +1078,7 @@ chst_mod <- glmer(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, chst_mod, test = 'LR')
+anova(null_mod, chst_mod, test = 'LRT')
 
 ## No significant difference in null and full models
 ## Print model
@@ -1157,7 +1157,7 @@ groin_mod <- glmer(Pain_present ~
                family = binomial())
 
 ## Compare models 
-anova(null_mod, groin_mod, test = 'LR')
+anova(null_mod, groin_mod, test = 'LRT')
 
 ## No significant difference between null and full model
 ## Print model
@@ -1210,7 +1210,7 @@ hips_mod <- glmer(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, hips_mod, test = 'LR')
+anova(null_mod, hips_mod, test = 'LRT')
 
 ## No significant difference between null and full model
 ## Print model
@@ -1313,7 +1313,7 @@ neck_mod <- glmer(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, neck_mod, test = 'LR')
+anova(null_mod, neck_mod, test = 'LRT')
 
 ## No significant difference between null and full models
 ## Print model
@@ -1341,7 +1341,7 @@ thrx_mod <- glmer(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, thrx_mod, test = 'LR')
+anova(null_mod, thrx_mod, test = 'LRT')
 
 ## No significant difference between null and full models
 ## Print model
@@ -1369,7 +1369,7 @@ lmbr_mod <- glmer(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, lmbr_mod, test = 'LR')
+anova(null_mod, lmbr_mod, test = 'LRT')
 
 ## No significant difference between null and full models
 ## Print model
@@ -1426,7 +1426,7 @@ thrt_mod <- glm(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, thrt_mod, test = 'LR')
+anova(null_mod, thrt_mod, test = 'LRT')
 
 ## No significant difference between the null and full models
 ## Print model
@@ -1453,7 +1453,7 @@ arms_mod <- glm(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, arms_mod, test = 'LR')
+anova(null_mod, arms_mod, test = 'LRT')
 
 ## No significant difference between the null and full models
 ## Print model
@@ -1480,7 +1480,7 @@ elbw_mod <- glm(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, elbw_mod, test = 'LR')
+anova(null_mod, elbw_mod, test = 'LRT')
 
 ## No significant difference between the null and full models
 ## Print model
@@ -1507,7 +1507,7 @@ wrst_mod <- glm(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, wrst_mod, test = 'LR')
+anova(null_mod, wrst_mod, test = 'LRT')
 
 ## No significant difference between the null and full models 
 ## (family-wise error correction, alpha = 0.0024)
@@ -1535,7 +1535,7 @@ abdm_mod <- glm(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, abdm_mod, test = 'LR')
+anova(null_mod, abdm_mod, test = 'LRT')
 
 ## No significant difference between the null and full models 
 ## (family-wise error correction, alpha = 0.0024)
@@ -1563,7 +1563,7 @@ back_mod <- glm(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, back_mod, test = 'LR')
+anova(null_mod, back_mod, test = 'LRT')
 
 ## No significant difference between the null and full models
 ## Print model
@@ -1590,7 +1590,7 @@ butt_mod <- glm(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, butt_mod, test = 'LR')
+anova(null_mod, butt_mod, test = 'LRT')
 
 ## No significant difference between the null and full models
 ## Print model
@@ -1617,7 +1617,7 @@ legs_mod <- glm(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, legs_mod, test = 'LR')
+anova(null_mod, legs_mod, test = 'LRT')
 
 ## Significant difference between the null and full models 
 ## (family-wise error correction, alpha = 0.0024)
@@ -1644,7 +1644,7 @@ knee_mod <- glm(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, knee_mod, test = 'LR')
+anova(null_mod, knee_mod, test = 'LRT')
 
 ## Significant difference between the null and full models 
 ## (family-wise error correction, alpha = 0.0024)
@@ -1671,7 +1671,7 @@ ankl_mod <- glm(Pain_present ~
               family = binomial())
 
 ## Compare models 
-anova(null_mod, ankl_mod, test = 'LR')
+anova(null_mod, ankl_mod, test = 'LRT')
 
 ## Significant difference between the null and full models 
 ## (family-wise error correction, alpha = 0.0024)
@@ -1711,7 +1711,7 @@ glmm_mods <- data_logit.long %>%
     # Perform likelihood ratio test
     mutate(LRT = map2(.x = logistic,
                       .y = null,
-                      ~ anova(.y, .x, test = 'LR'))) %>% 
+                      ~ anova(.y, .x, test = 'LRT'))) %>% 
     # Extract LRT p-values and correct for multiple comparisons
     mutate(LRT_p = map(.x = LRT,
                        ~ .x[, 8][[2]]),
@@ -1834,7 +1834,7 @@ glm_mods <- data_logit.long %>%
     # Perform likelihood ratio test
     mutate(LRT = map2(.x = logistic,
                       .y = null,
-                      ~ anova(.y, .x, test = 'LR'))) %>% 
+                      ~ anova(.y, .x, test = 'LRT'))) %>% 
     # Extract LRT p-values and correct for multiple comparisons
     mutate(LRT_p = map(.x = LRT,
                        ~ .x[, 5][[2]]),
