@@ -3,7 +3,6 @@ title: "Supplement 2"
 subtitle: "Sites of pain"
 author: "Peter Kamerman" 
 date: "Last knitted: `r format(Sys.Date(), '%d %B %Y')`"
-mainfont: Helvetica
 ---
 
 ```{r setup, include = FALSE}

@@ -3,7 +3,6 @@ title: "Supplement 1"
 subtitle: "Demographics"
 author: "Peter Kamerman" 
 date: "Last knitted: `r format(Sys.Date(), '%d %B %Y')`"
-mainfont: Helvetica
 ---
 
 ```{r setup, include = FALSE}
@@ -18,8 +17,8 @@ if(!dir.exists('figures')){
 }
 
 # Skimr options
-skim <- skim_with(factor = sfl(ordered = NULL),
-                  numeric = sfl(hist = NULL))
+my_skim <- skim_with(factor = sfl(ordered = NULL),
+                     numeric = sfl(hist = NULL))
 
 # Set knitr options
 knitr::opts_chunk$set(echo = TRUE,
@@ -56,7 +55,7 @@ demo %>%
     select(-ID, -Site) %>% 
     # Convert character to factor
     mutate_if(is.character, factor) %>% 
-    skim()
+    my_skim()
 ```
 
 ## By study site
@@ -83,7 +82,7 @@ demo %>%
     select(-ID) %>% 
     # Group by site
     group_by(Site) %>%
-    skim()
+    my_skim()
 ```
 
 \newpage
