@@ -689,7 +689,7 @@ ggsave(filename = 'figures/figure_3.png',
 ```
 
 \begin{figure}[!h]
-    \center{\includegraphics[width=\textwidth]{figures/figure_4.png}}
+    \center{\includegraphics[width=\textwidth]{figures/figure_3.png}}
     \caption{Number of pain sites by predictor variable}
 \end{figure}
 
