@@ -1,14 +1,14 @@
 #-- Build the image--#
-# docker build -t kamermanpr/pain-sites:v0.1 .
+# docker build -t kamermanpr/pain-sites:v1.0 .
 
 #-- Push the image to Docker Hub --#
-# docker push kamermanpr/pain-sites:v0.1
+# docker push kamermanpr/pain-sites:v1.0
 
 #-- Pull the latest image from Docker Hub --#
 # docker pull kamermanpr/pain-sites
 
 #-- Run command --#
-# docker run --name pain -d -p 8787:8787 -e USER=user -e PASSWORD=password kamermanpr/pain-sites
+# docker run --name pain -d -p 8787:8787 -e USER=user -e PASSWORD=password kamermanpr/pain-sites:v1.0
 
 #-- Login to RStudio --#
 # In your browser, navigate to: localhost:8787
