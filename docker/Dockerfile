@@ -26,4 +26,4 @@ MAINTAINER Peter Kamerman <peter.kamerman@gmail.com>
 RUN Rscript -e "install.packages(c('lme4' , 'patchwork', 'skimr'), dependencies = TRUE)"
 
 #-- Make sure TinyTex is installed --#
-RUN Rscript -e "tidytext::install_tinytex(force = TRUE))"
+RUN Rscript -e "tinytex::install_tinytex(force = TRUE)"
