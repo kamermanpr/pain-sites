@@ -5,7 +5,7 @@
 .DS_Store
 *_cache
 other/
-data-original/data.csv
+paper/
+data-original/data-original.csv
 data-original/data-july-2019.xlsx
 *.log
-paper/
