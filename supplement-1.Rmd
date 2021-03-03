@@ -32,7 +32,16 @@ knitr::opts_chunk$set(echo = TRUE,
 
 ```{r import}
 # Import
-demo <- read_rds('data-cleaned/data-demographics.rds')
+demo <- read_rds('data-cleaned/data-demographics.rds')%>% 
+    # Fix site names: 
+    ## DD = Site 1, NM = Site 2, RESI = Site 3, RP = Site 4, STIG = Site 5
+    mutate(Site = case_when(
+        Site == 'DD' ~ 'Site 1',
+        Site == 'NM' ~ 'Site 2',
+        Site == 'RESI' ~ 'Site 3',
+        Site == 'RP' ~ 'Site 4',
+        Site == 'STIG' ~ 'Site 5'
+    ))
 
 # Check
 ## Demographics
