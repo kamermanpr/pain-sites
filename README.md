@@ -27,7 +27,7 @@ Enter: `docker run --name pain -d -p 8787:8787 -e USER=user -e PASSWORD=password
     
 #### Upload repository
 
-- Go to the [pain sites](https://github.com/kamermanpr/pain-sites.git) repository on GitHub and select download _Code_ and _Download ZIP_.
+- Go to the [pain sites](https://github.com/kamermanpr/pain-sites.git) repository on GitHub and select _Code_ and then _Download ZIP_.
 
 - In the _Files_ tab on the lower right panel of RStudio, click **Upload**, located the zip file you downloaded and the click **OK**. The zip file will be uploaded and will automatically unzip, giving you access to all the content, including the analysis scripts, for the project.
 
