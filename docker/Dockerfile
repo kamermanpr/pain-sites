@@ -1,14 +1,8 @@
-#-- Build the image--#
-# docker build -t kamermanpr/pain-sites:v1.0 .
-
-#-- Push the image to Docker Hub --#
-# docker push kamermanpr/pain-sites:v1.0
-
 #-- Pull the latest image from Docker Hub --#
-# docker pull kamermanpr/pain-sites
+# docker pull kamermanpr/pain-sites:v1.1
 
 #-- Run command --#
-# docker run --name pain -d -p 8787:8787 -e USER=user -e PASSWORD=password kamermanpr/pain-sites:v1.0
+# docker run --name pain_sites -d -p 8787:8787 -e USER=user -e PASSWORD=password kamermanpr/pain-sites:v1.1
 
 #-- Login to RStudio --#
 # In your browser, navigate to: localhost:8787
@@ -17,10 +11,10 @@
 
 #-- Get the verse rocker image --#
 
-FROM rocker/verse:3.6.3
+FROM rocker/verse:4.0.4
 
 MAINTAINER Peter Kamerman <peter.kamerman@gmail.com>
 
 #-- Install extra packages --#
 
-RUN Rscript -e "install.packages(c('lme4' , 'patchwork', 'skimr'), dependencies = TRUE)"
+RUN Rscript -e "install.packages(c('patchwork', 'skimr'), dependencies = TRUE)"
