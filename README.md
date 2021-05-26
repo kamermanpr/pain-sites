@@ -1,5 +1,13 @@
 # Pain sites
 
+## Bibliometrics
+
+Wadley A, Parker R, Mukhuba A, Ratshinanga A, Zwane Z, Kamerman P. A similar number of pain sites are experienced by both South African men and women living with HIV. 
+
+## Abstract
+
+
+
 ## Reproducibility
 
 For reproducibility we have built a docker image with the environment used to run the scripts:  
@@ -11,11 +19,11 @@ You need to have docker installed on your computer. To do so, go to [docker.com]
 
 #### Download the latest image
 
-Enter: `docker pull kamermanpr/pain-sites:v1.0`
+Enter: `docker pull kamermanpr/pain-sites:v1.1`
 
 #### Run the container
 
-Enter: `docker run --name pain -d -p 8787:8787 -e USER=user -e PASSWORD=password kamermanpr/pain-sites:v1.0`
+Enter: `docker run --name pain_sites -d -p 8787:8787 -e USER=user -e PASSWORD=password kamermanpr/pain-sites:v1.1`
 
 #### Login to RStudio Server
 
@@ -37,5 +45,5 @@ Enter: `docker run --name pain -d -p 8787:8787 -e USER=user -e PASSWORD=password
 
 #### Shutting down
 
-Once done, log out of RStudio Server and enter the following into a terminal to stop the docker container: `docker stop pain`. If you then want to remove the container, enter: `docker rm pain`. If you also want to remove the docker image you downloaded, enter: `docker rmi kamermanpr/painsites:v1.0`
+Once done, log out of RStudio Server and enter the following into a terminal to stop the docker container: `docker stop pain_sites`. If you then want to remove the container, enter: `docker rm pain_sites`. If you also want to remove the docker image you downloaded, enter: `docker rmi kamermanpr/painsites:v1.1`
 
