@@ -1,6 +1,6 @@
 # Pain sites
 
-## Bibliometrics
+## Bibliographic information
 
 Wadley A, Parker R, Mukhuba A, Ratshinanga A, Zwane Z, Kamerman P. A similar number of pain sites are experienced by both South African men and women living with HIV. 
 
