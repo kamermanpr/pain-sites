@@ -587,8 +587,8 @@ data <- data %>%
 #                                                          #
 ############################################################
 # Write to file
-write_csv(data, path = 'data-cleaned/data-all.csv')
-write_rds(data, path = 'data-cleaned/data-all.rds')
+write_csv(data, file = 'data-cleaned/data-all.csv')
+write_rds(data, file = 'data-cleaned/data-all.rds')
 
 ############################################################
 #                                                          #
@@ -600,21 +600,8 @@ sites <- data %>%
     select(-ends_with('bilateral'), -c(27:36))
 
 # Write to file
-write_csv(sites, path = 'data-cleaned/data-pain-sites.csv')
-write_rds(sites, path = 'data-cleaned/data-pain-sites.rds')
-
-############################################################
-#                                                          #
-#                      Arthritis only                      #
-#                                                          #
-############################################################
-# Extract data from complete dataset
-arthritis <- data %>% 
-    select(ID, Site, ends_with('bilateral'))
-
-# Write to file
-write_csv(arthritis, path = 'data-cleaned/data-rheumatoid-arthritis.csv')
-write_rds(arthritis, path = 'data-cleaned/data-rheumatoid-arthritis.rds')
+write_csv(sites, file = 'data-cleaned/data-pain-sites.csv')
+write_rds(sites, file = 'data-cleaned/data-pain-sites.rds')
 
 ############################################################
 #                                                          #
@@ -626,8 +613,8 @@ demo <- data %>%
     select(ID, Site, 27:31, 35)
 
 # Write to file
-write_csv(demo, path = 'data-cleaned/data-demographics.csv')
-write_rds(demo, path = 'data-cleaned/data-demographics.rds')
+write_csv(demo, file = 'data-cleaned/data-demographics.csv')
+write_rds(demo, file = 'data-cleaned/data-demographics.rds')
 
 ############################################################
 #                                                          #
@@ -639,6 +626,8 @@ pain <- data %>%
     select(ID, Site, 32:34, 36)
 
 # Write to file
-write_csv(pain, path = 'data-cleaned/data-pain-intensity.csv')
-write_rds(pain, path = 'data-cleaned/data-pain-intensity.rds')
+write_csv(pain, file = 'data-cleaned/data-pain-intensity.csv')
+write_rds(pain, file = 'data-cleaned/data-pain-intensity.rds')
 
+# Session Information
+sessionInfo()
