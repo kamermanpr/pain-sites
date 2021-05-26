@@ -32,8 +32,8 @@ skim <- skim_with(factor = sfl(ordered = NULL),
 knitr::opts_chunk$set(echo = TRUE,
                       message = FALSE,
                       warning = FALSE,
-                      fig.height = 6,
-                      fig.width = 7,
+                      fig.height = 5,
+                      fig.width = 6,
                       fig.path = 'figures/supplement-2/')
 ```
 
@@ -201,7 +201,7 @@ prop_boot2 <- prop_boot %>%
                            geom_point(shape = 21,
                                       colour = '#000000',
                                       fill = '#000000',
-                                      size = 3,
+                                      size = 4,
                                       stroke = 1) +
                            coord_flip() +
                             labs(title = .y,
@@ -233,7 +233,11 @@ walk(prop_boot2$tables, ~ print(.x))
 ## Plotted data
 
 ```{r plotted_prop}
-walk(prop_boot2$plots, ~ print(.x))
+prop_boot2$plots[[1]]
+prop_boot2$plots[[2]]
+prop_boot2$plots[[3]]
+prop_boot2$plots[[4]]
+prop_boot2$plots[[5]]
 ```
 
 ----
@@ -382,7 +386,11 @@ walk(sex_boot2$tables, ~ print(.x))
 
 ```{r plotted_sex}
 # Individual plots
-walk(sex_boot2$plots, ~ print(.x))
+sex_boot2$plots[[1]]
+sex_boot2$plots[[2]]
+sex_boot2$plots[[3]]
+sex_boot2$plots[[4]]
+sex_boot2$plots[[5]]
 ```
 
 ```{r publication_plot}
