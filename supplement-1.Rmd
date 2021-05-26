@@ -11,14 +11,11 @@ library(tidyverse)
 library(skimr)
 library(knitr)
 
-# Create figures folder
-if(!dir.exists('figures')){
-    dir.create('figures')
-}
-
 # Skimr options
 my_skim <- skim_with(factor = sfl(ordered = NULL),
-                     numeric = sfl(hist = NULL))
+                     numeric = sfl(hist = NULL),
+                     base = sfl(missing = n_missing,
+                                complete = n_complete))
 
 # Set knitr options
 knitr::opts_chunk$set(echo = TRUE,
@@ -94,7 +91,7 @@ demo %>%
     my_skim()
 ```
 
-\newpage
+----
 
 # Session information
 
