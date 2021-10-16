@@ -11,7 +11,7 @@ Wadley A, Parker R, Mukhuba A, Ratshinanga A, Zwane Z, Kamerman P. A similar num
 ## Reproducibility
 
 For reproducibility we have built a docker image with the environment used to run the scripts:  
-[kamermanpr/pain-sites](https://hub.docker.com/repository/docker/kamermanpr/pain-sites)
+[kamermanpr/pain-sites](https://hub.docker.com/r/kamermanpr/pain-sites)
 
 ### Using Docker to run the scripts
 
@@ -45,5 +45,5 @@ Enter: `docker run --name pain_sites -d -p 8787:8787 -e USER=user -e PASSWORD=pa
 
 #### Shutting down
 
-Once done, log out of RStudio Server and enter the following into a terminal to stop the docker container: `docker stop pain_sites`. If you then want to remove the container, enter: `docker rm pain_sites`. If you also want to remove the docker image you downloaded, enter: `docker rmi kamermanpr/painsites:v1.1`
+Once done, log out of RStudio Server and enter the following into a terminal to stop the docker container: `docker stop pain_sites`. If you then want to remove the container, enter: `docker rm pain_sites`. If you also want to remove the docker image you downloaded, enter: `docker rmi kamermanpr/pain-sites:v1.1`
 
