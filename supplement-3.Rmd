@@ -109,7 +109,7 @@ analysis_set %>%
   skim()
 ```
 
-#### By HAART
+#### By ART
 
 ```{r by_haart}
 analysis_set %>% 
@@ -258,7 +258,7 @@ sex <- analysis_set %>%
           axis.ticks = element_line(size = 0.5)); sex
 ```
 
-#### Count by HAART
+#### Count by ART
 
 ```{r art}
 analysis_set %>% 
@@ -270,7 +270,7 @@ analysis_set %>%
                    colour = '#FFFFFF') +
     scale_y_continuous(limits = c(0, 150),
                        breaks = c(0, 50, 100, 150)) +
-    labs(title = 'Currently on HAART',
+    labs(title = 'Currently on ART',
          subtitle = str_glue('(Complete cases = {nrow(analysis_set[!is.na(
                              analysis_set$ART_currently), ])})'),
          x = 'Number of sites',
@@ -303,7 +303,7 @@ haart <- analysis_set %>%
                  size = 0.8,
                  alpha = 0) +
     scale_x_discrete(labels = c('No', 'Yes')) +
-    labs(title = 'Currently on HAART',
+    labs(title = 'Currently on ART',
          subtitle = str_glue('(Complete cases = {nrow(analysis_set[!is.na(
                              analysis_set$ART_currently), ])})'),
          y = 'Number of sites') +
@@ -438,11 +438,11 @@ employment <- analysis_set %>%
                  size = 0.8,
                  alpha = 0) +
     scale_x_discrete(labels = c('Full-time\nwork', 'Part-time\nwork',
-                                'Other', 'Unemployed')) +
+                                'Other*', 'Unemployed')) +
     labs(title = 'Employment status',
          subtitle = str_glue('(Complete cases = {nrow(analysis_set[!is.na(
                              analysis_set$Employment_status), ])})'),
-         caption = 'Other: were receiving social grants or were students',
+         caption = '*Other: were receiving social grants or were students',
          y = 'Number of sites') +
     theme_minimal(base_size = 18) +
     theme(plot.title = element_text(size = 18),

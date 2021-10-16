@@ -603,7 +603,9 @@ write_rds(data, file = 'data-cleaned/data-all.rds')
 names(data)
 
 sites <- data %>% 
-    select(-ends_with('bilateral'), -c(27:40))
+    select(-ends_with('bilateral'), -c(27:39))
+
+names(data)
 
 # Write to file
 write_csv(sites, file = 'data-cleaned/data-pain-sites.csv')
