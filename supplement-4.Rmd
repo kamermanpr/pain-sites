@@ -1,0 +1,293 @@
+---
+title: "Supplement 4"
+subtitle: "Reviewer analysis requests: Number of pain sites"
+author: "Peter Kamerman"
+date: "Last knitted: `r format(Sys.Date(), '%d %B %Y')`"
+---
+
+```{r setup, include = FALSE}
+# Load packages
+library(tidyverse)
+library(skimr)
+library(knitr)
+
+# Create figures folder
+if(!dir.exists('figures')){
+    dir.create('figures')
+}
+
+# Skimr options
+skim <- skim_with(factor = sfl(ordered = NULL),
+                  numeric = sfl(hist = NULL),
+                  base = sfl(missing = n_missing,
+                             complete = n_complete))
+
+# Set knitr options
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      fig.align = 'center',
+                      fig.height = 5,
+                      fig.width = 6,
+                      fig.path = 'figures/supplement-4/')
+```
+
+----
+
+# Import and check data
+
+```{r import}
+# Import
+data <- read_rds('data-cleaned/data-pain-sites.rds')
+demo <- read_rds('data-cleaned/data-demographics.rds') %>% 
+  select(ID, Site, Diabetes, TB, BDI) # Select required columns
+
+# Check
+## Pain sites
+dim(data)
+names(data)
+glimpse(data)
+
+data %>% 
+    select(-ID, -Site) %>% 
+    mutate_if(is.character, factor) %>% 
+    skim()
+
+## Demographics
+dim(demo)
+names(demo)
+glimpse(demo)
+
+demo %>% 
+    select(-ID, -Site) %>% 
+    mutate_if(is.character, factor) %>% 
+    skim()
+```
+
+----
+
+# Data analysis
+
+## Process data
+
+```{r process_data}
+# Remove upper_back (only one outcome -- no pain)
+data <- data[, !(names(data) %in% c('Upper_back'))]
+
+# Calculate number of sites per individual
+pain_count <- data %>% 
+    # Format as long data
+    pivot_longer(cols = -c(ID, Site),
+                 names_to = 'pain_site',
+                 values_to = 'pain_present') %>% 
+    group_by(ID) %>% 
+    summarise(Count = sum(pain_present == 'Yes', na.rm = TRUE))
+
+# Join datasets
+analysis_set <- left_join(pain_count, demo)
+```
+
+## Summary statistics
+
+### Total group
+
+```{r total}
+analysis_set %>% 
+  select(Count) %>% 
+  skim()
+```
+
+### For each categorical variable
+
+#### By diabetes
+
+```{r by_diabetes}
+analysis_set %>% 
+  select(Count, Diabetes) %>%
+  filter(complete.cases(.)) %>% 
+  group_by(Diabetes) %>% 
+  skim()
+```
+
+#### By TB
+
+```{r by_tb}
+analysis_set %>% 
+  select(Count, TB) %>%
+  filter(complete.cases(.)) %>% 
+  group_by(TB) %>% 
+  skim()
+```
+
+## Exploratory plots
+
+### For each categorical variable
+
+#### Count by diabetes
+
+```{r diabetes}
+analysis_set %>% 
+    select(Count, Diabetes) %>% 
+    filter(complete.cases(.)) %>%
+    ggplot(data = .) +
+    aes(Count) +
+    geom_histogram(binwidth = 1,
+                   colour = '#FFFFFF') +
+    labs(title = 'Diabetes mellitus',
+         subtitle = str_glue('(Complete cases = {nrow(analysis_set[!is.na(
+                             analysis_set$Diabetes), ])})'),
+         x = 'Number of sites',
+         y = 'Count') +
+    facet_wrap(~Diabetes) +
+    coord_flip() +
+    theme_minimal(base_size = 18) +
+    theme(plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5))
+
+diabetes <- analysis_set %>% 
+    select(Count, Diabetes) %>% 
+    filter(complete.cases(.)) %>% 
+    ggplot(data = .) +
+    aes(y = Count,
+        x = Diabetes) +
+    geom_point(size = 2,
+               shape = 21,
+               position = position_jitter(height = 0.2, width = 0.2),
+               fill = '#FFFFFF',
+               colour = '#000000',
+               stroke = 0.8,
+               alpha = 0.5) +
+    geom_boxplot(outlier.colour = '#FFFFFF',
+                 outlier.size = 0,
+                 size = 0.8,
+                 alpha = 0) +
+    scale_x_discrete(labels = c('No', 'Yes')) +
+    labs(title = 'Diabetes mellitus',
+         subtitle = str_glue('(Complete cases = {nrow(analysis_set[!is.na(
+                             analysis_set$Diabetes), ])})'),
+         y = 'Number of sites') +
+    theme_minimal(base_size = 18) +
+    theme(plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          plot.caption = element_text(size = 12),
+          panel.grid = element_blank(),
+          axis.title.x = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5)); diabetes
+
+wilcox.test(Count ~ Diabetes, data = analysis_set)
+```
+
+#### Count by TB
+
+```{r tb}
+analysis_set %>% 
+    select(Count, TB) %>% 
+    filter(complete.cases(.)) %>%
+    ggplot(data = .) +
+    aes(Count) +
+    geom_histogram(binwidth = 1,
+                   colour = '#FFFFFF') +
+    scale_y_continuous(limits = c(0, 150),
+                       breaks = c(0, 50, 100, 150)) +
+    labs(title = 'TB infection',
+         subtitle = str_glue('(Complete cases = {nrow(analysis_set[!is.na(
+                             analysis_set$TB), ])})'),
+         x = 'Number of sites',
+         y = 'Count') +
+    facet_wrap(~TB) +
+    coord_flip() +
+    theme_minimal(base_size = 18) +
+    theme(plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5))
+
+tb <- analysis_set %>%
+    select(Count, TB) %>% 
+    filter(complete.cases(.)) %>% 
+    ggplot(data = .) +
+    aes(y = Count,
+        x = TB) +
+    geom_point(size = 2,
+               shape = 21,
+               position = position_jitter(height = 0.2, width = 0.2),
+               fill = '#FFFFFF',
+               colour = '#000000',
+               stroke = 0.8,
+               alpha = 0.5) +
+    geom_boxplot(outlier.colour = '#FFFFFF',
+                 outlier.size = 0,
+                 size = 0.8,
+                 alpha = 0) +
+    scale_x_discrete(labels = c('No', 'Yes')) +
+    labs(title = 'TB infection',
+         subtitle = str_glue('(Complete cases = {nrow(analysis_set[!is.na(
+                             analysis_set$TB), ])})'),
+         y = 'Number of sites') +
+    theme_minimal(base_size = 18) +
+    theme(plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          plot.caption = element_text(size = 12),
+          panel.grid = element_blank(),
+          axis.title.x = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5)); tb
+
+wilcox.test(Count ~ TB, data = analysis_set)
+```
+
+### Continuous variables
+
+#### Beck's Depression Inventory II
+
+```{r bdi}
+bdi <- analysis_set %>% 
+    select(Count, BDI) %>% 
+    filter(complete.cases(.)) %>%
+    ggplot(data = .) +
+    aes(y = Count,
+        x = BDI) +
+    geom_point(size = 2,
+               shape = 21,
+               position = position_jitter(height = 0.2, width = 0.2),
+               fill = '#FFFFFF',
+               colour = '#000000',
+               stroke = 0.8,
+               alpha = 0.5) +
+    labs(title = 'Depression',
+         subtitle = str_glue('(Complete cases = {nrow(analysis_set[!is.na(
+                             analysis_set$BDI), ])})'),
+         x = "Beck's Depression Inventory II (0 to 63)",
+         y = 'Number of sites') +
+    scale_x_continuous(limits = c(0, 60),
+                       breaks = seq(0, 60, by = 20)) +
+    theme_minimal(base_size = 18) +
+    theme(plot.title = element_text(size = 18),
+          plot.subtitle = element_text(size = 12),
+          plot.caption = element_text(size = 12),
+          panel.grid = element_blank(),
+          axis.text = element_text(colour = '#000000'),
+          axis.line = element_line(size = 0.5),
+          axis.ticks = element_line(size = 0.5)); bdi
+
+cor.test(analysis_set$Count, analysis_set$BDI, 
+         method = 'spearman',
+         exact = FALSE)
+```
+
+----
+
+# Session information
+
+```{r session}
+sessionInfo()
+```
