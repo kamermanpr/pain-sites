@@ -503,10 +503,22 @@ data <- data %>%
 data <- data %>% 
     select(-`Complete?`)
 
+# Add BDI
+bdi <- read_csv('data-original/bdi-data.csv')
+data <- data %>% 
+    left_join(bdi)
+
 ## Check data and remove variables with less than 80% completeness
 data %>%
     mutate_if(is.character, factor) %>% 
     skim()
+
+#####################
+# Reviewer requests #
+#####################
+# Keep BDI despite only been
+# Keep diabetes
+# Keep TB
 
 ### Remove CD4_recent values > 1500 cells/mm3
 data <- data %>% 
@@ -529,14 +541,6 @@ data <- data %>%
 data <- data %>% 
     select(-Language)
 
-### Remove Diabetes
-data <- data %>% 
-    select(-Diabetes)
-
-### Remove TB
-data <- data %>% 
-    select(-TB)
-
 ### Remove TB treatment
 data <- data %>% 
     select(-`currently on TB treatment`)
@@ -557,7 +561,7 @@ data <- data %>%
 data <- data %>% 
     # Clean-up ID column to keep only study site information
     mutate(Site = str_remove(ID, 
-                           pattern = '[0-9][0-9]?[0-9]?[0-9]?')) %>% 
+                             pattern = '[0-9][0-9]?[0-9]?[0-9]?')) %>% 
     # Fix RP? (all from the same site, just different group allocation)
     mutate(Site = ifelse(Site == 'RPA' | Site == 'RPB' | Site == 'RPC' | Site == 'RPD',
                          yes = 'RP',
@@ -596,8 +600,10 @@ write_rds(data, file = 'data-cleaned/data-all.rds')
 #                                                          #
 ############################################################
 # Extract data from complete dataset
+names(data)
+
 sites <- data %>% 
-    select(-ends_with('bilateral'), -c(27:36))
+    select(-ends_with('bilateral'), -c(27:40))
 
 # Write to file
 write_csv(sites, file = 'data-cleaned/data-pain-sites.csv')
@@ -610,7 +616,7 @@ write_rds(sites, file = 'data-cleaned/data-pain-sites.rds')
 ############################################################
 # Extract data from complete dataset
 demo <- data %>% 
-    select(ID, Site, 27:31, 35)
+    select(ID, Site, 27:33, 37, 39)
 
 # Write to file
 write_csv(demo, file = 'data-cleaned/data-demographics.csv')
@@ -623,7 +629,7 @@ write_rds(demo, file = 'data-cleaned/data-demographics.rds')
 ############################################################
 # Extract data from complete dataset
 pain <- data %>% 
-    select(ID, Site, 32:34, 36)
+    select(ID, Site, 34:36, 38)
 
 # Write to file
 write_csv(pain, file = 'data-cleaned/data-pain-intensity.csv')
